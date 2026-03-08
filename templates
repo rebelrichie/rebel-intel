@@ -1,1 +1,436 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page {
+    size: letter;
+    margin: 0.6in 0.55in;
+    @bottom-center {
+      content: "REBEL TALENT SYSTEMS  ·  CONFIDENTIAL BD INTELLIGENCE  ·  {{ today }}";
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 8pt;
+      color: #2a3a4a;
+    }
+  }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #050d1b;
+    color: #d0dce8;
+    font-size: 9.5pt;
+    line-height: 1.5;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: table;
+    width: 100%;
+    border-bottom: 2pt solid #7CCBC3;
+    padding-bottom: 10pt;
+    margin-bottom: 18pt;
+  }
+  .header-left { display: table-cell; vertical-align: bottom; width: 60%; }
+  .header-right { display: table-cell; vertical-align: bottom; text-align: right; width: 40%; }
+  .wordmark {
+    font-family: 'Syne', sans-serif;
+    font-size: 20pt;
+    font-weight: 800;
+    color: #7CCBC3;
+    letter-spacing: 0.04em;
+    line-height: 1;
+  }
+  .submark {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.5pt;
+    color: #E2C46B;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 3pt;
+  }
+  .header-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8pt;
+    color: #4a6070;
+    letter-spacing: 0.08em;
+  }
+  .header-tagline {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    color: #2a3a4a;
+    letter-spacing: 0.06em;
+    margin-top: 3pt;
+  }
+
+  /* ── SECTION HEADERS ── */
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #4a6070;
+    border-bottom: 0.5pt solid #1a2a3a;
+    padding-bottom: 3pt;
+    margin-bottom: 10pt;
+    margin-top: 20pt;
+  }
+
+  /* ── GOLD ACTION CARDS — YOUR MOVES TODAY ── */
+  .moves-grid {
+    display: table;
+    width: 100%;
+    margin-bottom: 4pt;
+  }
+  .move-card {
+    display: table-cell;
+    width: 33.33%;
+    padding: 10pt 10pt;
+    background: #0a1520;
+    border-left: 3pt solid #E2C46B;
+    vertical-align: top;
+  }
+  .move-card + .move-card { margin-left: 8pt; }
+  .move-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    color: #E2C46B;
+    letter-spacing: 0.15em;
+    margin-bottom: 4pt;
+  }
+  .move-text {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 8.5pt;
+    color: #d0dce8;
+    line-height: 1.45;
+  }
+
+  /* ── TEAL PRIORITY CARDS — TOP 3 ── */
+  .top3-grid {
+    display: table;
+    width: 100%;
+  }
+  .top3-card {
+    display: table-cell;
+    width: 33.33%;
+    padding: 10pt 10pt;
+    background: #071520;
+    border-top: 2pt solid #7CCBC3;
+    vertical-align: top;
+  }
+  .top3-card + .top3-card { margin-left: 8pt; }
+  .top3-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    color: #7CCBC3;
+    letter-spacing: 0.15em;
+    margin-bottom: 4pt;
+  }
+  .top3-text {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 8.5pt;
+    color: #c0d4e8;
+    line-height: 1.45;
+  }
+
+  /* ── DATA TABLE ── */
+  .intel-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6pt;
+  }
+  .intel-thead { display: table-header-group; }
+  .intel-tbody { display: table-row-group; }
+  .intel-tr { display: table-row; }
+  .intel-th {
+    display: table-cell;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    color: #4a6070;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4pt 8pt;
+    border-bottom: 0.5pt solid #1a2a3a;
+    text-align: left;
+  }
+  .intel-td {
+    display: table-cell;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 8.5pt;
+    color: #c0d4e8;
+    padding: 6pt 8pt;
+    border-bottom: 0.5pt solid #0d1828;
+    vertical-align: top;
+  }
+  .intel-tr:nth-child(even) .intel-td { background: #080f1e; }
+  .tag-teal {
+    display: inline;
+    background: #0d2a28;
+    color: #7CCBC3;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    padding: 1pt 5pt;
+    border-radius: 2pt;
+    letter-spacing: 0.08em;
+  }
+  .tag-gold {
+    display: inline;
+    background: #2a2010;
+    color: #E2C46B;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    padding: 1pt 5pt;
+    border-radius: 2pt;
+    letter-spacing: 0.08em;
+  }
+  .tag-red {
+    display: inline;
+    background: #2a1010;
+    color: #E07070;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    padding: 1pt 5pt;
+    border-radius: 2pt;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── SIGNAL LIST ── */
+  .signal-list { margin-top: 4pt; }
+  .signal-item {
+    padding: 7pt 10pt;
+    border-left: 2pt solid #1a3a48;
+    margin-bottom: 6pt;
+    background: #060d18;
+  }
+  .signal-item:hover { border-left-color: #7CCBC3; }
+  .signal-text {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 8.5pt;
+    color: #c0d4e8;
+    line-height: 1.45;
+  }
+
+  /* ── VEHICLES / PROCUREMENT ── */
+  .vehicle-grid {
+    display: table;
+    width: 100%;
+  }
+  .vehicle-item {
+    display: table-cell;
+    width: 50%;
+    padding: 8pt 10pt;
+    background: #070e1c;
+    border-left: 2pt solid #A78BCA;
+    vertical-align: top;
+  }
+  .vehicle-item + .vehicle-item { margin-left: 8pt; }
+  .vehicle-text {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 8.5pt;
+    color: #c0d4e8;
+    line-height: 1.45;
+  }
+
+  /* ── FOOTER ── */
+  .brief-footer {
+    margin-top: 24pt;
+    padding-top: 10pt;
+    border-top: 0.5pt solid #1a2a3a;
+    display: table;
+    width: 100%;
+  }
+  .footer-left { display: table-cell; width: 60%; }
+  .footer-right { display: table-cell; width: 40%; text-align: right; }
+  .footer-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    color: #2a3a4a;
+    line-height: 1.6;
+  }
+
+  /* ── PAGE BREAK CONTROL ── */
+  .page-break { page-break-before: always; }
+  .no-break { page-break-inside: avoid; }
+
+  /* ── SPACER ── */
+  .spacer-8 { height: 8pt; display: block; }
+  .spacer-16 { height: 16pt; display: block; }
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ─────────────────────────────────── -->
+<div class="header">
+  <div class="header-left">
+    <div class="wordmark">REBEL TALENT</div>
+    <div class="submark">BD Intelligence Brief · Fractional Recruiting</div>
+  </div>
+  <div class="header-right">
+    <div class="header-date">{{ today }}</div>
+    <div class="header-tagline">Series A–C · $8K–$14K/mo · 350% avg ROI</div>
+  </div>
+</div>
+
+
+<!-- ── YOUR MOVES TODAY ────────────────────────── -->
+<div class="section-label">▸ Your Moves Today</div>
+{% if intel.moves_today %}
+<div class="moves-grid no-break">
+  {% for move in intel.moves_today[:3] %}
+  <div class="move-card">
+    <div class="move-num">MOVE {{ loop.index }}</div>
+    <div class="move-text">{{ move }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+<!-- ── TOP 3 MUST-CHASE ────────────────────────── -->
+<div class="spacer-16"></div>
+<div class="section-label">▸ Top 3 Must-Chase Today</div>
+{% if intel.top_3 %}
+<div class="top3-grid no-break">
+  {% for item in intel.top_3[:3] %}
+  <div class="top3-card">
+    <div class="top3-num">PRIORITY {{ loop.index }}</div>
+    <div class="top3-text">{{ item }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+<!-- ── NEW MONEY IN ─────────────────────────────── -->
+{% if data.new_money or data.raw_funded %}
+<div class="section-label">▸ Intel Digest: New Money In</div>
+<div class="intel-table no-break">
+  <div class="intel-thead">
+    <div class="intel-tr">
+      <div class="intel-th" style="width:28%;">Company</div>
+      <div class="intel-th" style="width:14%;">Amount</div>
+      <div class="intel-th" style="width:14%;">Stage</div>
+      <div class="intel-th" style="width:44%;">Why Fractional Fits Now</div>
+    </div>
+  </div>
+  <div class="intel-tbody">
+    {% for item in data.new_money[:8] %}
+    <div class="intel-tr">
+      <div class="intel-td"><strong>{{ item.company }}</strong></div>
+      <div class="intel-td"><span class="tag-gold">{{ item.amount }}</span></div>
+      <div class="intel-td"><span class="tag-teal">{{ item.stage }}</span></div>
+      <div class="intel-td">{{ item.why_now }}</div>
+    </div>
+    {% endfor %}
+    {% if not data.new_money %}
+    {% for item in data.raw_funded[:6] %}
+    <div class="intel-tr">
+      <div class="intel-td">{{ item.name[:50] }}</div>
+      <div class="intel-td"><span class="tag-gold">{{ item.amount }}</span></div>
+      <div class="intel-td"><span class="tag-teal">{{ item.stage }}</span></div>
+      <div class="intel-td">Recently funded — likely entering hiring phase.</div>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+
+<!-- ── HIRING SIGNALS ─────────────────────────── -->
+{% if intel.hiring_signals %}
+<div class="section-label">▸ Intel Digest: Hiring Signals</div>
+<div class="signal-list no-break">
+  {% for signal in intel.hiring_signals %}
+  <div class="signal-item">
+    <div class="signal-text">{{ signal }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+<!-- ── EXECUTIVE MOVES ────────────────────────── -->
+{% if intel.exec_moves %}
+<div class="section-label">▸ Intel Digest: Executive Moves</div>
+<div class="signal-list no-break">
+  {% for move in intel.exec_moves %}
+  <div class="signal-item" style="border-left-color: #A78BCA;">
+    <div class="signal-text">{{ move }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+<!-- ── COMPETITIVE LANDSCAPE ─────────────────── -->
+{% if intel.competitive %}
+<div class="section-label">▸ Competitive Landscape</div>
+<div class="signal-list no-break">
+  {% for item in intel.competitive %}
+  <div class="signal-item" style="border-left-color: #E07070;">
+    <div class="signal-text">{{ item }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+<!-- ── VEHICLES / PROCUREMENT ────────────────── -->
+{% if intel.vehicles %}
+<div class="section-label">▸ Procurement / Vehicles</div>
+<div class="vehicle-grid no-break">
+  {% for v in intel.vehicles[:2] %}
+  <div class="vehicle-item">
+    <div class="vehicle-text">{{ v }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+<!-- ── INDUSTRY BUZZ ─────────────────────────── -->
+{% if data.raw_funded or data.raw_hiring %}
+<div class="section-label">▸ Industry Buzz</div>
+<div class="signal-list no-break">
+  {% for item in data.raw_funded[:4] %}
+  <div class="signal-item" style="border-left-color: #2a3a4a;">
+    <span class="tag-gold">FUNDING</span>
+    <span class="signal-text" style="margin-left:6pt;">{{ item.headline[:100] }}</span>
+  </div>
+  {% endfor %}
+  {% for item in data.raw_hiring[:3] %}
+  <div class="signal-item" style="border-left-color: #2a3a4a;">
+    <span class="tag-teal">HIRING</span>
+    <span class="signal-text" style="margin-left:6pt;">{{ item.company[:80] }}</span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+<!-- ── FOOTER ─────────────────────────────────── -->
+<div class="brief-footer">
+  <div class="footer-left">
+    <div class="footer-text">
+      REBEL TALENT SYSTEMS · Richie Lampani · Fractional Head of Talent<br>
+      EDF Case Study: 6 roles filled · $178K agency fees avoided · 350% ROI<br>
+      Distribution: FPP · GoFractional · Direct Outreach
+    </div>
+  </div>
+  <div class="footer-right">
+    <div class="footer-text">
+      CONFIDENTIAL BD INTELLIGENCE<br>
+      Generated {{ today }}<br>
+      Series A–C · 20–150 employees
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
