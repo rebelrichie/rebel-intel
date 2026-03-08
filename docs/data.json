@@ -1,0 +1,27 @@
+{
+  "generated": "Awaiting first run",
+  "generated_slug": "pending",
+  "moves_today": [
+    "Run the GitHub Action to generate your first brief and populate this dashboard with live data.",
+    "Set your GROQ_API_KEY, GMAIL_USER, GMAIL_APP_PASSWORD, and SEND_TO secrets in GitHub → Settings → Secrets.",
+    "Trigger manually via Actions → Rebel Talent Daily BD Intel Brief → Run workflow."
+  ],
+  "top_3": [
+    "Dashboard is live — data populates automatically every weekday at 7am ET after secrets are configured.",
+    "The PDF brief is emailed to your subscriber list each morning with full synthesis.",
+    "Subscribe button on this dashboard routes to Google Sheet via Apps Script webhook."
+  ],
+  "new_money": [],
+  "hiring_signals": ["Hiring signal data will appear here after first run."],
+  "exec_moves": ["Executive move data will appear here after first run."],
+  "vehicles": [
+    "FPP (Fractional People Practitioners) — primary warm distribution channel for Series A–C founders.",
+    "GoFractional marketplace — active lead source for inbound fractional talent requests."
+  ],
+  "competitive": ["Competitive landscape data will appear here after first run."],
+  "raw_funded": [],
+  "raw_hiring": [],
+  "raw_execs": [],
+  "raw_competitors": [],
+  "pdf_url": "daily_brief.pdf"
+}
