@@ -1,0 +1,100 @@
+name: Rebel Talent — Daily BD Intel Brief
+
+on:
+  schedule:
+    # Mon–Fri at 7am ET (12:00 UTC)
+    - cron: '0 12 * * 1-5'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate-brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      # ── CHECKOUT ──────────────────────────────────────
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      # ── PYTHON SETUP ──────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # ── SYSTEM DEPS (WeasyPrint) ───────────────────────
+      - name: Install system dependencies for WeasyPrint
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y \
+            libpango-1.0-0 \
+            libpangoft2-1.0-0 \
+            libpangocairo-1.0-0 \
+            libgdk-pixbuf2.0-0 \
+            libcairo2 \
+            libffi-dev \
+            shared-mime-info
+
+      # ── PIP DEPS ──────────────────────────────────────
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install \
+            weasyprint \
+            jinja2 \
+            requests \
+            feedparser \
+            groq \
+            pandas
+
+      # ── RUN BRIEF ─────────────────────────────────────
+      - name: Generate daily brief
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CRUNCHBASE_API_KEY: ${{ secrets.CRUNCHBASE_API_KEY }}
+        run: python generate_brief.py
+
+      # ── SEND EMAIL ────────────────────────────────────
+      - name: Send email brief
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          SEND_TO: ${{ secrets.SEND_TO }}
+          BRIEF_CC: ${{ secrets.BRIEF_CC }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+          SHEETS_API_KEY: ${{ secrets.SHEETS_API_KEY }}
+        run: python send_brief.py
+
+      # ── COMMIT OUTPUTS ────────────────────────────────
+      - name: Commit docs to repo
+        run: |
+          git config user.name "rebel-talent-bot"
+          git config user.email "actions@github.com"
+          git add docs/
+          git diff --cached --quiet || git commit -m "Brief: $(date +%Y-%m-%d)"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+
+      # ── DEPLOY TO GITHUB PAGES ────────────────────────
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          force_orphan: false
+          keep_files: false
+          commit_message: "Daily brief deploy: $(date +%Y-%m-%d)"
