@@ -1,55 +1,43 @@
 {
-  "generated": "March 11, 2026",
-  "generated_slug": "2026-03-11",
+  "generated": "March 13, 2026",
+  "generated_slug": "2026-03-13",
   "moves_today": [
-    "Check LinkedIn for Rajat Bansal, new Head of Talent Acquisition at MobiKwik",
-    "Reach out to Ethan Choi at Khosla Ventures to discuss AI investing and talent acquisition",
-    "Connect with Matthew Rutler, new Head of Talent at MasterClass, to discuss talent strategies"
+    "Reach out to Rebar's team to offer services, specifically around building out their recruiting function.",
+    "Check if MasterClass has an immediate need for recruiting or people operations support. Connect with Matthew Rutler, Head of Talent.",
+    "Connect with Cadent to explore potential services, focusing on their recent announcement of a new CPO and SVP of Marketing."
   ],
   "top_3": [
-    "Rebar raised $14M in Series A funding for AI-generated HVAC quotes",
-    "PsiQuantum began construction on a quantum facility in Chicago",
-    "Detroit launched a technology grant fund for small businesses"
+    "Rebar, with recent Series A funding ($14M), has a high need for recruiting infrastructure and potentially a full recruiting build-out.",
+    "Cadent's hiring of a CPO indicates they are expanding their people operations, making a recruiting consulting engagement a good fit.",
+    "MasterClass, with Matthew Rutler recently onboarded as Head of Talent, might benefit from a strategic recruiting consultation to optimize their people growth path."
   ],
   "new_money": [
     {
       "company": "Rebar",
       "amount": "$14M",
-      "stage": "Series A",
+      "stage": "Series a",
       "location": "",
-      "sector_tag": "SaaS / B2B tech",
-      "why_now": "Hiring 10-30 people in 90 days, no people function yet"
-    },
-    {
-      "company": "PsiQuantum",
-      "amount": "undisclosed",
-      "stage": "seed",
-      "location": "Chicago",
-      "sector_tag": "Defense tech / GovTech",
-      "why_now": "SBIR Phase II winner, need to hire cleared engineers + BD fast"
+      "sector_tag": "SaaS / B2B Tech",
+      "why_now": ""
     }
   ],
   "hiring_signals": [
-    "MobiKwik Appoints Rajat Bansal as Senior Director and Head of Talent Acquisition",
-    "Duolingo's head of talent shares advice on how to land a job at Pittsburgh's global tech company",
-    "CluePoints appoints chief people officer to drive global growth"
+    "Reach out to Zoom's head of talent to explore a potential partnership or consulting engagement around their recruiting strategy.",
+    "Duolingo's head of talent shares advice on how to land a job at Pittsburgh's tech companies, which may indicate a hiring need or strategy for Duolingo in Pittsburgh.",
+    "MobiKwik Appoints Rajat Bansal as Senior Director and Head of Talent Acquisition, which could be an opportunity to connect and offer services."
   ],
   "exec_moves": [
-    "Aprio appoints chief people officer",
-    "Greenhouse Appoints Chief People Officer"
+    "Cadent Appoints Chief People Officer and SVP of Marketing to Accelerate Next Phase of Growth, which shows a clear need for recruiting infrastructure.",
+    "CluePoints appoints chief people officer to drive global growth, indicating a potential need for recruiting support or strategic consultation.",
+    "KPMG appoints Nicolas Deflaux as Head of Talent Acquisition - Middle East, which could be an opportunity to connect and explore a potential partnership or consulting engagement."
   ],
-  "defense_signals": [
-    "PsiQuantum began construction on a quantum facility in Chicago",
-    "Detroit launched a technology grant fund for small businesses"
-  ],
+  "defense_signals": [],
   "vehicles": [
-    "Rebar's AI-generated HVAC quotes",
-    "PsiQuantum's quantum facility in Chicago",
-    "Detroit's technology grant fund for small businesses"
+    "Detroit Launches Technology Grant Fund for Small Businesses - GovTech",
+    "USDA Invests in AI, Funding a Pilot Program for Michigan - GovTech"
   ],
   "competitive": [
-    "MobiKwik's acquisition of Rajat Bansal as Head of Talent Acquisition",
-    "Duolingo's hiring advice for global tech companies"
+    "Atlassian follows Block\u2019s footsteps and cuts staff in the name of AI, which may indicate a need for strategic people operations or talent consulting to mitigate disruption."
   ],
   "raw_funded": [
     {
@@ -60,18 +48,6 @@
       "location": "",
       "headline": "Exclusive: Rebar Lands $14M To Help HVAC Suppliers Generate Quotes Faster With AI",
       "link": "https://news.crunchbase.com/real-estate-property-tech/ai-generated-hvac-quotes-rebar-seriesa/",
-      "geo_match": 1,
-      "sector_match": 1,
-      "score": 2
-    },
-    {
-      "name": "PsiQuantum Begins Quantum Facility Construction in Chicago",
-      "amount": "undisclosed",
-      "stage": "seed",
-      "sector": "",
-      "location": "",
-      "headline": "PsiQuantum Begins Quantum Facility Construction in Chicago",
-      "link": "https://www.executivebiz.com/articles/psiquantum-chicago-quantum-facility",
       "geo_match": 1,
       "sector_match": 1,
       "score": 2
@@ -101,25 +77,61 @@
       "score": 2
     },
     {
-      "name": "What Is University at Buffalo's Place in New York's AI Boom? - GovTech",
+      "name": "Before quantum computing arrives, this startup wants enterprises already running",
+      "amount": "$665 million",
+      "stage": "seed",
+      "sector": "",
+      "location": "",
+      "headline": "Before quantum computing arrives, this startup wants enterprises already running on it",
+      "link": "https://techcrunch.com/2026/03/12/before-quantum-computing-arrives-this-startup-wants-enterprises-already-running-on-it/",
+      "geo_match": 0,
+      "sector_match": 1,
+      "score": 1
+    },
+    {
+      "name": "Atlassian follows Block\u2019s footsteps and cuts staff in the name of AI",
       "amount": "undisclosed",
       "stage": "seed",
       "sector": "",
       "location": "",
-      "headline": "What Is University at Buffalo's Place in New York's AI Boom? - GovTech",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdGRaQ1pLQVVmbE5pZjVnOGZVdkYzb2RudjdrZWVQaVp4WUo1OTVDS1NSam9xbHNsY1gyRlVEckNUakU0ZVVCT1lQN2h0N2VyOFJXazZvWk4ycVgtdkF2TnREMlVpeUpUMlFQWXlISkZBeUtzOHZYaTJudlFRUVUyd2tVeG1faThLbjRpWEpSOUtoLU15NXlUdkpGelN2VkFXbTVz?oc=5",
-      "geo_match": 1,
+      "headline": "Atlassian follows Block\u2019s footsteps and cuts staff in the name of AI",
+      "link": "https://techcrunch.com/2026/03/12/atlassian-follows-blocks-footsteps-and-cuts-staff-in-the-name-of-ai/",
+      "geo_match": 0,
       "sector_match": 1,
-      "score": 2
+      "score": 1
     },
     {
-      "name": "AgentMail raises $6M to build an email service for AI agents",
-      "amount": "$6M",
+      "name": "Wonderful raises $150M Series B at $2B valuation",
+      "amount": "$150M",
+      "stage": "Series b",
+      "sector": "",
+      "location": "",
+      "headline": "Wonderful raises $150M Series B at $2B valuation",
+      "link": "https://techcrunch.com/2026/03/12/wonderful-raises-150m-series-b-at-2b-valuation/",
+      "geo_match": 0,
+      "sector_match": 1,
+      "score": 1
+    },
+    {
+      "name": "Agents need vector search more than RAG ever did",
+      "amount": "undisclosed",
       "stage": "seed",
       "sector": "",
       "location": "",
-      "headline": "AgentMail raises $6M to build an email service for AI agents",
-      "link": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
+      "headline": "Agents need vector search more than RAG ever did",
+      "link": "https://venturebeat.com/data/agents-dont-replace-vector-search-they-make-it-harder-to-get-right",
+      "geo_match": 0,
+      "sector_match": 1,
+      "score": 1
+    },
+    {
+      "name": "From Hype To Outcomes: How VCs Recalibrate Around Agentic AI",
+      "amount": "undisclosed",
+      "stage": "seed",
+      "sector": "",
+      "location": "",
+      "headline": "From Hype To Outcomes: How VCs Recalibrate Around Agentic AI",
+      "link": "https://news.crunchbase.com/venture/hype-outcomes-vcs-recalibrate-agentic-ai-kapre-snowflake/",
       "geo_match": 0,
       "sector_match": 1,
       "score": 1
@@ -161,61 +173,25 @@
       "score": 1
     },
     {
-      "name": "Science Corp., Another Braintech Startup Founded By Neuralink Alums, Raises $230",
-      "amount": "$230M",
-      "stage": "Series c",
+      "name": "Booz Allen Ventures Invests in Hadean to Advance AI-Driven Military Wargaming",
+      "amount": "undisclosed",
+      "stage": "seed",
       "sector": "",
       "location": "",
-      "headline": "Science Corp., Another Braintech Startup Founded By Neuralink Alums, Raises $230M Series C",
-      "link": "https://news.crunchbase.com/venture/braintech-ai-startup-science-neuralink-alums-seriesc/",
+      "headline": "Booz Allen Ventures Invests in Hadean to Advance AI-Driven Military Wargaming",
+      "link": "https://www.executivebiz.com/articles/booz-allen-hadean-investment-ai-wargaming",
       "geo_match": 0,
       "sector_match": 1,
       "score": 1
     },
     {
-      "name": "Exclusive: Founded By 2 Brothers In Their 20s, YC-Backed Denki Raises $4.1M To A",
-      "amount": "$4.1M",
+      "name": "Leidos Wins $455M Air Force Cloud One Modernization Contract",
+      "amount": "$455M",
       "stage": "seed",
       "sector": "",
       "location": "",
-      "headline": "Exclusive: Founded By 2 Brothers In Their 20s, YC-Backed Denki Raises $4.1M To Automate Financial Audits",
-      "link": "https://news.crunchbase.com/venture/yc-backed-denki-raise-financial-audit-automation-ai/",
-      "geo_match": 0,
-      "sector_match": 1,
-      "score": 1
-    },
-    {
-      "name": "Empower AI Lands CMS Contract for Office of Hearings and Inquiries Support",
-      "amount": "$20 million",
-      "stage": "seed",
-      "sector": "",
-      "location": "",
-      "headline": "Empower AI Lands CMS Contract for Office of Hearings and Inquiries Support",
-      "link": "https://www.executivebiz.com/articles/empower-ai-cms-ohi-support",
-      "geo_match": 0,
-      "sector_match": 1,
-      "score": 1
-    },
-    {
-      "name": "Starburst Reports $100M ARR, Strong Financial Sector Demand for Enterprise AI",
-      "amount": "$100M",
-      "stage": "seed",
-      "sector": "",
-      "location": "",
-      "headline": "Starburst Reports $100M ARR, Strong Financial Sector Demand for Enterprise AI",
-      "link": "https://www.executivebiz.com/articles/starburst-ai-100m-revenue-financial",
-      "geo_match": 0,
-      "sector_match": 1,
-      "score": 1
-    },
-    {
-      "name": "Air Force Issues Draft RFP for Potential $900M FARM III Modernization Contract",
-      "amount": "$900M",
-      "stage": "seed",
-      "sector": "",
-      "location": "",
-      "headline": "Air Force Issues Draft RFP for Potential $900M FARM III Modernization Contract",
-      "link": "https://www.executivebiz.com/articles/air-force-farm-iii-900m-contract-aedc-modernize",
+      "headline": "Leidos Wins $455M Air Force Cloud One Modernization Contract",
+      "link": "https://www.executivebiz.com/articles/leidos-455m-air-force-cloud-one-modernization",
       "geo_match": 0,
       "sector_match": 1,
       "score": 1
@@ -291,6 +267,18 @@
       "geo_match": 0,
       "sector_match": 1,
       "score": 1
+    },
+    {
+      "name": "Tagbin Secures $10M To Supercharge AI-Driven GovTech Platforms And Expand Experi",
+      "amount": "$10M",
+      "stage": "seed",
+      "sector": "",
+      "location": "",
+      "headline": "Tagbin Secures $10M To Supercharge AI-Driven GovTech Platforms And Expand Experiential Tech Footprint - Everything Exper",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZHhINEZuZHdmeXVzbVI4U2dJcW9mQWlZRUt0R05pUFJvOGxXSzBrc2FrdEVST2dla3N3cVdwWEUySTA5emg0a29lbTluTEFzbnhwc3VuTGd5ZHo0T29Fd0lrVDI4MXRXRUwtUmpvc0RBM3VBa05ySXhiMWdHVWZxSHBGdjloYk1TSENuZVJMb3QwdlFtZmtLTDBfOFNNX3dycEU3SFJaZDR3OG9RZGptRURqaUYyenF5bnNzRnI2RlhxSWZoQnlsZUZFemJDRzlyYlp0cHVFcERmUEN2aHVKd2NWcVQ?oc=5",
+      "geo_match": 0,
+      "sector_match": 1,
+      "score": 1
     }
   ],
   "raw_hiring": [
@@ -301,27 +289,21 @@
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNM1UwblhiTmhVMjFKTUx5bE9zQ3l1RlA5eTdnZmZQSnlyczFLV1d0M21aTkdITjRfVUNXMkRhMmtCajVyaVp4QWJ3b012UWh0TGNpUUlxNlkzcWgtdlQtWnBuTzVKZjlDTTRMN1k4YXZlOUc3OWEtdDRSbUpUeWtlSFI0NUdnQm1XU1AyOFM1a2tWcG1GeEhfYi1PaEhJUVFoVFprSFJZSmxEejlfOGJsWEFzSQ?oc=5"
     },
     {
-      "company": "How to Get a Job at Zoom, According to Its Head of Talent Acquisition - Business",
-      "role": "How to Get a Job at Zoom, According to Its Head of Talent Acquisition - Business",
-      "signal": "How to Get a Job at Zoom, According to Its Head of Talent Acquisition &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcnY4bmZ4NWlxM1llRXVvLXlTb0htSGFEbXZBZmdNc2ZRWENoN2JjZDJLMFFCU2VJc0ZfUzRtcnBOa18zYzI3eHFJZ2tJV0FIcXFTWm5YQXZuQUtEbUF0OG0zVjNXNnhnNmQ4TXBqQUU5MGlha2o3MnR6a2p1clNFbFpsdDRnbDZBc1E?oc=5"
-    },
-    {
-      "company": "Building a Premier Talent Pipeline: Meet Kandace Elam, Our New Director of GTM T",
-      "role": "Building a Premier Talent Pipeline: Meet Kandace Elam, Our New Director of GTM T",
-      "signal": "Building a Premier Talent Pipeline: Meet Kandace Elam, Our New Director of GTM Talent &nbsp;&nbsp; Menlo Ventures",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPS0c5Uk51QUN5ZVlWcXRHRlZRbUYwLWtsbk5Lc3lHRnFVbHgzeUl4WEY5TFBGaWNjSGJJR1hFakl0MFgySWxmZ2NrU3JQQnBYX3ZELWtaNHU2bHJuNkV6b25pYTZSektMSzE4Q1BRNHBUb0xXdzZkVnlEcGZsbmlvVm9lZDRPQmFTSzg2S1gzMFpoUXlMTDN1c2p0N1JSNDlaQTZLb25NYTZWd2RMNEVUcGZfR3FndDQ?oc=5"
-    },
-    {
       "company": "Duolingo's head of talent shares advice on how to land a job at Pittsburgh's glo",
       "role": "Duolingo's head of talent shares advice on how to land a job at Pittsburgh's glo",
       "signal": "Duolingo's head of talent shares advice on how to land a job at Pittsburgh's globetrotting tech company [Q&amp;A] &nbsp;&nbsp; Technical.ly",
       "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1LcDhBX0RqZzdNdjJuRlVYUVNhSGhaX3M1LTJ3UWVDcnhwMUlNRlhGRU1sTU9KSkFzQmg1ekctc05MSko3TnJvZE8tMmRXRmYwX3hxVDZMc0RkSEhoYWdpLWtaaE1hZk55X3EwaVlWR0JTR3Y0SDVfVTJNWXE?oc=5"
     },
     {
+      "company": "How to Get a Job at Zoom, According to Its Head of Talent Acquisition - Business",
+      "role": "How to Get a Job at Zoom, According to Its Head of Talent Acquisition - Business",
+      "signal": "How to Get a Job at Zoom, According to Its Head of Talent Acquisition &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcnY4bmZ4NWlxM1llRXVvLXlTb0htSGFEbXZBZmdNc2ZRWENoN2JjZDJLMFFCU2VJc0ZfUzRtcnBOa18zYzI3eHFJZ2tJV0FIcXFTWm5YQXZuQUtEbUF0OG0zVjNXNnhnNmQ4TXBqQUU5MGlha2o3MnR6a2p1clNFbFpsdDRnbDZBc1E?oc=5"
+    },
+    {
       "company": "Celeb-Instructor Startup MasterClass Names Matthew Rutler Head of Talent, Biz De",
       "role": "Celeb-Instructor Startup MasterClass Names Matthew Rutler Head of Talent, Biz De",
-      "signal": "Celeb-Instructor Startup MasterClass Names Matthew Rutler Head of Talent, Biz Dev &nbsp;&nbsp; Variety",
+      "signal": "Celeb-Instructor Startup MasterClass Names Matthew Rutler Head of Talent, Biz Dev &nbsp;&nbsp; variety.com",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeThScXdPTFFfOHZyelpYMkJYQjR3elM5WXhmQ0w0Tk05NGdJMVM4bjY5YWFNZEc2TGRETVJrYUZaQWltNVFHdHBUOG5sRDQwbDBmT0lyYWhCeERXekJ3eVFLUE5hYklpbGd2NTBOY01NT3Q4SERfQlRrZzlxNzkzRmlxZnlsRWdpangzbFI2U3VYNm1FRmJyX2FPWTR4U05QTnQ0a0g0ekZ5WHN6blI5cnJBT09mZw?oc=5"
     },
     {
@@ -331,16 +313,16 @@
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV0puZGdiZ29aZ2V0RkJvWk16YU9kZDFtSVhUMXZnSDhYdk9Cd2xGUlF5bWtpQnc2VmhqVFFZNUp1d3B4SU9QYlptNkQ3REFSNEhfeTl1RDZtVTl4TTNDcXlRaE52U3JpbkFVZGt5clFKcG5nMGFISzVkMHY1cFh4cmY2cVg1TURoQTRZaWczV2kzR0o1NFQya3V5ZWRVMkZzcVNrYThxbHMwcGxGMUdyeWhoVQ?oc=5"
     },
     {
-      "company": "How to use AI to support your hiring processes - Sifted",
-      "role": "How to use AI to support your hiring processes - Sifted",
-      "signal": "How to use AI to support your hiring processes &nbsp;&nbsp; Sifted",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8wZkFBWGxwM3ZIWDhod0p2UHhmMHFQNDhZeVlYOXNqdUVVWDltSUZNZWo5YzBLeTNXRkptUjJDZW41S0hhRW1MNEJxWFhrcjZNUURTVmdxMFNleWZUcUJJ?oc=5"
+      "company": "KPMG appoints Nicolas Deflaux as Head of Talent Acquisition - Middle East - Peop",
+      "role": "KPMG appoints Nicolas Deflaux as Head of Talent Acquisition - Middle East - Peop",
+      "signal": "KPMG appoints Nicolas Deflaux as Head of Talent Acquisition - Middle East &nbsp;&nbsp; People Matters Global",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORWw2S0ZsazNoM2h2aFBnLXM0M1JfZmhnVzVnRjVoelphRTJYeTR4TFkxQXJkZmJud192X1Awa3NlaVEtd19HekdNbDM0b3JEY0V6ZnVxbkZxN0g2M1pkUTRkcnAwQmxKZzVDbWFUTk1vczlhOFdEUEozenJhYjI4ZkhPZXZHMW5sV19Fd3ZKRFFHcEtYcjRjM3BWeGRoYnVfMFJVY25ycS1vaU9zWG8tTGxTRmZtTVdqT1dQXzlaNVFWTkV1Z1RGZVZ3?oc=5"
     },
     {
-      "company": "Leaked Slack messages show Bolt's head of talent and evangelist of its 4-day wor",
-      "role": "Leaked Slack messages show Bolt's head of talent and evangelist of its 4-day wor",
-      "signal": "Leaked Slack messages show Bolt's head of talent and evangelist of its 4-day workweek is out after just 5 months &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSzc1UjlnMEJLSUxXY0poOEhKZTNFXzJ3b2EteFNLRVJvT1RCNF9xRmFFd2ZDYkpzOG40b3lsczZPaUU2QUVjSzVVd1FXTjZKdXJNRWRrOEpVTjB3emxDdERDb2UteDRuSkNFYklLdnpLX1BId1NlYzcxdDktXzl3Q3VhNUVvY0h4MWNaLTdLTDhhNUlhZGJra1gxSWF5UQ?oc=5"
+      "company": "Hitachi Energy and its Diversity 360 approach with Head of Talent Stefanie Ratze",
+      "role": "Hitachi Energy and its Diversity 360 approach with Head of Talent Stefanie Ratze",
+      "signal": "Hitachi Energy and its Diversity 360 approach with Head of Talent Stefanie Ratzel &nbsp;&nbsp; ETHRWorld.com",
+      "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOMzR4LVozRXo4N2RFUS1iRmoxb0ZFcW1ENFNEckIydlFuQ25Wd2FnelQyZDNOOEh6S2FpQ18tUWxmWmZuUWhMM2xhdUZQVnY2TW5PdzVjUVRMcGVDaDNGRXo5eTlpbHRabVd6eURHSUdsbzk5T0RTLWo1YU9hOUdlQTRUVGJmLV84U3FNSXpnR3FCR2tzNE0zX3RUWXo2b2lHTFptcVhTXzlBODBQVFVKNDJOU3hrZGpoVWhnbXJobUNRdWc5TTAzLXNPZ05GeWdNSkNoRlhaTlFKNEZnODhuWFVyaS1LY0hGOVU2aUFfZmx4SHZaTHc2ellHM2F3bjZrNHdr0gGIAkFVX3lxTE5wTTRNNFJObTJIZTJSQUhFS0pVZk9GaGRlbXd5RXoxOHpWelNaWF9yUjFnZG9fWDNaOERCNmFpQ3NHb0dWaTZCd2pCeDBoWXg4S01VRzZ2VlZaa2ZqcHlhVjJQV1ZOM2VDSVgxYm9nX2czMEpKdHJhR1RrRUFLTDQ4V2c5X1c1TFNMcTJyb2t2OGFIQkpIbHFjUl9LTzhWekdTM25jeEU4VVlKN3Z6SGNveDI4dDR1cXRwSm5wUG14MEhyaDREVGlLWmJDTWdhZ19XT0o5SEdBTklhcTRVTGtLYnRNS0lWbzdxeXpVa3RiaHU0RXZWbzVBMU5XNHMya2ozN0RhMWZhRw?oc=5"
     },
     {
       "company": "Humand: $66 Million Series A Raised For AI Workforce Platform - Pulse 2.0",
@@ -353,9 +335,22 @@
       "role": "Niural Raises $31 Million in Series A - The SaaS News",
       "signal": "Niural Raises $31 Million in Series A &nbsp;&nbsp; The SaaS News",
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBHeGxaTDZfcUw1ejBkQ0U2RzBtaFUxQUVlNEMyTjNRVHZsWkhsdmpiQlplbVViVlZ3ZWtHaVFnLUJBVm5hc091RmNCNm1EVHp6RTgxYVlPdW1uUlM4dEpUb20yZEF5VGJlVGdoNm0zU1A4Rm5FdzZwbA?oc=5"
+    },
+    {
+      "company": "Sparrow Raises $35 Million in Series B Funding to Scale Its Global AI-powered So",
+      "role": "Sparrow Raises $35 Million in Series B Funding to Scale Its Global AI-powered So",
+      "signal": "Sparrow Raises $35 Million in Series B Funding to Scale Its Global AI-powered Solutions for Leave Management &nbsp;&nbsp; Business Wire",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYjdldFp4a2VkVTE5S0FndUZQVFJlcGVxeXJ5YlJzWHVodS1NV3lZSllKMVhqZzlhLVZvSG11Z05BQ01ncGpGSndzSm41NmhLbWdRaEVQdzNNUG15T05Ba2xncnBBUkdSTDU4cUNRWF9BeDJNbFQteC00em85MGRXTlBYN19pallidmw3T0VKWGRDdF8zUUVIc2V2RE5jbnNrbS1FcU5RYmhIYVF4bHMwRTZxYUh3Wk01SjdHdFBSVm02V1FpTERuQVhma2ZFUjhSM0dCbmU3LVpRNEpwc2xVWFplT1U2M25ZUVVBSGo3enI0UEYzV2tDQ3FKUQ?oc=5"
     }
   ],
   "raw_execs": [
+    {
+      "person": "",
+      "title": "",
+      "company": "Cadent Appoints Chief People Officer and SVP of Marketing to Accelerate Next Pha",
+      "headline": "Cadent Appoints Chief People Officer and SVP of Marketing to Accelerate Next Phase of Growth - PR Newswire",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQMWdjNXdadElwSUpwbS1XQ19xSlFZdjVoV2FlVHhxLUU0bVB5ZTRQS09ISEpUS0R6LVA3TXN3Q0JPcGZUbXU3Q01oVUQycVdTYU5TUGR3X0JBLWRCSmJnZllfOC1ENjFReW9rTjc3a3QyYmVoZFZVVV9mUmI0YUJEemdsbkVlcDBtVkNqazBIclZnRDJtVDNIZXhyMTc3WmxoNVFhNkdEcFkwTlJfOGg2UGpJbExFZzgwV0ppWkJUNjdJRmFPbUp6M2w1TV9HLWU2R3ZNenpuNGVTQ2RNMnZNQXF3?oc=5"
+    },
     {
       "person": "",
       "title": "",
@@ -373,30 +368,9 @@
     {
       "person": "",
       "title": "",
-      "company": "LRG appoints chief people officer - previously group HR director - Insider Media",
-      "headline": "LRG appoints chief people officer - previously group HR director - Insider Media Ltd",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSV8xYVl6RXdnNXhZb19VN2hwT211b2t1Wk4xUHpIOXNQTU9vS1NNTVhjb3JWNTdSR3JGWEdFaDVPS3N3VWxoRXVuczZZQUFEc0w3VFhYbnUyVXgzMk9YRk0xaXl5bnczaVZKQ05yemJtMU5CcEdodkV1YlJZenNZRUxMZ0loczY5Q3NiYVRnSmZiT21uRUdkT2J0UnVXd1pYRVdzMDE0M0d1ZGc?oc=5"
-    },
-    {
-      "person": "",
-      "title": "",
-      "company": "Cadent Appoints Chief People Officer and SVP of Marketing to Accelerate Next Pha",
-      "headline": "Cadent Appoints Chief People Officer and SVP of Marketing to Accelerate Next Phase of Growth - PR Newswire",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQMWdjNXdadElwSUpwbS1XQ19xSlFZdjVoV2FlVHhxLUU0bVB5ZTRQS09ISEpUS0R6LVA3TXN3Q0JPcGZUbXU3Q01oVUQycVdTYU5TUGR3X0JBLWRCSmJnZllfOC1ENjFReW9rTjc3a3QyYmVoZFZVVV9mUmI0YUJEemdsbkVlcDBtVkNqazBIclZnRDJtVDNIZXhyMTc3WmxoNVFhNkdEcFkwTlJfOGg2UGpJbExFZzgwV0ppWkJUNjdJRmFPbUp6M2w1TV9HLWU2R3ZNenpuNGVTQ2RNMnZNQXF3?oc=5"
-    },
-    {
-      "person": "",
-      "title": "",
       "company": "CluePoints appoints chief people officer to drive global growth - Health Tech Wo",
       "headline": "CluePoints appoints chief people officer to drive global growth - Health Tech World",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQd0dfRkRzWG8ydlZFM2hzdjhTTjdPNmxVUVRzdE9YVUVTNFVuZS0wdm83ZjhrWWdrQVdzZTJvR3BOZVBSNWUxTXc1Y0RTMnJuQm1Nc3htb0VMakNLWHFldGNPUjk0QXJ4TnlvVjhVUVJRV1JXQ0I1X1V5ME5ISEcteWhfcExLQ2JaTUVRckFhM2ZtMkFBUDBFdlM1WW5fbzhneW81ZmJMQQ?oc=5"
-    },
-    {
-      "person": "",
-      "title": "",
-      "company": "Railpen appoints chief people officer and chief risk officer - Corporate Adviser",
-      "headline": "Railpen appoints chief people officer and chief risk officer - Corporate Adviser",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMENPU01rVWZuYjBYTGNaMWQyWjNIcGdLd3ZYYzh6aW1TaUt3dlFIZE85aENPVTluSFoxcWNNMlFUTEdmVzhkQkxaTnRkYUhwaHN4RUloaFFua0tlMFpxZlRuUGRWV1BHSHd4ZjhhMGd2WlVGYTJMWmhDTEQ2anlTUTlEY3g2bElKM3ZVdXNpM2VqRnZZa1HSAZsBQVVfeXFMTWsxdURJeHVDdzl0TGVEYXpyU2NVaW1Gcm9IcXNOemZmOWhVRGN5cllWSllKaXp6ekhkWVBMUzF1VTlYQWlYdzlVejJONXVPUXlmNTVZaW1PWDhvY2FnVWwyMUI0SHBJWVFRa2ZvdF9jWFNET3Q2b2FnS0Jod21pRHJBbUdYRnBPR3ZYLWdFRmlFX0dpTUl2MExYWmc?oc=5"
     },
     {
       "person": "",
@@ -411,24 +385,38 @@
       "company": "Fortifi appoints chief people officer - The National Provisioner",
       "headline": "Fortifi appoints chief people officer - The National Provisioner",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOUtKZ0NMWUxpX1pDX19JRUFQcWM1d3FWcDdMR1dZOUNnMWtGVFZEX2FDSWY5eDBOMWM5VEJXZ0QtVXp4Q3lFZHBnaFdCRTZHaHhxWHhBY0hSektuelRCWllCQkM1N29FOFh4R3VMbEpib2JUOHZaZV9hOFc0RFQtRlNndEF2Q1dVRDZHb1VhRHg?oc=5"
+    },
+    {
+      "person": "",
+      "title": "",
+      "company": "Excel London appoints Chief People Officer to strengthen people & culture strate",
+      "headline": "Excel London appoints Chief People Officer to strengthen people & culture strategy - Event Industry News",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOU3VlWGcwb3ZoSVZuUHI5d3pJSDVCaE1UXzRid1h1MGFEQThfWm9yLWVRMWRBY2lJZnlfOC1pdGJoek5ZVkVSelpQSEsxakhjZG5mVDE0cHV0dWFFN3ZMamZUaTF1YmtrV05meVVXZjlXU0JaSXprNmFGSFRzY1RxaVBWNXJrbXhvSlpKd1FJQ3JPNzhXZjhzR3J0VDAyY3oyVmxqNE9haU1obWgyWXBubTJqdkhTR1QxQUJF?oc=5"
+    },
+    {
+      "person": "",
+      "title": "",
+      "company": "LRG appoints chief people officer - previously group HR director - Insider Media",
+      "headline": "LRG appoints chief people officer - previously group HR director - Insider Media Ltd",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSV8xYVl6RXdnNXhZb19VN2hwT211b2t1Wk4xUHpIOXNQTU9vS1NNTVhjb3JWNTdSR3JGWEdFaDVPS3N3VWxoRXVuczZZQUFEc0w3VFhYbnUyVXgzMk9YRk0xaXl5bnczaVZKQ05yemJtMU5CcEdodkV1YlJZenNZRUxMZ0loczY5Q3NiYVRnSmZiT21uRUdkT2J0UnVXd1pYRVdzMDE0M0d1ZGc?oc=5"
     }
   ],
   "raw_competitors": [
     {
-      "headline": "Williamson Homepage Events - LEAP HR: Higher Education 2026 - Williamson Scene",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUS1SQWZnaHpRQmRKRnZoU0luMEVhd19Ga2N6aEdYdTRzU09hZWJUc0tuWEttbWlLckRJNnFNVUVkbUFxZzJUcnhndXpTRmVIaWcxdFZzV3A0RWZtWU1mR3ZKQzEtYXJ2SzY3RzFFNkpnVEJ1LW1jZjk2QS1iOFJST3BsWVZhaHdTZE53eTBOSUhpMVk0b1BvS3lfSFNBWndfUlZiTHUtYS1mbEk?oc=5"
+      "headline": "LEAP HR: Life Sciences West 2026 - inewsource",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNXl2MUFNM01paUtQNEpmLUZCMG9BYmxrYjlwX3dfMUZLbi1FZDkwYWRwLUFnLTBmdFJCMVFzTkI1d3RXZk5vZVVPQzRtMzBCZy1HVlljc1BJSnBDd05yT3hTUWZPbFJFZTNuQXhEOTRKT0o0Z2dRNXlGWnZ0RkVwMXF4ZmJhUzVMZGNTQ3hHR2c2SEtPMVAxNXBn?oc=5"
     },
     {
-      "headline": "Ecommerce Success with Fractional Talent - Practical Ecommerce",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTUd3alk5R3FJakc0dHJDbVVqR013TG12cHg4Z1NlRDBuVC1NcVZxcGgwejNJNlRrZ1R2LUl1VU1nOXMwU1lhTHdBS3F3X3RoZi13ZUZLbUlCX29ucjc3MWRwUlJpUS11dllUWWdWX19rMFZMS1k4YktiUGdhM1UzTQ?oc=5"
+      "headline": "Williamson Homepage Events - LEAP HR: Higher Education 2026 - Williamson Scene",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUS1SQWZnaHpRQmRKRnZoU0luMEVhd19Ga2N6aEdYdTRzU09hZWJUc0tuWEttbWlLckRJNnFNVUVkbUFxZzJUcnhndXpTRmVIaWcxdFZzV3A0RWZtWU1mR3ZKQzEtYXJ2SzY3RzFFNkpnVEJ1LW1jZjk2QS1iOFJST3BsWVZhaHdTZE53eTBOSUhpMVk0b1BvS3lfSFNBWndfUlZiTHUtYS1mbEk?oc=5"
     },
     {
       "headline": "10 Best HR Outsourcing Services Of 2025 - Forbes",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdFJLUjRPd0xlejc3eVVHLUtPUDM0S0ZLUkVsQUNmNm1BcjZmQlpEeE1lQzNWVm5vWVdxTUlySUJwNzJSRjlJbjBSTEtWYldCY0E5SnVDZWNYcFhLbWRYZlF1MklKTjFoRmYxeEMyVXNUaEdiUUR3SElHX1VJZjlnUzdudGI?oc=5"
     },
     {
-      "headline": "LEAP HR: Higher Education 2026 - Williamson Herald",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQalpoS05MdF9XQ3ZsZFV4anNwd3Ytc1JsLVpXLThjLTJfRjZOVjBiUkZWQlFWbGd4eThxZmtXZFd6eDJVSjFpR1BJM2JIT1NHcEJFbXg5TGN4SlBwYVA2OWRTNUJORVVPdTdiLWpaaTMtc0dzNGNVRnpnUTlOZGdnU3lwTnZRc3BIbE1GM19WRXl1UklObjhPSUJIVVNtUHVQbkl1U3REWGpTQzRH?oc=5"
+      "headline": "Ecommerce Success with Fractional Talent - Practical Ecommerce",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTUd3alk5R3FJakc0dHJDbVVqR013TG12cHg4Z1NlRDBuVC1NcVZxcGgwejNJNlRrZ1R2LUl1VU1nOXMwU1lhTHdBS3F3X3RoZi13ZUZLbUlCX29ucjc3MWRwUlJpUS11dllUWWdWX19rMFZMS1k4YktiUGdhM1UzTQ?oc=5"
     },
     {
       "headline": "LEAP HR: Manufacturing Total Workforce - Liberty Hill Independent",
