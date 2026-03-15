@@ -1,0 +1,5 @@
+weasyprint
+jinja2
+requests
+feedparser
+groq

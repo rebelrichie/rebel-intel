@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: letter;
+    margin: 0.6in 0.7in;
+    @bottom-center {
+      content: "Rebel Talent Systems — Confidential";
+      font-family: monospace;
+      font-size: 8px;
+      color: #4a6070;
+    }
+    @bottom-right {
+      content: "Page " counter(page);
+      font-family: monospace;
+      font-size: 8px;
+      color: #4a6070;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #050d1b;
+    color: #b8ccd8;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  /* Header */
+  .header {
+    border-bottom: 2px solid #7CCBC3;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #7CCBC3;
+    letter-spacing: 0.15em;
+  }
+  .logo-sub {
+    font-size: 8px;
+    color: #4a6070;
+    letter-spacing: 0.2em;
+    margin-top: 2px;
+  }
+  .date-box {
+    text-align: right;
+  }
+  .date-main {
+    font-size: 11px;
+    color: #E2C46B;
+    font-weight: 600;
+  }
+  .date-sub {
+    font-size: 8px;
+    color: #4a6070;
+    letter-spacing: 0.1em;
+  }
+  .clf {
+    font-size: 7px;
+    letter-spacing: 0.2em;
+    color: #e05c5c;
+    border: 1px solid rgba(224, 92, 92, 0.4);
+    display: inline-block;
+    padding: 2px 6px;
+    margin-bottom: 8px;
+  }
+
+  /* Section headers */
+  .sec {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #4a6070;
+    border-bottom: 1px solid #0f2030;
+    padding: 14px 0 4px;
+    margin: 18px 0 10px;
+  }
+  .sec::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 1px;
+    background: #7CCBC3;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  /* Move cards */
+  .moves-grid {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .move-card {
+    flex: 1;
+    background: #070e18;
+    border: 1px solid #0f2030;
+    border-top: 2px solid #E2C46B;
+    padding: 10px;
+  }
+  .move-tag {
+    font-size: 7px;
+    letter-spacing: 0.2em;
+    color: #E2C46B;
+    margin-bottom: 4px;
+  }
+  .move-txt {
+    font-size: 9px;
+    line-height: 1.5;
+    color: #b8ccd8;
+  }
+
+  /* Target cards */
+  .target-card {
+    background: #070e18;
+    border: 1px solid #0f2030;
+    border-left: 2px solid #7CCBC3;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+  }
+  .target-idx {
+    font-size: 7px;
+    letter-spacing: 0.15em;
+    color: #7CCBC3;
+    margin-bottom: 2px;
+  }
+  .target-txt {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9px;
+    margin-bottom: 6px;
+  }
+  thead th {
+    font-size: 7px;
+    letter-spacing: 0.15em;
+    color: #4a6070;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 4px 6px;
+    border-bottom: 1px solid #0f2030;
+  }
+  tbody td {
+    padding: 5px 6px;
+    border-bottom: 1px solid rgba(15, 32, 48, 0.5);
+    vertical-align: top;
+    line-height: 1.4;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 7px;
+    letter-spacing: 0.05em;
+    padding: 1px 5px;
+    border-radius: 2px;
+  }
+  .tag-teal { background: rgba(124,203,195,0.1); color: #7CCBC3; border: 1px solid rgba(124,203,195,0.2); }
+  .tag-gold { background: rgba(226,196,107,0.1); color: #E2C46B; border: 1px solid rgba(226,196,107,0.2); }
+
+  /* Signal list */
+  .sig {
+    background: #070e18;
+    border-left: 2px solid #7CCBC3;
+    padding: 6px 10px;
+    margin-bottom: 4px;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .sig-gold { border-left-color: #E2C46B; }
+  .sig-red { border-left-color: #e05c5c; }
+  .sig-purple { border-left-color: #9b7fc9; }
+  .no-data {
+    color: #384858;
+    font-size: 8px;
+    letter-spacing: 0.15em;
+    padding: 8px 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 24px;
+    padding-top: 10px;
+    border-top: 1px solid #0f2030;
+    font-size: 7px;
+    color: #384858;
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <div class="clf">// INTERNAL — NOT FOR DISTRIBUTION</div><br>
+    <span class="logo">REBEL TALENT</span>
+    <div class="logo-sub">DAILY BD INTEL BRIEF</div>
+  </div>
+  <div class="date-box">
+    <div class="date-main">{{ today }}</div>
+    <div class="date-sub">Series A-C &middot; SaaS &middot; Defense Tech &middot; GovTech</div>
+  </div>
+</div>
+
+<!-- MOVES TODAY -->
+<div class="sec">Mission Objectives // Today</div>
+<div class="moves-grid">
+  {% for move in intel.get('moves_today', [])[:3] %}
+  <div class="move-card">
+    <div class="move-tag">OBJ {{ '%02d' % loop.index }}</div>
+    <div class="move-txt">{{ move }}</div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- TOP 3 -->
+<div class="sec">High-Value Targets // Top 3</div>
+{% for target in intel.get('top_3', [])[:3] %}
+<div class="target-card">
+  <div class="target-idx">// TARGET {{ '%02d' % loop.index }}</div>
+  <div class="target-txt">{{ target }}</div>
+</div>
+{% endfor %}
+
+<!-- NEW MONEY -->
+<div class="sec">New Money In</div>
+{% if intel.get('new_money') %}
+<table>
+  <thead>
+    <tr><th>Company</th><th>Amount</th><th>Stage</th><th>Sector</th><th>Why Now</th></tr>
+  </thead>
+  <tbody>
+    {% for item in intel.get('new_money', []) %}
+    <tr>
+      <td style="color:#dde8f0; font-weight:600;">{{ item.company or '—' }}</td>
+      <td><span class="tag tag-gold">{{ item.amount or '—' }}</span></td>
+      <td><span class="tag tag-teal">{{ item.stage or '—' }}</span></td>
+      <td>{{ item.sector_tag or '—' }}</td>
+      <td style="color:#8899aa; font-size:8px;">{{ item.why_now or '—' }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<div class="no-data">// NO FUNDING DATA TODAY</div>
+{% endif %}
+
+<!-- HIRING SIGNALS -->
+<div class="sec">Hiring Signals</div>
+{% for sig in intel.get('hiring_signals', []) %}
+<div class="sig">{{ sig }}</div>
+{% endfor %}
+{% if not intel.get('hiring_signals') %}
+<div class="no-data">// NO HIRING SIGNALS TODAY</div>
+{% endif %}
+
+<!-- EXEC MOVES -->
+<div class="sec">Executive Moves</div>
+{% for sig in intel.get('exec_moves', []) %}
+<div class="sig sig-purple">{{ sig }}</div>
+{% endfor %}
+{% if not intel.get('exec_moves') %}
+<div class="no-data">// NO EXEC MOVES TODAY</div>
+{% endif %}
+
+<!-- DEFENSE / GOVTECH -->
+<div class="sec">Defense / GovTech</div>
+{% for sig in intel.get('defense_signals', []) %}
+<div class="sig sig-gold">{{ sig }}</div>
+{% endfor %}
+{% if not intel.get('defense_signals') %}
+<div class="no-data">// NO DEFENSE SIGNALS TODAY</div>
+{% endif %}
+
+<!-- COMPETITIVE -->
+<div class="sec">Competitive Intel</div>
+{% for sig in intel.get('competitive', []) %}
+<div class="sig sig-red">{{ sig }}</div>
+{% endfor %}
+{% if not intel.get('competitive') %}
+<div class="no-data">// NO COMPETITIVE INTEL TODAY</div>
+{% endif %}
+
+<!-- VEHICLES -->
+<div class="sec">Distribution Vehicles</div>
+{% for sig in intel.get('vehicles', []) %}
+<div class="sig">{{ sig }}</div>
+{% endfor %}
+
+<!-- FOOTER -->
+<div class="footer">
+  <div>REBEL TALENT SYSTEMS &middot; RICHIE LAMPANI &middot; FRACTIONAL HEAD OF TALENT</div>
+  <div>NYC &middot; CHI &middot; ATL &middot; MI &middot; CO &middot; REMOTE-US</div>
+</div>
+
+</body>
+</html>
