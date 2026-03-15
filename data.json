@@ -2,14 +2,14 @@
   "generated": "March 15, 2026",
   "generated_slug": "2026-03-15",
   "moves_today": [
-    "Reach out to Rebar to discuss building out their recruiting infrastructure after their $14M Series A funding",
-    "Contact Tagbin to explore how Rebel Talent Systems can support their hiring needs after securing $10M in Series A funding",
-    "Connect with DC startup Ressio to offer guidance on constructing a robust recruiting function following their $8.8M Series A funding"
+    "Reach out to Rebar, a SaaS/B2B tech company that just raised $14M in Series A funding, to discuss building out their recruiting infrastructure",
+    "Contact Tagbin, a GovTech company that secured $10M in Series A funding, to explore their talent acquisition needs",
+    "Connect with DC startup Ressio, which landed $8.75 million in Series A funding, to offer support in building their recruiting function"
   ],
   "top_3": [
-    "Rebar - recently raised $14M in Series A funding and likely needs to build out its recruiting infrastructure",
-    "Tagbin - secured $10M in Series A funding and may require support in expanding its team",
-    "Ressio - received $8.8M in Series A funding and could benefit from Rebel Talent Systems' expertise in constructing a recruiting function"
+    "Rebar: Recently raised $14M in Series A funding and likely needs to build out its recruiting infrastructure",
+    "Tagbin: Secured $10M in Series A funding and may require support in expanding its experiential tech footprint",
+    "Ressio: Received $8.75 million in Series A funding and could benefit from guidance on constructing its recruiting function"
   ],
   "new_money": [
     {
@@ -17,8 +17,8 @@
       "amount": "$14M",
       "stage": "Series A",
       "location": "",
-      "sector_tag": "",
-      "why_now": "Recently raised Series A funding, likely needs to build out recruiting infrastructure"
+      "sector_tag": "SaaS/B2B tech",
+      "why_now": "Recently raised Series A funding, indicating a need to scale and build out recruiting infrastructure"
     },
     {
       "company": "Tagbin",
@@ -26,26 +26,26 @@
       "stage": "Series A",
       "location": "",
       "sector_tag": "GovTech",
-      "why_now": "Secured Series A funding, may require support in expanding its team"
+      "why_now": "Secured Series A funding, suggesting a requirement to expand its team and develop its recruiting capabilities"
     },
     {
       "company": "Ressio",
-      "amount": "$8.8M",
+      "amount": "$8.75M",
       "stage": "Series A",
       "location": "DC",
       "sector_tag": "",
-      "why_now": "Received Series A funding, could benefit from Rebel Talent Systems' expertise in recruiting"
+      "why_now": "Received Series A funding, implying a need to establish a robust recruiting function to support growth"
     }
   ],
   "hiring_signals": [
-    "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants",
-    "VC firm Redpoint tells startups to buckle up for a hiring showdown",
-    "MobiKwik appoints Rajat Bansal as Senior Director and Head of Talent Acquisition"
+    "BlackRock's head of talent acquisition is sharing advice for college students, indicating potential hiring plans",
+    "MobiKwik has appointed a new head of talent acquisition, suggesting an increased focus on hiring",
+    "Vanguard's head of talent acquisition is sharing favorite interview questions, implying a proactive approach to hiring"
   ],
   "exec_moves": [
-    "Cadent appoints Chief People Officer and SVP of Marketing to accelerate next phase of growth",
-    "CluePoints appoints chief people officer to drive global growth",
-    "Tower appoints chief people officer to steer strategy"
+    "Cadent has appointed a chief people officer to accelerate growth, indicating a potential need for recruiting support",
+    "CluePoints has appointed a chief people officer to drive global growth, suggesting an increased focus on hiring",
+    "Tower has appointed a chief people officer to steer strategy, implying a potential requirement for recruiting infrastructure development"
   ],
   "defense_signals": [],
   "vehicles": [
@@ -53,8 +53,8 @@
     "GoFractional"
   ],
   "competitive": [
-    "BlackRock's head of talent acquisition shares favorite interview question",
-    "Vanguard Head of Talent Acquisition shares insights on hiring"
+    "BlackRock is focusing on AI-driven talent acquisition, indicating a trend towards innovative hiring practices",
+    "Fidelity is sharing insights on landing open jobs, suggesting a competitive job market"
   ],
   "raw_funded": [
     {
@@ -164,17 +164,17 @@
   ],
   "raw_hiring": [
     {
+      "company": "the firm",
+      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
+      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
+      "source": "news.google.com"
+    },
+    {
       "company": "he looks for in applicants",
       "role": "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants - ",
       "signal": "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants &nbsp;&nbsp; Business Insider",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaUk4YTI2OWx6VEc1dkI2OGxnVjVyVGZweHJKYzBuWldxV0doc3o0VWFjME5KN0trY1pxcjJialhkeDRuc1NYY1B2aU1WeDlWdWpHdXFqVGJ6Zlpud1RPNjNiSk5EWGd3Zm9TeEJONWh5WE11bkZ3N2h5WXMyanFCUk53VVFWRmcxM2lmR2JR?oc=5",
-      "source": "news.google.com"
-    },
-    {
-      "company": "VC firm Redpoint tells startups to buckle up for a",
-      "role": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shar",
-      "signal": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shared with founders. &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRUdYVEdsTlJDczJ4T1hQN2swd0h4ZmlweVlDYjllYW1Well3UkdyeXNXOXVxdmVtQjhaa2VRU0ExWkpFVk9laGxUYl9oQUJtTTVXQVc0OXpGTy0taEIyeS1xTXN6MUJQRnJuR1VQSk5BYUpJMlhYUjFHY2pDbjRzajdYOTNrMkRRSEE?oc=5",
       "source": "news.google.com"
     },
     {
@@ -185,6 +185,13 @@
       "source": "news.google.com"
     },
     {
+      "company": "VC firm Redpoint tells startups to buckle up for a",
+      "role": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shar",
+      "signal": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shared with founders. &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRUdYVEdsTlJDczJ4T1hQN2swd0h4ZmlweVlDYjllYW1Well3UkdyeXNXOXVxdmVtQjhaa2VRU0ExWkpFVk9laGxUYl9oQUJtTTVXQVc0OXpGTy0taEIyeS1xTXN6MUJQRnJuR1VQSk5BYUpJMlhYUjFHY2pDbjRzajdYOTNrMkRRSEE?oc=5",
+      "source": "news.google.com"
+    },
+    {
       "company": "Scaling from 5 to 50 employees \u2014 your startup hiri",
       "role": "Scaling from 5 to 50 employees \u2014 your startup hiring roadmap - Sifted",
       "signal": "Scaling from 5 to 50 employees \u2014 your startup hiring roadmap &nbsp;&nbsp; Sifted",
@@ -192,17 +199,17 @@
       "source": "news.google.com"
     },
     {
-      "company": "the firm",
-      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
-      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
-      "source": "news.google.com"
-    },
-    {
       "company": "Vanguard Head of Talent Acquisition Shares Favorit",
       "role": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question - Business Insider",
       "signal": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question &nbsp;&nbsp; Business Insider",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2tEazBKTHVJMmR5dUZPMVBvU1hJMkhlbWhGVEJSV3lXSGxiaFRUUTdESUdHT29SNUdTY3hEeXpEeWJ4cWZ3OXlRb2M1dXN1dGVCVjlyUUtfN3JwSlRIMkpTSk5STGdFM1lVVUE3YklFc1E3akpWUEZqNkdJc2ZTeExuMS1MNXhHdnkxZTdYQjVaZzVIQnlXeEZhR1I1bmZ0X0JTZA?oc=5",
+      "source": "news.google.com"
+    },
+    {
+      "company": "Fidelity's head of talent acquisition shares how y",
+      "role": "Fidelity's head of talent acquisition shares how you can land one of the company's 9,000 open jobs r",
+      "signal": "Fidelity's head of talent acquisition shares how you can land one of the company's 9,000 open jobs right now &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZmZOTDE5clp5VV9EVkJZOWFyTTlJbGFjRDMxaDdhUVFDbmw3cnZOVDhaYlhaMlY3VW1MZGhWVllTUjdUZUw2c2JYdWdHUDlMS1BFd3ZFbk5hcDhNX2FjUXpjb0dPYWFUc0w0SnBxLXV2MFNQYmN4OVloZ2VSaGFpWnFmR0s1Tk9mdUJFMXkyRFBENV9HYV9F?oc=5",
       "source": "news.google.com"
     },
     {
@@ -220,17 +227,10 @@
       "source": "news.google.com"
     },
     {
-      "company": "Fidelity's head of talent acquisition shares how y",
-      "role": "Fidelity's head of talent acquisition shares how you can land one of the company's 9,000 open jobs r",
-      "signal": "Fidelity's head of talent acquisition shares how you can land one of the company's 9,000 open jobs right now &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZmZOTDE5clp5VV9EVkJZOWFyTTlJbGFjRDMxaDdhUVFDbmw3cnZOVDhaYlhaMlY3VW1MZGhWVllTUjdUZUw2c2JYdWdHUDlMS1BFd3ZFbk5hcDhNX2FjUXpjb0dPYWFUc0w0SnBxLXV2MFNQYmN4OVloZ2VSaGFpWnFmR0s1Tk9mdUJFMXkyRFBENV9HYV9F?oc=5",
-      "source": "news.google.com"
-    },
-    {
-      "company": "NHL's first diversity and inclusion report finds w",
-      "role": "NHL's first diversity and inclusion report finds workforce 84% white - ESPN",
-      "signal": "NHL's first diversity and inclusion report finds workforce 84% white &nbsp;&nbsp; ESPN",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQV3dCdnZRSUR5MnI3dHdfMXFLVTVpdGFCM2ExOThZUVVBNXlzZmpBbUlxdlJlUk52MF9sMHpGWEcyZjlWQkxQZDl4SzhacVp0dnA0dzZEYVpmVEdQNFh2S3AzbnUxcFNKRUhST3MxN0FQM0h5S1BoNnBKaHl4VDZFUEFXa093TkJOYXZjeV85T2Jka1df?oc=5",
+      "company": "Apollo is revamping recruiting and trying to softe",
+      "role": "Apollo is revamping recruiting and trying to soften its culture amid a big growth push. From MBA sum",
+      "signal": "Apollo is revamping recruiting and trying to soften its culture amid a big growth push. From MBA summer internships to kids' story time, here's a look. &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQX195RDU5VFgzbnFwalQyeDhpeE44d2pOQ3lHRk40TGxOcXdjbndnUDhndVRmZUR3cjZXLXdyS1AyZVVGVmNOaHEyaUtpTkU5UFVfY3c5M0dJUV9pNnJrN3hqcVZ1c3VnVmx4aWJGVVJjTHdNVnlWQkJQUlY4NHpaU1V6bWs3WFpGc1I4aFpHYklYZ2VfNjczZ3YzRnY4OFNlZGxlM053?oc=5",
       "source": "news.google.com"
     },
     {
@@ -357,5 +357,448 @@
     }
   ],
   "raw_sam": [],
+  "yc_companies": [],
+  "hn_hiring": [
+    {
+      "company": "Temporal Technologies",
+      "location": "",
+      "remote": false,
+      "roles": [
+        "senior level engineers for multiple roles - https:&#x2f;&#x2"
+      ],
+      "text": "Temporal Technologies | Multiple positions in United States - WORK FROM HOME | FULL-TIME | Temporal offers an entirely new way to build scalable and reliable applications. Temporal enables developers to focus on writing important business logic, and not on managing state or worrying about the underl"
+    },
+    {
+      "company": "PrairieLearn (Remote US) \u2014 Full-Stack Software Engineer \u2014 Ty",
+      "location": "",
+      "remote": true,
+      "roles": [],
+      "text": "PrairieLearn (Remote US) \u2014 Full-Stack Software Engineer \u2014 TypeScript &#x2F; Postgres &#x2F; React &#x2F; AI PrairieLearn ( https:&#x2F;&#x2F;www.prairielearn.com ) is an open-source assessment platform used by universities across the US (Berkeley, Princeton, Michigan, Illinois, and others). We power"
+    },
+    {
+      "company": "Sheer Health ( https:&#x2F;&#x2F;www.sheerhealth.com )",
+      "location": "",
+      "remote": false,
+      "roles": [],
+      "text": "Sheer Health ( https:&#x2F;&#x2F;www.sheerhealth.com ) | New York, NY | Full-Time | ONSITE If you or a loved one has ever suffered from confusing&#x2F;egregious medical bills or insurance communications, this is your chance to give the power back to others in a similar situation. Our mission is to d"
+    },
+    {
+      "company": "PostHog",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "gmt-8 to gmt+2 posthog equips developers to build successful"
+      ],
+      "text": "PostHog | Full-Time | Product engineers, backend engineers, Technical AMs | REMOTE (all remote) | Hiring GMT-8 to GMT+2 PostHog equips developers to build successful products by combining product analytics, feature flags, session replay, a data warehouse, CDP and many more. * we have a public handbo"
+    },
+    {
+      "company": "Softmax",
+      "location": "",
+      "remote": false,
+      "roles": [
+        "the engineers who will make that possible"
+      ],
+      "text": "Softmax | softmax.com | San Francisco (onsite) | Full-time THE MOST IMPORTANT UNSOLVED PROBLEM IN AI IS THE MOST POWERFUL OF ALL CAPABILITIES: ALIGNMENT. Hi, I&#x27;m Emmett. You may know me as the founder of Twitch (YC S05), and as the (extremely) interim CEO of OpenAI. I believe the question of ho"
+    },
+    {
+      "company": "YCharts",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "mid-level or senior engineer to join our ai engineering team"
+      ],
+      "text": "YCharts | Software Engineer | Full-Time | REMOTE (US only) | 140k - 180k USD + benefits | https:&#x2F;&#x2F;ycharts.com YCharts is an investment research platform that financial advisors and asset managers use to make smarter investing decisions and create visuals that effectively communicate their "
+    },
+    {
+      "company": "Flux.ai",
+      "location": "",
+      "remote": false,
+      "roles": [],
+      "text": "Flux.ai | Sr. Platform, Sr. Front End, Sr. SWE (Agentic Products), Sr. DevOps, | San Francisco, CA | ONSITE | Full-time Flux developed the first AI Hardware Engineer integrated into a browser-based EDA, where hardware engineers can collaborate live and design hardware together from around the world."
+    },
+    {
+      "company": "yeet",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "extremely talented &#x2f; passionate rust developers &#x2f; "
+      ],
+      "text": "yeet | Chicago, IL &#x2F; Remote | Full-Time Building a dynamic runtime on top of the Linux BPF sub-system. Looking for extremely talented &#x2F; passionate Rust developers &#x2F; Backend Engineers with a deep interest in Linux internals, Distributed Systems, Dev Tools, Great Developer Experiences a"
+    },
+    {
+      "company": "geeksprep is hiring for multiple profile ,pls check https:&#",
+      "location": "",
+      "remote": false,
+      "roles": [
+        "for multiple profile"
+      ],
+      "text": "geeksprep is hiring for multiple profile ,pls check https:&#x2F;&#x2F;geeksprep.com&#x2F;careers"
+    },
+    {
+      "company": "Category Labs",
+      "location": "",
+      "remote": true,
+      "roles": [],
+      "text": "Category Labs | https:&#x2F;&#x2F;www.category.xyz&#x2F; | Remote and NYC | Full Time | $200K USD+ Category Labs (formerly known as Monad Labs) is a team of systems engineers and researchers on a mission to design and build at the frontier of decentralized technology. We strive to design and build s"
+    },
+    {
+      "company": "OpenRent",
+      "location": "",
+      "remote": true,
+      "roles": [],
+      "text": "OpenRent | London, UK | Full-Time | ONSITE+PART REMOTE | https:&#x2F;&#x2F;www.openrent.co.uk What sucked the last time you rented a house or flat? Come and fix it. OpenRent is a force for good in an industry tarnished by rip-off agencies. Enabled by an unrelenting focus on technology, we let more p"
+    },
+    {
+      "company": "Lead Full-Stack Engineer Marker Learning",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "hands-on full-stack engineer (react"
+      ],
+      "text": "Lead Full-Stack Engineer Marker Learning | Remote (U.S. only) | Full-time | Engineering | 185-250k I have dyslexia. I was one of the lucky ones. Diagnosed at eight, I got accommodations and support before things spiraled. Most kids aren&#x27;t so lucky. The path from initial concern to diagnosis can"
+    },
+    {
+      "company": "Baseten Labs",
+      "location": "New York",
+      "remote": true,
+      "roles": [
+        "for multiple core roles: 1",
+        "deep kubernetes and container orchestration experience along",
+        "folks with a breadth of experience equity: this is an opport"
+      ],
+      "text": "Baseten Labs | San Francisco, New York |ONSITE, REMOTE, HYBRID | VISA SPONSORSHIP | RELOCATION SUPPORT We are Baseten, the team that powers mission-critical inference for the world\u2019s most dynamic AI companies such as Cursor, Notion, OpenEvidence, Abridge, Clay, Gamma and Writer. We\u2019re growing quickl"
+    },
+    {
+      "company": "Schema Labs (OpenCouncil)",
+      "location": "",
+      "remote": true,
+      "roles": [],
+      "text": "Schema Labs (OpenCouncil) | Civic Tech Software Engineer | Athens, Greece | Hybrid (3 days in office) | \u20ac55K-65K We&#x27;re a 4-person non-profit building OpenCouncil ( https:&#x2F;&#x2F;opencouncil.gr ), an AI platform that makes Greek municipal council meetings accessible to citizens. We take hour"
+    },
+    {
+      "company": "River",
+      "location": "",
+      "remote": true,
+      "roles": [],
+      "text": "River | Senior + Staff Engineers (Elixir, React, ML&#x2F;AI) | SF or NYC or REMOTE (US, Europe, South America) | Full-Time | $150K-$250K + equity | https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;river I&#x27;m Alex, founder and CEO of River. I also wrote the first line of code and still ship PRs. River is "
+    },
+    {
+      "company": "Product incubator",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "long-term collaboration with imaginative people who communic",
+        "the following: - experience in f&amp;b logistics"
+      ],
+      "text": "Product incubator | REMOTE (US) | Consulting (1099) We are a small team with a wide network, bringing ideas to market with a focus on simplicity and trust. Clients a mix of early-stage and enterprise. Seeking long-term collaboration with imaginative people who communicate well. Teams are built aroun"
+    },
+    {
+      "company": "Lantern",
+      "location": "",
+      "remote": false,
+      "roles": [],
+      "text": "Lantern | Software Engineers (Python, Full-Stack) | NYC (Onsite) | Full-time | withlantern.com Lantern is building AI-powered revenue intelligence\u2014autonomous agents that turn cold outreach into warm conversations. We detect buying signals across your tech stack, prioritize opportunities, and help B2"
+    },
+    {
+      "company": "Wayward (wayward.com) - we\u2019re rebuilding the way brands and",
+      "location": "",
+      "remote": false,
+      "roles": [
+        "ny-based engineers (hybrid) to help us build the platform an"
+      ],
+      "text": "Wayward (wayward.com) - we\u2019re rebuilding the way brands and creators connect. Backed by a founder with $1B+ exits and growing fast, 3x YoY growth. Looking for NY-based engineers (hybrid) to help us build the platform and the team. Email me (CTO) jesse (at) wayward.com"
+    },
+    {
+      "company": "Docker Inc, Remote (62 positions available) We are rapidly e",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "engineers"
+      ],
+      "text": "Docker Inc, Remote (62 positions available) We are rapidly expanding to help developers securely use agentic AI to increase their productivity. We are hiring engineers, data scientist, program manager, product managers, solutions engineers, solutions architects, account executives Details and apply:"
+    },
+    {
+      "company": "FUTO",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "for a few of our projects"
+      ],
+      "text": "FUTO | Software Engineers | Austin, TX | Remote or Onsite | Full Time FUTO is an organization dedicated to developing, both through in-house engineering and investment, technologies that frustrate centralization and industry consolidation. Our work consists of a combination of in-house engineering p"
+    },
+    {
+      "company": "Arcol",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "senior engineers with experience in modern web technologies "
+      ],
+      "text": "Arcol | Senior Software Engineer | NYC, SF, or Remote (US&#x2F;Canada) | Full-time Arcol (arcol.io) is a small, high talent density team building the future of building design - a future that&#x27;s collaborative, fast, and intuitive. We&#x27;re a web-native, fully collaborative 3d design tool moder"
+    },
+    {
+      "company": "Deep Systems",
+      "location": "",
+      "remote": true,
+      "roles": [],
+      "text": "Deep Systems | Senior DevOps Engineer | Remote EMEA, APAC, and Americas | Full-time I am building a DevOps team at a capital markets tech company most people haven&#x27;t heard of \u2014 but some of the world&#x27;s biggest financial institutions run on our platform. 300B+ messages&#x2F;day. 99.99% uptim"
+    },
+    {
+      "company": "Transfyr",
+      "location": "Cambridge",
+      "remote": false,
+      "roles": [
+        "(hiring from entry level to senior leadership): - computer v"
+      ],
+      "text": "Transfyr | Full Stack Software Engineer | Cambridge, MA | Full-time | ONSITE Transfyr is building physical AI for science. Why is it that a professional athlete has dramatically more information about every play they make than a scientist has about the cause of any experimental failure? At Transfyr,"
+    },
+    {
+      "company": "Mezzanine",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "senior engineer with java 25 skills"
+      ],
+      "text": "Mezzanine | Senior Java Developer and Architect | Stellenbosch, South Africa&#x2F;hybrid&#x2F;REMOTE possible (but ONLY if you live in SA already) | Full-time Mezzanine designs and builds digital technology solutions for customers across Africa and beyond in order to create productive societies. Fou"
+    },
+    {
+      "company": "40GRID - Full-time Remote",
+      "location": "",
+      "remote": true,
+      "roles": [],
+      "text": "40GRID - Full-time Remote | Product Manager Our mission is to empower field-service companies to grow by modernizing and automating their business operations. Every company we work with has unrealized potentials \u2014 our task is to build the platform that empowers growth and helps them unlock opportuni"
+    },
+    {
+      "company": "Foxglove",
+      "location": "",
+      "remote": true,
+      "roles": [],
+      "text": "Foxglove | Software Engineers (Rust, Typescript) | SF, Remote (US, AU) | Full Time Foxglove is a platform for robotics and autonomy teams to collect, analyze, and learn from the vast quantities of multimodal data required to build, train, deploy, and operate reliable robots. - Sr. Software Engineer,"
+    },
+    {
+      "company": "Aqora",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "quantum computing expert to help us scale"
+      ],
+      "text": "Aqora | Quantum Computing Expert | Full-time | Paris (HQ) or Remote (Europe) We&#x27;re building the go-to hub for quantum computing, focused on organizing quantum hackathons and competitions globally as well as hosting quantum datasets and algorithms. We&#x27;ve partnered with major industry player"
+    },
+    {
+      "company": "Impinj",
+      "location": "",
+      "remote": false,
+      "roles": [
+        "software engineering intern to own a lighthouse initiative",
+        "someone passionate about software development and great user"
+      ],
+      "text": "Impinj | Hybrid in Seattle, WA | Intern (Summer 2026) | https:&#x2F;&#x2F;www.impinj.com&#x2F; Impinj is a leading RAIN RFID provider connecting everyday physical items \u2014 retail apparel, healthcare supplies, airline baggage, auto parts \u2014 to the Internet. Over 100 billion items connected and counting"
+    },
+    {
+      "company": "Oboe",
+      "location": "",
+      "remote": false,
+      "roles": [
+        "full-stack engineer to work across oboe&#x27;s stack"
+      ],
+      "text": "Oboe | Full Stack Engineer | New York City | ONSITE | $170k-$230k Oboe&#x27;s goal is simple: teach one billion people one trillion things. We&#x27;ll do that by building the world&#x27;s first completely generalized AI-powered learning platform. Today, so much of our focus is spent on making machin"
+    },
+    {
+      "company": "Phaselaw",
+      "location": "",
+      "remote": true,
+      "roles": [
+        "support engineer to work with our growing customer base in t"
+      ],
+      "text": "Phaselaw | Support Engineer | Remote (UK) | Full-time Phaselaw ( https:&#x2F;&#x2F;phase.law ) is building the AI-native eDiscovery platform for in-house legal and privacy teams. We save teams thousands of hours with tools for document review and redaction. We&#x27;re seed stage but already working "
+    }
+  ],
+  "github_trending": [
+    {
+      "repo": "browser",
+      "owner": "lightpanda-io",
+      "stars_today": 1323,
+      "language": "Zig",
+      "description": "Lightpanda: the headless browser designed for AI and automation",
+      "url": "https://github.com/lightpanda-io/browser"
+    },
+    {
+      "repo": "project-nomad",
+      "owner": "Crosstalk-Solutions",
+      "stars_today": 241,
+      "language": "TypeScript",
+      "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered\u2014anytime, anywhere.",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad"
+    },
+    {
+      "repo": "OpenViking",
+      "owner": "volcengine",
+      "stars_today": 1877,
+      "language": "Python",
+      "description": "OpenViking is an open-source context database designed specifically for AI Agents(such as openclaw). OpenViking unifies the management of context (memory, resources, and skills) that Agents need throu",
+      "url": "https://github.com/volcengine/OpenViking"
+    },
+    {
+      "repo": "learn-claude-code",
+      "owner": "shareAI-lab",
+      "stars_today": 865,
+      "language": "TypeScript",
+      "description": "Bash is all you need - A nano Claude Code\u2013like agent, built from 0 to 1",
+      "url": "https://github.com/shareAI-lab/learn-claude-code"
+    },
+    {
+      "repo": "claude-code-best-practice",
+      "owner": "shanraisshan",
+      "stars_today": 852,
+      "language": "HTML",
+      "description": "practice made claude perfect",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice"
+    },
+    {
+      "repo": "superpowers",
+      "owner": "obra",
+      "stars_today": 1893,
+      "language": "Shell",
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "url": "https://github.com/obra/superpowers"
+    },
+    {
+      "repo": "heretic",
+      "owner": "p-e-w",
+      "stars_today": 1066,
+      "language": "Python",
+      "description": "Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic"
+    },
+    {
+      "repo": "MiroFish",
+      "owner": "666ghj",
+      "stars_today": 2985,
+      "language": "Python",
+      "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. \u7b80\u6d01\u901a\u7528\u7684\u7fa4\u4f53\u667a\u80fd\u5f15\u64ce\uff0c\u9884\u6d4b\u4e07\u7269",
+      "url": "https://github.com/666ghj/MiroFish"
+    },
+    {
+      "repo": "GitNexus",
+      "owner": "abhigyanpatwari",
+      "stars_today": 450,
+      "language": "TypeScript",
+      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive kno",
+      "url": "https://github.com/abhigyanpatwari/GitNexus"
+    },
+    {
+      "repo": "cognee",
+      "owner": "topoteretes",
+      "stars_today": 310,
+      "language": "Python",
+      "description": "Knowledge Engine for AI Agent Memory in 6 lines of code",
+      "url": "https://github.com/topoteretes/cognee"
+    },
+    {
+      "repo": "InsForge",
+      "owner": "InsForge",
+      "stars_today": 509,
+      "language": "TypeScript",
+      "description": "Give agents everything they need to ship fullstack apps. The backend built for agentic development.",
+      "url": "https://github.com/InsForge/InsForge"
+    },
+    {
+      "repo": "vite-plus",
+      "owner": "voidzero-dev",
+      "stars_today": 301,
+      "language": "Rust",
+      "description": "Vite+ is the unified toolchain and entry point for web development. It manages your runtime, package manager, and frontend toolchain in one place.",
+      "url": "https://github.com/voidzero-dev/vite-plus"
+    },
+    {
+      "repo": "claude-plugins-official",
+      "owner": "anthropics",
+      "stars_today": 608,
+      "language": "Python",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "url": "https://github.com/anthropics/claude-plugins-official"
+    }
+  ],
+  "sec_filings": [],
+  "ph_launches": [
+    {
+      "product": "Morgen",
+      "tagline": "Your entire morning in one tab. Discussion | Link",
+      "link": "https://www.producthunt.com/products/morgen-2",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "ClawSecure",
+      "tagline": "The only complete security platform for OpenClaw AI agents Discussion | Link",
+      "link": "https://www.producthunt.com/products/clawsecure",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "Aura Water: Private Hydration",
+      "tagline": "Offline water tracker with a private AI hydration coach Discussion | Link",
+      "link": "https://www.producthunt.com/products/aura-water",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "Nutgrafe",
+      "tagline": "Every article summarized in one short paragraph. Discussion | Link",
+      "link": "https://www.producthunt.com/products/nutgrafe",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "Mooon",
+      "tagline": "One-step Japanese Document Processing Engine Discussion | Link",
+      "link": "https://www.producthunt.com/products/mooon",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "Query Memory",
+      "tagline": "One API for all documents your AI agents need Discussion | Link",
+      "link": "https://www.producthunt.com/products/query-memory",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "DynamicLake",
+      "tagline": "Dynamic Island experience for Mac with apps & notifications Discussion | Link",
+      "link": "https://www.producthunt.com/products/dynamiclake",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "Cal.com Agents",
+      "tagline": "AI Agents coming to the best scheduling tool Discussion | Link",
+      "link": "https://www.producthunt.com/products/cal",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "ElevenCreative by ElevenLabs",
+      "tagline": "The AI creative platform to bring your content to life Discussion | Link",
+      "link": "https://www.producthunt.com/products/elevencreative-by-elevenlabs",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "The Banana App",
+      "tagline": "Speak human - Where every word finds its way home Discussion | Link",
+      "link": "https://www.producthunt.com/products/the-banana-app",
+      "source": "producthunt.com"
+    }
+  ],
+  "cross_references": [],
+  "source_stats": {
+    "rss_funding": 8,
+    "rss_hiring": 12,
+    "rss_execs": 10,
+    "sam_gov": 0,
+    "yc": 0,
+    "hn_hiring": 30,
+    "github": 13,
+    "sec_edgar": 0,
+    "producthunt": 10
+  },
+  "stage_breakdown": {
+    "Series A": 5,
+    "Series C": 1,
+    "Seed": 1,
+    "Late Stage": 1
+  },
+  "sector_breakdown": {},
   "pdf_url": "daily_brief.pdf"
 }
