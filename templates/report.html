@@ -7,7 +7,7 @@
     size: letter;
     margin: 0.6in 0.7in;
     @bottom-center {
-      content: "Rebel Talent Systems — Confidential";
+      content: "Rebel Talent Systems v4.0 \2014  Confidential";
       font-family: monospace;
       font-size: 8px;
       color: #4a6070;
@@ -22,17 +22,17 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: #050d1b;
-    color: #b8ccd8;
+    background: #0a0a0f;
+    color: #c0d0e0;
     font-size: 10px;
     line-height: 1.5;
   }
 
   /* Header */
   .header {
-    border-bottom: 2px solid #7CCBC3;
+    border-bottom: 2px solid #00ffd5;
     padding-bottom: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -40,7 +40,7 @@
   .logo {
     font-size: 18px;
     font-weight: 700;
-    color: #7CCBC3;
+    color: #00ffd5;
     letter-spacing: 0.15em;
   }
   .logo-sub {
@@ -49,12 +49,10 @@
     letter-spacing: 0.2em;
     margin-top: 2px;
   }
-  .date-box {
-    text-align: right;
-  }
+  .date-box { text-align: right; }
   .date-main {
     font-size: 11px;
-    color: #E2C46B;
+    color: #ffa500;
     font-weight: 600;
   }
   .date-sub {
@@ -65,11 +63,44 @@
   .clf {
     font-size: 7px;
     letter-spacing: 0.2em;
-    color: #e05c5c;
-    border: 1px solid rgba(224, 92, 92, 0.4);
+    color: #ff3366;
+    border: 1px solid rgba(255, 51, 102, 0.4);
     display: inline-block;
     padding: 2px 6px;
     margin-bottom: 8px;
+  }
+
+  /* Intelligence Summary */
+  .intel-summary {
+    background: #0d1117;
+    border: 1px solid #1a2440;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+  }
+  .intel-summary-title {
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    color: #4a6070;
+    margin-bottom: 8px;
+  }
+  .intel-stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .intel-stat {
+    text-align: center;
+  }
+  .intel-stat-num {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .intel-stat-label {
+    font-size: 7px;
+    letter-spacing: 0.15em;
+    color: #4a6070;
+    margin-top: 2px;
   }
 
   /* Section headers */
@@ -79,7 +110,7 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #4a6070;
-    border-bottom: 1px solid #0f2030;
+    border-bottom: 1px solid #1a2440;
     padding: 14px 0 4px;
     margin: 18px 0 10px;
   }
@@ -88,7 +119,7 @@
     display: inline-block;
     width: 12px;
     height: 1px;
-    background: #7CCBC3;
+    background: #00ffd5;
     margin-right: 6px;
     vertical-align: middle;
   }
@@ -101,35 +132,35 @@
   }
   .move-card {
     flex: 1;
-    background: #070e18;
-    border: 1px solid #0f2030;
-    border-top: 2px solid #E2C46B;
+    background: #0d1117;
+    border: 1px solid #1a2440;
+    border-top: 2px solid #ffa500;
     padding: 10px;
   }
   .move-tag {
     font-size: 7px;
     letter-spacing: 0.2em;
-    color: #E2C46B;
+    color: #ffa500;
     margin-bottom: 4px;
   }
   .move-txt {
     font-size: 9px;
     line-height: 1.5;
-    color: #b8ccd8;
+    color: #c0d0e0;
   }
 
   /* Target cards */
   .target-card {
-    background: #070e18;
-    border: 1px solid #0f2030;
-    border-left: 2px solid #7CCBC3;
+    background: #0d1117;
+    border: 1px solid #1a2440;
+    border-left: 2px solid #00ffd5;
     padding: 8px 10px;
     margin-bottom: 6px;
   }
   .target-idx {
     font-size: 7px;
     letter-spacing: 0.15em;
-    color: #7CCBC3;
+    color: #00ffd5;
     margin-bottom: 2px;
   }
   .target-txt {
@@ -151,11 +182,11 @@
     text-transform: uppercase;
     text-align: left;
     padding: 4px 6px;
-    border-bottom: 1px solid #0f2030;
+    border-bottom: 1px solid #1a2440;
   }
   tbody td {
     padding: 5px 6px;
-    border-bottom: 1px solid rgba(15, 32, 48, 0.5);
+    border-bottom: 1px solid rgba(26, 36, 64, 0.5);
     vertical-align: top;
     line-height: 1.4;
   }
@@ -166,35 +197,48 @@
     padding: 1px 5px;
     border-radius: 2px;
   }
-  .tag-teal { background: rgba(124,203,195,0.1); color: #7CCBC3; border: 1px solid rgba(124,203,195,0.2); }
-  .tag-gold { background: rgba(226,196,107,0.1); color: #E2C46B; border: 1px solid rgba(226,196,107,0.2); }
+  .tag-teal { background: rgba(0,255,213,0.08); color: #00ffd5; border: 1px solid rgba(0,255,213,0.2); }
+  .tag-gold { background: rgba(255,165,0,0.08); color: #ffa500; border: 1px solid rgba(255,165,0,0.2); }
+  .tag-pink { background: rgba(255,0,110,0.08); color: #ff006e; border: 1px solid rgba(255,0,110,0.2); }
 
   /* Signal list */
   .sig {
-    background: #070e18;
-    border-left: 2px solid #7CCBC3;
+    background: #0d1117;
+    border-left: 2px solid #00ffd5;
     padding: 6px 10px;
     margin-bottom: 4px;
     font-size: 9px;
     line-height: 1.5;
   }
-  .sig-gold { border-left-color: #E2C46B; }
-  .sig-red { border-left-color: #e05c5c; }
-  .sig-purple { border-left-color: #9b7fc9; }
+  .sig-gold { border-left-color: #ffa500; }
+  .sig-red { border-left-color: #ff3366; }
+  .sig-purple { border-left-color: #b47cff; }
+  .sig-pink { border-left-color: #ff006e; }
   .no-data {
-    color: #384858;
+    color: #3a4858;
     font-size: 8px;
     letter-spacing: 0.15em;
     padding: 8px 0;
+  }
+
+  /* Charts */
+  .chart-row {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .chart-row img {
+    max-width: 48%;
+    height: auto;
   }
 
   /* Footer */
   .footer {
     margin-top: 24px;
     padding-top: 10px;
-    border-top: 1px solid #0f2030;
+    border-top: 1px solid #1a2440;
     font-size: 7px;
-    color: #384858;
+    color: #3a4858;
     display: flex;
     justify-content: space-between;
   }
@@ -205,15 +249,51 @@
 <!-- HEADER -->
 <div class="header">
   <div>
-    <div class="clf">// INTERNAL — NOT FOR DISTRIBUTION</div><br>
+    <div class="clf">// INTERNAL &mdash; NOT FOR DISTRIBUTION</div><br>
     <span class="logo">REBEL TALENT</span>
-    <div class="logo-sub">DAILY BD INTEL BRIEF</div>
+    <div class="logo-sub">DAILY BD INTEL BRIEF v4.0</div>
   </div>
   <div class="date-box">
     <div class="date-main">{{ today }}</div>
     <div class="date-sub">Series A-C &middot; SaaS &middot; Defense Tech &middot; GovTech</div>
   </div>
 </div>
+
+<!-- INTELLIGENCE SUMMARY -->
+<div class="intel-summary">
+  <div class="intel-summary-title">INTELLIGENCE SUMMARY // {{ data.generated_slug }}</div>
+  <div class="intel-stats">
+    <div class="intel-stat">
+      <div class="intel-stat-num" style="color:#00ffd5;">{{ data.raw_funded|length }}</div>
+      <div class="intel-stat-label">FUNDED</div>
+    </div>
+    <div class="intel-stat">
+      <div class="intel-stat-num" style="color:#ffa500;">{{ (data.source_stats.values()|list|sum) if data.source_stats else 0 }}</div>
+      <div class="intel-stat-label">TOTAL SIGNALS</div>
+    </div>
+    <div class="intel-stat">
+      <div class="intel-stat-num" style="color:#ff006e;">{{ (data.cross_references|length) if data.cross_references else 0 }}</div>
+      <div class="intel-stat-label">CROSS-REFS</div>
+    </div>
+    <div class="intel-stat">
+      <div class="intel-stat-num" style="color:#b47cff;">{{ (data.source_stats.keys()|list|length) if data.source_stats else 0 }}</div>
+      <div class="intel-stat-label">SOURCES</div>
+    </div>
+    <div class="intel-stat">
+      <div class="intel-stat-num" style="color:#00ff41;">{{ (data.yc_companies|length) if data.yc_companies else 0 }}</div>
+      <div class="intel-stat-label">YC COMPANIES</div>
+    </div>
+  </div>
+</div>
+
+<!-- CHARTS -->
+{% if charts %}
+<div class="chart-row">
+  {% for chart in charts %}
+  <img src="{{ chart }}">
+  {% endfor %}
+</div>
+{% endif %}
 
 <!-- MOVES TODAY -->
 <div class="sec">Mission Objectives // Today</div>
@@ -245,17 +325,35 @@
   <tbody>
     {% for item in intel.get('new_money', []) %}
     <tr>
-      <td style="color:#dde8f0; font-weight:600;">{{ item.company or '—' }}</td>
-      <td><span class="tag tag-gold">{{ item.amount or '—' }}</span></td>
-      <td><span class="tag tag-teal">{{ item.stage or '—' }}</span></td>
-      <td>{{ item.sector_tag or '—' }}</td>
-      <td style="color:#8899aa; font-size:8px;">{{ item.why_now or '—' }}</td>
+      <td style="color:#dde8f0; font-weight:600;">{{ item.company or '\u2014' }}</td>
+      <td><span class="tag tag-gold">{{ item.amount or '\u2014' }}</span></td>
+      <td><span class="tag tag-teal">{{ item.stage or '\u2014' }}</span></td>
+      <td>{{ item.sector_tag or '\u2014' }}</td>
+      <td style="color:#8899aa; font-size:8px;">{{ item.why_now or '\u2014' }}</td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
 {% else %}
 <div class="no-data">// NO FUNDING DATA TODAY</div>
+{% endif %}
+
+<!-- CROSS-REFERENCE HITS -->
+{% if data.cross_references %}
+<div class="sec">Cross-Reference Hits // Multi-Source Validation</div>
+<table>
+  <thead><tr><th>Company</th><th>Sources</th><th>Count</th><th>Details</th></tr></thead>
+  <tbody>
+    {% for xr in data.cross_references[:8] %}
+    <tr>
+      <td style="color:#dde8f0; font-weight:600;">{{ xr.company }}</td>
+      <td style="font-size:8px;">{{ xr.sources|join(' + ') }}</td>
+      <td><span class="tag tag-pink">{{ xr.source_count }}</span></td>
+      <td style="font-size:8px; color:#8899aa;">{% if xr.details %}{{ xr.details.get('funding', '') }} {{ xr.details.get('yc_batch', '') }}{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 {% endif %}
 
 <!-- HIRING SIGNALS -->
@@ -302,8 +400,8 @@
 
 <!-- FOOTER -->
 <div class="footer">
-  <div>REBEL TALENT SYSTEMS &middot; RICHIE LAMPANI &middot; FRACTIONAL HEAD OF TALENT</div>
-  <div>NYC &middot; CHI &middot; ATL &middot; MI &middot; CO &middot; REMOTE-US</div>
+  <div>REBEL TALENT SYSTEMS v4.0 &middot; RICHIE LAMPANI &middot; FRACTIONAL HEAD OF TALENT</div>
+  <div>{{ (data.source_stats.keys()|list|length) if data.source_stats else 0 }} SOURCES &middot; {{ (data.source_stats.values()|list|sum) if data.source_stats else 0 }} SIGNALS</div>
 </div>
 
 </body>

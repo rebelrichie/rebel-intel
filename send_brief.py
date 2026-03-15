@@ -1,5 +1,5 @@
 """
-Rebel Talent Systems — Daily Brief Email Sender v3.0
+Rebel Talent Systems — Daily Brief Email Sender v4.0
 Sends PDF brief to subscriber list via Gmail SMTP
 """
 
@@ -94,7 +94,8 @@ def build_html_body():
 
     <p style="color:#a0b4c8; font-family:sans-serif; font-size:14px; line-height:1.6;">
       Your daily fractional recruiting intelligence is attached.
-      Today's brief covers new funding rounds, hiring signals, and executive moves
+      Today's brief covers signals from {len(data.get('source_stats', {}))} data sources,
+      including funding rounds, YC companies, hiring signals, and executive moves
       across Series A-C startups.
     </p>
 
@@ -139,6 +140,13 @@ def build_plain_text():
         lines.append("TOP 3 MUST-CHASE:")
         for t in top3:
             lines.append(f"  - {t}")
+        lines.append("")
+        if data.get("cross_references"):
+            lines.append("")
+            lines.append("CROSS-REFERENCES (multi-source):")
+            for xr in data["cross_references"][:5]:
+                lines.append(f"  - {xr['company']} ({xr['source_count']} sources: {', '.join(xr['sources'])})")
+
         lines.append("")
         lines.append(f"Full brief attached. Dashboard: {SITE_URL}")
         lines.append("")

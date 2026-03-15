@@ -1,8 +1,9 @@
 """
-Rebel Talent Systems — Daily BD Intel Brief v3.0
+Rebel Talent Systems — Daily BD Intel Brief v4.0
 Fractional Recruiting Intelligence for Series A-C Startups
 
-Complete rewrite: smarter filtering, better parsing, upgraded AI.
+v4.0: 5 new data sources (YC, HN, GitHub, SEC EDGAR, ProductHunt),
+cross-reference engine, analytics breakdowns, matplotlib PDF charts.
 """
 
 import os
@@ -124,10 +125,8 @@ COMPETITOR_FEEDS = [
 def fetch_feed(url, max_items=25):
     """Fetch and parse an RSS feed with strict timeout."""
     try:
-        # Use requests with timeout instead of feedparser's built-in fetch
-        # feedparser.parse(url) can hang forever on slow feeds
         resp = requests.get(url, timeout=12, headers={
-            'User-Agent': 'RebelTalentIntel/3.0 (RSS Reader)'
+            'User-Agent': 'RebelTalentIntel/4.0 (RSS Reader)'
         })
         resp.raise_for_status()
         feed = feedparser.parse(resp.text)
@@ -269,7 +268,6 @@ def is_funding_article(item):
     """Determine if an RSS item is about an actual funding event."""
     title = item.get("title", "").lower()
 
-    # Strong funding signals in the headline
     funding_verbs = [
         r'\braises?\b', r'\blands?\b', r'\bcloses?\b', r'\bsecures?\b',
         r'\bnabs?\b', r'\bgets?\b.*funding', r'\bnets?\b',
@@ -279,7 +277,6 @@ def is_funding_article(item):
 
     headline_match = any(re.search(p, title) for p in funding_verbs)
 
-    # Anti-patterns: opinion pieces, listicles, analysis, layoffs
     noise_patterns = [
         r'^how\s+', r'^why\s+', r'^what\s+', r'^will\s+',
         r'^the\s+(?:future|rise|fall|state|best|top|worst)',
@@ -336,7 +333,6 @@ def extract_company_from_headline(headline):
         m = re.search(pattern, headline, re.IGNORECASE)
         if m:
             name = m.group(1).strip()
-            # Remove trailing source attributions
             name = re.sub(r'\s*[-\u2013\u2014]\s*.*$', '', name)
             if len(name) <= 50:
                 return name
@@ -357,7 +353,7 @@ def deduplicate(items, key_field, threshold=25):
     return unique
 
 
-# ─── DATA PULL FUNCTIONS ─────────────────────────────────────────────────────
+# ─── ORIGINAL DATA PULL FUNCTIONS ────────────────────────────────────────────
 
 def pull_funding_signals():
     """Pull and filter funding signals from RSS feeds."""
@@ -568,9 +564,496 @@ def pull_news_headlines():
     return headlines[:10]
 
 
+# ─── NEW v4.0 DATA SOURCES ──────────────────────────────────────────────────
+
+def pull_yc_companies():
+    """Pull recent YC batch companies for cross-referencing."""
+    print("-> Pulling Y Combinator batch data...")
+    results = []
+    batches = ["s2025", "w2025", "s2024"]
+
+    for batch in batches:
+        url = f"https://yc-oss.github.io/api/batches/{batch}.json"
+        try:
+            resp = requests.get(url, timeout=12, headers={
+                'User-Agent': 'RebelTalentIntel/4.0'
+            })
+            if not resp.ok:
+                print(f"  [WARN] YC batch {batch} returned {resp.status_code}")
+                continue
+            companies = resp.json()
+            for co in companies:
+                name = co.get("name", "")
+                if not name or is_large_company(name.lower()):
+                    continue
+                status = (co.get("status") or "").lower()
+                if status in ("inactive", "acquired", "dead"):
+                    continue
+                results.append({
+                    "name": name,
+                    "batch": co.get("batch", batch).upper(),
+                    "description": (co.get("one_liner") or co.get("long_description") or "")[:200],
+                    "url": co.get("url", ""),
+                    "industries": co.get("tags") or co.get("industries") or [],
+                    "status": status or "active",
+                })
+        except Exception as e:
+            print(f"  [WARN] YC batch {batch} failed: {e}")
+
+    print(f"  {len(results)} YC companies loaded")
+    return results
+
+
+def pull_hn_hiring():
+    """Pull hiring signals from Hacker News 'Who is Hiring' threads."""
+    print("-> Pulling Hacker News hiring threads...")
+    results = []
+
+    try:
+        # Find the most recent "Who is Hiring" thread via Algolia
+        search_url = "https://hn.algolia.com/api/v1/search_by_date"
+        params = {
+            "query": "Ask HN: Who is hiring",
+            "tags": "story,author_whoishiring",
+            "hitsPerPage": 1,
+        }
+        resp = requests.get(search_url, params=params, timeout=12)
+        resp.raise_for_status()
+        hits = resp.json().get("hits", [])
+        if not hits:
+            print("  [WARN] No HN hiring thread found")
+            return []
+
+        thread_id = hits[0]["objectID"]
+        thread_title = hits[0].get("title", "")
+        print(f"  Found thread: {thread_title}")
+
+        # Fetch top-level comments (each is a company posting)
+        items_url = f"https://hn.algolia.com/api/v1/items/{thread_id}"
+        resp2 = requests.get(items_url, timeout=15)
+        resp2.raise_for_status()
+        thread = resp2.json()
+
+        for child in (thread.get("children") or [])[:80]:
+            text = child.get("text", "") or ""
+            # Strip HTML
+            clean = re.sub(r"<[^>]+>", " ", text)
+            clean = re.sub(r"\s+", " ", clean).strip()
+
+            if not clean or len(clean) < 30:
+                continue
+
+            # Company name is usually first part before "|"
+            first_line = clean.split("|")[0].strip() if "|" in clean else clean[:60]
+            company = first_line.strip()[:80]
+
+            # Detect remote
+            is_remote = any(kw in clean.lower() for kw in [
+                "remote", "fully remote", "remote ok", "remote-friendly"
+            ])
+
+            # Detect location
+            location = ""
+            loc_match = re.search(
+                r'(?:located?\s+in|based\s+in|offices?\s+in)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)',
+                clean
+            )
+            if loc_match:
+                location = loc_match.group(1)
+
+            # Extract roles mentioned
+            role_keywords = re.findall(
+                r'(?:hiring|looking for|seeking)\s+(?:a\s+)?([^,.]+)',
+                clean.lower()
+            )
+
+            # Apply filters
+            if is_non_us(clean.lower()) and not is_remote:
+                continue
+            if is_large_company(clean.lower()):
+                continue
+
+            results.append({
+                "company": company,
+                "location": location,
+                "remote": is_remote,
+                "roles": [r.strip()[:60] for r in role_keywords[:3]],
+                "text": clean[:300],
+            })
+    except Exception as e:
+        print(f"  [WARN] HN hiring pull failed: {e}")
+
+    print(f"  {len(results)} HN hiring signals found")
+    return results[:30]
+
+
+def pull_github_trending():
+    """Pull trending GitHub repos and map to companies/orgs."""
+    print("-> Pulling GitHub trending repos...")
+    results = []
+    try:
+        resp = requests.get(
+            "https://github.com/trending?since=daily",
+            timeout=12,
+            headers={'User-Agent': 'RebelTalentIntel/4.0'}
+        )
+        resp.raise_for_status()
+        html = resp.text
+
+        # Parse repo entries from trending page HTML
+        repo_pattern = r'<h2[^>]*>\s*<a[^>]*href="(/[^"]+)"[^>]*>'
+        desc_pattern = r'<p class="col-9[^"]*">(.*?)</p>'
+        lang_pattern = r'itemprop="programmingLanguage">([^<]+)</span>'
+        star_pattern = r'(\d[\d,]*)\s*stars?\s*today'
+
+        repos = re.findall(repo_pattern, html)
+        descriptions = re.findall(desc_pattern, html, re.DOTALL)
+        languages = re.findall(lang_pattern, html)
+        stars_today = re.findall(star_pattern, html)
+
+        for i, repo_path in enumerate(repos[:25]):
+            parts = repo_path.strip("/").split("/")
+            if len(parts) != 2:
+                continue
+            owner, repo_name = parts
+
+            desc = ""
+            if i < len(descriptions):
+                desc = re.sub(r"<[^>]+>", "", descriptions[i]).strip()[:200]
+
+            lang = languages[i] if i < len(languages) else ""
+            stars = stars_today[i].replace(",", "") if i < len(stars_today) else "0"
+
+            if is_large_company(owner.lower()):
+                continue
+
+            results.append({
+                "repo": repo_name,
+                "owner": owner,
+                "stars_today": int(stars) if stars.isdigit() else 0,
+                "language": lang.strip(),
+                "description": desc,
+                "url": f"https://github.com{repo_path}",
+            })
+    except Exception as e:
+        print(f"  [WARN] GitHub trending failed: {e}")
+
+    print(f"  {len(results)} trending repos found")
+    return results[:15]
+
+
+def pull_sec_edgar():
+    """Pull recent Form D filings (Regulation D private placements) from SEC EDGAR."""
+    print("-> Pulling SEC EDGAR Form D filings...")
+    results = []
+
+    today = datetime.date.today()
+    start = today - datetime.timedelta(days=3)
+
+    search_queries = ['"series a"', '"series b"', '"series c" technology']
+
+    for query in search_queries:
+        try:
+            url = "https://efts.sec.gov/LATEST/search-index"
+            params = {
+                "q": query,
+                "dateRange": "custom",
+                "startdt": start.strftime("%Y-%m-%d"),
+                "enddt": today.strftime("%Y-%m-%d"),
+                "forms": "D",
+            }
+            resp = requests.get(url, params=params, timeout=12, headers={
+                'User-Agent': 'RebelTalentIntel/4.0 rebel-talent@pm.me',
+                'Accept': 'application/json',
+            })
+            if not resp.ok:
+                # Try EDGAR full-text search API as fallback
+                alt_url = f"https://efts.sec.gov/LATEST/search-index?q={query}&forms=D"
+                try:
+                    resp = requests.get(alt_url, timeout=12, headers={
+                        'User-Agent': 'RebelTalentIntel/4.0 rebel-talent@pm.me',
+                    })
+                except Exception:
+                    continue
+                if not resp.ok:
+                    continue
+
+            data = resp.json()
+            for hit in data.get("hits", {}).get("hits", [])[:15]:
+                source = hit.get("_source", {})
+                company = source.get("entity_name", "") or ""
+                if isinstance(source.get("display_names"), list) and source["display_names"]:
+                    company = source["display_names"][0]
+
+                if not company or is_large_company(company.lower()):
+                    continue
+
+                filing_text = json.dumps(source).lower()
+                is_tech = any(kw in filing_text for kw in [
+                    "software", "saas", "technology", "ai", "machine learning",
+                    "platform", "data", "cloud", "cyber", "digital",
+                ])
+
+                if not is_tech:
+                    continue
+
+                results.append({
+                    "company": company[:80],
+                    "filing_date": source.get("file_date", ""),
+                    "form_type": "Form D",
+                    "description": source.get("display_description", "")[:200],
+                    "link": f"https://www.sec.gov/cgi-bin/browse-edgar?company={company}&CIK=&type=D&owner=include&count=10&action=getcompany",
+                })
+        except Exception as e:
+            print(f"  [WARN] SEC EDGAR query failed: {e}")
+
+    results = deduplicate(results, "company")
+    print(f"  {len(results)} SEC Form D filings found")
+    return results[:10]
+
+
+def pull_producthunt():
+    """Pull recent ProductHunt launches as growth signals."""
+    print("-> Pulling ProductHunt launches...")
+    results = []
+    try:
+        items = fetch_feed("https://www.producthunt.com/feed", max_items=20)
+
+        for item in items:
+            title = item.get("title", "")
+            summary = item.get("summary", "")
+            link = item.get("link", "")
+
+            if is_large_company(item["text"]):
+                continue
+
+            # Product name is usually before " - " or " -- "
+            product = re.split(r'\s*[-\u2013\u2014]\s*', title)[0].strip()
+
+            results.append({
+                "product": product[:80],
+                "tagline": summary[:200],
+                "link": link,
+                "source": "producthunt.com",
+            })
+    except Exception as e:
+        print(f"  [WARN] ProductHunt pull failed: {e}")
+
+    print(f"  {len(results)} ProductHunt launches found")
+    return results[:10]
+
+
+# ─── CROSS-REFERENCE ENGINE ─────────────────────────────────────────────────
+
+def build_cross_references(funded, yc_companies, hn_hiring, github_trending,
+                            sec_filings, ph_launches):
+    """Cross-reference companies across all data sources to identify high-conviction signals."""
+    print("-> Building cross-references...")
+
+    company_sources = {}  # normalized_name -> {name, sources set, details}
+
+    def normalize(name):
+        return re.sub(r'[^a-z0-9]', '', name.lower().strip())
+
+    # RSS funded companies
+    for item in funded:
+        key = normalize(item.get("name", ""))
+        if key and len(key) > 2:
+            company_sources.setdefault(key, {"name": item["name"], "sources": set(), "details": {}})
+            company_sources[key]["sources"].add("rss_funding")
+            company_sources[key]["details"]["funding"] = item.get("amount", "")
+
+    # YC companies
+    for item in yc_companies:
+        key = normalize(item.get("name", ""))
+        if key and len(key) > 2:
+            company_sources.setdefault(key, {"name": item["name"], "sources": set(), "details": {}})
+            company_sources[key]["sources"].add("yc")
+            company_sources[key]["details"]["yc_batch"] = item.get("batch", "")
+
+    # HN hiring
+    for item in hn_hiring:
+        raw = item.get("company", "").split("|")[0].strip()
+        key = normalize(raw)
+        if key and len(key) > 2:
+            company_sources.setdefault(key, {"name": raw, "sources": set(), "details": {}})
+            company_sources[key]["sources"].add("hn_hiring")
+
+    # GitHub trending (owner = org name)
+    for item in github_trending:
+        key = normalize(item.get("owner", ""))
+        if key and len(key) > 2:
+            company_sources.setdefault(key, {"name": item["owner"], "sources": set(), "details": {}})
+            company_sources[key]["sources"].add("github")
+            company_sources[key]["details"]["trending_repo"] = item.get("repo", "")
+
+    # SEC Form D
+    for item in sec_filings:
+        key = normalize(item.get("company", ""))
+        if key and len(key) > 2:
+            company_sources.setdefault(key, {"name": item["company"], "sources": set(), "details": {}})
+            company_sources[key]["sources"].add("sec_edgar")
+
+    # ProductHunt
+    for item in ph_launches:
+        key = normalize(item.get("product", ""))
+        if key and len(key) > 2:
+            company_sources.setdefault(key, {"name": item["product"], "sources": set(), "details": {}})
+            company_sources[key]["sources"].add("producthunt")
+
+    # Filter to companies appearing in 2+ sources
+    cross_refs = []
+    for key, info in company_sources.items():
+        if len(info["sources"]) >= 2:
+            cross_refs.append({
+                "company": info["name"],
+                "sources": sorted(list(info["sources"])),
+                "source_count": len(info["sources"]),
+                "details": {k: v for k, v in info["details"].items() if v},
+            })
+
+    cross_refs.sort(key=lambda x: x["source_count"], reverse=True)
+    print(f"  {len(cross_refs)} companies appear in 2+ sources")
+    return cross_refs[:15]
+
+
+def enrich_funded_with_yc(funded, yc_companies):
+    """Annotate funded companies that are also YC companies."""
+    yc_lookup = {}
+    for co in yc_companies:
+        yc_lookup[co["name"].lower()] = co
+
+    for item in funded:
+        name = item["name"].lower()
+        if name in yc_lookup:
+            item["yc_batch"] = yc_lookup[name].get("batch", "")
+            item["yc_match"] = True
+            item["score"] = item.get("score", 0) + 2
+    return funded
+
+
+# ─── ANALYTICS BUILDERS ─────────────────────────────────────────────────────
+
+def build_source_stats(funded, hiring, execs, sam_signals,
+                        yc_companies, hn_hiring, github_trending,
+                        sec_filings, ph_launches):
+    """Count signals from each data source."""
+    return {
+        "rss_funding": len(funded),
+        "rss_hiring": len(hiring),
+        "rss_execs": len(execs),
+        "sam_gov": len(sam_signals),
+        "yc": len(yc_companies),
+        "hn_hiring": len(hn_hiring),
+        "github": len(github_trending),
+        "sec_edgar": len(sec_filings),
+        "producthunt": len(ph_launches),
+    }
+
+
+def build_stage_breakdown(funded, intel):
+    """Count funding signals by stage."""
+    breakdown = {}
+    for item in funded:
+        stage = item.get("stage", "Unknown")
+        if stage:
+            breakdown[stage] = breakdown.get(stage, 0) + 1
+    for item in intel.get("new_money", []):
+        stage = item.get("stage", "Unknown")
+        if stage and stage not in breakdown:
+            breakdown[stage] = breakdown.get(stage, 0) + 1
+    return breakdown
+
+
+def build_sector_breakdown(funded, yc_companies):
+    """Count signals by sector/industry."""
+    breakdown = {}
+    for item in funded:
+        sector = item.get("sector", "")
+        if sector:
+            breakdown[sector] = breakdown.get(sector, 0) + 1
+    for item in yc_companies:
+        for industry in (item.get("industries") or [])[:2]:
+            if industry:
+                breakdown[industry] = breakdown.get(industry, 0) + 1
+    # Only return top 10 sectors
+    sorted_sectors = sorted(breakdown.items(), key=lambda x: x[1], reverse=True)
+    return dict(sorted_sectors[:10])
+
+
+# ─── MATPLOTLIB CHART GENERATION ────────────────────────────────────────────
+
+def generate_pdf_charts(data):
+    """Generate static chart images for the PDF using matplotlib."""
+    try:
+        import matplotlib
+        matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
+
+        bg_color = '#050d1b'
+        text_color = '#6a7a8a'
+        colors = ['#00ffd5', '#ffa500', '#ff006e', '#b47cff', '#00ff41', '#ff3366']
+
+        charts_generated = []
+
+        # 1. Stage breakdown donut
+        stages = data.get("stage_breakdown", {})
+        if stages:
+            fig, ax = plt.subplots(figsize=(3.5, 2.5), facecolor=bg_color)
+            ax.set_facecolor(bg_color)
+            wedges, texts, autotexts = ax.pie(
+                stages.values(), labels=stages.keys(),
+                colors=colors[:len(stages)],
+                autopct='%1.0f%%', pctdistance=0.75,
+                wedgeprops={'width': 0.45, 'edgecolor': bg_color, 'linewidth': 1},
+            )
+            for t in texts + autotexts:
+                t.set_color(text_color)
+                t.set_fontsize(7)
+            ax.set_title('FUNDING BY STAGE', color=text_color, fontsize=8,
+                         fontfamily='monospace', pad=10)
+            fig.savefig('docs/chart_stage.png', dpi=150, bbox_inches='tight',
+                       facecolor=bg_color, transparent=False)
+            plt.close(fig)
+            charts_generated.append('chart_stage.png')
+
+        # 2. Source coverage bar chart
+        stats = data.get("source_stats", {})
+        active_stats = {k: v for k, v in stats.items() if v > 0}
+        if active_stats:
+            fig, ax = plt.subplots(figsize=(3.5, 2.5), facecolor=bg_color)
+            ax.set_facecolor(bg_color)
+            labels = [k.replace('_', ' ').upper() for k in active_stats.keys()]
+            values = list(active_stats.values())
+            bar_colors = ['#00ffd5' if v > 5 else '#ffa500' if v > 2 else '#ff006e' for v in values]
+            bars = ax.barh(labels, values, color=bar_colors, height=0.6)
+            ax.tick_params(colors=text_color, labelsize=6)
+            ax.set_title('DATA SOURCE COVERAGE', color=text_color, fontsize=8,
+                         fontfamily='monospace', pad=10)
+            for spine in ax.spines.values():
+                spine.set_color('#1a2440')
+            for bar in bars:
+                ax.text(bar.get_width() + 0.3, bar.get_y() + bar.get_height() / 2,
+                       f'{int(bar.get_width())}', va='center', color=text_color, fontsize=7)
+            fig.savefig('docs/chart_sources.png', dpi=150, bbox_inches='tight',
+                       facecolor=bg_color, transparent=False)
+            plt.close(fig)
+            charts_generated.append('chart_sources.png')
+
+        print(f"  {len(charts_generated)} PDF charts generated")
+        return charts_generated
+    except ImportError:
+        print("  [WARN] matplotlib not available - skipping PDF charts")
+        return []
+    except Exception as e:
+        print(f"  [WARN] Chart generation failed: {e}")
+        return []
+
+
 # ─── GROQ SYNTHESIS ──────────────────────────────────────────────────────────
 
-def synthesize_with_groq(funded, hiring, execs, headlines, sam_signals=None):
+def synthesize_with_groq(funded, hiring, execs, headlines, sam_signals=None,
+                          yc_companies=None, cross_references=None):
     """Call Groq AI to synthesize raw data into actionable intelligence."""
     print("-> Calling Groq for synthesis (llama-3.3-70b)...")
 
@@ -578,12 +1061,18 @@ def synthesize_with_groq(funded, hiring, execs, headlines, sam_signals=None):
         print("  [WARN] No GROQ_API_KEY - using fallback data")
         return fallback_data(funded, hiring, execs)
 
+    # Count total sources for the prompt
+    total_sources = sum(1 for x in [funded, hiring, execs, sam_signals,
+                                     yc_companies, cross_references] if x)
+
     context = json.dumps({
         "funded_companies": funded[:10],
         "hiring_signals": hiring[:8],
         "exec_moves": execs[:6],
         "sam_sbir_signals": (sam_signals or [])[:5],
         "news_headlines": headlines[:8],
+        "yc_batch_companies": (yc_companies or [])[:10],
+        "cross_references": (cross_references or [])[:5],
     }, indent=2)
 
     system_prompt = """You are the BD Oracle for Richie Lampani at Rebel Talent Systems.
@@ -613,6 +1102,7 @@ CRITICAL RULES - FOLLOW EXACTLY:
 5. For "why_now" - explain the specific trigger (just raised Series A, no talent lead, etc.)
 6. If data is thin, say so honestly - do not pad with generic advice
 7. Return ONLY valid JSON - no markdown, no code fences, no commentary
+8. If a company appears in cross_references (multiple data sources), flag it as HIGH CONVICTION and prioritize it
 
 WHAT MAKES A REAL OPPORTUNITY:
 - Series A or B in SaaS/B2B - hiring 10-30 people, no people function yet
@@ -620,6 +1110,8 @@ WHAT MAKES A REAL OPPORTUNITY:
 - New CPO/CHRO at startup under 150 employees - they need infra
 - GovTech company won a gov contract - headcount expansion signal
 - Company posting for Head of Talent/VP People with no one in seat
+- YC batch company that just raised - peak hiring velocity window
+- Company appearing in multiple data sources - high conviction signal
 
 Return ONLY valid JSON:
 {
@@ -633,7 +1125,11 @@ Return ONLY valid JSON:
   "competitive": ["string - competitive intel, 1-2 items"]
 }"""
 
-    user_prompt = f"Today is {TODAY}. Here is today's raw intelligence data:\n\n{context}\n\nSynthesize into actionable BD intelligence. Return ONLY valid JSON."
+    user_prompt = f"""Today is {TODAY}. Here is today's raw intelligence from {total_sources} data sources (RSS, SAM.gov, Y Combinator, Hacker News, GitHub, SEC EDGAR, ProductHunt):
+
+{context}
+
+Synthesize into actionable BD intelligence. Prioritize companies that appear in cross_references. Return ONLY valid JSON."""
 
     for attempt in range(3):
         try:
@@ -738,11 +1234,15 @@ def stage_to_arr(stage):
     return mapping.get(stage, "Early stage")
 
 
-def build_data_json(intel, funded, hiring, execs, competitors, sam_signals=None):
+def build_data_json(intel, funded, hiring, execs, competitors, sam_signals=None,
+                     yc_companies=None, hn_hiring=None, github_trending=None,
+                     sec_filings=None, ph_launches=None, cross_references=None,
+                     source_stats=None, stage_breakdown=None, sector_breakdown=None):
     """Build data.json for the GitHub Pages dashboard."""
     return {
         "generated": TODAY,
         "generated_slug": TODAY_SLUG,
+        # Synthesized intel
         "moves_today": intel.get("moves_today", []),
         "top_3": intel.get("top_3", []),
         "new_money": intel.get("new_money", []),
@@ -751,11 +1251,24 @@ def build_data_json(intel, funded, hiring, execs, competitors, sam_signals=None)
         "defense_signals": intel.get("defense_signals", []),
         "vehicles": intel.get("vehicles", []),
         "competitive": intel.get("competitive", []),
+        # Raw data
         "raw_funded": funded,
         "raw_hiring": hiring,
         "raw_execs": execs,
         "raw_competitors": competitors,
         "raw_sam": sam_signals or [],
+        # v4.0 new data sources
+        "yc_companies": yc_companies or [],
+        "hn_hiring": hn_hiring or [],
+        "github_trending": github_trending or [],
+        "sec_filings": sec_filings or [],
+        "ph_launches": ph_launches or [],
+        # v4.0 analytics
+        "cross_references": cross_references or [],
+        "source_stats": source_stats or {},
+        "stage_breakdown": stage_breakdown or {},
+        "sector_breakdown": sector_breakdown or {},
+        # Meta
         "pdf_url": "daily_brief.pdf",
     }
 
@@ -800,7 +1313,7 @@ def export_hubspot_csv(funded, intel):
     print(f"  HubSpot CSV written: {path} ({len(rows)} rows)")
 
 
-def generate_pdf(data, intel):
+def generate_pdf(data, intel, charts=None):
     """Render Jinja2 template and generate PDF via WeasyPrint."""
     env = Environment(loader=FileSystemLoader("templates"))
     template = env.get_template("report.html")
@@ -808,6 +1321,7 @@ def generate_pdf(data, intel):
         today=TODAY,
         data=data,
         intel=intel,
+        charts=charts or [],
     )
     out_path = "docs/daily_brief.pdf"
     WeasyHTML(string=html_content, base_url=".").write_pdf(out_path)
@@ -818,12 +1332,13 @@ def generate_pdf(data, intel):
 
 def main():
     print(f"\n{'='*60}")
-    print(f"REBEL TALENT SYSTEMS - Daily Intel Brief v3.0")
+    print(f"REBEL TALENT SYSTEMS - Daily Intel Brief v4.0")
     print(f"  {TODAY}")
     print(f"{'='*60}\n")
 
     os.makedirs("docs", exist_ok=True)
 
+    # ── EXISTING SOURCES ──
     funded = pull_funding_signals()
     hiring = pull_hiring_signals()
     execs = pull_exec_moves()
@@ -831,9 +1346,39 @@ def main():
     headlines = pull_news_headlines()
     sam_signals = pull_sam_gov()
 
-    intel = synthesize_with_groq(funded, hiring, execs, headlines, sam_signals)
+    # ── NEW v4.0 SOURCES ──
+    yc_companies = pull_yc_companies()
+    hn_hiring = pull_hn_hiring()
+    github_trending = pull_github_trending()
+    sec_filings = pull_sec_edgar()
+    ph_launches = pull_producthunt()
 
-    data = build_data_json(intel, funded, hiring, execs, competitors, sam_signals)
+    # ── CROSS-REFERENCE ENGINE ──
+    cross_references = build_cross_references(
+        funded, yc_companies, hn_hiring, github_trending, sec_filings, ph_launches
+    )
+
+    # ── YC ENRICHMENT ──
+    funded = enrich_funded_with_yc(funded, yc_companies)
+
+    # ── GROQ SYNTHESIS ──
+    intel = synthesize_with_groq(funded, hiring, execs, headlines, sam_signals,
+                                  yc_companies, cross_references)
+
+    # ── ANALYTICS ──
+    source_stats = build_source_stats(funded, hiring, execs, sam_signals,
+                                       yc_companies, hn_hiring, github_trending,
+                                       sec_filings, ph_launches)
+    stage_breakdown = build_stage_breakdown(funded, intel)
+    sector_breakdown = build_sector_breakdown(funded, yc_companies)
+
+    # ── BUILD DATA ──
+    data = build_data_json(
+        intel, funded, hiring, execs, competitors, sam_signals,
+        yc_companies, hn_hiring, github_trending,
+        sec_filings, ph_launches, cross_references,
+        source_stats, stage_breakdown, sector_breakdown,
+    )
 
     json_path = "docs/data.json"
     with open(json_path, "w") as f:
@@ -842,14 +1387,28 @@ def main():
 
     export_hubspot_csv(funded, intel)
 
+    # ── PDF CHARTS + GENERATION ──
+    charts = []
     try:
-        generate_pdf(data, intel)
+        charts = generate_pdf_charts(data)
+    except Exception as e:
+        print(f"  [WARN] Chart generation failed: {e}")
+
+    try:
+        generate_pdf(data, intel, charts)
     except Exception as e:
         print(f"  [WARN] PDF generation failed: {e}")
 
+    # ── SUMMARY ──
+    total_signals = sum(source_stats.values())
+    active_sources = sum(1 for v in source_stats.values() if v > 0)
+
     print(f"\n{'='*60}")
     print(f"  Brief complete - {TODAY}")
+    print(f"  {active_sources} active sources | {total_signals} total signals")
     print(f"  Funded: {len(funded)} | Hiring: {len(hiring)} | Execs: {len(execs)} | SBIR: {len(sam_signals)}")
+    print(f"  YC: {len(yc_companies)} | HN: {len(hn_hiring)} | GitHub: {len(github_trending)} | SEC: {len(sec_filings)} | PH: {len(ph_launches)}")
+    print(f"  Cross-referenced: {len(cross_references)} companies in 2+ sources")
     print(f"{'='*60}\n")
 
 

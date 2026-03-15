@@ -7,88 +7,128 @@
 <title>REBEL TALENT — DAILY BRIEF</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.plot.ly/plotly-2.35.0.min.js" charset="utf-8"></script>
 <style>
 :root {
-  --bg:#04090f; --surface:#070e18; --surface2:#0a1520; --border:#0f2030;
-  --teal:#7CCBC3; --teal-dim:#3a7c78; --gold:#E2C46B; --gold-dim:#7a6030;
-  --red:#e05c5c; --purple:#9b7fc9; --text:#b8ccd8; --muted:#384858;
+  --bg:#0a0a0f; --surface:#0d1117; --surface2:#131a24; --border:#1a2440;
+  --teal:#00ffd5; --teal-dim:#007a66; --gold:#ffa500; --gold-dim:#7a5000;
+  --neon-pink:#ff006e; --matrix-green:#00ff41; --red:#ff3366;
+  --purple:#b47cff; --text:#c0d0e0; --muted:#3a4858;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:clamp(13px,1vw,16px)}
 body{background:var(--bg);color:var(--text);font-family:'JetBrains Mono',monospace;min-height:100vh;overflow-x:hidden;cursor:crosshair}
-body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.07) 2px,rgba(0,0,0,.07) 4px);pointer-events:none;z-index:1000}
-body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(124,203,195,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(124,203,195,.02) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,213,.012) 2px,rgba(0,255,213,.012) 4px);pointer-events:none;z-index:1000}
+body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,213,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,213,.015) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+
+/* Boot */
 #boot{position:fixed;inset:0;background:var(--bg);z-index:9000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35rem;transition:opacity .4s}
 #boot.gone{opacity:0;pointer-events:none}
-.bl{font-size:.68rem;color:var(--teal);letter-spacing:.06em;opacity:0;animation:bf .1s forwards;width:400px;max-width:88vw}
+.bl{font-size:.68rem;color:var(--teal);letter-spacing:.06em;opacity:0;animation:bf .1s forwards;width:440px;max-width:88vw}
 .bl.ok::after{content:'  [OK]';color:var(--teal)}
 @keyframes bf{to{opacity:1}}
-nav{position:sticky;top:0;z-index:500;background:rgba(4,9,15,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem;height:48px;display:flex;align-items:center;justify-content:space-between;opacity:0;animation:fi .3s .9s forwards}
-.nav-logo{font-family:'Chakra Petch',sans-serif;font-size:.9rem;font-weight:700;color:var(--teal);letter-spacing:.15em}
+
+/* Nav */
+nav{position:sticky;top:0;z-index:500;background:rgba(10,10,15,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem;height:48px;display:flex;align-items:center;justify-content:space-between;opacity:0;animation:fi .3s 1.2s forwards}
+.nav-logo{font-family:'Chakra Petch',sans-serif;font-size:.9rem;font-weight:700;color:var(--teal);letter-spacing:.15em;text-shadow:0 0 12px rgba(0,255,213,.3)}
 .nav-logo span{color:var(--muted);font-size:.58rem;letter-spacing:.2em;margin-left:.75rem}
 .nav-r{display:flex;align-items:center;gap:1.5rem}
 .ndot{font-size:.58rem;letter-spacing:.12em;color:var(--muted)}
-.ndot::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--teal);margin-right:.4rem;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.15}}
+.ndot::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--matrix-green);margin-right:.4rem;box-shadow:0 0 6px var(--matrix-green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 6px var(--matrix-green)}50%{opacity:.15;box-shadow:none}}
 .ndate{font-size:.58rem;color:var(--gold);letter-spacing:.1em}
-.pdf-btn{font-family:'Chakra Petch',sans-serif;font-size:.58rem;letter-spacing:.15em;color:var(--teal);text-decoration:none;border:1px solid var(--teal-dim);padding:.35rem .75rem;transition:background .12s,border-color .12s}
-.pdf-btn:hover{background:rgba(124,203,195,.08);border-color:var(--teal)}
-.wrap{max-width:1280px;margin:0 auto;padding:0 2rem 4rem;position:relative;z-index:1;opacity:0;animation:fi .4s 1s forwards}
+.pdf-btn{font-family:'Chakra Petch',sans-serif;font-size:.58rem;letter-spacing:.15em;color:var(--teal);text-decoration:none;border:1px solid var(--teal-dim);padding:.35rem .75rem;transition:all .15s}
+.pdf-btn:hover{background:rgba(0,255,213,.08);border-color:var(--teal);box-shadow:0 0 12px rgba(0,255,213,.15)}
+
+/* Layout */
+.wrap{max-width:1280px;margin:0 auto;padding:0 2rem 4rem;position:relative;z-index:1;opacity:0;animation:fi .4s 1.3s forwards}
 .updated-ago{font-size:.5rem;color:var(--muted);letter-spacing:.1em;margin-left:.5rem}
 @keyframes fi{to{opacity:1}}
+
+/* Hero */
 .hero{padding:2.5rem 0 2rem;border-bottom:1px solid var(--border);display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap}
-.h-clf{font-size:.55rem;letter-spacing:.25em;color:var(--red);border:1px solid rgba(224,92,92,.4);display:inline-block;padding:.15rem .5rem;margin-bottom:.5rem;opacity:.8}
+.h-clf{font-size:.55rem;letter-spacing:.25em;color:var(--red);border:1px solid rgba(255,51,102,.4);display:inline-block;padding:.15rem .5rem;margin-bottom:.5rem;opacity:.8;text-shadow:0 0 4px rgba(255,51,102,.3)}
 .h-title{font-family:'Chakra Petch',sans-serif;font-size:clamp(2.2rem,5vw,4rem);font-weight:700;color:#fff;line-height:.95;letter-spacing:-.01em}
-.h-title .t{color:var(--teal)}
+.h-title .t{color:var(--teal);text-shadow:0 0 20px rgba(0,255,213,.25)}
 .h-sub{margin-top:.7rem;font-size:.6rem;color:var(--muted);letter-spacing:.12em}
 .h-stats{display:flex;gap:2rem;flex-wrap:wrap}
 .stat{text-align:right}
-.sv{font-family:'Chakra Petch',sans-serif;font-size:1.7rem;font-weight:600;color:var(--teal);line-height:1;display:block}
+.sv{font-family:'Chakra Petch',sans-serif;font-size:1.7rem;font-weight:600;color:var(--teal);line-height:1;display:block;font-variant-numeric:tabular-nums;text-shadow:0 0 8px rgba(0,255,213,.2)}
 .sl{font-size:.52rem;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;margin-top:.15rem}
-.sec{font-family:'Chakra Petch',sans-serif;font-size:.58rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);padding:2rem 0 .6rem;border-bottom:1px solid var(--border);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
-.sec::before{content:'';display:block;width:14px;height:1px;background:var(--teal)}
+
+/* Section headers with glitch effect */
+.sec{font-family:'Chakra Petch',sans-serif;font-size:.58rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);padding:2rem 0 .6rem;border-bottom:1px solid var(--border);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;position:relative}
+.sec::before{content:'';display:block;width:14px;height:1px;background:var(--teal);box-shadow:0 0 4px var(--teal)}
+.sec:hover{color:var(--teal);text-shadow:0 0 6px rgba(0,255,213,.3)}
+
+/* Cards with glow */
 .mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
-@media(max-width:700px){.mgrid,.pgrid{grid-template-columns:1fr}}
-.mc{background:var(--surface);padding:1.25rem;position:relative;overflow:hidden;transition:background .15s}
-.mc:hover{background:var(--surface2)}
-.mc::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:var(--gold)}
-.mc-num{font-family:'Chakra Petch',sans-serif;font-size:2.8rem;font-weight:700;color:rgba(15,32,48,.8);position:absolute;bottom:-.4rem;right:.5rem;line-height:1;user-select:none}
-.mc-tag{font-size:.52rem;letter-spacing:.2em;color:var(--gold);margin-bottom:.5rem}
+@media(max-width:700px){.mgrid,.pgrid,.chart-grid{grid-template-columns:1fr}}
+.mc{background:var(--surface);padding:1.25rem;position:relative;overflow:hidden;transition:all .2s;border:1px solid transparent}
+.mc:hover{background:var(--surface2);box-shadow:0 0 20px rgba(0,255,213,.08);border-color:rgba(0,255,213,.1)}
+.mc::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--gold),var(--neon-pink))}
+.mc-num{font-family:'Chakra Petch',sans-serif;font-size:2.8rem;font-weight:700;color:rgba(26,36,64,.6);position:absolute;bottom:-.4rem;right:.5rem;line-height:1;user-select:none}
+.mc-tag{font-size:.52rem;letter-spacing:.2em;color:var(--gold);margin-bottom:.5rem;text-shadow:0 0 4px rgba(255,165,0,.3)}
 .mc-txt{font-size:.76rem;line-height:1.6;position:relative;z-index:1}
+
+/* Target cards with pulse */
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
-.pc{background:var(--surface);border:1px solid var(--border);border-top:2px solid var(--teal);padding:1rem 1.1rem;transition:border-color .15s,transform .15s}
-.pc:hover{border-color:var(--teal);transform:translateY(-2px)}
+.pc{background:var(--surface);border:1px solid rgba(0,255,213,.15);border-top:2px solid var(--teal);padding:1rem 1.1rem;transition:all .2s;box-shadow:0 0 6px rgba(0,255,213,.04);animation:cardPulse 4s ease-in-out infinite}
+.pc:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:0 0 20px rgba(0,255,213,.12)}
+@keyframes cardPulse{0%,100%{box-shadow:0 0 6px rgba(0,255,213,.04)}50%{box-shadow:0 0 14px rgba(0,255,213,.1)}}
 .pc-idx{font-family:'Chakra Petch',sans-serif;font-size:.55rem;letter-spacing:.2em;color:var(--teal);margin-bottom:.4rem}
 .pc-txt{font-size:.73rem;line-height:1.6}
+
+/* Charts */
+.chart-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:2rem}
+.chart-card{background:var(--surface);border:1px solid var(--border);border-top:2px solid var(--teal);padding:1rem;box-shadow:0 0 10px rgba(0,255,213,.03);transition:box-shadow .2s}
+.chart-card:hover{box-shadow:0 0 16px rgba(0,255,213,.08)}
+.chart-title{font-family:'Chakra Petch',sans-serif;font-size:.55rem;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;margin-bottom:.75rem}
+
+/* Tabs */
 .tabrow{display:flex;border-bottom:1px solid var(--border);margin-bottom:1.25rem;overflow-x:auto;scrollbar-width:none}
 .tabrow::-webkit-scrollbar{display:none}
-.tb{font-family:'Chakra Petch',sans-serif;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:.55rem 1rem;background:none;border:none;color:var(--muted);cursor:crosshair;border-bottom:2px solid transparent;white-space:nowrap;margin-bottom:-1px;transition:color .12s,border-color .12s}
+.tb{font-family:'Chakra Petch',sans-serif;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:.55rem 1rem;background:none;border:none;color:var(--muted);cursor:crosshair;border-bottom:2px solid transparent;white-space:nowrap;margin-bottom:-1px;transition:all .12s}
 .tb:hover{color:var(--text)}
-.tb.on{color:var(--teal);border-bottom-color:var(--teal)}
+.tb.on{color:var(--teal);border-bottom-color:var(--teal);text-shadow:0 0 6px rgba(0,255,213,.2)}
 .pane{display:none}.pane.on{display:block}
+
+/* Filter */
 .frow{display:flex;gap:.75rem;margin-bottom:1rem;align-items:center;flex-wrap:wrap}
-.fi{background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:.67rem;padding:.42rem .8rem;outline:none;width:240px;transition:border-color .12s}
-.fi::placeholder{color:var(--muted)}.fi:focus{border-color:var(--teal)}
-.dlb{font-family:'Chakra Petch',sans-serif;font-size:.56rem;letter-spacing:.14em;padding:.42rem .85rem;background:transparent;border:1px solid var(--border);color:var(--muted);cursor:crosshair;text-decoration:none;transition:color .12s,border-color .12s}
-.dlb:hover{color:var(--gold);border-color:var(--gold)}
+.fi{background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:.67rem;padding:.42rem .8rem;outline:none;width:240px;transition:all .15s}
+.fi::placeholder{color:var(--muted)}.fi:focus{border-color:var(--teal);box-shadow:0 0 8px rgba(0,255,213,.1)}
+.dlb{font-family:'Chakra Petch',sans-serif;font-size:.56rem;letter-spacing:.14em;padding:.42rem .85rem;background:transparent;border:1px solid var(--border);color:var(--muted);cursor:crosshair;text-decoration:none;transition:all .12s}
+.dlb:hover{color:var(--gold);border-color:var(--gold);box-shadow:0 0 8px rgba(255,165,0,.1)}
+
+/* Table */
 .tw{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:.71rem}
 thead th{font-family:'Chakra Petch',sans-serif;font-size:.53rem;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;padding:.38rem .75rem;border-bottom:1px solid var(--border);text-align:left;white-space:nowrap}
-tbody td{padding:.58rem .75rem;border-bottom:1px solid rgba(15,32,48,.9);vertical-align:top;line-height:1.45;transition:background .1s}
+tbody td{padding:.58rem .75rem;border-bottom:1px solid rgba(26,36,64,.6);vertical-align:top;line-height:1.45;transition:background .1s}
 tbody tr:hover td{background:var(--surface)}
 .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.53rem;letter-spacing:.05em;padding:.13rem .38rem;white-space:nowrap}
-.tt{background:rgba(124,203,195,.07);color:var(--teal);border:1px solid rgba(124,203,195,.18)}
-.tg{background:rgba(226,196,107,.07);color:var(--gold);border:1px solid rgba(226,196,107,.18)}
-.tp{background:rgba(155,127,201,.07);color:var(--purple);border:1px solid rgba(155,127,201,.18)}
+.tt{background:rgba(0,255,213,.06);color:var(--teal);border:1px solid rgba(0,255,213,.18)}
+.tg{background:rgba(255,165,0,.06);color:var(--gold);border:1px solid rgba(255,165,0,.18)}
+.tp{background:rgba(180,124,255,.06);color:var(--purple);border:1px solid rgba(180,124,255,.18)}
+.tr{background:rgba(255,0,110,.06);color:var(--neon-pink);border:1px solid rgba(255,0,110,.18)}
 .nodata{text-align:center;padding:2.5rem;color:var(--muted);font-size:.6rem;letter-spacing:.2em}
+
+/* Signal list */
 .siglist{display:flex;flex-direction:column;gap:1px;background:var(--border);border:1px solid var(--border)}
-.si{background:var(--surface);padding:.8rem 1rem .8rem 1.2rem;font-size:.73rem;line-height:1.55;border-left:2px solid transparent;transition:background .1s,border-color .1s}
-.si:hover{background:var(--surface2)}
-.defnote{font-size:.61rem;color:var(--muted);letter-spacing:.07em;margin-bottom:1.25rem;padding:.55rem .85rem;border-left:2px solid var(--gold);background:rgba(226,196,107,.03)}
+.si{background:var(--surface);padding:.8rem 1rem .8rem 1.2rem;font-size:.73rem;line-height:1.55;border-left:2px solid transparent;transition:all .1s}
+.si:hover{background:var(--surface2);border-left-width:4px}
+.defnote{font-size:.61rem;color:var(--muted);letter-spacing:.07em;margin-bottom:1.25rem;padding:.55rem .85rem;border-left:2px solid var(--gold);background:rgba(255,165,0,.02)}
+
+/* Cross-ref badges */
+.xref-badge{display:inline-block;font-family:'Chakra Petch',sans-serif;font-size:.48rem;letter-spacing:.12em;padding:.12rem .4rem;background:rgba(255,0,110,.08);color:var(--neon-pink);border:1px solid rgba(255,0,110,.25);margin-left:.4rem;text-shadow:0 0 4px rgba(255,0,110,.3)}
+
+/* Loading */
 #loading{text-align:center;padding:5rem 2rem;font-size:.62rem;color:var(--muted);letter-spacing:.2em}
 .lbar{width:200px;height:2px;background:var(--border);margin:1rem auto 0;overflow:hidden}
-.lfill{height:100%;background:var(--teal);animation:ll 1.2s ease-out forwards}
+.lfill{height:100%;background:var(--teal);box-shadow:0 0 6px var(--teal);animation:ll 1.2s ease-out forwards}
 @keyframes ll{from{width:0}to{width:100%}}
+
+/* Footer */
 footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
 .ft{font-size:.55rem;color:var(--muted);letter-spacing:.1em;line-height:1.8}
 </style>
@@ -96,19 +136,24 @@ footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);dis
 <body>
 
 <div id="boot">
-  <div class="bl ok" style="animation-delay:.05s">REBEL TALENT SYSTEMS v3.0 — INITIALIZING</div>
-  <div class="bl ok" style="animation-delay:.2s">RSS FEEDS — CONNECTED</div>
-  <div class="bl ok" style="animation-delay:.35s">SAM.GOV SBIR — CONNECTED</div>
-  <div class="bl ok" style="animation-delay:.5s">GROQ SYNTHESIS (70B) — READY</div>
-  <div class="bl" style="animation-delay:.65s;color:var(--gold)">ACCESS GRANTED — INTERNAL USE ONLY</div>
+  <div class="bl ok" style="animation-delay:.05s">REBEL TALENT SYSTEMS v4.0 // INITIALIZING</div>
+  <div class="bl ok" style="animation-delay:.15s">RSS FEEDS [10] // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.25s">SAM.GOV SBIR // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.35s">Y COMBINATOR API // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.45s">HACKER NEWS // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.55s">GITHUB TRENDING // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.65s">SEC EDGAR // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.75s">PRODUCTHUNT // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.85s">GROQ SYNTHESIS (70B) // READY</div>
+  <div class="bl" style="animation-delay:.95s;color:var(--gold)">ACCESS GRANTED // INTERNAL USE ONLY</div>
 </div>
 
 <nav>
-  <div class="nav-logo">REBEL TALENT<span>// DAILY BRIEF</span></div>
+  <div class="nav-logo">REBEL TALENT<span>// DAILY BRIEF v4.0</span></div>
   <div class="nav-r">
     <span class="ndot">LIVE</span>
-    <span class="ndate" id="nav-date">—</span>
-    <a href="daily_brief.pdf" download class="pdf-btn">↓ PDF</a>
+    <span class="ndate" id="nav-date">&mdash;</span>
+    <a href="daily_brief.pdf" download class="pdf-btn">&darr; PDF</a>
   </div>
 </nav>
 
@@ -118,15 +163,26 @@ footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);dis
 
     <div class="hero">
       <div>
-        <div class="h-clf">// INTERNAL — NOT FOR DISTRIBUTION</div>
+        <div class="h-clf">// INTERNAL &mdash; NOT FOR DISTRIBUTION</div>
         <div class="h-title">DAILY<br><span class="t">BRIEF</span></div>
-        <div class="h-sub">Series A–C &nbsp;·&nbsp; SaaS &nbsp;·&nbsp; Defense Tech &nbsp;·&nbsp; GovTech &nbsp;·&nbsp; US Only</div>
+        <div class="h-sub">Series A&ndash;C &nbsp;&middot;&nbsp; SaaS &nbsp;&middot;&nbsp; Defense Tech &nbsp;&middot;&nbsp; GovTech &nbsp;&middot;&nbsp; US Only</div>
       </div>
       <div class="h-stats">
-        <div class="stat"><span class="sv" id="s-f">—</span><span class="sl">Funded</span></div>
-        <div class="stat"><span class="sv" id="s-s">—</span><span class="sl">Signals</span></div>
-        <div class="stat"><span class="sv" id="s-b">—</span><span class="sl">SBIR</span></div>
+        <div class="stat"><span class="sv" id="s-f">&mdash;</span><span class="sl">Funded</span></div>
+        <div class="stat"><span class="sv" id="s-s">&mdash;</span><span class="sl">Signals</span></div>
+        <div class="stat"><span class="sv" id="s-b">&mdash;</span><span class="sl">SBIR</span></div>
+        <div class="stat"><span class="sv" id="s-src">&mdash;</span><span class="sl">Sources</span></div>
+        <div class="stat"><span class="sv" id="s-xref">&mdash;</span><span class="sl">Cross-Ref</span></div>
       </div>
+    </div>
+
+    <!-- INTEL OVERVIEW CHARTS -->
+    <div class="sec">INTEL OVERVIEW // SIGNAL ANALYSIS</div>
+    <div class="chart-grid">
+      <div class="chart-card"><div class="chart-title">Funding by Stage</div><div id="chart-stage"></div></div>
+      <div class="chart-card"><div class="chart-title">Sector Heat Map</div><div id="chart-sector"></div></div>
+      <div class="chart-card"><div class="chart-title">Signal Radar</div><div id="chart-radar"></div></div>
+      <div class="chart-card"><div class="chart-title">Data Source Coverage</div><div id="chart-sources"></div></div>
     </div>
 
     <div class="sec">MISSION OBJECTIVES // TODAY</div>
@@ -141,6 +197,10 @@ footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);dis
       <button class="tb" onclick="tab('hiring',this)">Hiring Signals</button>
       <button class="tb" onclick="tab('execs',this)">Exec Moves</button>
       <button class="tb" onclick="tab('defense',this)">Defense / GovTech</button>
+      <button class="tb" onclick="tab('xref',this)">Cross-Refs</button>
+      <button class="tb" onclick="tab('yc',this)">YC Batch</button>
+      <button class="tb" onclick="tab('hn',this)">HN Hiring</button>
+      <button class="tb" onclick="tab('github',this)">GitHub</button>
       <button class="tb" onclick="tab('comp',this)">Competitive</button>
       <button class="tb" onclick="tab('vehicles',this)">Vehicles</button>
     </div>
@@ -148,7 +208,7 @@ footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);dis
     <div id="pane-funded" class="pane on">
       <div class="frow">
         <input class="fi" type="text" placeholder="// filter..." oninput="ftbl('tbl-f',this.value)">
-        <a href="hubspot_leads.csv" download class="dlb">↓ EXPORT CSV</a>
+        <a href="hubspot_leads.csv" download class="dlb">&darr; EXPORT CSV</a>
       </div>
       <div class="tw">
         <table id="tbl-f">
@@ -179,6 +239,34 @@ footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);dis
       </div>
     </div>
 
+    <div id="pane-xref" class="pane">
+      <div class="defnote">Companies appearing in 2+ data sources. Higher conviction = more sources confirming the signal.</div>
+      <div class="siglist" id="sl-xref"></div>
+    </div>
+
+    <div id="pane-yc" class="pane">
+      <div class="defnote">Recent Y Combinator batch companies. Sweet spot for Series A outreach 6-18 months post-batch.</div>
+      <div class="frow"><input class="fi" type="text" placeholder="// filter..." oninput="ftbl('tbl-yc',this.value)"></div>
+      <div class="tw"><table id="tbl-yc">
+        <thead><tr><th>Company</th><th>Batch</th><th>Industries</th><th>Description</th></tr></thead>
+        <tbody id="tb-yc"></tbody>
+      </table></div>
+    </div>
+
+    <div id="pane-hn" class="pane">
+      <div class="defnote">Hacker News "Who is Hiring" thread. Companies actively recruiting = warm outreach targets.</div>
+      <div class="frow"><input class="fi" type="text" placeholder="// filter..." oninput="fsig('sl-hn',this.value)"></div>
+      <div class="siglist" id="sl-hn"></div>
+    </div>
+
+    <div id="pane-github" class="pane">
+      <div class="defnote">GitHub trending repos. Trending open source = growing engineering team = hiring signal.</div>
+      <div class="tw"><table id="tbl-gh">
+        <thead><tr><th>Repo</th><th>Owner</th><th>Stars Today</th><th>Language</th><th>Description</th></tr></thead>
+        <tbody id="tb-gh"></tbody>
+      </table></div>
+    </div>
+
     <div id="pane-comp" class="pane"><div class="siglist" id="sl-c"></div></div>
     <div id="pane-vehicles" class="pane"><div class="siglist" id="sl-v"></div></div>
 
@@ -187,13 +275,13 @@ footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);dis
 
 <div class="wrap" style="padding-top:0">
   <footer>
-    <div class="ft">REBEL TALENT SYSTEMS · RICHIE LAMPANI<br>GITHUB ACTIONS · GROQ · RSS INTEL · SAM.GOV</div>
-    <div class="ft" style="text-align:right">NYC · CHI · ATL · MI · CO · REMOTE-US<br>SAAS · B2B · DEFENSE TECH · GOVTECH</div>
+    <div class="ft">REBEL TALENT SYSTEMS v4.0 &middot; RICHIE LAMPANI<br>GITHUB ACTIONS &middot; GROQ &middot; RSS &middot; SAM.GOV &middot; YC &middot; HN &middot; GITHUB &middot; SEC EDGAR &middot; PRODUCTHUNT</div>
+    <div class="ft" style="text-align:right">NYC &middot; CHI &middot; ATL &middot; MI &middot; CO &middot; REMOTE-US<br>SAAS &middot; B2B &middot; DEFENSE TECH &middot; GOVTECH</div>
   </footer>
 </div>
 
 <script>
-setTimeout(()=>{const b=document.getElementById('boot');b.classList.add('gone');setTimeout(()=>b.remove(),400)},900);
+setTimeout(()=>{const b=document.getElementById('boot');b.classList.add('gone');setTimeout(()=>b.remove(),400)},1200);
 
 async function load(){
   try{
@@ -205,52 +293,147 @@ async function load(){
   }
 }
 
+function animateCount(el,target){
+  if(!target||target<1){el.textContent=target||0;return;}
+  let current=0;const step=Math.max(1,Math.floor(target/15));
+  const iv=setInterval(()=>{current=Math.min(current+step,target);el.textContent=current;if(current>=target)clearInterval(iv);},50);
+}
+
 function render(d){
   document.getElementById('loading').style.display='none';
   document.getElementById('content').style.display='block';
-  const dateStr=d.generated||'—';
+  const dateStr=d.generated||'\u2014';
   document.getElementById('nav-date').textContent=dateStr;
-  // Show relative time
   try{
-    const briefDate=new Date(dateStr);
-    const now=new Date();
-    const diffMs=now-briefDate;
-    const diffHrs=Math.floor(diffMs/3600000);
-    const diffDays=Math.floor(diffMs/86400000);
+    const briefDate=new Date(dateStr);const now=new Date();
+    const diffMs=now-briefDate;const diffHrs=Math.floor(diffMs/3600000);const diffDays=Math.floor(diffMs/86400000);
     let ago='';
     if(diffDays>0)ago=diffDays===1?'1 day ago':diffDays+' days ago';
     else if(diffHrs>0)ago=diffHrs===1?'1 hour ago':diffHrs+' hours ago';
     else ago='just now';
     document.getElementById('nav-date').innerHTML=dateStr+'<span class="updated-ago">('+ago+')</span>';
   }catch{}
-  document.getElementById('s-f').textContent=d.new_money?.length||d.raw_funded?.length||0;
-  document.getElementById('s-s').textContent=(d.hiring_signals?.length||0)+(d.exec_moves?.length||0);
-  document.getElementById('s-b').textContent=d.raw_sam?.length||0;
 
+  // Hero stats with animation
+  const fundedCount=d.new_money?.length||d.raw_funded?.length||0;
+  const signalCount=(d.hiring_signals?.length||0)+(d.exec_moves?.length||0);
+  const sbirCount=d.raw_sam?.length||0;
+  const srcCount=Object.values(d.source_stats||{}).filter(v=>v>0).length;
+  const xrefCount=(d.cross_references||[]).length;
+  animateCount(document.getElementById('s-f'),fundedCount);
+  animateCount(document.getElementById('s-s'),signalCount);
+  animateCount(document.getElementById('s-b'),sbirCount);
+  animateCount(document.getElementById('s-src'),srcCount);
+  animateCount(document.getElementById('s-xref'),xrefCount);
+
+  // Mission objectives
   const mg=document.getElementById('moves');
   (d.moves_today||[]).slice(0,3).forEach((m,i)=>{
     mg.innerHTML+=`<div class="mc"><div class="mc-tag">OBJ ${p2(i+1)}</div><div class="mc-txt">${m}</div><div class="mc-num">${p2(i+1)}</div></div>`;
   });
 
+  // Top 3 targets
   const pg=document.getElementById('top3');
   (d.top_3||[]).slice(0,3).forEach((t,i)=>{
     pg.innerHTML+=`<div class="pc"><div class="pc-idx">// TARGET ${p2(i+1)}</div><div class="pc-txt">${t}</div></div>`;
   });
 
-  const items=d.new_money?.length?d.new_money:(d.raw_funded||[]).map(f=>({company:f.name,amount:f.amount,stage:f.stage,location:f.location||'',sector_tag:f.sector||'',why_now:'Funded — likely entering active hiring phase.'}));
+  // Funded table
+  const items=d.new_money?.length?d.new_money:(d.raw_funded||[]).map(f=>({company:f.name,amount:f.amount,stage:f.stage,location:f.location||'',sector_tag:f.sector||'',why_now:'Funded \u2014 likely entering active hiring phase.'}));
   const ftb=document.getElementById('tb-f');
-  if(items.length){items.forEach(item=>{const tr=document.createElement('tr');const geo=item.location?item.location.split(',')[0]:'';tr.innerHTML=`<td><strong style="color:#dde8f0">${item.company||'—'}</strong></td><td><span class="tag tg">${item.amount||'—'}</span></td><td><span class="tag tt">${item.stage||'—'}</span></td><td>${geo?`<span class="tag tp">${geo}</span>`:'<span style="color:var(--muted)">—</span>'}</td><td>${item.sector_tag?`<span class="tag tt">${item.sector_tag}</span>`:'<span style="color:var(--muted)">—</span>'}</td><td style="color:var(--muted);font-size:.66rem">${item.why_now||'—'}</td>`;ftb.appendChild(tr);});}
-  else{ftb.innerHTML='<tr><td colspan="6" class="nodata">// NO DATA</td></tr>';}
+  if(items.length){items.forEach(item=>{const tr=document.createElement('tr');const geo=item.location?item.location.split(',')[0]:'';tr.innerHTML=`<td><strong style="color:#dde8f0">${item.company||'\u2014'}</strong></td><td><span class="tag tg">${item.amount||'\u2014'}</span></td><td><span class="tag tt">${item.stage||'\u2014'}</span></td><td>${geo?`<span class="tag tp">${geo}</span>`:'<span style="color:var(--muted)">\u2014</span>'}</td><td>${item.sector_tag?`<span class="tag tt">${item.sector_tag}</span>`:'<span style="color:var(--muted)">\u2014</span>'}</td><td style="color:var(--muted);font-size:.66rem">${item.why_now||'\u2014'}</td>`;ftb.appendChild(tr);});}
+  else{ftb.innerHTML='<tr><td colspan="6" class="nodata">// NO FUNDED DATA</td></tr>';}
 
+  // Signal lists
   sigs('sl-h',d.hiring_signals||[],'var(--teal)');
   sigs('sl-e',d.exec_moves||[],'var(--purple)');
   sigs('sl-d',d.defense_signals||[],'var(--gold)');
   sigs('sl-c',d.competitive||[],'var(--red)');
   sigs('sl-v',d.vehicles||[],'var(--purple)');
 
+  // SAM.gov table
   const stb=document.getElementById('tb-s');
-  if(d.raw_sam?.length){d.raw_sam.forEach(item=>{const tr=document.createElement('tr');tr.innerHTML=`<td style="color:#dde8f0">${item.title||'—'}</td><td style="color:var(--muted);font-size:.65rem">${item.agency||'—'}</td><td><span class="tag ${item.type==='SBIR Phase II'?'tg':'tt'}">${item.type||'SBIR'}</span></td><td style="color:var(--muted);font-size:.65rem">${item.posted||'—'}</td>`;stb.appendChild(tr);});}
+  if(d.raw_sam?.length){d.raw_sam.forEach(item=>{const tr=document.createElement('tr');tr.innerHTML=`<td style="color:#dde8f0">${item.title||'\u2014'}</td><td style="color:var(--muted);font-size:.65rem">${item.agency||'\u2014'}</td><td><span class="tag ${item.type==='SBIR Phase II'?'tg':'tt'}">${item.type||'SBIR'}</span></td><td style="color:var(--muted);font-size:.65rem">${item.posted||'\u2014'}</td>`;stb.appendChild(tr);});}
   else{stb.innerHTML='<tr><td colspan="4" class="nodata">// NO SAM.GOV DATA</td></tr>';}
+
+  // Cross-references
+  const xrefEl=document.getElementById('sl-xref');
+  if((d.cross_references||[]).length){
+    d.cross_references.forEach(xr=>{
+      xrefEl.innerHTML+=`<div class="si" style="border-left-color:var(--neon-pink)"><strong style="color:#dde8f0">${xr.company}</strong><span class="xref-badge">${xr.source_count} SOURCES</span><br><span style="color:var(--muted);font-size:.62rem">${xr.sources.join(' + ')}</span>${xr.details?.funding?` <span class="tag tg">${xr.details.funding}</span>`:''} ${xr.details?.yc_batch?` <span class="tag tt">YC ${xr.details.yc_batch}</span>`:''}</div>`;
+    });
+  }else{xrefEl.innerHTML='<div class="si" style="color:var(--muted)">// NO CROSS-REFERENCES TODAY</div>';}
+
+  // YC companies table
+  const ycTb=document.getElementById('tb-yc');
+  if((d.yc_companies||[]).length){
+    (d.yc_companies).slice(0,25).forEach(co=>{
+      const tr=document.createElement('tr');
+      const indStr=(co.industries||[]).slice(0,3).join(', ');
+      tr.innerHTML=`<td><strong style="color:#dde8f0">${co.name}</strong>${co.url?` <a href="${co.url}" style="color:var(--teal);font-size:.6rem" target="_blank">\u2197</a>`:''}</td><td><span class="tag tg">${co.batch||'\u2014'}</span></td><td style="font-size:.62rem;color:var(--muted)">${indStr||'\u2014'}</td><td style="color:var(--muted);font-size:.62rem">${co.description||'\u2014'}</td>`;
+      ycTb.appendChild(tr);
+    });
+  }else{ycTb.innerHTML='<tr><td colspan="4" class="nodata">// NO YC DATA</td></tr>';}
+
+  // HN Hiring
+  const hnEl=document.getElementById('sl-hn');
+  if((d.hn_hiring||[]).length){
+    (d.hn_hiring).slice(0,20).forEach(h=>{
+      const remote=h.remote?'<span class="tag tt" style="margin-left:.3rem">REMOTE</span>':'';
+      const loc=h.location?`<span class="tag tp" style="margin-left:.3rem">${h.location}</span>`:'';
+      hnEl.innerHTML+=`<div class="si" style="border-left-color:var(--gold)"><strong style="color:#dde8f0">${h.company}</strong>${remote}${loc}<br><span style="color:var(--muted);font-size:.62rem">${(h.text||'').slice(0,200)}</span></div>`;
+    });
+  }else{hnEl.innerHTML='<div class="si" style="color:var(--muted)">// NO HN HIRING DATA</div>';}
+
+  // GitHub trending table
+  const ghTb=document.getElementById('tb-gh');
+  if((d.github_trending||[]).length){
+    (d.github_trending).slice(0,15).forEach(r=>{
+      const tr=document.createElement('tr');
+      tr.innerHTML=`<td><a href="${r.url}" style="color:var(--teal)" target="_blank">${r.repo}</a></td><td style="color:#dde8f0">${r.owner}</td><td><span class="tag tg">\u2605 ${r.stars_today}</span></td><td>${r.language?`<span class="tag tt">${r.language}</span>`:'<span style="color:var(--muted)">\u2014</span>'}</td><td style="color:var(--muted);font-size:.62rem">${r.description||'\u2014'}</td>`;
+      ghTb.appendChild(tr);
+    });
+  }else{ghTb.innerHTML='<tr><td colspan="5" class="nodata">// NO GITHUB DATA</td></tr>';}
+
+  // Render Plotly charts
+  renderCharts(d);
+}
+
+function renderCharts(d){
+  const plotConfig={displayModeBar:false,responsive:true};
+  const darkLayout={paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{family:'JetBrains Mono',color:'#5a6a7a',size:10},margin:{l:40,r:20,t:10,b:40}};
+
+  // 1. Funding by Stage - Donut
+  const stages=d.stage_breakdown||{};
+  const stageLabels=Object.keys(stages);
+  const stageValues=Object.values(stages);
+  if(stageLabels.length){
+    Plotly.newPlot('chart-stage',[{type:'pie',hole:0.55,labels:stageLabels,values:stageValues,marker:{colors:['#00ffd5','#ffa500','#ff006e','#b47cff','#00ff41','#ff3366']},textfont:{family:'JetBrains Mono',size:9},textinfo:'label+value',hoverinfo:'label+percent'}],{...darkLayout,height:260,showlegend:false},plotConfig);
+  }else{document.getElementById('chart-stage').innerHTML='<div class="nodata">// AWAITING DATA</div>';}
+
+  // 2. Sector Heat Map - Treemap
+  const sectors=d.sector_breakdown||{};
+  const secLabels=Object.keys(sectors);
+  const secValues=Object.values(sectors);
+  if(secLabels.length){
+    Plotly.newPlot('chart-sector',[{type:'treemap',labels:secLabels,parents:secLabels.map(()=>''),values:secValues,marker:{colors:secValues,colorscale:[[0,'#0d1117'],[0.5,'#007a66'],[1,'#00ffd5']]},textfont:{family:'JetBrains Mono',size:10},hoverinfo:'label+value'}],{...darkLayout,height:260},plotConfig);
+  }else{document.getElementById('chart-sector').innerHTML='<div class="nodata">// AWAITING DATA</div>';}
+
+  // 3. Signal Radar
+  const stats=d.source_stats||{};
+  const radarLabels=Object.keys(stats);
+  const radarValues=Object.values(stats);
+  if(radarLabels.length){
+    Plotly.newPlot('chart-radar',[{type:'scatterpolar',fill:'toself',r:radarValues,theta:radarLabels.map(l=>l.replace(/_/g,' ').toUpperCase()),marker:{color:'#00ffd5'},line:{color:'#00ffd5'},fillcolor:'rgba(0,255,213,0.08)'}],{...darkLayout,height:260,polar:{bgcolor:'rgba(0,0,0,0)',radialaxis:{visible:true,color:'#2a3a4a',gridcolor:'#1a2440'},angularaxis:{color:'#5a6a7a',gridcolor:'#1a2440'}}},plotConfig);
+  }else{document.getElementById('chart-radar').innerHTML='<div class="nodata">// AWAITING DATA</div>';}
+
+  // 4. Data Source Coverage - Bar
+  const activeStats={};
+  for(const[k,v]of Object.entries(stats)){if(v>0)activeStats[k]=v;}
+  if(Object.keys(activeStats).length){
+    const barColors=Object.values(activeStats).map(v=>v>5?'#00ffd5':v>2?'#ffa500':'#ff006e');
+    Plotly.newPlot('chart-sources',[{type:'bar',orientation:'h',x:Object.values(activeStats),y:Object.keys(activeStats).map(l=>l.replace(/_/g,' ').toUpperCase()),marker:{color:barColors},text:Object.values(activeStats).map(String),textposition:'outside',textfont:{family:'JetBrains Mono',size:9,color:'#5a6a7a'}}],{...darkLayout,height:260,xaxis:{gridcolor:'#1a2440',zeroline:false},yaxis:{automargin:true}},plotConfig);
+  }else{document.getElementById('chart-sources').innerHTML='<div class="nodata">// AWAITING DATA</div>';}
 }
 
 function sigs(id,items,color){const el=document.getElementById(id);if(!items.length){el.innerHTML=`<div class="si" style="color:var(--muted)">// NO SIGNALS</div>`;return;}items.forEach(s=>el.innerHTML+=`<div class="si" style="border-left-color:${color}">${s}</div>`);}
