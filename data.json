@@ -2,14 +2,14 @@
   "generated": "March 15, 2026",
   "generated_slug": "2026-03-15",
   "moves_today": [
-    "Reach out to Rebar, a SaaS/B2B tech company that just raised $14M in Series A funding, to discuss building out their recruiting infrastructure",
-    "Contact Tagbin, a GovTech company that secured $10M in Series A funding, to explore their talent acquisition needs",
-    "Connect with DC startup Ressio, which landed $8.75 million in Series A funding, to offer support in building their recruiting function"
+    "Reach out to Rebar, a Series A SaaS company, to discuss building their recruiting infrastructure",
+    "Connect with Tagbin, a Series A GovTech company, to explore their talent acquisition needs",
+    "Research DC startup Ressio, a Series A construction management software company, to identify potential hiring signals"
   ],
   "top_3": [
-    "Rebar: Recently raised $14M in Series A funding and likely needs to build out its recruiting infrastructure",
-    "Tagbin: Secured $10M in Series A funding and may require support in expanding its experiential tech footprint",
-    "Ressio: Received $8.75 million in Series A funding and could benefit from guidance on constructing its recruiting function"
+    "Rebar: Recently raised $14M in Series A funding, indicating a need for recruiting infrastructure build-out",
+    "Tagbin: Secured $10M in Series A funding, suggesting a requirement for talent acquisition support in the GovTech sector",
+    "Ressio: Raised $8.8M in Series A funding, potentially signaling a need for hiring and talent management services"
   ],
   "new_money": [
     {
@@ -18,7 +18,7 @@
       "stage": "Series A",
       "location": "",
       "sector_tag": "SaaS/B2B tech",
-      "why_now": "Recently raised Series A funding, indicating a need to scale and build out recruiting infrastructure"
+      "why_now": "Recently raised Series A funding, indicating a need for recruiting infrastructure build-out"
     },
     {
       "company": "Tagbin",
@@ -26,26 +26,26 @@
       "stage": "Series A",
       "location": "",
       "sector_tag": "GovTech",
-      "why_now": "Secured Series A funding, suggesting a requirement to expand its team and develop its recruiting capabilities"
+      "why_now": "Secured Series A funding, suggesting a requirement for talent acquisition support"
     },
     {
       "company": "Ressio",
-      "amount": "$8.75M",
+      "amount": "$8.8M",
       "stage": "Series A",
       "location": "DC",
-      "sector_tag": "",
-      "why_now": "Received Series A funding, implying a need to establish a robust recruiting function to support growth"
+      "sector_tag": "construction management software",
+      "why_now": "Raised Series A funding, potentially signaling a need for hiring and talent management services"
     }
   ],
   "hiring_signals": [
-    "BlackRock's head of talent acquisition is sharing advice for college students, indicating potential hiring plans",
-    "MobiKwik has appointed a new head of talent acquisition, suggesting an increased focus on hiring",
-    "Vanguard's head of talent acquisition is sharing favorite interview questions, implying a proactive approach to hiring"
+    "BlackRock's head of talent acquisition reveals changes in what they look for in applicants",
+    "VC firm Redpoint tells startups to prepare for a hiring showdown",
+    "Scaling from 5 to 50 employees requires a startup hiring roadmap"
   ],
   "exec_moves": [
-    "Cadent has appointed a chief people officer to accelerate growth, indicating a potential need for recruiting support",
-    "CluePoints has appointed a chief people officer to drive global growth, suggesting an increased focus on hiring",
-    "Tower has appointed a chief people officer to steer strategy, implying a potential requirement for recruiting infrastructure development"
+    "Cadent appoints Chief People Officer and SVP of Marketing to accelerate growth",
+    "CluePoints appoints chief people officer to drive global growth",
+    "Tower appoints chief people officer to steer strategy"
   ],
   "defense_signals": [],
   "vehicles": [
@@ -53,8 +53,8 @@
     "GoFractional"
   ],
   "competitive": [
-    "BlackRock is focusing on AI-driven talent acquisition, indicating a trend towards innovative hiring practices",
-    "Fidelity is sharing insights on landing open jobs, suggesting a competitive job market"
+    "BlackRock's head of talent acquisition shares favorite interview questions",
+    "Vanguard Head of Talent Acquisition shares insights on hiring"
   ],
   "raw_funded": [
     {
@@ -123,19 +123,6 @@
       "score": 2
     },
     {
-      "name": "David Sacks\u2019 Craft leads $42M Series A in govtech startup Starbridge - Yahoo Fin",
-      "amount": "$42M",
-      "stage": "Series A",
-      "sector": "",
-      "location": "",
-      "headline": "David Sacks\u2019 Craft leads $42M Series A in govtech startup Starbridge - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1FVHdBWHhNb20zb0g2YVBvanZ0dlBVT0lzZG9RcUxhVFNjVG9zTm42QlBTdjVRTkRsSkxDRXlIYWNKSzR1Q3l4Z0EzdGJWMjNJVnMyMWV1cDZPMDVpZjJRQ3dZZFNWQUd0WHgtU1FlRmUydlBPMW12VHJXYlI?oc=5",
-      "source": "news.google.com",
-      "geo_match": 0,
-      "sector_match": 1,
-      "score": 1
-    },
-    {
       "name": "Govtech startup Esper announces $8M Series A - PR Newswire",
       "amount": "$8M",
       "stage": "Series A",
@@ -164,17 +151,17 @@
   ],
   "raw_hiring": [
     {
-      "company": "the firm",
-      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
-      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
-      "source": "news.google.com"
-    },
-    {
       "company": "he looks for in applicants",
       "role": "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants - ",
       "signal": "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants &nbsp;&nbsp; Business Insider",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaUk4YTI2OWx6VEc1dkI2OGxnVjVyVGZweHJKYzBuWldxV0doc3o0VWFjME5KN0trY1pxcjJialhkeDRuc1NYY1B2aU1WeDlWdWpHdXFqVGJ6Zlpud1RPNjNiSk5EWGd3Zm9TeEJONWh5WE11bkZ3N2h5WXMyanFCUk53VVFWRmcxM2lmR2JR?oc=5",
+      "source": "news.google.com"
+    },
+    {
+      "company": "the firm",
+      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
+      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
       "source": "news.google.com"
     },
     {
@@ -206,13 +193,6 @@
       "source": "news.google.com"
     },
     {
-      "company": "Fidelity's head of talent acquisition shares how y",
-      "role": "Fidelity's head of talent acquisition shares how you can land one of the company's 9,000 open jobs r",
-      "signal": "Fidelity's head of talent acquisition shares how you can land one of the company's 9,000 open jobs right now &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZmZOTDE5clp5VV9EVkJZOWFyTTlJbGFjRDMxaDdhUVFDbmw3cnZOVDhaYlhaMlY3VW1MZGhWVllTUjdUZUw2c2JYdWdHUDlMS1BFd3ZFbk5hcDhNX2FjUXpjb0dPYWFUc0w0SnBxLXV2MFNQYmN4OVloZ2VSaGFpWnFmR0s1Tk9mdUJFMXkyRFBENV9HYV9F?oc=5",
-      "source": "news.google.com"
-    },
-    {
       "company": "BlackRock, According to Their Head of Talent",
       "role": "How to Get a Job at BlackRock, According to Their Head of Talent - Business Insider",
       "signal": "How to Get a Job at BlackRock, According to Their Head of Talent &nbsp;&nbsp; Business Insider",
@@ -221,9 +201,16 @@
     },
     {
       "company": "How to Get",
-      "role": "How to Get Hired at Tinder, According to the Head of Talent - Business Insider",
-      "signal": "How to Get Hired at Tinder, According to the Head of Talent &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSEVSYXBpRlpmc0MtcGM1bGZ1YUtLVlNmdTRkZmtzQkFIc3RweVhBWVpHdjY5VTBBcjE1S2k4NzVqR2Zvb1c2VlVYQThNRU1HMzhmNHRxZ2ZTOWpRU1hyMWhKbVN6RTN2WDItX2hmbHc2bDZOV1A3UW1xWFNFaWUzQk1R?oc=5",
+      "role": "How to Get Hired at Peloton, According to Its Head of Talent - Business Insider",
+      "signal": "How to Get Hired at Peloton, According to Its Head of Talent &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NZmNmVWd6aGFfWjNvbUJ5Ulh0LUNwRHJPazF5OF9MTUxVZlB5V19aQUF2c2NySE14YndLaGg1SmRPX3VQc19PWHF3Y0I5cFR4MnRKVE93cU52dEE5NlB6ZzZkSUZBYTNNTjVjTEFQUVB3VXkybGc?oc=5",
+      "source": "news.google.com"
+    },
+    {
+      "company": "Fidelity's head of talent acquisition shares how y",
+      "role": "Fidelity's head of talent acquisition shares how you can land one of the company's 9,000 open jobs r",
+      "signal": "Fidelity's head of talent acquisition shares how you can land one of the company's 9,000 open jobs right now &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZmZOTDE5clp5VV9EVkJZOWFyTTlJbGFjRDMxaDdhUVFDbmw3cnZOVDhaYlhaMlY3VW1MZGhWVllTUjdUZUw2c2JYdWdHUDlMS1BFd3ZFbk5hcDhNX2FjUXpjb0dPYWFUc0w0SnBxLXV2MFNQYmN4OVloZ2VSaGFpWnFmR0s1Tk9mdUJFMXkyRFBENV9HYV9F?oc=5",
       "source": "news.google.com"
     },
     {
@@ -284,14 +271,6 @@
     {
       "person": "",
       "title": "",
-      "company": "Raffles Family Office",
-      "headline": "Raffles Family Office appoints chief people officer - Fund Selector Asia",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYTktMlFfZFVfZXIzU295Vk9nZ1FibmJURU9nMnFpalFCaFAwVGJiMG8yUTV3S042a3lBb2xwd1NDUEtJdk5HaFlmbnkzSmZRWXE1QXIza2l4T09EaHR5bC1wNWY2NlB6a3NPMzlsaU42RXlnYkp4TTZKX2NEckFBU05SZXVsUWFq?oc=5",
-      "source": "news.google.com"
-    },
-    {
-      "person": "",
-      "title": "",
       "company": "Driscoll\u2019s",
       "headline": "Driscoll\u2019s appoints chief people officer - bluebookservices.com",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB3a1FWUGdwbzk5c2pPMTlGUEtQSllVN0RzTUNHWDFxenlfYk9VaDYzclVqc1hTMzBGT1RqLWtkMnIzcDlCbm5QekU3YzlYYldpem1nRzZDeS1KUkJhTWJsQXk0QXdvWlUybm5EdnFzNzRmZGNDY0VjdUhGMDkxdw?oc=5",
@@ -303,6 +282,14 @@
       "company": "Swiss Re",
       "headline": "Swiss Re appoints chief people officer - Corporate Adviser",
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1jcGx6amVJVkhEdzVObGdXM3dPRTYwVE9pTUZzTy0yeHRsYlNpZHloSGVaMkVSTUl0aTAwc0xDY3R2dy1zRlJCNlY5RW9wamdZeVV5bk9RQUlDOVFMV3ZPSEJJaWtiRVVySUx2N1BZRVY5bGFvb3VtSdIBfkFVX3lxTE5zcGo3VEoxZVRDVnd0QXZVZjZESjBUc0JIVFY4OW5EaHhpbjZxWFJHLU9iTXNCYkRnRDdCTnFvSUR1eEhEMlh0Z1pKb3BpZTl4WWpDQUIwdXl4eDlqaEZISTBQVHZoNHN2SzZzcUhnZDhLRjdIQ2QzN3F0cnpDdw?oc=5",
+      "source": "news.google.com"
+    },
+    {
+      "person": "",
+      "title": "",
+      "company": "Raffles Family Office",
+      "headline": "Raffles Family Office appoints chief people officer - Fund Selector Asia",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYTktMlFfZFVfZXIzU295Vk9nZ1FibmJURU9nMnFpalFCaFAwVGJiMG8yUTV3S042a3lBb2xwd1NDUEtJdk5HaFlmbnkzSmZRWXE1QXIza2l4T09EaHR5bC1wNWY2NlB6a3NPMzlsaU42RXlnYkp4TTZKX2NEckFBU05SZXVsUWFq?oc=5",
       "source": "news.google.com"
     },
     {
@@ -721,9 +708,9 @@
   "sec_filings": [],
   "ph_launches": [
     {
-      "product": "Morgen",
-      "tagline": "Your entire morning in one tab. Discussion | Link",
-      "link": "https://www.producthunt.com/products/morgen-2",
+      "product": "Motion Software",
+      "tagline": "Modern screen recordings for Windows, made simple. Discussion | Link",
+      "link": "https://www.producthunt.com/products/motion-software",
       "source": "producthunt.com"
     },
     {
@@ -733,9 +720,27 @@
       "source": "producthunt.com"
     },
     {
-      "product": "Aura Water: Private Hydration",
-      "tagline": "Offline water tracker with a private AI hydration coach Discussion | Link",
-      "link": "https://www.producthunt.com/products/aura-water",
+      "product": "DynamicLake",
+      "tagline": "Dynamic Island experience for Mac with apps & notifications Discussion | Link",
+      "link": "https://www.producthunt.com/products/dynamiclake",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "Query Memory",
+      "tagline": "One API for all documents your AI agents need Discussion | Link",
+      "link": "https://www.producthunt.com/products/query-memory",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "LaterAI",
+      "tagline": "AI-powered reading, 100% on your device Discussion | Link",
+      "link": "https://www.producthunt.com/products/laterai-save-read-listen",
+      "source": "producthunt.com"
+    },
+    {
+      "product": "ElevenCreative by ElevenLabs",
+      "tagline": "The AI creative platform to bring your content to life Discussion | Link",
+      "link": "https://www.producthunt.com/products/elevencreative-by-elevenlabs",
       "source": "producthunt.com"
     },
     {
@@ -751,39 +756,21 @@
       "source": "producthunt.com"
     },
     {
-      "product": "Query Memory",
-      "tagline": "One API for all documents your AI agents need Discussion | Link",
-      "link": "https://www.producthunt.com/products/query-memory",
+      "product": "Morgen",
+      "tagline": "Your entire morning in one tab. Discussion | Link",
+      "link": "https://www.producthunt.com/products/morgen-2",
       "source": "producthunt.com"
     },
     {
-      "product": "DynamicLake",
-      "tagline": "Dynamic Island experience for Mac with apps & notifications Discussion | Link",
-      "link": "https://www.producthunt.com/products/dynamiclake",
-      "source": "producthunt.com"
-    },
-    {
-      "product": "Cal.com Agents",
-      "tagline": "AI Agents coming to the best scheduling tool Discussion | Link",
-      "link": "https://www.producthunt.com/products/cal",
-      "source": "producthunt.com"
-    },
-    {
-      "product": "ElevenCreative by ElevenLabs",
-      "tagline": "The AI creative platform to bring your content to life Discussion | Link",
-      "link": "https://www.producthunt.com/products/elevencreative-by-elevenlabs",
-      "source": "producthunt.com"
-    },
-    {
-      "product": "The Banana App",
-      "tagline": "Speak human - Where every word finds its way home Discussion | Link",
-      "link": "https://www.producthunt.com/products/the-banana-app",
+      "product": "ByteRover Memory System for OpenClaw",
+      "tagline": "File-based memory for OpenClaw with >92% retrieval accuracy Discussion | Link",
+      "link": "https://www.producthunt.com/products/byterover",
       "source": "producthunt.com"
     }
   ],
   "cross_references": [],
   "source_stats": {
-    "rss_funding": 8,
+    "rss_funding": 7,
     "rss_hiring": 12,
     "rss_execs": 10,
     "sam_gov": 0,
@@ -794,7 +781,7 @@
     "producthunt": 10
   },
   "stage_breakdown": {
-    "Series A": 5,
+    "Series A": 4,
     "Series C": 1,
     "Seed": 1,
     "Late Stage": 1
