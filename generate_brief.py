@@ -6,13 +6,18 @@ Complete rewrite: smarter filtering, better parsing, upgraded AI.
 """
 
 import os
+import sys
 import json
 import csv
 import re
 import time
 import datetime
+import signal
 import feedparser
 import requests
+
+# Force unbuffered output so GitHub Actions shows logs in real-time
+sys.stdout.reconfigure(line_buffering=True) if hasattr(sys.stdout, 'reconfigure') else None
 from groq import Groq
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML as WeasyHTML
@@ -117,9 +122,16 @@ COMPETITOR_FEEDS = [
 # ─── HELPERS ─────────────────────────────────────────────────────────────────
 
 def fetch_feed(url, max_items=25):
-    """Fetch and parse an RSS feed with timeout and error handling."""
+    """Fetch and parse an RSS feed with strict timeout."""
     try:
-        feed = feedparser.parse(url)
+        # Use requests with timeout instead of feedparser's built-in fetch
+        # feedparser.parse(url) can hang forever on slow feeds
+        resp = requests.get(url, timeout=12, headers={
+            'User-Agent': 'RebelTalentIntel/3.0 (RSS Reader)'
+        })
+        resp.raise_for_status()
+        feed = feedparser.parse(resp.text)
+
         items = []
         for entry in feed.entries[:max_items]:
             title = getattr(entry, "title", "").strip()
@@ -140,6 +152,9 @@ def fetch_feed(url, max_items=25):
                 "source": url.split("/")[2] if "/" in url else "unknown",
             })
         return items
+    except requests.Timeout:
+        print(f"  [WARN] Feed timed out ({url[:50]}...)")
+        return []
     except Exception as e:
         print(f"  [WARN] Feed failed ({url[:50]}...): {e}")
         return []
