@@ -1,15 +1,15 @@
 {
-  "generated": "March 15, 2026",
-  "generated_slug": "2026-03-15",
+  "generated": "March 16, 2026",
+  "generated_slug": "2026-03-16",
   "moves_today": [
     "Reach out to Rebar, a Series A SaaS company, to discuss building their recruiting infrastructure",
-    "Connect with Tagbin, a Series A GovTech company, to explore their talent acquisition needs",
-    "Research DC startup Ressio, a Series A construction management software company, to identify potential hiring signals"
+    "Contact Tagbin, a Series A GovTech company, to explore their talent acquisition needs",
+    "Research DC startup Ressio, a Series A company, to understand their hiring requirements"
   ],
   "top_3": [
-    "Rebar: Recently raised $14M in Series A funding, indicating a need for recruiting infrastructure build-out",
-    "Tagbin: Secured $10M in Series A funding, suggesting a requirement for talent acquisition support in the GovTech sector",
-    "Ressio: Raised $8.8M in Series A funding, potentially signaling a need for hiring and talent management services"
+    "Rebar: Recently raised $14M in Series A funding, indicating a need for recruiting infrastructure",
+    "Tagbin: Secured $10M in Series A funding, suggesting a requirement for talent acquisition support",
+    "Ressio: Raised $8.8M in Series A funding, implying a need for hiring and recruitment services"
   ],
   "new_money": [
     {
@@ -18,7 +18,7 @@
       "stage": "Series A",
       "location": "",
       "sector_tag": "SaaS/B2B tech",
-      "why_now": "Recently raised Series A funding, indicating a need for recruiting infrastructure build-out"
+      "why_now": "Recently raised Series A funding, indicating a need for recruiting infrastructure"
     },
     {
       "company": "Tagbin",
@@ -33,17 +33,17 @@
       "amount": "$8.8M",
       "stage": "Series A",
       "location": "DC",
-      "sector_tag": "construction management software",
-      "why_now": "Raised Series A funding, potentially signaling a need for hiring and talent management services"
+      "sector_tag": "",
+      "why_now": "Raised Series A funding, implying a need for hiring and recruitment services"
     }
   ],
   "hiring_signals": [
-    "BlackRock's head of talent acquisition reveals changes in what they look for in applicants",
-    "VC firm Redpoint tells startups to prepare for a hiring showdown",
-    "Scaling from 5 to 50 employees requires a startup hiring roadmap"
+    "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants",
+    "MobiKwik appoints Rajat Bansal as Senior Director and Head of Talent Acquisition",
+    "Vanguard Head of Talent Acquisition Shares Favorite Interview Question"
   ],
   "exec_moves": [
-    "Cadent appoints Chief People Officer and SVP of Marketing to accelerate growth",
+    "Cadent appoints Chief People Officer and SVP of Marketing to accelerate next phase of growth",
     "CluePoints appoints chief people officer to drive global growth",
     "Tower appoints chief people officer to steer strategy"
   ],
@@ -53,8 +53,8 @@
     "GoFractional"
   ],
   "competitive": [
-    "BlackRock's head of talent acquisition shares favorite interview questions",
-    "Vanguard Head of Talent Acquisition shares insights on hiring"
+    "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants",
+    "VC firm Redpoint tells startups to buckle up for a hiring showdown"
   ],
   "raw_funded": [
     {
@@ -214,13 +214,6 @@
       "source": "news.google.com"
     },
     {
-      "company": "Apollo is revamping recruiting and trying to softe",
-      "role": "Apollo is revamping recruiting and trying to soften its culture amid a big growth push. From MBA sum",
-      "signal": "Apollo is revamping recruiting and trying to soften its culture amid a big growth push. From MBA summer internships to kids' story time, here's a look. &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQX195RDU5VFgzbnFwalQyeDhpeE44d2pOQ3lHRk40TGxOcXdjbndnUDhndVRmZUR3cjZXLXdyS1AyZVVGVmNOaHEyaUtpTkU5UFVfY3c5M0dJUV9pNnJrN3hqcVZ1c3VnVmx4aWJGVVJjTHdNVnlWQkJQUlY4NHpaU1V6bWs3WFpGc1I4aFpHYklYZ2VfNjczZ3YzRnY4OFNlZGxlM053?oc=5",
-      "source": "news.google.com"
-    },
-    {
       "company": "Humand: $66 Million Series A Raised For AI Workfor",
       "role": "Humand: $66 Million Series A Raised For AI Workforce Platform - Pulse 2.0",
       "signal": "Humand: $66 Million Series A Raised For AI Workforce Platform &nbsp;&nbsp; Pulse 2.0",
@@ -232,6 +225,13 @@
       "role": "Niural Raises $31 Million in Series A - The SaaS News",
       "signal": "Niural Raises $31 Million in Series A &nbsp;&nbsp; The SaaS News",
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBHeGxaTDZfcUw1ejBkQ0U2RzBtaFUxQUVlNEMyTjNRVHZsWkhsdmpiQlplbVViVlZ3ZWtHaVFnLUJBVm5hc091RmNCNm1EVHp6RTgxYVlPdW1uUlM4dEpUb20yZEF5VGJlVGdoNm0zU1A4Rm5FdzZwbA?oc=5",
+      "source": "news.google.com"
+    },
+    {
+      "company": "Sparrow Raises $35 Million in Series B Funding to ",
+      "role": "Sparrow Raises $35 Million in Series B Funding to Scale Its Global AI-powered Solutions for Leave Ma",
+      "signal": "Sparrow Raises $35 Million in Series B Funding to Scale Its Global AI-powered Solutions for Leave Management &nbsp;&nbsp; Business Wire",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYjdldFp4a2VkVTE5S0FndUZQVFJlcGVxeXJ5YlJzWHVodS1NV3lZSllKMVhqZzlhLVZvSG11Z05BQ01ncGpGSndzSm41NmhLbWdRaEVQdzNNUG15T05Ba2xncnBBUkdSTDU4cUNRWF9BeDJNbFQteC00em85MGRXTlBYN19pallidmw3T0VKWGRDdF8zUUVIc2V2RE5jbnNrbS1FcU5RYmhIYVF4bHMwRTZxYUh3Wk01SjdHdFBSVm02V1FpTERuQVhma2ZFUjhSM0dCbmU3LVpRNEpwc2xVWFplT1U2M25ZUVVBSGo3enI0UEYzV2tDQ3FKUQ?oc=5",
       "source": "news.google.com"
     }
   ],
@@ -319,12 +319,12 @@
   ],
   "raw_competitors": [
     {
-      "headline": "10 Best HR Outsourcing Services Of 2025 - Forbes",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdFJLUjRPd0xlejc3eVVHLUtPUDM0S0ZLUkVsQUNmNm1BcjZmQlpEeE1lQzNWVm5vWVdxTUlySUJwNzJSRjlJbjBSTEtWYldCY0E5SnVDZWNYcFhLbWRYZlF1MklKTjFoRmYxeEMyVXNUaEdiUUR3SElHX1VJZjlnUzdudGI?oc=5"
-    },
-    {
       "headline": "Ecommerce Success with Fractional Talent - Practical Ecommerce",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTUd3alk5R3FJakc0dHJDbVVqR013TG12cHg4Z1NlRDBuVC1NcVZxcGgwejNJNlRrZ1R2LUl1VU1nOXMwU1lhTHdBS3F3X3RoZi13ZUZLbUlCX29ucjc3MWRwUlJpUS11dllUWWdWX19rMFZMS1k4YktiUGdhM1UzTQ?oc=5"
+    },
+    {
+      "headline": "10 Best HR Outsourcing Services Of 2025 - Forbes",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdFJLUjRPd0xlejc3eVVHLUtPUDM0S0ZLUkVsQUNmNm1BcjZmQlpEeE1lQzNWVm5vWVdxTUlySUJwNzJSRjlJbjBSTEtWYldCY0E5SnVDZWNYcFhLbWRYZlF1MklKTjFoRmYxeEMyVXNUaEdiUUR3SElHX1VJZjlnUzdudGI?oc=5"
     },
     {
       "headline": "A Fractional Approach - HRO Today",
@@ -601,25 +601,57 @@
   ],
   "github_trending": [
     {
-      "repo": "browser",
-      "owner": "lightpanda-io",
-      "stars_today": 1323,
-      "language": "Zig",
-      "description": "Lightpanda: the headless browser designed for AI and automation",
-      "url": "https://github.com/lightpanda-io/browser"
+      "repo": "MiroFish",
+      "owner": "666ghj",
+      "stars_today": 3257,
+      "language": "Python",
+      "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. \u7b80\u6d01\u901a\u7528\u7684\u7fa4\u4f53\u667a\u80fd\u5f15\u64ce\uff0c\u9884\u6d4b\u4e07\u7269",
+      "url": "https://github.com/666ghj/MiroFish"
+    },
+    {
+      "repo": "claude-mem",
+      "owner": "thedotmack",
+      "stars_today": 1017,
+      "language": "TypeScript",
+      "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future ses",
+      "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "repo": "project-nomad",
       "owner": "Crosstalk-Solutions",
-      "stars_today": 241,
+      "stars_today": 773,
       "language": "TypeScript",
       "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered\u2014anytime, anywhere.",
       "url": "https://github.com/Crosstalk-Solutions/project-nomad"
     },
     {
+      "repo": "superpowers",
+      "owner": "obra",
+      "stars_today": 3142,
+      "language": "Shell",
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "url": "https://github.com/obra/superpowers"
+    },
+    {
+      "repo": "GitNexus",
+      "owner": "abhigyanpatwari",
+      "stars_today": 1867,
+      "language": "TypeScript",
+      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive kno",
+      "url": "https://github.com/abhigyanpatwari/GitNexus"
+    },
+    {
+      "repo": "browser",
+      "owner": "lightpanda-io",
+      "stars_today": 2089,
+      "language": "Zig",
+      "description": "Lightpanda: the headless browser designed for AI and automation",
+      "url": "https://github.com/lightpanda-io/browser"
+    },
+    {
       "repo": "OpenViking",
       "owner": "volcengine",
-      "stars_today": 1877,
+      "stars_today": 2014,
       "language": "Python",
       "description": "OpenViking is an open-source context database designed specifically for AI Agents(such as openclaw). OpenViking unifies the management of context (memory, resources, and skills) that Agents need throu",
       "url": "https://github.com/volcengine/OpenViking"
@@ -627,144 +659,104 @@
     {
       "repo": "learn-claude-code",
       "owner": "shareAI-lab",
-      "stars_today": 865,
+      "stars_today": 1542,
       "language": "TypeScript",
       "description": "Bash is all you need - A nano Claude Code\u2013like agent, built from 0 to 1",
       "url": "https://github.com/shareAI-lab/learn-claude-code"
     },
     {
-      "repo": "claude-code-best-practice",
-      "owner": "shanraisshan",
-      "stars_today": 852,
-      "language": "HTML",
-      "description": "practice made claude perfect",
-      "url": "https://github.com/shanraisshan/claude-code-best-practice"
-    },
-    {
-      "repo": "superpowers",
-      "owner": "obra",
-      "stars_today": 1893,
-      "language": "Shell",
-      "description": "An agentic skills framework &amp; software development methodology that works.",
-      "url": "https://github.com/obra/superpowers"
-    },
-    {
       "repo": "heretic",
       "owner": "p-e-w",
-      "stars_today": 1066,
+      "stars_today": 787,
       "language": "Python",
       "description": "Fully automatic censorship removal for language models",
       "url": "https://github.com/p-e-w/heretic"
     },
     {
-      "repo": "MiroFish",
-      "owner": "666ghj",
-      "stars_today": 2985,
+      "repo": "deepagents",
+      "owner": "langchain-ai",
+      "stars_today": 444,
       "language": "Python",
-      "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. \u7b80\u6d01\u901a\u7528\u7684\u7fa4\u4f53\u667a\u80fd\u5f15\u64ce\uff0c\u9884\u6d4b\u4e07\u7269",
-      "url": "https://github.com/666ghj/MiroFish"
+      "description": "Agent harness built with LangChain and LangGraph. Equipped with a planning tool, a filesystem backend, and the ability to spawn subagents - well-equipped to handle complex agentic tasks.",
+      "url": "https://github.com/langchain-ai/deepagents"
     },
     {
-      "repo": "GitNexus",
-      "owner": "abhigyanpatwari",
-      "stars_today": 450,
+      "repo": "claudian",
+      "owner": "YishenTu",
+      "stars_today": 109,
       "language": "TypeScript",
-      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive kno",
-      "url": "https://github.com/abhigyanpatwari/GitNexus"
-    },
-    {
-      "repo": "cognee",
-      "owner": "topoteretes",
-      "stars_today": 310,
-      "language": "Python",
-      "description": "Knowledge Engine for AI Agent Memory in 6 lines of code",
-      "url": "https://github.com/topoteretes/cognee"
-    },
-    {
-      "repo": "InsForge",
-      "owner": "InsForge",
-      "stars_today": 509,
-      "language": "TypeScript",
-      "description": "Give agents everything they need to ship fullstack apps. The backend built for agentic development.",
-      "url": "https://github.com/InsForge/InsForge"
+      "description": "An Obsidian plugin that embeds Claude Code as an AI collaborator in your vault",
+      "url": "https://github.com/YishenTu/claudian"
     },
     {
       "repo": "vite-plus",
       "owner": "voidzero-dev",
-      "stars_today": 301,
+      "stars_today": 622,
       "language": "Rust",
       "description": "Vite+ is the unified toolchain and entry point for web development. It manages your runtime, package manager, and frontend toolchain in one place.",
       "url": "https://github.com/voidzero-dev/vite-plus"
-    },
-    {
-      "repo": "claude-plugins-official",
-      "owner": "anthropics",
-      "stars_today": 608,
-      "language": "Python",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "url": "https://github.com/anthropics/claude-plugins-official"
     }
   ],
   "sec_filings": [],
   "ph_launches": [
     {
-      "product": "Motion Software",
-      "tagline": "Modern screen recordings for Windows, made simple. Discussion | Link",
-      "link": "https://www.producthunt.com/products/motion-software",
+      "product": "Spott",
+      "tagline": "Spott is the AI-native ATS & CRM for recruiting firms Discussion | Link",
+      "link": "https://www.producthunt.com/products/spott-3",
       "source": "producthunt.com"
     },
     {
-      "product": "ClawSecure",
-      "tagline": "The only complete security platform for OpenClaw AI agents Discussion | Link",
-      "link": "https://www.producthunt.com/products/clawsecure",
+      "product": "Adaptive",
+      "tagline": "The computer for AI to get things done Discussion | Link",
+      "link": "https://www.producthunt.com/products/adaptive-ai",
       "source": "producthunt.com"
     },
     {
-      "product": "DynamicLake",
-      "tagline": "Dynamic Island experience for Mac with apps & notifications Discussion | Link",
-      "link": "https://www.producthunt.com/products/dynamiclake",
+      "product": "Donely",
+      "tagline": "Your own OpenClaw instance for $0/mo + free AI usage offer Discussion | Link",
+      "link": "https://www.producthunt.com/products/donely",
       "source": "producthunt.com"
     },
     {
-      "product": "Query Memory",
-      "tagline": "One API for all documents your AI agents need Discussion | Link",
-      "link": "https://www.producthunt.com/products/query-memory",
+      "product": "JetBrains Air",
+      "tagline": "Run Codex, Claude Agents, Gemini CLI, and Junie side by side Discussion | Link",
+      "link": "https://www.producthunt.com/products/jetbrains",
       "source": "producthunt.com"
     },
     {
-      "product": "LaterAI",
-      "tagline": "AI-powered reading, 100% on your device Discussion | Link",
-      "link": "https://www.producthunt.com/products/laterai-save-read-listen",
+      "product": "GLM",
+      "tagline": "High-speed agentic model built specifically for OpenClaw Discussion | Link",
+      "link": "https://www.producthunt.com/products/z-ai",
       "source": "producthunt.com"
     },
     {
-      "product": "ElevenCreative by ElevenLabs",
-      "tagline": "The AI creative platform to bring your content to life Discussion | Link",
-      "link": "https://www.producthunt.com/products/elevencreative-by-elevenlabs",
+      "product": "Glam AI",
+      "tagline": "Pick a trend, add your photo, and create viral content Discussion | Link",
+      "link": "https://www.producthunt.com/products/glam-ai",
       "source": "producthunt.com"
     },
     {
-      "product": "Nutgrafe",
-      "tagline": "Every article summarized in one short paragraph. Discussion | Link",
-      "link": "https://www.producthunt.com/products/nutgrafe",
+      "product": "Faces",
+      "tagline": "Interactive presentations that use the full power of the web Discussion | Link",
+      "link": "https://www.producthunt.com/products/faces-4",
       "source": "producthunt.com"
     },
     {
-      "product": "Mooon",
-      "tagline": "One-step Japanese Document Processing Engine Discussion | Link",
-      "link": "https://www.producthunt.com/products/mooon",
+      "product": "Wendi AI",
+      "tagline": "The AI OS for people who manage people Discussion | Link",
+      "link": "https://www.producthunt.com/products/wendi-ai-yc-application",
       "source": "producthunt.com"
     },
     {
-      "product": "Morgen",
-      "tagline": "Your entire morning in one tab. Discussion | Link",
-      "link": "https://www.producthunt.com/products/morgen-2",
+      "product": "MuleRun",
+      "tagline": "Raise an AI that actually learns how you work Discussion | Link",
+      "link": "https://www.producthunt.com/products/mulerun",
       "source": "producthunt.com"
     },
     {
-      "product": "ByteRover Memory System for OpenClaw",
-      "tagline": "File-based memory for OpenClaw with >92% retrieval accuracy Discussion | Link",
-      "link": "https://www.producthunt.com/products/byterover",
+      "product": "Masko Code",
+      "tagline": "A mascot that watches Claude Code for you Discussion | Link",
+      "link": "https://www.producthunt.com/products/masko-code",
       "source": "producthunt.com"
     }
   ],
@@ -776,7 +768,7 @@
     "sam_gov": 0,
     "yc": 0,
     "hn_hiring": 30,
-    "github": 13,
+    "github": 12,
     "sec_edgar": 0,
     "producthunt": 10
   },
