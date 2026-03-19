@@ -1,15 +1,15 @@
 {
-  "generated": "March 18, 2026",
-  "generated_slug": "2026-03-18",
+  "generated": "March 19, 2026",
+  "generated_slug": "2026-03-19",
   "moves_today": [
-    "Reach out to Tagbin to discuss building out their recruiting infrastructure after their $10M Series A funding",
-    "Connect with DC startup Ressio to explore their hiring needs after securing $8.8M in Series A funding",
-    "Research Starbridge, a govtech startup that recently raised $42M in Series A funding, to identify potential hiring opportunities"
+    "Reach out to Tagbin to discuss potential recruiting infrastructure build-out after their $10M Series A funding",
+    "Research DC startup Ressio's hiring plans after their $8.8M Series A funding",
+    "Explore potential partnership with Cadent after appointing a new Chief People Officer"
   ],
   "top_3": [
-    "Tagbin: Recently raised $10M in Series A funding and may need help building out their recruiting infrastructure",
-    "Ressio: Secured $8.8M in Series A funding and could be looking to scale their team",
-    "Starbridge: Raised $42M in Series A funding and may be expanding their team in the govtech space"
+    "Tagbin: recently secured $10M Series A funding and may need recruiting infrastructure build-out",
+    "Ressio: recently raised $8.8M Series A funding and may be looking to scale their team",
+    "Cadent: appointed a new Chief People Officer, indicating potential hiring plans"
   ],
   "new_money": [
     {
@@ -18,7 +18,7 @@
       "stage": "Series A",
       "location": "",
       "sector_tag": "GovTech",
-      "why_now": "Recently raised Series A funding and may need help building out their recruiting infrastructure"
+      "why_now": "Recently secured $10M Series A funding, may need recruiting infrastructure build-out"
     },
     {
       "company": "Ressio",
@@ -26,26 +26,18 @@
       "stage": "Series A",
       "location": "DC",
       "sector_tag": "",
-      "why_now": "Secured Series A funding and could be looking to scale their team"
-    },
-    {
-      "company": "Starbridge",
-      "amount": "$42M",
-      "stage": "Series A",
-      "location": "",
-      "sector_tag": "GovTech",
-      "why_now": "Raised Series A funding and may be expanding their team in the govtech space"
+      "why_now": "Recently raised $8.8M Series A funding, may be looking to scale their team"
     }
   ],
   "hiring_signals": [
     "BlackRock's head of talent acquisition reveals how AI has changed what they look for in applicants",
-    "VC firm Redpoint tells startups to buckle up for a hiring showdown",
-    "Scaling from 5 to 50 employees \u2014 your startup hiring roadmap"
+    "Cadent appointed a new Chief People Officer to accelerate next phase of growth",
+    "CluePoints appointed a chief people officer to drive global growth"
   ],
   "exec_moves": [
-    "Cadent appoints Chief People Officer and SVP of Marketing to accelerate next phase of growth",
-    "CluePoints appoints chief people officer to drive global growth",
-    "Tower appoints chief people officer to steer strategy"
+    "Cadent appointed a new Chief People Officer",
+    "CluePoints appointed a chief people officer",
+    "Tower appointed a chief people officer"
   ],
   "defense_signals": [],
   "vehicles": [
@@ -53,8 +45,8 @@
     "GoFractional"
   ],
   "competitive": [
-    "BlackRock's head of talent acquisition shares favorite interview question",
-    "Vanguard Head of Talent Acquisition Shares Favorite Interview Question"
+    "BlackRock's head of talent acquisition shares insights on hiring",
+    "Vanguard Head of Talent Acquisition shares favorite interview question"
   ],
   "raw_funded": [
     {
@@ -84,6 +76,45 @@
       "score": 3
     },
     {
+      "name": "Pardoned Nikola founder Trevor Milton is trying to",
+      "amount": "$1.0B",
+      "stage": "Late Stage",
+      "sector": "",
+      "location": "",
+      "headline": "Pardoned Nikola founder Trevor Milton is trying to raise $1B for AI-powered planes",
+      "link": "https://techcrunch.com/2026/03/18/pardoned-nikola-founder-trevor-milton-is-trying-to-raise-1b-for-ai-powered-planes/",
+      "source": "techcrunch.com",
+      "geo_match": 0,
+      "sector_match": 0,
+      "score": 2
+    },
+    {
+      "name": "KBR",
+      "amount": "$95M",
+      "stage": "Series C",
+      "sector": "",
+      "location": "",
+      "headline": "KBR Secures $95M Air Force Contract for Digital Engineering Support",
+      "link": "https://www.executivebiz.com/articles/kbr-air-force-digital-engineering-contract",
+      "source": "executivebiz.com",
+      "geo_match": 0,
+      "sector_match": 0,
+      "score": 2
+    },
+    {
+      "name": "SPA",
+      "amount": "$100M",
+      "stage": "Series C",
+      "sector": "",
+      "location": "",
+      "headline": "SPA Lands $100M Contract to Support Secretary of War Research Office",
+      "link": "https://www.executivebiz.com/articles/systems-planning-analysis-ousw-re-contract-100m",
+      "source": "executivebiz.com",
+      "geo_match": 0,
+      "sector_match": 0,
+      "score": 2
+    },
+    {
       "name": "Arlo Solutions",
       "amount": "$85M",
       "stage": "Series C",
@@ -110,19 +141,6 @@
       "score": 2
     },
     {
-      "name": "New Orleans-based Civilized AI",
-      "amount": "$2M",
-      "stage": "Seed",
-      "sector": "",
-      "location": "",
-      "headline": "New Orleans-based Civilized AI raises $2M to modernize city services - New Orleans CityBusiness",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdk1CN00xRXQ2YXd1bDE1TEppbE5mdG1OcmNhUjQ1U3hrLWxRendtUzNMOEtpaWZxYmxocFhGbWVscS1UclB4TWtyTEZnenJSNlYwRHE3blFkT3RBTlhHTXJOajMyRjROSE1vam5xTTdGeWM1cjdaRFJhdzAxbzNGSnY3WThreUd3WEd1LVpidTVKZGFwR0pwVFlR?oc=5",
-      "source": "news.google.com",
-      "geo_match": 0,
-      "sector_match": 0,
-      "score": 2
-    },
-    {
       "name": "Exclusive: Candex Extends Series C To $40M+ To Help Enterprises Easily Onboard G",
       "amount": "$40M",
       "stage": "Series C",
@@ -133,19 +151,6 @@
       "source": "news.crunchbase.com",
       "geo_match": 1,
       "sector_match": 0,
-      "score": 1
-    },
-    {
-      "name": "David Sacks\u2019 Craft leads $42M Series A in govtech startup Starbridge - Yahoo Fin",
-      "amount": "$42M",
-      "stage": "Series A",
-      "sector": "",
-      "location": "",
-      "headline": "David Sacks\u2019 Craft leads $42M Series A in govtech startup Starbridge - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1FVHdBWHhNb20zb0g2YVBvanZ0dlBVT0lzZG9RcUxhVFNjVG9zTm42QlBTdjVRTkRsSkxDRXlIYWNKSzR1Q3l4Z0EzdGJWMjNJVnMyMWV1cDZPMDVpZjJRQ3dZZFNWQUd0WHgtU1FlRmUydlBPMW12VHJXYlI?oc=5",
-      "source": "news.google.com",
-      "geo_match": 0,
-      "sector_match": 1,
       "score": 1
     }
   ],
@@ -193,17 +198,17 @@
       "source": "news.google.com"
     },
     {
-      "company": "How to Get",
-      "role": "How to Get Hired at Tinder, According to the Head of Talent - Business Insider",
-      "signal": "How to Get Hired at Tinder, According to the Head of Talent &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSEVSYXBpRlpmc0MtcGM1bGZ1YUtLVlNmdTRkZmtzQkFIc3RweVhBWVpHdjY5VTBBcjE1S2k4NzVqR2Zvb1c2VlVYQThNRU1HMzhmNHRxZ2ZTOWpRU1hyMWhKbVN6RTN2WDItX2hmbHc2bDZOV1A3UW1xWFNFaWUzQk1R?oc=5",
-      "source": "news.google.com"
-    },
-    {
       "company": "Vanguard Head of Talent Acquisition Shares Favorit",
       "role": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question - Business Insider",
       "signal": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question &nbsp;&nbsp; Business Insider",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2tEazBKTHVJMmR5dUZPMVBvU1hJMkhlbWhGVEJSV3lXSGxiaFRUUTdESUdHT29SNUdTY3hEeXpEeWJ4cWZ3OXlRb2M1dXN1dGVCVjlyUUtfN3JwSlRIMkpTSk5STGdFM1lVVUE3YklFc1E3akpWUEZqNkdJc2ZTeExuMS1MNXhHdnkxZTdYQjVaZzVIQnlXeEZhR1I1bmZ0X0JTZA?oc=5",
+      "source": "news.google.com"
+    },
+    {
+      "company": "How to Get",
+      "role": "How to Get Hired at Tinder, According to the Head of Talent - Business Insider",
+      "signal": "How to Get Hired at Tinder, According to the Head of Talent &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSEVSYXBpRlpmc0MtcGM1bGZ1YUtLVlNmdTRkZmtzQkFIc3RweVhBWVpHdjY5VTBBcjE1S2k4NzVqR2Zvb1c2VlVYQThNRU1HMzhmNHRxZ2ZTOWpRU1hyMWhKbVN6RTN2WDItX2hmbHc2bDZOV1A3UW1xWFNFaWUzQk1R?oc=5",
       "source": "news.google.com"
     },
     {
@@ -331,16 +336,16 @@
       "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HZnc1X2dES0VEZDJXTk5hR2NGcjlXdTJvbENuZlFJek5BdER6OGU3QUxSbHVKOW1QelB3QWRqNm9tS0ZQbzdNeVNGQ2lYOUk?oc=5"
     },
     {
+      "headline": "Akkad Bakkad Bambee Bo Assi Nabbe Poore So (2025) - IMDb",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZkdrTVFHendBbDhtTWg3M0hpR0xOcXVkUng4X1lGRlBveUVOWDBKME1zWkZWcnZESkhJWXNqN2Q4b2hNc2twai0xZlJBVWNERVBwb3M5S2xPNC1sR0lHVXFNaXJRZGJtaDJmSGFReHVWWnJhajV2RjdxYXpmd2dOSkUzbko?oc=5"
+    },
+    {
+      "headline": "Griffen O\u2019Shaughnessy redefines fractional talent access - ColoradoBiz",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5BakdZUGJGajhhQUFlNmltcl9LeVN2eUpZUXRfZzlMNmlLZ2FHSFNJaUJoNG54U25VWFlGWVpVM0FkS2Z5Sk9acEY1ekhYMTJQOW1xQklyVjg1cFlqVDhPZFljeFg5d00zWGt4eUJLZG5OMHhjRWFQbVBR?oc=5"
+    },
+    {
       "headline": "Bambee Review and Pricing Plans in 2026 - Business News Daily",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBzZ0VkdXVuckNtVHdQZV9WVEs3RTBVTGV0RmNMT3pfeXJudnZVR0RUckJKSndqR21EVVE4TEV0RGlxZEF2MlhnaEhYRGZGaXZlbmNXYWdPdnlDVW80em9leWQtcThwZw?oc=5"
-    },
-    {
-      "headline": "Akkad Bakkad Bambee Bo Assi Nabbe Poore So (2025) - IMDb",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObWZwcE5zMnhmOTdrMEY0cGlNbHBySnNYSTZUZzhpTHdaelkxa3NnakxSdWRfMnZ0d3ZGSWN1SUNxaTZZSW9ReTU5OFE2VnZ2SkhrZEVnZVRsQjNVX3VHQ1ZTdkdHTlFGU1REWTkwbTVMelp3bHdYVHlibEVzU1hWMEJaTQ?oc=5"
-    },
-    {
-      "headline": "Fractional talent: redefining executive hiring in Ireland - Irish Examiner",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5oQXp4dncxcW1PQTMxbHgycGhsSzJpUEF6cGhRcEZVMktGRUkydU52ZXRpWTRKenJSMTRyTkd1bnNRYWJmOEhrbzZKYlVIUzBPbWtrZEVCZDJVbHBQY1l2bUhxYXF4cnpsZ1ZHRzBCTVRNc1U?oc=5"
     }
   ],
   "raw_sam": [],
@@ -601,133 +606,173 @@
   ],
   "github_trending": [
     {
-      "repo": "claude-hud",
-      "owner": "jarrodwatts",
-      "stars_today": 1040,
-      "language": "JavaScript",
-      "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
-      "url": "https://github.com/jarrodwatts/claude-hud"
+      "repo": "opendataloader-pdf",
+      "owner": "opendataloader-project",
+      "stars_today": 1394,
+      "language": "Java",
+      "description": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+      "url": "https://github.com/opendataloader-project/opendataloader-pdf"
+    },
+    {
+      "repo": "open-swe",
+      "owner": "langchain-ai",
+      "stars_today": 955,
+      "language": "Python",
+      "description": "An Open-Source Asynchronous Coding Agent",
+      "url": "https://github.com/langchain-ai/open-swe"
     },
     {
       "repo": "superpowers",
       "owner": "obra",
-      "stars_today": 4091,
+      "stars_today": 3476,
       "language": "Shell",
       "description": "An agentic skills framework &amp; software development methodology that works.",
       "url": "https://github.com/obra/superpowers"
     },
     {
+      "repo": "claude-hud",
+      "owner": "jarrodwatts",
+      "stars_today": 1851,
+      "language": "JavaScript",
+      "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
+      "url": "https://github.com/jarrodwatts/claude-hud"
+    },
+    {
       "repo": "unsloth",
       "owner": "unslothai",
-      "stars_today": 975,
+      "stars_today": 1259,
       "language": "Python",
-      "description": "Unified web UI for training and running open models like Qwen, DeepSeek, and Gemma locally.",
+      "description": "Unified web UI for training and running open models like Qwen, DeepSeek, gpt-oss and Gemma locally.",
       "url": "https://github.com/unslothai/unsloth"
+    },
+    {
+      "repo": "Maestro",
+      "owner": "mobile-dev-inc",
+      "stars_today": 469,
+      "language": "Kotlin",
+      "description": "Painless E2E Automation for Mobile and Web",
+      "url": "https://github.com/mobile-dev-inc/Maestro"
     },
     {
       "repo": "newton",
       "owner": "newton-physics",
-      "stars_today": 20,
+      "stars_today": 345,
       "language": "Python",
       "description": "An open-source, GPU-accelerated physics simulation engine built upon NVIDIA Warp, specifically targeting roboticists and simulation researchers.",
       "url": "https://github.com/newton-physics/newton"
     },
     {
-      "repo": "shadPS4",
-      "owner": "shadps4-emu",
-      "stars_today": 683,
-      "language": "C++",
-      "description": "PlayStation 4 emulator for Windows, Linux and macOS written in C++",
-      "url": "https://github.com/shadps4-emu/shadPS4"
+      "repo": "arnis",
+      "owner": "louis-e",
+      "stars_today": 918,
+      "language": "Rust",
+      "description": "Generate any location from the real world in Minecraft with a high level of detail.",
+      "url": "https://github.com/louis-e/arnis"
     },
     {
-      "repo": "open-swe",
-      "owner": "langchain-ai",
-      "stars_today": 454,
+      "repo": "MoneyPrinterV2",
+      "owner": "FujiwaraChoki",
+      "stars_today": 560,
       "language": "Python",
-      "description": "An Open-Source Asynchronous Coding Agent",
-      "url": "https://github.com/langchain-ai/open-swe"
+      "description": "Automate the process of making money online.",
+      "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2"
+    },
+    {
+      "repo": "get-shit-done",
+      "owner": "gsd-build",
+      "stars_today": 2642,
+      "language": "JavaScript",
+      "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by T\u00c2CHES.",
+      "url": "https://github.com/gsd-build/get-shit-done"
+    },
+    {
+      "repo": "learn-claude-code",
+      "owner": "shareAI-lab",
+      "stars_today": 1724,
+      "language": "TypeScript",
+      "description": "Bash is all you need - A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
+      "url": "https://github.com/shareAI-lab/learn-claude-code"
     }
   ],
   "sec_filings": [],
   "ph_launches": [
     {
-      "product": "Doccupine",
-      "tagline": "Open source AI-ready documentation platform. Discussion | Link",
-      "link": "https://www.producthunt.com/products/doccupine",
+      "product": "MiniMax",
+      "tagline": "Self-evolving AI model powering autonomous agents Discussion | Link",
+      "link": "https://www.producthunt.com/products/minimax-agent",
       "source": "producthunt.com"
     },
     {
-      "product": "Fantastical MCP for Mac",
-      "tagline": "Manage your schedule directly with Claude Discussion | Link",
-      "link": "https://www.producthunt.com/products/fantastical",
+      "product": "Netlify.new",
+      "tagline": "Start a project with just a prompt on Netlify Discussion | Link",
+      "link": "https://www.producthunt.com/products/netlify",
       "source": "producthunt.com"
     },
     {
-      "product": "Lore",
-      "tagline": "Cursor for your memory. 100% private, open-source & free. Discussion | Link",
-      "link": "https://www.producthunt.com/products/lore-4",
+      "product": "Comet for iOS",
+      "tagline": "Agentic AI browser and assistant for mobile by Perplexity Discussion | Link",
+      "link": "https://www.producthunt.com/products/perplexity-ai",
       "source": "producthunt.com"
     },
     {
-      "product": "GPT\u20115.4 mini and nano",
-      "tagline": "Fast and efficient models optimized for coding and subagents Discussion | Link",
-      "link": "https://www.producthunt.com/products/openai",
+      "product": "InfrOS",
+      "tagline": "Cloud Design: Predicted, Proven, Perfected. Discussion | Link",
+      "link": "https://www.producthunt.com/products/infros",
       "source": "producthunt.com"
     },
     {
-      "product": "AutoSend MCP",
-      "tagline": "The email platform your AI agent can operate. Discussion | Link",
-      "link": "https://www.producthunt.com/products/autosend-mcp",
+      "product": "Budibase AI Agents",
+      "tagline": "AI agents that run your operations (Open source) Discussion | Link",
+      "link": "https://www.producthunt.com/products/budibase",
       "source": "producthunt.com"
     },
     {
-      "product": "MetricMap",
-      "tagline": "Track revenue, ads, web vitals, & user insights in one hub Discussion | Link",
-      "link": "https://www.producthunt.com/products/metricmap-analytics-for-saas-e-com",
+      "product": "Doodles Ai",
+      "tagline": "An artist platform using a self-contained Doodles IP LLM Discussion | Link",
+      "link": "https://www.producthunt.com/products/doodles-ai",
       "source": "producthunt.com"
     },
     {
-      "product": "Claude Double Checker",
-      "tagline": "See Claude's 2\u00d7 usage window live in your macOS menu bar Discussion | Link",
-      "link": "https://www.producthunt.com/products/claude-double-checker-is-2x-active",
+      "product": "Tracium.ai",
+      "tagline": "Track AI Agents with a single line of code Discussion | Link",
+      "link": "https://www.producthunt.com/products/tracium-ai",
       "source": "producthunt.com"
     },
     {
-      "product": "Lightfield",
-      "tagline": "AI-native CRM that builds itself and does work for you Discussion | Link",
-      "link": "https://www.producthunt.com/products/lightfield",
+      "product": "talat",
+      "tagline": "Realtime meeting notes that don\u2019t leave your Mac Discussion | Link",
+      "link": "https://www.producthunt.com/products/talat",
       "source": "producthunt.com"
     },
     {
-      "product": "MS AUTO CAPTIONS",
-      "tagline": "Generate trending subtitles for videos automatically with AI Discussion | Link",
-      "link": "https://www.producthunt.com/products/ms-auto-captions",
+      "product": "SideDisplay",
+      "tagline": "Your Tesla screen is now a wireless second display Discussion | Link",
+      "link": "https://www.producthunt.com/products/sidedisplay",
       "source": "producthunt.com"
     },
     {
-      "product": "Banyan AI Lite",
-      "tagline": "AI detecting & preventing SaaS churn Discussion | Link",
-      "link": "https://www.producthunt.com/products/banyan-ai-lite",
+      "product": "Offload",
+      "tagline": "Parallelize tests across 200+ cloud sandboxes in one command Discussion | Link",
+      "link": "https://www.producthunt.com/products/imbue-7",
       "source": "producthunt.com"
     }
   ],
   "cross_references": [],
   "source_stats": {
-    "rss_funding": 7,
+    "rss_funding": 8,
     "rss_hiring": 12,
     "rss_execs": 10,
     "sam_gov": 0,
     "yc": 0,
     "hn_hiring": 30,
-    "github": 6,
+    "github": 11,
     "sec_edgar": 0,
     "producthunt": 10
   },
   "stage_breakdown": {
-    "Series A": 3,
-    "Series C": 3,
-    "Seed": 1
+    "Series A": 2,
+    "Series C": 5,
+    "Late Stage": 1
   },
   "sector_breakdown": {},
   "pdf_url": "daily_brief.pdf"
