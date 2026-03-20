@@ -1,15 +1,13 @@
 {
-  "generated": "March 19, 2026",
-  "generated_slug": "2026-03-19",
+  "generated": "March 20, 2026",
+  "generated_slug": "2026-03-20",
   "moves_today": [
-    "Reach out to Tagbin to discuss potential recruiting infrastructure build-out after their $10M Series A funding",
-    "Research DC startup Ressio's hiring plans after their $8.8M Series A funding",
-    "Explore potential partnership with Cadent after appointing a new Chief People Officer"
+    "Reach out to Tagbin to discuss building out their recruiting infrastructure after their $10M Series A funding",
+    "Connect with DC startup Ressio to explore their hiring needs after securing $8.8M in Series A funding"
   ],
   "top_3": [
-    "Tagbin: recently secured $10M Series A funding and may need recruiting infrastructure build-out",
-    "Ressio: recently raised $8.8M Series A funding and may be looking to scale their team",
-    "Cadent: appointed a new Chief People Officer, indicating potential hiring plans"
+    "Ressio: With $8.8M in Series A funding, they may be looking to build out their team and could benefit from Rebel Talent Systems' expertise",
+    "Esper: As a Govtech startup with $8M in Series A funding, they may be in need of recruiting support to drive growth"
   ],
   "new_money": [
     {
@@ -18,7 +16,7 @@
       "stage": "Series A",
       "location": "",
       "sector_tag": "GovTech",
-      "why_now": "Recently secured $10M Series A funding, may need recruiting infrastructure build-out"
+      "why_now": "Recently secured funding and is likely expanding their team"
     },
     {
       "company": "Ressio",
@@ -26,18 +24,26 @@
       "stage": "Series A",
       "location": "DC",
       "sector_tag": "",
-      "why_now": "Recently raised $8.8M Series A funding, may be looking to scale their team"
+      "why_now": "Recently secured funding and may be looking to build out their team"
+    },
+    {
+      "company": "Esper",
+      "amount": "$8M",
+      "stage": "Series A",
+      "location": "",
+      "sector_tag": "Govtech",
+      "why_now": "Recently secured funding and may be in need of recruiting support"
     }
   ],
   "hiring_signals": [
-    "BlackRock's head of talent acquisition reveals how AI has changed what they look for in applicants",
-    "Cadent appointed a new Chief People Officer to accelerate next phase of growth",
-    "CluePoints appointed a chief people officer to drive global growth"
+    "BlackRock's head of talent acquisition reveals changes in what they look for in applicants",
+    "VC firm Redpoint tells startups to prepare for a hiring showdown",
+    "MobiKwik appoints new head of talent acquisition"
   ],
   "exec_moves": [
-    "Cadent appointed a new Chief People Officer",
-    "CluePoints appointed a chief people officer",
-    "Tower appointed a chief people officer"
+    "Palo Alto Networks appoints new Chief People Officer",
+    "Cadent appoints Chief People Officer and SVP of Marketing",
+    "CluePoints appoints chief people officer to drive global growth"
   ],
   "defense_signals": [],
   "vehicles": [
@@ -76,19 +82,6 @@
       "score": 3
     },
     {
-      "name": "Pardoned Nikola founder Trevor Milton is trying to",
-      "amount": "$1.0B",
-      "stage": "Late Stage",
-      "sector": "",
-      "location": "",
-      "headline": "Pardoned Nikola founder Trevor Milton is trying to raise $1B for AI-powered planes",
-      "link": "https://techcrunch.com/2026/03/18/pardoned-nikola-founder-trevor-milton-is-trying-to-raise-1b-for-ai-powered-planes/",
-      "source": "techcrunch.com",
-      "geo_match": 0,
-      "sector_match": 0,
-      "score": 2
-    },
-    {
       "name": "KBR",
       "amount": "$95M",
       "stage": "Series C",
@@ -96,32 +89,6 @@
       "location": "",
       "headline": "KBR Secures $95M Air Force Contract for Digital Engineering Support",
       "link": "https://www.executivebiz.com/articles/kbr-air-force-digital-engineering-contract",
-      "source": "executivebiz.com",
-      "geo_match": 0,
-      "sector_match": 0,
-      "score": 2
-    },
-    {
-      "name": "SPA",
-      "amount": "$100M",
-      "stage": "Series C",
-      "sector": "",
-      "location": "",
-      "headline": "SPA Lands $100M Contract to Support Secretary of War Research Office",
-      "link": "https://www.executivebiz.com/articles/systems-planning-analysis-ousw-re-contract-100m",
-      "source": "executivebiz.com",
-      "geo_match": 0,
-      "sector_match": 0,
-      "score": 2
-    },
-    {
-      "name": "Arlo Solutions",
-      "amount": "$85M",
-      "stage": "Series C",
-      "sector": "",
-      "location": "",
-      "headline": "Arlo Solutions Secures $85M Department of War Contract for SASP Mission Support",
-      "link": "https://www.executivebiz.com/articles/arlo-solutions-85m-dow-sasp-support-contract",
       "source": "executivebiz.com",
       "geo_match": 0,
       "sector_match": 0,
@@ -141,6 +108,19 @@
       "score": 2
     },
     {
+      "name": "New Orleans-based Civilized AI",
+      "amount": "$2M",
+      "stage": "Seed",
+      "sector": "",
+      "location": "",
+      "headline": "New Orleans-based Civilized AI raises $2M to modernize city services - New Orleans CityBusiness",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdk1CN00xRXQ2YXd1bDE1TEppbE5mdG1OcmNhUjQ1U3hrLWxRendtUzNMOEtpaWZxYmxocFhGbWVscS1UclB4TWtyTEZnenJSNlYwRHE3blFkT3RBTlhHTXJOajMyRjROSE1vam5xTTdGeWM1cjdaRFJhdzAxbzNGSnY3WThreUd3WEd1LVpidTVKZGFwR0pwVFlR?oc=5",
+      "source": "news.google.com",
+      "geo_match": 0,
+      "sector_match": 0,
+      "score": 2
+    },
+    {
       "name": "Exclusive: Candex Extends Series C To $40M+ To Help Enterprises Easily Onboard G",
       "amount": "$40M",
       "stage": "Series C",
@@ -152,6 +132,32 @@
       "geo_match": 1,
       "sector_match": 0,
       "score": 1
+    },
+    {
+      "name": "Govtech startup Esper announces $8M Series A - PR Newswire",
+      "amount": "$8M",
+      "stage": "Series A",
+      "sector": "",
+      "location": "",
+      "headline": "Govtech startup Esper announces $8M Series A - PR Newswire",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa0VMZXVPc25wNEpOVGhia1RVNFpUa3daSDQzLWZFZW00ZVVQMXVIa2czLUxJa3dhaEo4OXVRcHNKNmVLZXUzWm5ISk1wUzJRaG9OTWU4OEphbVpjbWc3REg1NTUyX19PXzk4Z2xoemFzS2FxZmlmSVczS281WDdzcng5OXF2TlkweG4yb1BEX0RaVGRiYnZueWZreFB3ZHJx?oc=5",
+      "source": "news.google.com",
+      "geo_match": 0,
+      "sector_match": 1,
+      "score": 1
+    },
+    {
+      "name": "Bluesky announces $100M Series B after CEO transition",
+      "amount": "$100M",
+      "stage": "Series B",
+      "sector": "",
+      "location": "",
+      "headline": "Bluesky announces $100M Series B after CEO transition",
+      "link": "https://techcrunch.com/2026/03/19/bluesky-announces-100m-series-b-after-ceo-transition/",
+      "source": "techcrunch.com",
+      "geo_match": 0,
+      "sector_match": 0,
+      "score": 0
     }
   ],
   "raw_hiring": [
@@ -163,10 +169,10 @@
       "source": "news.google.com"
     },
     {
-      "company": "the firm",
-      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
-      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
+      "company": "VC firm Redpoint tells startups to buckle up for a",
+      "role": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shar",
+      "signal": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shared with founders. &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRUdYVEdsTlJDczJ4T1hQN2swd0h4ZmlweVlDYjllYW1Well3UkdyeXNXOXVxdmVtQjhaa2VRU0ExWkpFVk9laGxUYl9oQUJtTTVXQVc0OXpGTy0taEIyeS1xTXN6MUJQRnJuR1VQSk5BYUpJMlhYUjFHY2pDbjRzajdYOTNrMkRRSEE?oc=5",
       "source": "news.google.com"
     },
     {
@@ -177,10 +183,10 @@
       "source": "news.google.com"
     },
     {
-      "company": "VC firm Redpoint tells startups to buckle up for a",
-      "role": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shar",
-      "signal": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shared with founders. &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRUdYVEdsTlJDczJ4T1hQN2swd0h4ZmlweVlDYjllYW1Well3UkdyeXNXOXVxdmVtQjhaa2VRU0ExWkpFVk9laGxUYl9oQUJtTTVXQVc0OXpGTy0taEIyeS1xTXN6MUJQRnJuR1VQSk5BYUpJMlhYUjFHY2pDbjRzajdYOTNrMkRRSEE?oc=5",
+      "company": "the firm",
+      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
+      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
       "source": "news.google.com"
     },
     {
@@ -242,6 +248,14 @@
   ],
   "raw_execs": [
     {
+      "person": "",
+      "title": "",
+      "company": "Palo Alto Networks Taps Danielle Gonzalez to Lead ",
+      "headline": "Palo Alto Networks Taps Danielle Gonzalez to Lead Talent Strategy as Chief People Officer - GovCon Wire",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOaUhlYmtDS2Nsb0FDUHpIbWRUQUVPZ3BGX3JnSFl1ZWxUeWFLSjRwUHVtejZsM3U0TFQyLUgtcWxrOE5qTUloaHB2Y0hzMVVqbmRPQXJvZ1ZEaGRRd2JBVWJMdGdpb1RxSjlfZ00ydTVJeVZCQXhqa0hoejl6M1BRRzZmYk54Z3VzNXc?oc=5",
+      "source": "news.google.com"
+    },
+    {
       "person": "Chief People Officer and SVP of Marketing",
       "title": "Accelerate Next Phase of Growth",
       "company": "Cadent",
@@ -276,17 +290,17 @@
     {
       "person": "",
       "title": "",
-      "company": "Driscoll\u2019s",
-      "headline": "Driscoll\u2019s appoints chief people officer - bluebookservices.com",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB3a1FWUGdwbzk5c2pPMTlGUEtQSllVN0RzTUNHWDFxenlfYk9VaDYzclVqc1hTMzBGT1RqLWtkMnIzcDlCbm5QekU3YzlYYldpem1nRzZDeS1KUkJhTWJsQXk0QXdvWlUybm5EdnFzNzRmZGNDY0VjdUhGMDkxdw?oc=5",
+      "company": "Swiss Re",
+      "headline": "Swiss Re appoints chief people officer - Corporate Adviser",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1jcGx6amVJVkhEdzVObGdXM3dPRTYwVE9pTUZzTy0yeHRsYlNpZHloSGVaMkVSTUl0aTAwc0xDY3R2dy1zRlJCNlY5RW9wamdZeVV5bk9RQUlDOVFMV3ZPSEJJaWtiRVVySUx2N1BZRVY5bGFvb3VtSdIBfkFVX3lxTE5zcGo3VEoxZVRDVnd0QXZVZjZESjBUc0JIVFY4OW5EaHhpbjZxWFJHLU9iTXNCYkRnRDdCTnFvSUR1eEhEMlh0Z1pKb3BpZTl4WWpDQUIwdXl4eDlqaEZISTBQVHZoNHN2SzZzcUhnZDhLRjdIQ2QzN3F0cnpDdw?oc=5",
       "source": "news.google.com"
     },
     {
       "person": "",
       "title": "",
-      "company": "Swiss Re",
-      "headline": "Swiss Re appoints chief people officer - Corporate Adviser",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1jcGx6amVJVkhEdzVObGdXM3dPRTYwVE9pTUZzTy0yeHRsYlNpZHloSGVaMkVSTUl0aTAwc0xDY3R2dy1zRlJCNlY5RW9wamdZeVV5bk9RQUlDOVFMV3ZPSEJJaWtiRVVySUx2N1BZRVY5bGFvb3VtSdIBfkFVX3lxTE5zcGo3VEoxZVRDVnd0QXZVZjZESjBUc0JIVFY4OW5EaHhpbjZxWFJHLU9iTXNCYkRnRDdCTnFvSUR1eEhEMlh0Z1pKb3BpZTl4WWpDQUIwdXl4eDlqaEZISTBQVHZoNHN2SzZzcUhnZDhLRjdIQ2QzN3F0cnpDdw?oc=5",
+      "company": "Driscoll\u2019s",
+      "headline": "Driscoll\u2019s appoints chief people officer - bluebookservices.com",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB3a1FWUGdwbzk5c2pPMTlGUEtQSllVN0RzTUNHWDFxenlfYk9VaDYzclVqc1hTMzBGT1RqLWtkMnIzcDlCbm5QekU3YzlYYldpem1nRzZDeS1KUkJhTWJsQXk0QXdvWlUybm5EdnFzNzRmZGNDY0VjdUhGMDkxdw?oc=5",
       "source": "news.google.com"
     },
     {
@@ -300,14 +314,6 @@
     {
       "person": "",
       "title": "",
-      "company": "Brooks Macdonald",
-      "headline": "Brooks Macdonald appoints chief people officer - International Adviser",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ2VTb0NzdUN0VHpUSGZiVUZjX1ZPWmpmSUIwM0hMOHVDVDEwVnYzY0NCWTBKVE52Qy1jR3FBeXZfVTNzTFU2ekhxYXh4dWh0S2tBbVNGcV9rSWl1c2x4bG9DWk0tMlRLTGwydmZzaHVBd0FTRlZ5Y2VYN3lvbl9iNUlNYlc1WC1EM0hKd2tn?oc=5",
-      "source": "news.google.com"
-    },
-    {
-      "person": "",
-      "title": "",
       "company": "Capital Four",
       "headline": "Capital Four appoints chief people officer - Alternative Credit Investor",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLTNIOHllMXEwTG5Ec0tOSDR5S2wxdUNVVDlUcVdka1pwbnhEZ0I5U1F3QzI5eUV1Mlh2TmNZTks3VDJKeVBhdzJtMUhSLWhhZG5DSEVYZkdSNEkxQXJobDdDSzAyd2lacVl1QTM1dkNQbGVNa0YwWGh6ankwbWpza1pwMnQ3ZDU0SmdTY0xvVHpZN1gzQ3FZ?oc=5",
@@ -316,9 +322,9 @@
     {
       "person": "",
       "title": "",
-      "company": "DSG Global",
-      "headline": "DSG Global Appoints Chief People Officer - Hunt Scanlon Media",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5mb3pJeGNURVcwd3JLZXByeVBmQnFKSks4OEpIdkMxa2NtSnBibGQtenc1V1lXZ1gzNHdUNC1rNXpfbEtKQzhTZ1lVa0lxZ0ZBTjhqb1l5dWlrSlhzWkcwLTZ2aTkzX1FEdDhLeFVpMERZWlU?oc=5",
+      "company": "Brooks Macdonald",
+      "headline": "Brooks Macdonald appoints chief people officer - International Adviser",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ2VTb0NzdUN0VHpUSGZiVUZjX1ZPWmpmSUIwM0hMOHVDVDEwVnYzY0NCWTBKVE52Qy1jR3FBeXZfVTNzTFU2ekhxYXh4dWh0S2tBbVNGcV9rSWl1c2x4bG9DWk0tMlRLTGwydmZzaHVBd0FTRlZ5Y2VYN3lvbl9iNUlNYlc1WC1EM0hKd2tn?oc=5",
       "source": "news.google.com"
     }
   ],
@@ -606,17 +612,17 @@
   ],
   "github_trending": [
     {
-      "repo": "opendataloader-pdf",
-      "owner": "opendataloader-project",
-      "stars_today": 1394,
-      "language": "Java",
-      "description": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
-      "url": "https://github.com/opendataloader-project/opendataloader-pdf"
+      "repo": "claude-hud",
+      "owner": "jarrodwatts",
+      "stars_today": 1074,
+      "language": "JavaScript",
+      "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
+      "url": "https://github.com/jarrodwatts/claude-hud"
     },
     {
       "repo": "open-swe",
       "owner": "langchain-ai",
-      "stars_today": 955,
+      "stars_today": 640,
       "language": "Python",
       "description": "An Open-Source Asynchronous Coding Agent",
       "url": "https://github.com/langchain-ai/open-swe"
@@ -624,136 +630,120 @@
     {
       "repo": "superpowers",
       "owner": "obra",
-      "stars_today": 3476,
+      "stars_today": 2886,
       "language": "Shell",
       "description": "An agentic skills framework &amp; software development methodology that works.",
       "url": "https://github.com/obra/superpowers"
     },
     {
-      "repo": "claude-hud",
-      "owner": "jarrodwatts",
-      "stars_today": 1851,
-      "language": "JavaScript",
-      "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
-      "url": "https://github.com/jarrodwatts/claude-hud"
-    },
-    {
-      "repo": "unsloth",
-      "owner": "unslothai",
-      "stars_today": 1259,
-      "language": "Python",
-      "description": "Unified web UI for training and running open models like Qwen, DeepSeek, gpt-oss and Gemma locally.",
-      "url": "https://github.com/unslothai/unsloth"
-    },
-    {
-      "repo": "Maestro",
-      "owner": "mobile-dev-inc",
-      "stars_today": 469,
-      "language": "Kotlin",
-      "description": "Painless E2E Automation for Mobile and Web",
-      "url": "https://github.com/mobile-dev-inc/Maestro"
-    },
-    {
-      "repo": "newton",
-      "owner": "newton-physics",
-      "stars_today": 345,
-      "language": "Python",
-      "description": "An open-source, GPU-accelerated physics simulation engine built upon NVIDIA Warp, specifically targeting roboticists and simulation researchers.",
-      "url": "https://github.com/newton-physics/newton"
+      "repo": "opendataloader-pdf",
+      "owner": "opendataloader-project",
+      "stars_today": 1848,
+      "language": "Java",
+      "description": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+      "url": "https://github.com/opendataloader-project/opendataloader-pdf"
     },
     {
       "repo": "arnis",
       "owner": "louis-e",
-      "stars_today": 918,
+      "stars_today": 1073,
       "language": "Rust",
       "description": "Generate any location from the real world in Minecraft with a high level of detail.",
       "url": "https://github.com/louis-e/arnis"
     },
     {
-      "repo": "MoneyPrinterV2",
-      "owner": "FujiwaraChoki",
-      "stars_today": 560,
+      "repo": "newton",
+      "owner": "newton-physics",
+      "stars_today": 267,
       "language": "Python",
-      "description": "Automate the process of making money online.",
-      "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2"
+      "description": "An open-source, GPU-accelerated physics simulation engine built upon NVIDIA Warp, specifically targeting roboticists and simulation researchers.",
+      "url": "https://github.com/newton-physics/newton"
     },
     {
-      "repo": "get-shit-done",
-      "owner": "gsd-build",
-      "stars_today": 2642,
-      "language": "JavaScript",
-      "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by T\u00c2CHES.",
-      "url": "https://github.com/gsd-build/get-shit-done"
-    },
-    {
-      "repo": "learn-claude-code",
-      "owner": "shareAI-lab",
-      "stars_today": 1724,
+      "repo": "TaxHacker",
+      "owner": "vas3k",
+      "stars_today": 136,
       "language": "TypeScript",
-      "description": "Bash is all you need - A nano claude code\u2013like \u300cagent harness\u300d, built from 0 to 1",
-      "url": "https://github.com/shareAI-lab/learn-claude-code"
+      "description": "Self-hosted AI accounting app. LLM analyzer for receipts, invoices, transactions with custom prompts and categories",
+      "url": "https://github.com/vas3k/TaxHacker"
+    },
+    {
+      "repo": "TradingAgents",
+      "owner": "TauricResearch",
+      "stars_today": 371,
+      "language": "Python",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    },
+    {
+      "repo": "openrocket",
+      "owner": "openrocket",
+      "stars_today": 132,
+      "language": "Java",
+      "description": "Model-rocketry aerodynamics and trajectory simulation software",
+      "url": "https://github.com/openrocket/openrocket"
     }
   ],
   "sec_filings": [],
   "ph_launches": [
     {
-      "product": "MiniMax",
-      "tagline": "Self-evolving AI model powering autonomous agents Discussion | Link",
-      "link": "https://www.producthunt.com/products/minimax-agent",
+      "product": "Gately",
+      "tagline": "Everything you need to build your own membership Discussion | Link",
+      "link": "https://www.producthunt.com/products/nevacode",
       "source": "producthunt.com"
     },
     {
-      "product": "Netlify.new",
-      "tagline": "Start a project with just a prompt on Netlify Discussion | Link",
-      "link": "https://www.producthunt.com/products/netlify",
+      "product": "Joy for Gmail",
+      "tagline": "A Gmail with clearer inbox, focused writing, less noise Discussion | Link",
+      "link": "https://www.producthunt.com/products/joy-for-gmail",
       "source": "producthunt.com"
     },
     {
-      "product": "Comet for iOS",
-      "tagline": "Agentic AI browser and assistant for mobile by Perplexity Discussion | Link",
-      "link": "https://www.producthunt.com/products/perplexity-ai",
+      "product": "MusicLib",
+      "tagline": "The Ultimate Sheet Music Library Solution Discussion | Link",
+      "link": "https://www.producthunt.com/products/musiclib",
       "source": "producthunt.com"
     },
     {
-      "product": "InfrOS",
-      "tagline": "Cloud Design: Predicted, Proven, Perfected. Discussion | Link",
-      "link": "https://www.producthunt.com/products/infros",
+      "product": "Telea",
+      "tagline": "Speak like you always know what to say Discussion | Link",
+      "link": "https://www.producthunt.com/products/telea",
       "source": "producthunt.com"
     },
     {
-      "product": "Budibase AI Agents",
-      "tagline": "AI agents that run your operations (Open source) Discussion | Link",
-      "link": "https://www.producthunt.com/products/budibase",
+      "product": "Visdiff",
+      "tagline": "Stop bridging the design-to-code gap, close it Discussion | Link",
+      "link": "https://www.producthunt.com/products/visdiff",
       "source": "producthunt.com"
     },
     {
-      "product": "Doodles Ai",
-      "tagline": "An artist platform using a self-contained Doodles IP LLM Discussion | Link",
-      "link": "https://www.producthunt.com/products/doodles-ai",
+      "product": "AdsTurbo",
+      "tagline": "Create ads with AI actors that look truly human Discussion | Link",
+      "link": "https://www.producthunt.com/products/adsturbo-2",
       "source": "producthunt.com"
     },
     {
-      "product": "Tracium.ai",
-      "tagline": "Track AI Agents with a single line of code Discussion | Link",
-      "link": "https://www.producthunt.com/products/tracium-ai",
+      "product": "GitAgent by Lyzr",
+      "tagline": "Your repository becomes your agent Discussion | Link",
+      "link": "https://www.producthunt.com/products/gitagent-2",
       "source": "producthunt.com"
     },
     {
-      "product": "talat",
-      "tagline": "Realtime meeting notes that don\u2019t leave your Mac Discussion | Link",
-      "link": "https://www.producthunt.com/products/talat",
+      "product": "Context Overflow",
+      "tagline": "Knowledge Sharing for AI Agents Discussion | Link",
+      "link": "https://www.producthunt.com/products/context-overflow",
       "source": "producthunt.com"
     },
     {
-      "product": "SideDisplay",
-      "tagline": "Your Tesla screen is now a wireless second display Discussion | Link",
-      "link": "https://www.producthunt.com/products/sidedisplay",
+      "product": "Composer 2 by Cursor",
+      "tagline": "Fast, token-efficient frontier-level coding model Discussion | Link",
+      "link": "https://www.producthunt.com/products/cursor",
       "source": "producthunt.com"
     },
     {
-      "product": "Offload",
-      "tagline": "Parallelize tests across 200+ cloud sandboxes in one command Discussion | Link",
-      "link": "https://www.producthunt.com/products/imbue-7",
+      "product": "Chat",
+      "tagline": "turn your backend into a chat app instantly Discussion | Link",
+      "link": "https://www.producthunt.com/products/chat-5",
       "source": "producthunt.com"
     }
   ],
@@ -765,14 +755,15 @@
     "sam_gov": 0,
     "yc": 0,
     "hn_hiring": 30,
-    "github": 11,
+    "github": 9,
     "sec_edgar": 0,
     "producthunt": 10
   },
   "stage_breakdown": {
-    "Series A": 2,
-    "Series C": 5,
-    "Late Stage": 1
+    "Series A": 3,
+    "Series C": 3,
+    "Seed": 1,
+    "Series B": 1
   },
   "sector_breakdown": {},
   "pdf_url": "daily_brief.pdf"
