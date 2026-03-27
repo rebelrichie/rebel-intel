@@ -1,51 +1,51 @@
 {
-  "generated": "March 26, 2026",
-  "generated_slug": "2026-03-26",
+  "generated": "March 27, 2026",
+  "generated_slug": "2026-03-27",
   "moves_today": [
-    "Research and reach out to DC startup Ressio, as they have recently raised $8.8M in Series A funding and may be looking to build out their recruiting infrastructure",
-    "Look into Govtech startup Esper, who has announced an $8M Series A and may need help with hiring and talent acquisition",
-    "Explore potential opportunities with Connecticut City, who has received a $50M state innovation grant and may be expanding their team"
+    "Research Conntour's hiring plans after their $7M Series A funding",
+    "Look into DC startup Ressio's hiring needs after their $8.8M Series A funding",
+    "Explore potential partnerships with New Orleans-based Civilized AI after their $2M seed funding"
   ],
   "top_3": [
-    "DC startup Ressio: Recently raised $8.8M in Series A funding, indicating potential need for recruiting infrastructure build-out",
-    "Govtech startup Esper: Announced $8M Series A, may require assistance with hiring and talent acquisition",
-    "Connecticut City: Received $50M state innovation grant, possible expansion of team and need for recruiting support"
+    "Conntour: Recently raised $7M in Series A funding and may be looking to build out their team",
+    "DC startup Ressio: Raised $8.8M in Series A funding and could be hiring for their AI construction management software",
+    "New Orleans-based Civilized AI: Raised $2M in seed funding and may be looking to expand their team"
   ],
   "new_money": [
     {
-      "company": "Ressio",
+      "company": "Conntour",
+      "amount": "$7M",
+      "stage": "Series A",
+      "location": "",
+      "sector_tag": "SaaS/B2B tech",
+      "why_now": "Recently raised Series A funding, likely to build out their team"
+    },
+    {
+      "company": "DC startup Ressio",
       "amount": "$8.8M",
       "stage": "Series A",
       "location": "DC",
-      "sector_tag": "GovTech",
-      "why_now": "Recently raised Series A funding, likely looking to build out recruiting infrastructure"
+      "sector_tag": "Construction tech",
+      "why_now": "Recently raised Series A funding, likely to hire for their AI construction management software"
     },
     {
-      "company": "Esper",
-      "amount": "$8M",
-      "stage": "Series A",
-      "location": "",
-      "sector_tag": "GovTech",
-      "why_now": "Announced Series A funding, may need help with hiring and talent acquisition"
-    },
-    {
-      "company": "Connecticut City",
-      "amount": "$50M",
-      "stage": "State Innovation Grant",
-      "location": "",
-      "sector_tag": "GovTech",
-      "why_now": "Received state innovation grant, possible expansion of team and need for recruiting support"
+      "company": "New Orleans-based Civilized AI",
+      "amount": "$2M",
+      "stage": "Seed",
+      "location": "New Orleans",
+      "sector_tag": "AI",
+      "why_now": "Recently raised seed funding, may be looking to expand their team"
     }
   ],
   "hiring_signals": [
-    "BlackRock's head of talent acquisition is looking for new hires, indicating potential need for recruiting support",
-    "MobiKwik has appointed a new Head of Talent Acquisition, may be looking to build out recruiting infrastructure",
-    "VC firm Redpoint is advising startups to prepare for a hiring showdown, indicating potential increased demand for recruiting services"
+    "BlackRock's head of talent acquisition reveals how AI has changed what they look for in applicants",
+    "VC firm Redpoint tells startups to buckle up for a hiring showdown",
+    "MobiKwik appoints Rajat Bansal as Senior Director and Head of Talent Acquisition"
   ],
   "exec_moves": [
-    "Palo Alto Networks has appointed a new Chief People Officer, Danielle Gonzalez, to lead talent strategy",
-    "Cadent has appointed a new Chief People Officer and SVP of Marketing to accelerate growth",
-    "CluePoints has appointed a new chief people officer to drive global growth"
+    "Palo Alto Networks appoints Danielle Gonzalez to Lead Talent Strategy as Chief People Officer",
+    "Cadent appoints Chief People Officer and SVP of Marketing to Accelerate Next Phase of Growth",
+    "CluePoints appoints chief people officer to drive global growth"
   ],
   "defense_signals": [],
   "vehicles": [
@@ -53,7 +53,8 @@
     "GoFractional"
   ],
   "competitive": [
-    "Mercor competitor Deccan AI has raised $25M, indicating increased competition in the AI space"
+    "Kleiner Perkins raises $3.5B for AI-focused funds",
+    "Shield AI lands $12.7B valuation after US Air Force deal"
   ],
   "raw_funded": [
     {
@@ -70,13 +71,26 @@
       "score": 3
     },
     {
-      "name": "Riding the GLP-1 boom, VITL",
-      "amount": "$7.5M",
+      "name": "Defense startup Shield AI",
+      "amount": "$12.7B",
+      "stage": "Late Stage",
+      "sector": "",
+      "location": "",
+      "headline": "Defense startup Shield AI lands $12.7B valuation, up 140%, after US Air Force deal",
+      "link": "https://techcrunch.com/2026/03/26/defense-startup-shield-ai-lands-12-7b-valuation-up-140-after-u-s-air-force-deal/",
+      "source": "techcrunch.com",
+      "geo_match": 0,
+      "sector_match": 0,
+      "score": 2
+    },
+    {
+      "name": "Conntour",
+      "amount": "$7M",
       "stage": "Series A",
       "sector": "",
       "location": "",
-      "headline": "Riding the GLP-1 boom, VITL lands $7.5M to overhaul cash-pay clinic prescribing",
-      "link": "https://techcrunch.com/2026/03/25/riding-the-glp-1-boom-vitl-lands-7-5m-to-overhaul-cash-pay-clinic-prescribing/",
+      "headline": "Conntour raises $7M from General Catalyst, YC to build an AI search engine for security video systems",
+      "link": "https://techcrunch.com/2026/03/26/conntour-raises-7m-from-general-catalyst-yc-to-build-an-ai-search-engine-for-security-video-systems/",
       "source": "techcrunch.com",
       "geo_match": 0,
       "sector_match": 0,
@@ -120,19 +134,6 @@
       "geo_match": 0,
       "sector_match": 0,
       "score": 2
-    },
-    {
-      "name": "Govtech startup Esper announces $8M Series A - PR Newswire",
-      "amount": "$8M",
-      "stage": "Series A",
-      "sector": "",
-      "location": "",
-      "headline": "Govtech startup Esper announces $8M Series A - PR Newswire",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa0VMZXVPc25wNEpOVGhia1RVNFpUa3daSDQzLWZFZW00ZVVQMXVIa2czLUxJa3dhaEo4OXVRcHNKNmVLZXUzWm5ISk1wUzJRaG9OTWU4OEphbVpjbWc3REg1NTUyX19PXzk4Z2xoemFzS2FxZmlmSVczS281WDdzcng5OXF2TlkweG4yb1BEX0RaVGRiYnZueWZreFB3ZHJx?oc=5",
-      "source": "news.google.com",
-      "geo_match": 0,
-      "sector_match": 1,
-      "score": 1
     }
   ],
   "raw_hiring": [
@@ -144,10 +145,10 @@
       "source": "news.google.com"
     },
     {
-      "company": "the firm",
-      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
-      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
+      "company": "VC firm Redpoint tells startups to buckle up for a",
+      "role": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shar",
+      "signal": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shared with founders. &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRUdYVEdsTlJDczJ4T1hQN2swd0h4ZmlweVlDYjllYW1Well3UkdyeXNXOXVxdmVtQjhaa2VRU0ExWkpFVk9laGxUYl9oQUJtTTVXQVc0OXpGTy0taEIyeS1xTXN6MUJQRnJuR1VQSk5BYUpJMlhYUjFHY2pDbjRzajdYOTNrMkRRSEE?oc=5",
       "source": "news.google.com"
     },
     {
@@ -158,10 +159,10 @@
       "source": "news.google.com"
     },
     {
-      "company": "VC firm Redpoint tells startups to buckle up for a",
-      "role": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shar",
-      "signal": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shared with founders. &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRUdYVEdsTlJDczJ4T1hQN2swd0h4ZmlweVlDYjllYW1Well3UkdyeXNXOXVxdmVtQjhaa2VRU0ExWkpFVk9laGxUYl9oQUJtTTVXQVc0OXpGTy0taEIyeS1xTXN6MUJQRnJuR1VQSk5BYUpJMlhYUjFHY2pDbjRzajdYOTNrMkRRSEE?oc=5",
+      "company": "How to Get",
+      "role": "How to Get Hired at Tinder, According to the Head of Talent - Business Insider",
+      "signal": "How to Get Hired at Tinder, According to the Head of Talent &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSEVSYXBpRlpmc0MtcGM1bGZ1YUtLVlNmdTRkZmtzQkFIc3RweVhBWVpHdjY5VTBBcjE1S2k4NzVqR2Zvb1c2VlVYQThNRU1HMzhmNHRxZ2ZTOWpRU1hyMWhKbVN6RTN2WDItX2hmbHc2bDZOV1A3UW1xWFNFaWUzQk1R?oc=5",
       "source": "news.google.com"
     },
     {
@@ -172,10 +173,17 @@
       "source": "news.google.com"
     },
     {
-      "company": "How to Get",
-      "role": "How to Get Hired at Tinder, According to the Head of Talent - Business Insider",
-      "signal": "How to Get Hired at Tinder, According to the Head of Talent &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSEVSYXBpRlpmc0MtcGM1bGZ1YUtLVlNmdTRkZmtzQkFIc3RweVhBWVpHdjY5VTBBcjE1S2k4NzVqR2Zvb1c2VlVYQThNRU1HMzhmNHRxZ2ZTOWpRU1hyMWhKbVN6RTN2WDItX2hmbHc2bDZOV1A3UW1xWFNFaWUzQk1R?oc=5",
+      "company": "the firm",
+      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
+      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
+      "source": "news.google.com"
+    },
+    {
+      "company": "Vanguard Head of Talent Acquisition Shares Favorit",
+      "role": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question - Business Insider",
+      "signal": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2tEazBKTHVJMmR5dUZPMVBvU1hJMkhlbWhGVEJSV3lXSGxiaFRUUTdESUdHT29SNUdTY3hEeXpEeWJ4cWZ3OXlRb2M1dXN1dGVCVjlyUUtfN3JwSlRIMkpTSk5STGdFM1lVVUE3YklFc1E3akpWUEZqNkdJc2ZTeExuMS1MNXhHdnkxZTdYQjVaZzVIQnlXeEZhR1I1bmZ0X0JTZA?oc=5",
       "source": "news.google.com"
     },
     {
@@ -186,10 +194,10 @@
       "source": "news.google.com"
     },
     {
-      "company": "Vanguard Head of Talent Acquisition Shares Favorit",
-      "role": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question - Business Insider",
-      "signal": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2tEazBKTHVJMmR5dUZPMVBvU1hJMkhlbWhGVEJSV3lXSGxiaFRUUTdESUdHT29SNUdTY3hEeXpEeWJ4cWZ3OXlRb2M1dXN1dGVCVjlyUUtfN3JwSlRIMkpTSk5STGdFM1lVVUE3YklFc1E3akpWUEZqNkdJc2ZTeExuMS1MNXhHdnkxZTdYQjVaZzVIQnlXeEZhR1I1bmZ0X0JTZA?oc=5",
+      "company": "Humand: $66 Million Series A Raised For AI Workfor",
+      "role": "Humand: $66 Million Series A Raised For AI Workforce Platform - Pulse 2.0",
+      "signal": "Humand: $66 Million Series A Raised For AI Workforce Platform &nbsp;&nbsp; Pulse 2.0",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWmp2MHBPbWc4MmVxb1FfcTdVZ1JoXzlDSjhOMTVGOHk4c1dUSkpaWnR5NnZ4OXJxT2t1N3FiTHE5YlBUQlJFdWJSVHNJeEVyYlpjeVNSNVp4RV82Q3VyYTczMGVicV9uLU9ubnhGTzdMcDRZSkhBLUdsckNNbHhPNzNPNV9Rd9IBiwFBVV95cUxNbE5pR1g1c093eXRjNEt4NWhnTWUxRVNyeWl6TW01M2p1dl8zLU5BNEdSb1ZUc3ZTRUVhMl9fRVBwQm5TQ0F3b21aaVJPUEhYTUVKUXE0STFYdmQ1UEZhN212R1hRVFB4bzNWQ21rR3AxZTROUVJyaHNZd0ZHSDRYQi1LQTFIMjZ1eFpr?oc=5",
       "source": "news.google.com"
     },
     {
@@ -204,13 +212,6 @@
       "role": "Sparrow Raises $35 Million in Series B Funding to Scale Its Global AI-powered Solutions for Leave Ma",
       "signal": "Sparrow Raises $35 Million in Series B Funding to Scale Its Global AI-powered Solutions for Leave Management &nbsp;&nbsp; Business Wire",
       "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYjdldFp4a2VkVTE5S0FndUZQVFJlcGVxeXJ5YlJzWHVodS1NV3lZSllKMVhqZzlhLVZvSG11Z05BQ01ncGpGSndzSm41NmhLbWdRaEVQdzNNUG15T05Ba2xncnBBUkdSTDU4cUNRWF9BeDJNbFQteC00em85MGRXTlBYN19pallidmw3T0VKWGRDdF8zUUVIc2V2RE5jbnNrbS1FcU5RYmhIYVF4bHMwRTZxYUh3Wk01SjdHdFBSVm02V1FpTERuQVhma2ZFUjhSM0dCbmU3LVpRNEpwc2xVWFplT1U2M25ZUVVBSGo3enI0UEYzV2tDQ3FKUQ?oc=5",
-      "source": "news.google.com"
-    },
-    {
-      "company": "Humand: $66 Million Series A Raised For AI Workfor",
-      "role": "Humand: $66 Million Series A Raised For AI Workforce Platform - Pulse 2.0",
-      "signal": "Humand: $66 Million Series A Raised For AI Workforce Platform &nbsp;&nbsp; Pulse 2.0",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWmp2MHBPbWc4MmVxb1FfcTdVZ1JoXzlDSjhOMTVGOHk4c1dUSkpaWnR5NnZ4OXJxT2t1N3FiTHE5YlBUQlJFdWJSVHNJeEVyYlpjeVNSNVp4RV82Q3VyYTczMGVicV9uLU9ubnhGTzdMcDRZSkhBLUdsckNNbHhPNzNPNV9Rd9IBiwFBVV95cUxNbE5pR1g1c093eXRjNEt4NWhnTWUxRVNyeWl6TW01M2p1dl8zLU5BNEdSb1ZUc3ZTRUVhMl9fRVBwQm5TQ0F3b21aaVJPUEhYTUVKUXE0STFYdmQ1UEZhN212R1hRVFB4bzNWQ21rR3AxZTROUVJyaHNZd0ZHSDRYQi1LQTFIMjZ1eFpr?oc=5",
       "source": "news.google.com"
     },
     {
@@ -289,17 +290,17 @@
     {
       "person": "",
       "title": "",
-      "company": "Capital Four",
-      "headline": "Capital Four appoints chief people officer - Alternative Credit Investor",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLTNIOHllMXEwTG5Ec0tOSDR5S2wxdUNVVDlUcVdka1pwbnhEZ0I5U1F3QzI5eUV1Mlh2TmNZTks3VDJKeVBhdzJtMUhSLWhhZG5DSEVYZkdSNEkxQXJobDdDSzAyd2lacVl1QTM1dkNQbGVNa0YwWGh6ankwbWpza1pwMnQ3ZDU0SmdTY0xvVHpZN1gzQ3FZ?oc=5",
+      "company": "Bravura",
+      "headline": "Bravura appoints chief people officer from AMP - Money Management",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWpNZ0lOd1VLZzNpb0t0a3dWQUZJWUpoTHN3N3U4V0o5QVBSUzhlWDFWWE1US0V2SlAwVE9UeUo4N0kxcW55WWFDV2M5RzBaV0RHdVVxeUdOZ0sxRE1aY0hzNTlMTUJZNUt0dDZxN05WajJzSjJTbnJhWHJzQzBZc01CTQ?oc=5",
       "source": "news.google.com"
     },
     {
       "person": "",
       "title": "",
-      "company": "Bravura",
-      "headline": "Bravura appoints chief people officer from AMP - Money Management",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWpNZ0lOd1VLZzNpb0t0a3dWQUZJWUpoTHN3N3U4V0o5QVBSUzhlWDFWWE1US0V2SlAwVE9UeUo4N0kxcW55WWFDV2M5RzBaV0RHdVVxeUdOZ0sxRE1aY0hzNTlMTUJZNUt0dDZxN05WajJzSjJTbnJhWHJzQzBZc01CTQ?oc=5",
+      "company": "Brooks Macdonald",
+      "headline": "Brooks Macdonald appoints chief people officer - International Adviser",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ2VTb0NzdUN0VHpUSGZiVUZjX1ZPWmpmSUIwM0hMOHVDVDEwVnYzY0NCWTBKVE52Qy1jR3FBeXZfVTNzTFU2ekhxYXh4dWh0S2tBbVNGcV9rSWl1c2x4bG9DWk0tMlRLTGwydmZzaHVBd0FTRlZ5Y2VYN3lvbl9iNUlNYlc1WC1EM0hKd2tn?oc=5",
       "source": "news.google.com"
     }
   ],
@@ -589,136 +590,152 @@
     {
       "repo": "last30days-skill",
       "owner": "mvanhorn",
-      "stars_today": 2684,
+      "stars_today": 2824,
       "language": "Python",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "url": "https://github.com/mvanhorn/last30days-skill"
     },
     {
-      "repo": "oh-my-claudecode",
-      "owner": "Yeachan-Heo",
-      "stars_today": 576,
-      "language": "TypeScript",
-      "description": "Teams-first Multi-agent orchestration for Claude Code",
-      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
-    },
-    {
-      "repo": "dexter",
-      "owner": "virattt",
-      "stars_today": 274,
-      "language": "TypeScript",
-      "description": "An autonomous agent for deep financial research",
-      "url": "https://github.com/virattt/dexter"
-    },
-    {
-      "repo": "RuView",
-      "owner": "ruvnet",
-      "stars_today": 1001,
-      "language": "Rust",
-      "description": "\u03c0 RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection \u2014 all without a single pixel of video.",
-      "url": "https://github.com/ruvnet/RuView"
-    },
-    {
-      "repo": "deer-flow",
-      "owner": "bytedance",
-      "stars_today": 2388,
+      "repo": "Deep-Live-Cam",
+      "owner": "hacksider",
+      "stars_today": 1546,
       "language": "Python",
-      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of ta",
-      "url": "https://github.com/bytedance/deer-flow"
+      "description": "real time face swap and one-click video deepfake with only a single image",
+      "url": "https://github.com/hacksider/Deep-Live-Cam"
     },
     {
-      "repo": "insanely-fast-whisper",
-      "owner": "Vaibhavs10",
-      "stars_today": 1381,
-      "language": "Jupyter Notebook",
-      "description": "Build and run agents you can see, understand and trust.",
-      "url": "https://github.com/Vaibhavs10/insanely-fast-whisper"
-    },
-    {
-      "repo": "agentscope",
-      "owner": "agentscope-ai",
-      "stars_today": 439,
+      "repo": "AI-Scientist-v2",
+      "owner": "SakanaAI",
+      "stars_today": 125,
       "language": "Python",
-      "description": "Building a modern alternative to Salesforce, powered by the community.",
-      "url": "https://github.com/agentscope-ai/agentscope"
+      "description": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search",
+      "url": "https://github.com/SakanaAI/AI-Scientist-v2"
     },
     {
       "repo": "twenty",
       "owner": "twentyhq",
-      "stars_today": 264,
+      "stars_today": 661,
       "language": "TypeScript",
-      "description": "OCR model that handles complex tables, forms, handwriting with full layout.",
+      "description": "Building a modern alternative to Salesforce, powered by the community.",
       "url": "https://github.com/twentyhq/twenty"
     },
     {
       "repo": "chandra",
       "owner": "datalab-to",
-      "stars_today": 546,
+      "stars_today": 913,
+      "language": "Python",
+      "description": "OCR model that handles complex tables, forms, handwriting with full layout.",
+      "url": "https://github.com/datalab-to/chandra"
+    },
+    {
+      "repo": "superpowers",
+      "owner": "obra",
+      "stars_today": 2993,
+      "language": "Shell",
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "url": "https://github.com/obra/superpowers"
+    },
+    {
+      "repo": "dexter",
+      "owner": "virattt",
+      "stars_today": 673,
+      "language": "TypeScript",
+      "description": "An autonomous agent for deep financial research",
+      "url": "https://github.com/virattt/dexter"
+    },
+    {
+      "repo": "oh-my-claudecode",
+      "owner": "Yeachan-Heo",
+      "stars_today": 1402,
+      "language": "TypeScript",
+      "description": "Teams-first Multi-agent orchestration for Claude Code",
+      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
+    },
+    {
+      "repo": "FreeCAD",
+      "owner": "FreeCAD",
+      "stars_today": 99,
+      "language": "C++",
+      "description": "Official source code of FreeCAD, a free and opensource multiplatform 3D parametric modeler.",
+      "url": "https://github.com/FreeCAD/FreeCAD"
+    },
+    {
+      "repo": "insanely-fast-whisper",
+      "owner": "Vaibhavs10",
+      "stars_today": 1075,
+      "language": "Jupyter Notebook",
+      "description": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
+      "url": "https://github.com/Vaibhavs10/insanely-fast-whisper"
+    },
+    {
+      "repo": "onyx",
+      "owner": "onyx-dot-app",
+      "stars_today": 512,
       "language": "Python",
       "description": "",
-      "url": "https://github.com/datalab-to/chandra"
+      "url": "https://github.com/onyx-dot-app/onyx"
     }
   ],
   "sec_filings": [],
   "ph_launches": [
     {
-      "product": "Mokkit",
-      "tagline": "Turn any screenshot into a scroll-stopping animated visual Discussion | Link",
-      "link": "https://www.producthunt.com/products/mokkit-2",
+      "product": "Noctiluca",
+      "tagline": "A new remote desktop for macOS Discussion | Link",
+      "link": "https://www.producthunt.com/products/noctiluca",
       "source": "producthunt.com"
     },
     {
-      "product": "Trivia by Typito AI",
-      "tagline": "Create viral quiz & trivia videos with AI Discussion | Link",
-      "link": "https://www.producthunt.com/products/trivia-by-typito-ai",
+      "product": "Hunna",
+      "tagline": "Profit App for Business Founders Discussion | Link",
+      "link": "https://www.producthunt.com/products/hunna",
       "source": "producthunt.com"
     },
     {
-      "product": "StreamPad",
-      "tagline": "Turn your iPhone/iPad into a studio-grade pro control deck Discussion | Link",
-      "link": "https://www.producthunt.com/products/streampad",
+      "product": "Web Rewind",
+      "tagline": "An interactive journey through 30 years of the web Discussion | Link",
+      "link": "https://www.producthunt.com/products/web-rewind",
       "source": "producthunt.com"
     },
     {
-      "product": "Venn.ai",
-      "tagline": "Delegate real work to AI agents with safety guardrails Discussion | Link",
-      "link": "https://www.producthunt.com/products/venn-ai-2",
+      "product": "Focus Flow 6.7 (Jira Plugin)",
+      "tagline": "Plan vs reality and multi-team epic reviews in Jira Discussion | Link",
+      "link": "https://www.producthunt.com/products/focus-flow",
       "source": "producthunt.com"
     },
     {
-      "product": "Autonoma.pro",
-      "tagline": "Real-time supplier search - trust scoring - outreaching Discussion | Link",
-      "link": "https://www.producthunt.com/products/autonoma-sourcing",
+      "product": "DashPane",
+      "tagline": "Switch apps at the speed of thought Discussion | Link",
+      "link": "https://www.producthunt.com/products/dashpane",
       "source": "producthunt.com"
     },
     {
-      "product": "Listen To This",
-      "tagline": "Paste an article to listen to it in your podcast app Discussion | Link",
-      "link": "https://www.producthunt.com/products/listen-to-this",
+      "product": "hoop.dev",
+      "tagline": "Connect Claude Code to your internal systems w/o credentials Discussion | Link",
+      "link": "https://www.producthunt.com/products/hoop-dev-for-databases",
       "source": "producthunt.com"
     },
     {
-      "product": "PinchBench",
-      "tagline": "Find the best AI model for your OpenClaw Discussion | Link",
-      "link": "https://www.producthunt.com/products/kiloclaw",
+      "product": "Playtester.gg",
+      "tagline": "Fresh and verified playtesters for your Indie Game Discussion | Link",
+      "link": "https://www.producthunt.com/products/playtester-gg",
       "source": "producthunt.com"
     },
     {
-      "product": "Anvil",
-      "tagline": "Run a fleet of parallel Claude Codes Discussion | Link",
-      "link": "https://www.producthunt.com/products/anvil-5",
+      "product": "Voxtral TTS by Mistral AI",
+      "tagline": "Multilingual TTS model with realistic and expressive speech Discussion | Link",
+      "link": "https://www.producthunt.com/products/mistral-7b",
       "source": "producthunt.com"
     },
     {
-      "product": "Littlebird",
-      "tagline": "Full context AI that can recall details from your screen Discussion | Link",
-      "link": "https://www.producthunt.com/products/littlebird",
+      "product": "Codex Plugins",
+      "tagline": "Package Codex skills and app integrations as plugins Discussion | Link",
+      "link": "https://www.producthunt.com/products/openai",
       "source": "producthunt.com"
     },
     {
-      "product": "Nebils",
-      "tagline": "An AI social network for humans, agents & models Discussion | Link",
-      "link": "https://www.producthunt.com/products/nebils",
+      "product": "InsideOrg",
+      "tagline": "Free organization chart viewer for any company Discussion | Link",
+      "link": "https://www.producthunt.com/products/insideorg",
       "source": "producthunt.com"
     }
   ],
@@ -730,16 +747,15 @@
     "sam_gov": 0,
     "yc": 0,
     "hn_hiring": 30,
-    "github": 9,
+    "github": 11,
     "sec_edgar": 0,
     "producthunt": 10
   },
   "stage_breakdown": {
     "Series C": 1,
-    "Series A": 3,
-    "Late Stage": 1,
-    "Seed": 1,
-    "State Innovation Grant": 1
+    "Late Stage": 2,
+    "Series A": 2,
+    "Seed": 1
   },
   "sector_breakdown": {},
   "pdf_url": "daily_brief.pdf"
