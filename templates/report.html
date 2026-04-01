@@ -5,284 +5,308 @@
 <style>
   @page {
     size: letter;
-    margin: 0.6in 0.7in;
+    margin: 0.55in 0.65in;
     @bottom-center {
-      content: "Rebel Talent Systems v4.0 \2014  Confidential";
-      font-family: monospace;
-      font-size: 8px;
-      color: #4a6070;
+      content: "Rebel Talent Systems v5.0  \2014  CONFIDENTIAL  \2014  Not for Distribution";
+      font-family: monospace; font-size: 7px; color: #3a4858;
     }
     @bottom-right {
-      content: "Page " counter(page);
-      font-family: monospace;
-      font-size: 8px;
-      color: #4a6070;
+      content: "Page " counter(page) " of " counter(pages);
+      font-family: monospace; font-size: 7px; color: #3a4858;
     }
   }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background: #0a0a0f;
     color: #c0d0e0;
-    font-size: 10px;
-    line-height: 1.5;
+    font-size: 9.5px;
+    line-height: 1.55;
   }
 
-  /* Header */
+  a { color: #00ffd5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── HEADER ── */
   .header {
     border-bottom: 2px solid #00ffd5;
     padding-bottom: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
-  .logo {
-    font-size: 18px;
-    font-weight: 700;
-    color: #00ffd5;
-    letter-spacing: 0.15em;
-  }
-  .logo-sub {
-    font-size: 8px;
-    color: #4a6070;
-    letter-spacing: 0.2em;
-    margin-top: 2px;
-  }
-  .date-box { text-align: right; }
-  .date-main {
-    font-size: 11px;
-    color: #ffa500;
-    font-weight: 600;
-  }
-  .date-sub {
-    font-size: 8px;
-    color: #4a6070;
-    letter-spacing: 0.1em;
-  }
   .clf {
-    font-size: 7px;
-    letter-spacing: 0.2em;
-    color: #ff3366;
-    border: 1px solid rgba(255, 51, 102, 0.4);
-    display: inline-block;
-    padding: 2px 6px;
-    margin-bottom: 8px;
+    font-size: 7px; letter-spacing: 0.2em; color: #ff3366;
+    border: 1px solid rgba(255,51,102,0.4);
+    display: inline-block; padding: 2px 6px; margin-bottom: 6px;
   }
+  .logo { font-size: 17px; font-weight: 700; color: #00ffd5; letter-spacing: 0.15em; }
+  .logo-sub { font-size: 7.5px; color: #4a6070; letter-spacing: 0.2em; margin-top: 2px; }
+  .date-main { font-size: 11px; color: #ffa500; font-weight: 600; text-align: right; }
+  .date-sub { font-size: 7px; color: #4a6070; letter-spacing: 0.1em; text-align: right; margin-top: 2px; }
 
-  /* Intelligence Summary */
-  .intel-summary {
-    background: #0d1117;
-    border: 1px solid #1a2440;
-    padding: 10px 14px;
-    margin-bottom: 16px;
+  /* ── INTELLIGENCE SUMMARY BAR ── */
+  .intel-bar {
+    background: #0d1117; border: 1px solid #1a2440;
+    padding: 10px 14px; margin-bottom: 14px;
   }
-  .intel-summary-title {
-    font-size: 8px;
-    letter-spacing: 0.2em;
-    color: #4a6070;
-    margin-bottom: 8px;
+  .intel-bar-title {
+    font-size: 7px; letter-spacing: 0.2em; color: #4a6070; margin-bottom: 8px;
   }
-  .intel-stats {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .intel-stat {
-    text-align: center;
-  }
-  .intel-stat-num {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1;
-  }
-  .intel-stat-label {
-    font-size: 7px;
-    letter-spacing: 0.15em;
-    color: #4a6070;
-    margin-top: 2px;
-  }
+  .intel-stats { display: flex; gap: 18px; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat-num { font-size: 17px; font-weight: 700; line-height: 1; }
+  .stat-label { font-size: 6.5px; letter-spacing: 0.15em; color: #4a6070; margin-top: 2px; }
 
-  /* Section headers */
+  /* ── SECTION HEADERS ── */
   .sec {
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #4a6070;
+    font-size: 8px; font-weight: 700; letter-spacing: 0.22em;
+    text-transform: uppercase; color: #4a6070;
     border-bottom: 1px solid #1a2440;
-    padding: 14px 0 4px;
-    margin: 18px 0 10px;
+    padding: 13px 0 4px; margin: 16px 0 9px;
+    display: flex; align-items: center; gap: 6px;
   }
   .sec::before {
-    content: '';
-    display: inline-block;
-    width: 12px;
-    height: 1px;
-    background: #00ffd5;
-    margin-right: 6px;
-    vertical-align: middle;
+    content: ''; display: inline-block; width: 10px; height: 1px;
+    background: #00ffd5; flex-shrink: 0;
+  }
+  .sec-count {
+    margin-left: auto; font-size: 7px; color: #3a4858;
   }
 
-  /* Move cards */
-  .moves-grid {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 6px;
+  /* ── EXECUTIVE SUMMARY ── */
+  .exec-summary {
+    background: linear-gradient(135deg, #0d1117 0%, #0a1020 100%);
+    border: 1px solid #1a2440; border-left: 3px solid #00ffd5;
+    padding: 12px 14px; margin-bottom: 14px;
   }
+  .exec-summary-title {
+    font-size: 7.5px; letter-spacing: 0.2em; color: #00ffd5;
+    margin-bottom: 8px; text-transform: uppercase;
+  }
+  .exec-summary-body { font-size: 9px; line-height: 1.65; color: #a0b4c8; }
+
+  /* ── CHARTS ── */
+  .chart-row { display: flex; gap: 10px; margin: 10px 0 14px; }
+  .chart-row img { max-width: 48%; height: auto; }
+
+  /* ── MOVE CARDS ── */
+  .moves-grid { display: flex; gap: 7px; margin-bottom: 6px; }
   .move-card {
-    flex: 1;
-    background: #0d1117;
-    border: 1px solid #1a2440;
-    border-top: 2px solid #ffa500;
-    padding: 10px;
+    flex: 1; background: #0d1117; border: 1px solid #1a2440;
+    border-top: 2px solid #ffa500; padding: 9px;
   }
-  .move-tag {
-    font-size: 7px;
-    letter-spacing: 0.2em;
-    color: #ffa500;
-    margin-bottom: 4px;
-  }
-  .move-txt {
-    font-size: 9px;
-    line-height: 1.5;
-    color: #c0d0e0;
-  }
+  .move-tag { font-size: 6.5px; letter-spacing: 0.2em; color: #ffa500; margin-bottom: 3px; }
+  .move-txt { font-size: 8.5px; line-height: 1.55; }
 
-  /* Target cards */
+  /* ── TARGET CARDS ── */
   .target-card {
-    background: #0d1117;
-    border: 1px solid #1a2440;
-    border-left: 2px solid #00ffd5;
-    padding: 8px 10px;
-    margin-bottom: 6px;
+    background: #0d1117; border: 1px solid #1a2440;
+    border-left: 2px solid #00ffd5; padding: 8px 10px; margin-bottom: 5px;
   }
-  .target-idx {
-    font-size: 7px;
-    letter-spacing: 0.15em;
-    color: #00ffd5;
-    margin-bottom: 2px;
-  }
-  .target-txt {
-    font-size: 9px;
-    line-height: 1.5;
+  .target-idx { font-size: 6.5px; letter-spacing: 0.15em; color: #00ffd5; margin-bottom: 2px; }
+  .target-txt { font-size: 8.5px; line-height: 1.55; }
+
+  /* ── MARKET TRENDS ── */
+  .trend-card {
+    background: #0d1117; border-left: 2px solid #b47cff;
+    padding: 7px 10px; margin-bottom: 4px; font-size: 8.5px; line-height: 1.5;
   }
 
-  /* Tables */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 9px;
-    margin-bottom: 6px;
-  }
+  /* ── TABLES ── */
+  table { width: 100%; border-collapse: collapse; font-size: 8.5px; margin-bottom: 6px; }
   thead th {
-    font-size: 7px;
-    letter-spacing: 0.15em;
-    color: #4a6070;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 4px 6px;
-    border-bottom: 1px solid #1a2440;
+    font-size: 6.5px; letter-spacing: 0.15em; color: #4a6070;
+    text-transform: uppercase; text-align: left;
+    padding: 4px 6px; border-bottom: 1px solid #1a2440;
   }
   tbody td {
-    padding: 5px 6px;
-    border-bottom: 1px solid rgba(26, 36, 64, 0.5);
-    vertical-align: top;
-    line-height: 1.4;
+    padding: 5px 6px; border-bottom: 1px solid rgba(26,36,64,0.5);
+    vertical-align: top; line-height: 1.4;
   }
+  .co-name { color: #dde8f0; font-weight: 600; }
   .tag {
-    display: inline-block;
-    font-size: 7px;
-    letter-spacing: 0.05em;
-    padding: 1px 5px;
-    border-radius: 2px;
+    display: inline-block; font-size: 6.5px; letter-spacing: 0.05em;
+    padding: 1px 5px; border-radius: 2px;
   }
-  .tag-teal { background: rgba(0,255,213,0.08); color: #00ffd5; border: 1px solid rgba(0,255,213,0.2); }
-  .tag-gold { background: rgba(255,165,0,0.08); color: #ffa500; border: 1px solid rgba(255,165,0,0.2); }
-  .tag-pink { background: rgba(255,0,110,0.08); color: #ff006e; border: 1px solid rgba(255,0,110,0.2); }
+  .tag-teal  { background: rgba(0,255,213,0.08); color: #00ffd5; border: 1px solid rgba(0,255,213,0.2); }
+  .tag-gold  { background: rgba(255,165,0,0.08);  color: #ffa500; border: 1px solid rgba(255,165,0,0.2); }
+  .tag-pink  { background: rgba(255,0,110,0.08);  color: #ff006e; border: 1px solid rgba(255,0,110,0.2); }
+  .tag-purple{ background: rgba(180,124,255,0.08);color: #b47cff; border: 1px solid rgba(180,124,255,0.2); }
+  .tag-red   { background: rgba(255,51,102,0.08); color: #ff3366; border: 1px solid rgba(255,51,102,0.2); }
 
-  /* Signal list */
+  /* ── SIGNAL ITEMS ── */
   .sig {
-    background: #0d1117;
-    border-left: 2px solid #00ffd5;
-    padding: 6px 10px;
-    margin-bottom: 4px;
-    font-size: 9px;
-    line-height: 1.5;
+    background: #0d1117; border-left: 2px solid #00ffd5;
+    padding: 5px 9px; margin-bottom: 4px; font-size: 8.5px; line-height: 1.5;
   }
-  .sig-gold { border-left-color: #ffa500; }
-  .sig-red { border-left-color: #ff3366; }
+  .sig a { color: #00ffd5; }
+  .sig-gold   { border-left-color: #ffa500; }
+  .sig-red    { border-left-color: #ff3366; }
   .sig-purple { border-left-color: #b47cff; }
-  .sig-pink { border-left-color: #ff006e; }
-  .no-data {
-    color: #3a4858;
-    font-size: 8px;
-    letter-spacing: 0.15em;
-    padding: 8px 0;
+  .sig-pink   { border-left-color: #ff006e; }
+  .no-data { color: #3a4858; font-size: 8px; letter-spacing: 0.15em; padding: 6px 0; }
+
+  /* ── LEAD PROFILE CARDS (v5.0) ── */
+  .lead-card {
+    background: #0d1117; border: 1px solid #1a2440;
+    border-top: 2px solid #00ffd5; margin-bottom: 14px;
+    page-break-inside: avoid;
+  }
+  .lead-header {
+    padding: 10px 12px 8px;
+    border-bottom: 1px solid #1a2440;
+    display: flex; justify-content: space-between; align-items: flex-start;
+  }
+  .lead-name {
+    font-size: 13px; font-weight: 700; color: #dde8f0;
+  }
+  .lead-name a { color: #dde8f0; }
+  .lead-meta { font-size: 7.5px; color: #4a6070; margin-top: 2px; letter-spacing: 0.05em; }
+  .lead-badges { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px; }
+  .lead-funding-box { text-align: right; }
+  .lead-amount { font-size: 14px; font-weight: 700; color: #ffa500; }
+  .lead-stage  { font-size: 7px; color: #4a6070; margin-top: 1px; }
+
+  .lead-body { padding: 10px 12px; }
+  .lead-desc { font-size: 8.5px; color: #a0b4c8; line-height: 1.6; margin-bottom: 8px; }
+
+  .lead-grid { display: flex; gap: 12px; margin-bottom: 8px; }
+  .lead-col  { flex: 1; }
+  .lead-col-title {
+    font-size: 7px; letter-spacing: 0.15em; color: #4a6070;
+    text-transform: uppercase; margin-bottom: 4px;
+    border-bottom: 1px solid #1a2440; padding-bottom: 2px;
+  }
+  .lead-col-val { font-size: 8px; line-height: 1.5; }
+
+  /* Funding history mini-table */
+  .fund-hist { font-size: 7.5px; }
+  .fund-hist tr td { padding: 2px 4px 2px 0; border: none; font-size: 7.5px; }
+  .fund-hist tr td:first-child { color: #4a6070; width: 55px; }
+
+  /* Tech stack */
+  .tech-tags { display: flex; flex-wrap: wrap; gap: 3px; }
+  .tech-tag {
+    font-size: 6.5px; background: rgba(0,255,213,0.05);
+    border: 1px solid rgba(0,255,213,0.15); color: #7CCBC3;
+    padding: 1px 5px; border-radius: 2px;
   }
 
-  /* Charts */
-  .chart-row {
-    display: flex;
-    gap: 10px;
-    margin: 12px 0;
+  /* Decision maker cards */
+  .dm-section { border-top: 1px solid #1a2440; padding: 8px 12px 10px; }
+  .dm-section-title {
+    font-size: 7px; letter-spacing: 0.15em; color: #4a6070;
+    text-transform: uppercase; margin-bottom: 6px;
   }
-  .chart-row img {
-    max-width: 48%;
-    height: auto;
+  .dm-grid { display: flex; gap: 6px; flex-wrap: wrap; }
+  .dm-card {
+    background: #131a24; border: 1px solid #1a2440;
+    padding: 7px 9px; flex: 1; min-width: 140px; max-width: 200px;
   }
+  .dm-name  { font-size: 9px; font-weight: 600; color: #dde8f0; }
+  .dm-title { font-size: 7.5px; color: #8899aa; margin-bottom: 4px; }
+  .dm-contacts { font-size: 7px; line-height: 1.7; }
+  .dm-contacts a { color: #00ffd5; }
 
-  /* Footer */
+  /* Outreach angle */
+  .outreach-angle {
+    border-top: 1px solid #1a2440; padding: 8px 12px;
+    background: rgba(255,165,0,0.04);
+  }
+  .outreach-label { font-size: 6.5px; letter-spacing: 0.15em; color: #ffa500; margin-bottom: 3px; }
+  .outreach-body  { font-size: 8.5px; color: #c0d0e0; line-height: 1.55; }
+
+  /* ── FOOTER ── */
   .footer {
-    margin-top: 24px;
-    padding-top: 10px;
-    border-top: 1px solid #1a2440;
-    font-size: 7px;
-    color: #3a4858;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 20px; padding-top: 9px; border-top: 1px solid #1a2440;
+    font-size: 7px; color: #3a4858; display: flex; justify-content: space-between;
   }
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- ═══════════════════════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════════════════════ -->
 <div class="header">
   <div>
-    <div class="clf">// INTERNAL &mdash; NOT FOR DISTRIBUTION</div><br>
+    <div class="clf">// INTERNAL — NOT FOR DISTRIBUTION</div><br>
     <span class="logo">REBEL TALENT</span>
-    <div class="logo-sub">DAILY BD INTEL BRIEF v4.0</div>
+    <div class="logo-sub">DAILY BD INTELLIGENCE BRIEF v5.0</div>
   </div>
-  <div class="date-box">
+  <div>
     <div class="date-main">{{ today }}</div>
-    <div class="date-sub">Series A-C &middot; SaaS &middot; Defense Tech &middot; GovTech</div>
+    <div class="date-sub">Series A-C · 20-100 EMP · SaaS · Fintech · Martech · Defense</div>
+    {% if data.apollo_enabled %}
+    <div style="margin-top:4px; text-align:right;">
+      <span class="tag tag-teal">APOLLO ENRICHED</span>
+      <span class="tag tag-gold">{{ data.leads_with_contacts }} CONTACTS</span>
+    </div>
+    {% endif %}
   </div>
 </div>
 
-<!-- INTELLIGENCE SUMMARY -->
-<div class="intel-summary">
-  <div class="intel-summary-title">INTELLIGENCE SUMMARY // {{ data.generated_slug }}</div>
+<!-- ═══════════════════════════════════════════════════════════
+     INTELLIGENCE SUMMARY BAR
+════════════════════════════════════════════════════════════ -->
+<div class="intel-bar">
+  <div class="intel-bar-title">INTELLIGENCE SUMMARY // {{ data.generated_slug }}</div>
   <div class="intel-stats">
-    <div class="intel-stat">
-      <div class="intel-stat-num" style="color:#00ffd5;">{{ data.raw_funded|length }}</div>
-      <div class="intel-stat-label">FUNDED</div>
+    <div class="stat">
+      <div class="stat-num" style="color:#00ffd5;">{{ data.raw_funded|length }}</div>
+      <div class="stat-label">FUNDED</div>
     </div>
-    <div class="intel-stat">
-      <div class="intel-stat-num" style="color:#ffa500;">{{ (data.source_stats.values()|list|sum) if data.source_stats else 0 }}</div>
-      <div class="intel-stat-label">TOTAL SIGNALS</div>
+    <div class="stat">
+      <div class="stat-num" style="color:#4fc3f7;">{{ (data.raw_fintech|length) if data.raw_fintech else 0 }}</div>
+      <div class="stat-label">FINTECH</div>
     </div>
-    <div class="intel-stat">
-      <div class="intel-stat-num" style="color:#ff006e;">{{ (data.cross_references|length) if data.cross_references else 0 }}</div>
-      <div class="intel-stat-label">CROSS-REFS</div>
+    <div class="stat">
+      <div class="stat-num" style="color:#81c784;">{{ (data.raw_martech|length) if data.raw_martech else 0 }}</div>
+      <div class="stat-label">MARTECH</div>
     </div>
-    <div class="intel-stat">
-      <div class="intel-stat-num" style="color:#b47cff;">{{ (data.source_stats.keys()|list|length) if data.source_stats else 0 }}</div>
-      <div class="intel-stat-label">SOURCES</div>
+    <div class="stat">
+      <div class="stat-num" style="color:#ffa500;">{{ (data.source_stats.values()|list|sum) if data.source_stats else 0 }}</div>
+      <div class="stat-label">TOTAL SIGNALS</div>
     </div>
-    <div class="intel-stat">
-      <div class="intel-stat-num" style="color:#00ff41;">{{ (data.yc_companies|length) if data.yc_companies else 0 }}</div>
-      <div class="intel-stat-label">YC COMPANIES</div>
+    <div class="stat">
+      <div class="stat-num" style="color:#ff006e;">{{ (data.cross_references|length) if data.cross_references else 0 }}</div>
+      <div class="stat-label">CROSS-REFS</div>
     </div>
+    <div class="stat">
+      <div class="stat-num" style="color:#b47cff;">{{ (data.lead_profiles|length) if data.lead_profiles else 0 }}</div>
+      <div class="stat-label">LEAD PROFILES</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" style="color:#00ff41;">{{ data.leads_with_contacts if data.leads_with_contacts else 0 }}</div>
+      <div class="stat-label">W/ CONTACTS</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     EXECUTIVE SUMMARY (v5.0)
+════════════════════════════════════════════════════════════ -->
+<div class="exec-summary">
+  <div class="exec-summary-title">// Executive Summary</div>
+  <div class="exec-summary-body">
+    Today's brief covers <strong style="color:#dde8f0;">{{ (data.source_stats.values()|list|sum) if data.source_stats else 0 }} signals</strong>
+    across <strong style="color:#dde8f0;">{{ (data.source_stats.keys()|list|length) if data.source_stats else 0 }} data sources</strong>
+    including RSS funding news, Fintech/Martech vertical feeds, SAM.gov SBIR awards, Y Combinator batches,
+    Hacker News hiring, SEC Form D filings, and Apollo-enriched contact intelligence.
+    {% if data.cross_references %}
+    <strong style="color:#ff006e;">{{ data.cross_references|length }} companies</strong> appear in 2+ independent sources — highest conviction targets.
+    {% endif %}
+    {% if data.lead_profiles %}
+    <strong style="color:#b47cff;">{{ data.lead_profiles|length }} deep lead profiles</strong> were built combining funding signals, hiring data, and Apollo enrichment.
+    {% if data.leads_with_contacts %}
+    <strong style="color:#00ffd5;">{{ data.leads_with_contacts }} profiles</strong> include verified decision maker contact information.
+    {% endif %}
+    {% endif %}
+    ICP filter: Series A-C · 20-100 employees · US-based · Active Sales/Tech hiring · No consulting firms.
   </div>
 </div>
 
@@ -290,12 +314,24 @@
 {% if charts %}
 <div class="chart-row">
   {% for chart in charts %}
-  <img src="{{ chart }}">
+  <img src="{{ chart }}" alt="Chart">
   {% endfor %}
 </div>
 {% endif %}
 
-<!-- MOVES TODAY -->
+<!-- ═══════════════════════════════════════════════════════════
+     MARKET TRENDS (v5.0 — from Groq synthesis)
+════════════════════════════════════════════════════════════ -->
+{% if intel.get('market_trends') %}
+<div class="sec">Market Trends // Macro Context</div>
+{% for trend in intel.get('market_trends', []) %}
+<div class="trend-card">{{ trend }}</div>
+{% endfor %}
+{% endif %}
+
+<!-- ═══════════════════════════════════════════════════════════
+     MISSION OBJECTIVES
+════════════════════════════════════════════════════════════ -->
 <div class="sec">Mission Objectives // Today</div>
 <div class="moves-grid">
   {% for move in intel.get('moves_today', [])[:3] %}
@@ -306,8 +342,10 @@
   {% endfor %}
 </div>
 
-<!-- TOP 3 -->
-<div class="sec">High-Value Targets // Top 3</div>
+<!-- ═══════════════════════════════════════════════════════════
+     HIGH-VALUE TARGETS
+════════════════════════════════════════════════════════════ -->
+<div class="sec">High-Value Targets // Top {{ intel.get('top_3', [])|length }}</div>
 {% for target in intel.get('top_3', [])[:3] %}
 <div class="target-card">
   <div class="target-idx">// TARGET {{ '%02d' % loop.index }}</div>
@@ -315,21 +353,211 @@
 </div>
 {% endfor %}
 
-<!-- NEW MONEY -->
-<div class="sec">New Money In</div>
+<!-- ═══════════════════════════════════════════════════════════
+     DEEP LEAD PROFILES (v5.0 — Apollo enriched)
+════════════════════════════════════════════════════════════ -->
+{% if lead_profiles %}
+<div class="sec">
+  Lead Profiles // Apollo-Enriched Intelligence
+  <span class="sec-count">{{ lead_profiles|length }} companies · {{ data.leads_with_contacts }} w/ contacts</span>
+</div>
+
+{% for profile in lead_profiles %}
+<div class="lead-card">
+
+  <!-- Lead Header -->
+  <div class="lead-header">
+    <div>
+      <div class="lead-name">
+        {% if profile.website %}
+        <a href="{{ profile.website }}">{{ profile.name }}</a>
+        {% else %}
+        {{ profile.name }}
+        {% endif %}
+        {% if profile.linkedin_company %}
+        &nbsp;<a href="{{ profile.linkedin_company }}" style="font-size:7.5px; color:#0077b5;">[LinkedIn]</a>
+        {% endif %}
+      </div>
+      <div class="lead-meta">
+        {{ profile.vertical or profile.industry or '' }}
+        {% if profile.employee_count %} · {{ profile.employee_count }} employees{% endif %}
+        {% if profile.annual_revenue %} · {{ profile.annual_revenue }} ARR{% endif %}
+        {% if profile.source_count > 1 %} · <span style="color:#ff006e;">{{ profile.source_count }} sources (HIGH CONVICTION)</span>{% endif %}
+      </div>
+      <div class="lead-badges" style="margin-top:5px;">
+        {% if profile.funding.stage %}
+        <span class="tag tag-teal">{{ profile.funding.stage }}</span>
+        {% endif %}
+        {% if profile.has_sales_role %}
+        <span class="tag tag-gold">SALES HIRING</span>
+        {% endif %}
+        {% if profile.has_tech_role %}
+        <span class="tag tag-purple">TECH HIRING</span>
+        {% endif %}
+        {% if profile.source_count > 1 %}
+        <span class="tag tag-pink">CROSS-REF</span>
+        {% endif %}
+        {% if profile.tech_stack %}
+        <span class="tag" style="background:rgba(0,255,213,0.05); color:#7CCBC3; border:1px solid rgba(0,255,213,0.15);">STACK DETECTED</span>
+        {% endif %}
+      </div>
+    </div>
+    <div class="lead-funding-box">
+      {% if profile.funding.latest_amount %}
+      <div class="lead-amount">{{ profile.funding.latest_amount }}</div>
+      {% endif %}
+      {% if profile.funding.total and profile.funding.total != profile.funding.latest_amount %}
+      <div class="lead-stage">Total: {{ profile.funding.total }}</div>
+      {% endif %}
+      {% if profile.funding.news_link %}
+      <div style="margin-top:4px;"><a href="{{ profile.funding.news_link }}" style="font-size:7px; color:#4a6070;">→ View news</a></div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Lead Body -->
+  <div class="lead-body">
+
+    {% if profile.what_they_do %}
+    <div class="lead-desc">{{ profile.what_they_do }}</div>
+    {% endif %}
+
+    <div class="lead-grid">
+
+      <!-- Funding History -->
+      {% if profile.funding.history %}
+      <div class="lead-col">
+        <div class="lead-col-title">Funding History</div>
+        <div class="lead-col-val">
+          <table class="fund-hist">
+            {% for event in profile.funding.history[:4] %}
+            <tr>
+              <td>{{ event.date[:7] if event.date else '—' }}</td>
+              <td>
+                <span class="tag tag-gold">{{ event.amount or '—' }}</span>
+                {{ event.type or '' }}
+                {% if event.investors %}
+                <span style="color:#4a6070;"> · {{ event.investors[:2]|join(', ') }}</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </table>
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Open Roles -->
+      {% if profile.open_roles %}
+      <div class="lead-col">
+        <div class="lead-col-title">Open Roles (HN Hiring)</div>
+        <div class="lead-col-val">
+          {% for role in profile.open_roles[:4] %}
+          <div style="margin-bottom:2px;">
+            <span style="color:#4a6070;">›</span> {{ role }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Tech Stack -->
+      {% if profile.tech_stack %}
+      <div class="lead-col">
+        <div class="lead-col-title">Tech Stack (Apollo)</div>
+        <div class="lead-col-val">
+          <div class="tech-tags">
+            {% for tech in profile.tech_stack[:8] %}
+            <span class="tech-tag">{{ tech }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+
+    <!-- Recent Exec Move -->
+    {% if profile.recent_exec_move %}
+    <div style="margin-top:4px; padding:5px 8px; background:rgba(180,124,255,0.05); border-left:2px solid #b47cff;">
+      <span style="font-size:7px; color:#b47cff; letter-spacing:0.1em;">EXEC MOVE ({{ profile.exec_move_type|upper if profile.exec_move_type else 'RECENT' }}) </span>
+      {% if profile.exec_move_link %}
+      <a href="{{ profile.exec_move_link }}" style="font-size:8px;">{{ profile.recent_exec_move }}</a>
+      {% else %}
+      <span style="font-size:8px;">{{ profile.recent_exec_move }}</span>
+      {% endif %}
+    </div>
+    {% endif %}
+
+  </div>
+
+  <!-- Decision Makers -->
+  {% if profile.decision_makers %}
+  <div class="dm-section">
+    <div class="dm-section-title">
+      Decision Makers (Apollo) · {{ profile.decision_makers|length }} found
+    </div>
+    <div class="dm-grid">
+      {% for dm in profile.decision_makers %}
+      <div class="dm-card">
+        <div class="dm-name">
+          {% if dm.linkedin_url %}
+          <a href="{{ dm.linkedin_url }}">{{ dm.name }}</a>
+          {% else %}
+          {{ dm.name }}
+          {% endif %}
+        </div>
+        <div class="dm-title">{{ dm.title }}</div>
+        <div class="dm-contacts">
+          {% if dm.email %}
+          <div>✉ <a href="mailto:{{ dm.email }}">{{ dm.email }}</a></div>
+          {% endif %}
+          {% if dm.phone %}
+          <div>☏ {{ dm.phone }}</div>
+          {% endif %}
+          {% if dm.linkedin_url %}
+          <div><a href="{{ dm.linkedin_url }}" style="color:#0077b5;">LinkedIn Profile →</a></div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% else %}
+  <div style="padding:6px 12px; font-size:7.5px; color:#3a4858; border-top:1px solid #1a2440;">
+    // No Apollo contacts yet — search LinkedIn for People/HR or CEO at {{ profile.name }}
+  </div>
+  {% endif %}
+
+  <!-- Outreach Angle -->
+  <div class="outreach-angle">
+    <div class="outreach-label">// RECOMMENDED OUTREACH ANGLE</div>
+    <div class="outreach-body">{{ profile.outreach_angle }}</div>
+  </div>
+
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- ═══════════════════════════════════════════════════════════
+     NEW MONEY IN (Groq synthesized)
+════════════════════════════════════════════════════════════ -->
+<div class="sec">New Money In // Funding Events</div>
 {% if intel.get('new_money') %}
 <table>
   <thead>
-    <tr><th>Company</th><th>Amount</th><th>Stage</th><th>Sector</th><th>Why Now</th></tr>
+    <tr>
+      <th>Company</th><th>Amount</th><th>Stage</th><th>Vertical</th><th>Why Now</th>
+    </tr>
   </thead>
   <tbody>
     {% for item in intel.get('new_money', []) %}
     <tr>
-      <td style="color:#dde8f0; font-weight:600;">{{ item.company or '\u2014' }}</td>
-      <td><span class="tag tag-gold">{{ item.amount or '\u2014' }}</span></td>
-      <td><span class="tag tag-teal">{{ item.stage or '\u2014' }}</span></td>
-      <td>{{ item.sector_tag or '\u2014' }}</td>
-      <td style="color:#8899aa; font-size:8px;">{{ item.why_now or '\u2014' }}</td>
+      <td class="co-name">{{ item.company or '—' }}</td>
+      <td><span class="tag tag-gold">{{ item.amount or '—' }}</span></td>
+      <td><span class="tag tag-teal">{{ item.stage or '—' }}</span></td>
+      <td>{{ item.sector_tag or item.location or '—' }}</td>
+      <td style="color:#8899aa; font-size:8px;">{{ item.why_now or '—' }}</td>
     </tr>
     {% endfor %}
   </tbody>
@@ -338,26 +566,34 @@
 <div class="no-data">// NO FUNDING DATA TODAY</div>
 {% endif %}
 
-<!-- CROSS-REFERENCE HITS -->
+<!-- ═══════════════════════════════════════════════════════════
+     CROSS-REFERENCE HITS
+════════════════════════════════════════════════════════════ -->
 {% if data.cross_references %}
 <div class="sec">Cross-Reference Hits // Multi-Source Validation</div>
 <table>
-  <thead><tr><th>Company</th><th>Sources</th><th>Count</th><th>Details</th></tr></thead>
+  <thead>
+    <tr><th>Company</th><th>Sources</th><th>Count</th><th>Details</th></tr>
+  </thead>
   <tbody>
-    {% for xr in data.cross_references[:8] %}
+    {% for xr in data.cross_references[:10] %}
     <tr>
-      <td style="color:#dde8f0; font-weight:600;">{{ xr.company }}</td>
-      <td style="font-size:8px;">{{ xr.sources|join(' + ') }}</td>
+      <td class="co-name">{{ xr.company }}</td>
+      <td style="font-size:7.5px; color:#8899aa;">{{ xr.sources|join(' + ') }}</td>
       <td><span class="tag tag-pink">{{ xr.source_count }}</span></td>
-      <td style="font-size:8px; color:#8899aa;">{% if xr.details %}{{ xr.details.get('funding', '') }} {{ xr.details.get('yc_batch', '') }}{% endif %}</td>
+      <td style="font-size:7.5px; color:#8899aa;">
+        {% if xr.details %}{{ xr.details.get('funding','') }} {{ xr.details.get('yc_batch','') }} {{ xr.details.get('sector','') }}{% endif %}
+      </td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
 {% endif %}
 
-<!-- HIRING SIGNALS -->
-<div class="sec">Hiring Signals</div>
+<!-- ═══════════════════════════════════════════════════════════
+     HIRING SIGNALS
+════════════════════════════════════════════════════════════ -->
+<div class="sec">Hiring Signals // Sales + Tech</div>
 {% for sig in intel.get('hiring_signals', []) %}
 <div class="sig">{{ sig }}</div>
 {% endfor %}
@@ -365,43 +601,112 @@
 <div class="no-data">// NO HIRING SIGNALS TODAY</div>
 {% endif %}
 
-<!-- EXEC MOVES -->
-<div class="sec">Executive Moves</div>
+<!-- ═══════════════════════════════════════════════════════════
+     EXECUTIVE MOVES
+════════════════════════════════════════════════════════════ -->
+<div class="sec">Executive Moves // People · Sales · Tech</div>
 {% for sig in intel.get('exec_moves', []) %}
 <div class="sig sig-purple">{{ sig }}</div>
 {% endfor %}
-{% if not intel.get('exec_moves') %}
+{% for exec in data.raw_execs[:6] %}
+<div class="sig sig-purple">
+  {% if exec.move_type == 'sales' %}<span class="tag tag-gold">SALES</span>{% elif exec.move_type == 'tech' %}<span class="tag tag-teal">TECH</span>{% else %}<span class="tag tag-purple">PEOPLE</span>{% endif %}
+  {% if exec.person %}<strong>{{ exec.person }}</strong> ({{ exec.title }}) at {% endif %}
+  {% if exec.link %}<a href="{{ exec.link }}">{{ exec.company }}</a>{% else %}{{ exec.company }}{% endif %}
+  {% if exec.headline and not exec.person %} — {{ exec.headline }}{% endif %}
+</div>
+{% endfor %}
+{% if not intel.get('exec_moves') and not data.raw_execs %}
 <div class="no-data">// NO EXEC MOVES TODAY</div>
 {% endif %}
 
-<!-- DEFENSE / GOVTECH -->
-<div class="sec">Defense / GovTech</div>
+<!-- ═══════════════════════════════════════════════════════════
+     DEFENSE / GOVTECH
+════════════════════════════════════════════════════════════ -->
+<div class="sec">Defense / GovTech // Cleared Hiring</div>
 {% for sig in intel.get('defense_signals', []) %}
 <div class="sig sig-gold">{{ sig }}</div>
 {% endfor %}
-{% if not intel.get('defense_signals') %}
+{% for item in data.raw_sam[:5] %}
+<div class="sig sig-gold">
+  <span class="tag tag-gold">{{ item.type }}</span>
+  <a href="{{ item.link }}">{{ item.signal }}</a>
+</div>
+{% endfor %}
+{% if not intel.get('defense_signals') and not data.raw_sam %}
 <div class="no-data">// NO DEFENSE SIGNALS TODAY</div>
 {% endif %}
 
-<!-- COMPETITIVE -->
+<!-- ═══════════════════════════════════════════════════════════
+     FINTECH SIGNALS (v5.0)
+════════════════════════════════════════════════════════════ -->
+{% if intel.get('fintech_signals') or data.raw_fintech %}
+<div class="sec">Fintech // Payments · Insurtech · Wealthtech</div>
+{% for sig in intel.get('fintech_signals', []) %}
+<div class="sig" style="border-left-color:#4fc3f7;">{{ sig }}</div>
+{% endfor %}
+{% for item in data.raw_fintech[:5] %}
+<div class="sig" style="border-left-color:#4fc3f7;">
+  <span class="tag" style="background:rgba(79,195,247,0.08);color:#4fc3f7;border:1px solid rgba(79,195,247,0.2);">FINTECH</span>
+  {% if item.link %}<a href="{{ item.link }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}
+  {% if item.amount %} · <span class="tag tag-gold">{{ item.amount }}</span>{% endif %}
+  {% if item.stage %} <span class="tag tag-teal">{{ item.stage }}</span>{% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- ═══════════════════════════════════════════════════════════
+     MARTECH SIGNALS (v5.0)
+════════════════════════════════════════════════════════════ -->
+{% if intel.get('martech_signals') or data.raw_martech %}
+<div class="sec">Martech // Sales Enablement · Ad Tech · GTM</div>
+{% for sig in intel.get('martech_signals', []) %}
+<div class="sig" style="border-left-color:#81c784;">{{ sig }}</div>
+{% endfor %}
+{% for item in data.raw_martech[:5] %}
+<div class="sig" style="border-left-color:#81c784;">
+  <span class="tag" style="background:rgba(129,199,132,0.08);color:#81c784;border:1px solid rgba(129,199,132,0.2);">MARTECH</span>
+  {% if item.link %}<a href="{{ item.link }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}
+  {% if item.amount %} · <span class="tag tag-gold">{{ item.amount }}</span>{% endif %}
+  {% if item.stage %} <span class="tag tag-teal">{{ item.stage }}</span>{% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- ═══════════════════════════════════════════════════════════
+     COMPETITIVE INTEL
+════════════════════════════════════════════════════════════ -->
 <div class="sec">Competitive Intel</div>
 {% for sig in intel.get('competitive', []) %}
 <div class="sig sig-red">{{ sig }}</div>
 {% endfor %}
-{% if not intel.get('competitive') %}
+{% for item in data.raw_competitors[:4] %}
+<div class="sig sig-red">
+  {% if item.link %}<a href="{{ item.link }}" style="color:#ff3366;">{{ item.headline }}</a>{% else %}{{ item.headline }}{% endif %}
+</div>
+{% endfor %}
+{% if not intel.get('competitive') and not data.raw_competitors %}
 <div class="no-data">// NO COMPETITIVE INTEL TODAY</div>
 {% endif %}
 
-<!-- VEHICLES -->
+<!-- ═══════════════════════════════════════════════════════════
+     DISTRIBUTION VEHICLES
+════════════════════════════════════════════════════════════ -->
 <div class="sec">Distribution Vehicles</div>
 {% for sig in intel.get('vehicles', []) %}
 <div class="sig">{{ sig }}</div>
 {% endfor %}
 
-<!-- FOOTER -->
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
 <div class="footer">
-  <div>REBEL TALENT SYSTEMS v4.0 &middot; RICHIE LAMPANI &middot; FRACTIONAL HEAD OF TALENT</div>
-  <div>{{ (data.source_stats.keys()|list|length) if data.source_stats else 0 }} SOURCES &middot; {{ (data.source_stats.values()|list|sum) if data.source_stats else 0 }} SIGNALS</div>
+  <div>REBEL TALENT SYSTEMS v5.0 · RICHIE LAMPANI · FRACTIONAL HEAD OF TALENT<br>richie@rebeltalentsystems.com · shaun@arkhamtalent.com</div>
+  <div style="text-align:right;">
+    {{ (data.source_stats.keys()|list|length) if data.source_stats else 0 }} SOURCES ·
+    {{ (data.source_stats.values()|list|sum) if data.source_stats else 0 }} SIGNALS ·
+    {{ (data.lead_profiles|length) if data.lead_profiles else 0 }} PROFILES
+  </div>
 </div>
 
 </body>
