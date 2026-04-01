@@ -269,8 +269,11 @@ def extract_company_name(headline):
             name = m.group(1).strip()
             # Strip leading descriptors: "DC startup", "Govtech startup", "NY-based", etc.
             name = re.sub(r"^(?:Exclusive|Breaking|Report|Update):\s*", "", name, flags=re.IGNORECASE)
+            # Strip city/region prefixes: "New York-based", "DC-based", "DC startup"
+            name = re.sub(r"^(?:[A-Z][a-z]+(?: [A-Z][a-z]+)*[-\s]based\s+)", "", name, flags=re.IGNORECASE)
+            name = re.sub(r"^(?:[A-Z]{2,3}[-\s](?:based\s+)?)", "", name)
+            # Strip vertical/type descriptors: "fintech startup", "Govtech startup", "startup"
             name = re.sub(r"^(?:\w+\s+)?(?:startup|company|firm|platform|app|tool|software)\s+", "", name, flags=re.IGNORECASE)
-            name = re.sub(r"^(?:[A-Z]{2,3}[-\s](?:based\s+)?(?:startup\s+)?)", "", name)
             name = name.strip()
             if 1 < len(name) <= 60:
                 return name
