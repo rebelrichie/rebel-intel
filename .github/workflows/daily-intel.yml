@@ -85,7 +85,7 @@ jobs:
           git config user.email "actions@github.com"
           git add docs/
           git diff --cached --quiet || git commit -m "Brief: $(date +%Y-%m-%d)"
-          git push origin main || (sleep 5 && git push origin main)
+          git pull --rebase origin main && git push origin main || (sleep 5 && git pull --rebase origin main && git push origin main)
 
       # ── DEPLOY TO GITHUB PAGES ────────────────────────
       - name: Deploy to GitHub Pages

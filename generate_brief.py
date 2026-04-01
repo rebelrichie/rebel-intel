@@ -254,18 +254,25 @@ def detect_vertical(text):
 
 
 def extract_company_name(headline):
+    # Strip source suffixes first (e.g. " - PR Newswire", " | TechCrunch")
+    headline = re.sub(r"\s*[-|]\s*(PR Newswire|Business Wire|Globe Newswire|Reuters|Bloomberg|TechCrunch|Forbes|VentureBeat|Crunchbase|Yahoo Finance|MarketWatch).*$", "", headline, flags=re.IGNORECASE).strip()
+
     patterns = [
-        r"^(?:Exclusive:\s*)?(.+?)\s+(?:raises?|lands?|closes?|secures?|nabs?|gets?|nets?|bags?|grabs?)\s+\$",
-        r"^(?:Exclusive:\s*)?(.+?)\s+(?:raises?|lands?|closes?|secures?)\s+(?:a\s+)?\$",
-        r"^(.+?):\s+\$\d+",
+        r"^(?:Exclusive:\s*)?(.+?)\s+(?:raises?|lands?|closes?|secures?|nabs?|gets?|nets?|bags?|grabs?|announces?|has raised|just raised)\s+(?:a\s+)?\$",
+        r"^(?:Exclusive:\s*)?(.+?):\s+\$\d+",
         r"^(.+?)\s+Raises?\s+\$",
+        r"^(.+?)\s+(?:raises?|secures?|closes?)\s+(?:Series|Seed|Pre-Seed|Bridge)",
     ]
     for pattern in patterns:
         m = re.match(pattern, headline, re.IGNORECASE)
         if m:
             name = m.group(1).strip()
+            # Strip leading descriptors: "DC startup", "Govtech startup", "NY-based", etc.
             name = re.sub(r"^(?:Exclusive|Breaking|Report|Update):\s*", "", name, flags=re.IGNORECASE)
-            if len(name) <= 60:
+            name = re.sub(r"^(?:\w+\s+)?(?:startup|company|firm|platform|app|tool|software)\s+", "", name, flags=re.IGNORECASE)
+            name = re.sub(r"^(?:[A-Z]{2,3}[-\s](?:based\s+)?(?:startup\s+)?)", "", name)
+            name = name.strip()
+            if 1 < len(name) <= 60:
                 return name
     return ""
 
