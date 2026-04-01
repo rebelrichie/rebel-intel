@@ -1,49 +1,50 @@
 {
-  "generated": "March 31, 2026",
-  "generated_slug": "2026-03-31",
+  "generated": "April 01, 2026",
+  "generated_slug": "2026-04-01",
   "moves_today": [
-    "Research and reach out to DC startup Ressio, who just raised $8.8M in Series A funding, to discuss their talent acquisition needs",
-    "Look into Tagbin, who secured $10M in Series A funding, to explore potential opportunities for recruiting infrastructure support"
+    "Reach out to Nomadic to discuss building out their recruiting infrastructure after their recent $8.4M Series A funding",
+    "Contact DC startup Ressio to explore their talent acquisition needs following their $8.8M Series A funding",
+    "Research Govtech startup Esper to understand their hiring requirements after their $8M Series A funding"
   ],
   "top_3": [
-    "DC startup Ressio: recently raised $8.8M in Series A funding, likely to be hiring and building out their team",
-    "Tagbin: secured $10M in Series A funding, may need support in building out their recruiting infrastructure",
-    "New Orleans-based Civilized AI: raised $2M in seed funding, could be a potential opportunity for talent acquisition support"
+    "Nomadic: Recently raised $8.4M in Series A funding and may need help building out their recruiting infrastructure",
+    "Ressio: Raised $8.8M in Series A funding and could benefit from talent acquisition support",
+    "Esper: Secured $8M in Series A funding and may require assistance with hiring and talent management"
   ],
   "new_money": [
+    {
+      "company": "Nomadic",
+      "amount": "$8.4M",
+      "stage": "Series A",
+      "location": "",
+      "sector_tag": "SaaS/B2B tech",
+      "why_now": "Recently raised Series A funding and may need help building out their recruiting infrastructure"
+    },
     {
       "company": "Ressio",
       "amount": "$8.8M",
       "stage": "Series A",
       "location": "DC",
-      "sector_tag": "GovTech",
-      "why_now": "Recently raised Series A funding, likely to be hiring and building out their team"
+      "sector_tag": "",
+      "why_now": "Raised Series A funding and could benefit from talent acquisition support"
     },
     {
-      "company": "Tagbin",
-      "amount": "$10M",
+      "company": "Esper",
+      "amount": "$8M",
       "stage": "Series A",
       "location": "",
-      "sector_tag": "GovTech",
-      "why_now": "Secured Series A funding, may need support in building out their recruiting infrastructure"
-    },
-    {
-      "company": "Civilized AI",
-      "amount": "$2M",
-      "stage": "Seed",
-      "location": "New Orleans",
-      "sector_tag": "",
-      "why_now": "Raised seed funding, could be a potential opportunity for talent acquisition support"
+      "sector_tag": "Govtech",
+      "why_now": "Secured Series A funding and may require assistance with hiring and talent management"
     }
   ],
   "hiring_signals": [
     "BlackRock's head of talent acquisition reveals how AI has changed what they look for in applicants",
-    "VC firm Redpoint tells startups to buckle up for a hiring showdown",
-    "MobiKwik appoints Rajat Bansal as Senior Director and Head of Talent Acquisition"
+    "MobiKwik appoints Rajat Bansal as Senior Director and Head of Talent Acquisition",
+    "VC firm Redpoint tells startups to buckle up for a hiring showdown"
   ],
   "exec_moves": [
-    "Palo Alto Networks taps Danielle Gonzalez to lead talent strategy as Chief People Officer",
-    "Cadent appoints Chief People Officer and SVP of Marketing to accelerate next phase of growth",
+    "Palo Alto Networks appoints Danielle Gonzalez to Lead Talent Strategy as Chief People Officer",
+    "Cadent appoints Chief People Officer and SVP of Marketing to Accelerate Next Phase of Growth",
     "CluePoints appoints chief people officer to drive global growth"
   ],
   "defense_signals": [],
@@ -52,7 +53,8 @@
     "GoFractional"
   ],
   "competitive": [
-    "Kleiner Perkins raises $3.5B for AI-focused funds, indicating a competitive landscape for AI-related talent acquisition"
+    "Humand raises $66 Million in Series A funding for AI Workforce Platform",
+    "Kleiner Perkins raises $3.5B for AI-focused funds"
   ],
   "raw_funded": [
     {
@@ -64,19 +66,6 @@
       "headline": "CACI Secures $85M Navy Task Order for Engineering, Cyber Support",
       "link": "https://www.executivebiz.com/articles/caci-85m-navy-engineering-cybersecurity-task-order",
       "source": "executivebiz.com",
-      "geo_match": 0,
-      "sector_match": 1,
-      "score": 3
-    },
-    {
-      "name": "Tagbin",
-      "amount": "$10M",
-      "stage": "Series A",
-      "sector": "",
-      "location": "",
-      "headline": "Tagbin Secures $10M To Supercharge AI-Driven GovTech Platforms And Expand Experiential Tech Footprint - Everything Exper",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZHhINEZuZHdmeXVzbVI4U2dJcW9mQWlZRUt0R05pUFJvOGxXSzBrc2FrdEVST2dla3N3cVdwWEUySTA5emg0a29lbTluTEFzbnhwc3VuTGd5ZHo0T29Fd0lrVDI4MXRXRUwtUmpvc0RBM3VBa05ySXhiMWdHVWZxSHBGdjloYk1TSENuZVJMb3QwdlFtZmtLTDBfOFNNX3dycEU3SFJaZDR3OG9RZGptRURqaUYyenF5bnNzRnI2RlhxSWZoQnlsZUZFemJDRzlyYlp0cHVFcERmUEN2aHVKd2NWcVQ?oc=5",
-      "source": "news.google.com",
       "geo_match": 0,
       "sector_match": 1,
       "score": 3
@@ -95,14 +84,27 @@
       "score": 3
     },
     {
-      "name": "ScaleOps",
-      "amount": "$130M",
+      "name": "Nomadic",
+      "amount": "$8.4M",
+      "stage": "Series A",
+      "sector": "",
+      "location": "",
+      "headline": "Nomadic raises $8.4 million to wrangle the data pouring off autonomous vehicles",
+      "link": "https://techcrunch.com/2026/03/31/nomadic-raises-8-4-million-to-wrangle-the-data-pouring-off-avs/",
+      "source": "techcrunch.com",
+      "geo_match": 0,
+      "sector_match": 0,
+      "score": 2
+    },
+    {
+      "name": "Whoop\u2019s Wearable Fitness Tech",
+      "amount": "$575M",
       "stage": "Series C",
       "sector": "",
       "location": "",
-      "headline": "ScaleOps raises $130M to improve computing efficiency amid AI demand",
-      "link": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/",
-      "source": "techcrunch.com",
+      "headline": "Whoop\u2019s Wearable Fitness Tech Lands $575M From Athletes, Celebrities, Institutional Investors To Reach $10.1B Valuation",
+      "link": "https://news.crunchbase.com/venture/wearable-fitness-tech-ai-whoop-seriesg-funding/",
+      "source": "news.crunchbase.com",
       "geo_match": 0,
       "sector_match": 0,
       "score": 2
@@ -134,27 +136,40 @@
       "score": 2
     },
     {
-      "name": "New Orleans-based Civilized AI",
-      "amount": "$2M",
-      "stage": "Seed",
+      "name": "Govtech startup Esper announces $8M Series A - PR Newswire",
+      "amount": "$8M",
+      "stage": "Series A",
       "sector": "",
       "location": "",
-      "headline": "New Orleans-based Civilized AI raises $2M to modernize city services - neworleanscitybusiness.com",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdk1CN00xRXQ2YXd1bDE1TEppbE5mdG1OcmNhUjQ1U3hrLWxRendtUzNMOEtpaWZxYmxocFhGbWVscS1UclB4TWtyTEZnenJSNlYwRHE3blFkT3RBTlhHTXJOajMyRjROSE1vam5xTTdGeWM1cjdaRFJhdzAxbzNGSnY3WThreUd3WEd1LVpidTVKZGFwR0pwVFlR?oc=5",
+      "headline": "Govtech startup Esper announces $8M Series A - PR Newswire",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa0VMZXVPc25wNEpOVGhia1RVNFpUa3daSDQzLWZFZW00ZVVQMXVIa2czLUxJa3dhaEo4OXVRcHNKNmVLZXUzWm5ISk1wUzJRaG9OTWU4OEphbVpjbWc3REg1NTUyX19PXzk4Z2xoemFzS2FxZmlmSVczS281WDdzcng5OXF2TlkweG4yb1BEX0RaVGRiYnZueWZreFB3ZHJx?oc=5",
       "source": "news.google.com",
       "geo_match": 0,
-      "sector_match": 0,
-      "score": 2
+      "sector_match": 1,
+      "score": 1
     },
     {
-      "name": "Former Coatue partner raises\u00a0huge $65M seed\u00a0for\u00a0enterprise\u00a0AI agent\u00a0startup",
-      "amount": "$65M",
+      "name": "Whoop\u2019s valuation just tripled to $10 billion",
+      "amount": "$10.0B",
+      "stage": "Late Stage",
+      "sector": "",
+      "location": "",
+      "headline": "Whoop\u2019s valuation just tripled to $10 billion",
+      "link": "https://techcrunch.com/2026/03/31/whoop-valuation-10b-series-g-fundraise/",
+      "source": "techcrunch.com",
+      "geo_match": 0,
+      "sector_match": 0,
+      "score": 0
+    },
+    {
+      "name": "$230M funding round fuels EquipmentShare tech launch, national expansion plans -",
+      "amount": "$230M",
       "stage": "Series C",
       "sector": "",
       "location": "",
-      "headline": "Former Coatue partner raises\u00a0huge $65M seed\u00a0for\u00a0enterprise\u00a0AI agent\u00a0startup",
-      "link": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
-      "source": "techcrunch.com",
+      "headline": "$230M funding round fuels EquipmentShare tech launch, national expansion plans - Startland News",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1GcnV1ZklYODVNWTlDMWRscVlnTS15bFVFcmU2a2loUXFMOWt5US1hMm13V28xWVhmSmhleGg0SzZpa0FHdU04T2lOSHMwNHFZeGtsOFlLSFhZd2l6Ymp5ZlBldVlHd3Jh?oc=5",
+      "source": "news.google.com",
       "geo_match": 0,
       "sector_match": 0,
       "score": 0
@@ -164,15 +179,15 @@
     {
       "company": "he looks for in applicants",
       "role": "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants - ",
-      "signal": "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants &nbsp;&nbsp; businessinsider.com",
+      "signal": "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants &nbsp;&nbsp; Business Insider",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaUk4YTI2OWx6VEc1dkI2OGxnVjVyVGZweHJKYzBuWldxV0doc3o0VWFjME5KN0trY1pxcjJialhkeDRuc1NYY1B2aU1WeDlWdWpHdXFqVGJ6Zlpud1RPNjNiSk5EWGd3Zm9TeEJONWh5WE11bkZ3N2h5WXMyanFCUk53VVFWRmcxM2lmR2JR?oc=5",
       "source": "news.google.com"
     },
     {
-      "company": "VC firm Redpoint tells startups to buckle up for a",
-      "role": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shar",
-      "signal": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shared with founders. &nbsp;&nbsp; businessinsider.com",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRUdYVEdsTlJDczJ4T1hQN2swd0h4ZmlweVlDYjllYW1Well3UkdyeXNXOXVxdmVtQjhaa2VRU0ExWkpFVk9laGxUYl9oQUJtTTVXQVc0OXpGTy0taEIyeS1xTXN6MUJQRnJuR1VQSk5BYUpJMlhYUjFHY2pDbjRzajdYOTNrMkRRSEE?oc=5",
+      "company": "the firm",
+      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
+      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
       "source": "news.google.com"
     },
     {
@@ -183,6 +198,13 @@
       "source": "news.google.com"
     },
     {
+      "company": "VC firm Redpoint tells startups to buckle up for a",
+      "role": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shar",
+      "signal": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shared with founders. &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRUdYVEdsTlJDczJ4T1hQN2swd0h4ZmlweVlDYjllYW1Well3UkdyeXNXOXVxdmVtQjhaa2VRU0ExWkpFVk9laGxUYl9oQUJtTTVXQVc0OXpGTy0taEIyeS1xTXN6MUJQRnJuR1VQSk5BYUpJMlhYUjFHY2pDbjRzajdYOTNrMkRRSEE?oc=5",
+      "source": "news.google.com"
+    },
+    {
       "company": "Scaling from 5 to 50 employees \u2014 your startup hiri",
       "role": "Scaling from 5 to 50 employees \u2014 your startup hiring roadmap - Sifted",
       "signal": "Scaling from 5 to 50 employees \u2014 your startup hiring roadmap &nbsp;&nbsp; Sifted",
@@ -190,37 +212,16 @@
       "source": "news.google.com"
     },
     {
-      "company": "the firm",
-      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
-      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; businessinsider.com",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
-      "source": "news.google.com"
-    },
-    {
       "company": "How to Get",
-      "role": "How to Get Hired at Tinder, According to the Head of Talent - businessinsider.com",
-      "signal": "How to Get Hired at Tinder, According to the Head of Talent &nbsp;&nbsp; businessinsider.com",
+      "role": "How to Get Hired at Tinder, According to the Head of Talent - Business Insider",
+      "signal": "How to Get Hired at Tinder, According to the Head of Talent &nbsp;&nbsp; Business Insider",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSEVSYXBpRlpmc0MtcGM1bGZ1YUtLVlNmdTRkZmtzQkFIc3RweVhBWVpHdjY5VTBBcjE1S2k4NzVqR2Zvb1c2VlVYQThNRU1HMzhmNHRxZ2ZTOWpRU1hyMWhKbVN6RTN2WDItX2hmbHc2bDZOV1A3UW1xWFNFaWUzQk1R?oc=5",
       "source": "news.google.com"
     },
     {
-      "company": "BlackRock, According to Their Head of Talent",
-      "role": "How to Get a Job at BlackRock, According to Their Head of Talent - businessinsider.com",
-      "signal": "How to Get a Job at BlackRock, According to Their Head of Talent &nbsp;&nbsp; businessinsider.com",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYmJIVmo1MUFNUHVIUHFGSFk2dGZBeDRuV3BfTnVmU3YwdkROd3JMcFVlVm5ObkpkVXFzMzZud3RpSm9FaW9pT205LUtnLXQxUXpmZ0piamF6M3R3NUVlQ1hNVS13Skw3WnE0OEJRQWZRNjdTWlB3T0NBZmhUYjZOMlhScHNTandjcFlLVXd3?oc=5",
-      "source": "news.google.com"
-    },
-    {
-      "company": "are 'recession",
-      "role": "Startup job candidates that are 'recession-proof' have a big advantage, according to the people who ",
-      "signal": "Startup job candidates that are 'recession-proof' have a big advantage, according to the people who are hiring &nbsp;&nbsp; businessinsider.com",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOFQ5MmlCX2pIVXQ5TUpRcGNvUGxRWk1XU09JRUdqekVIbkpJT1JEY1EyVVd6eGZqU2xGWmd4MWxpMlZEYW1qOVA4NmxjQUx0VzRVQlNrSWpQeEs4eUpMV0pBR2dPR2lVeVRwX3ZsenJIRDZqQ1M4TjNPZWFTc1JMc1J3bzhxT2ZYZ2N1RXdHcl8?oc=5",
-      "source": "news.google.com"
-    },
-    {
       "company": "Vanguard Head of Talent Acquisition Shares Favorit",
-      "role": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question - businessinsider.com",
-      "signal": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question &nbsp;&nbsp; businessinsider.com",
+      "role": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question - Business Insider",
+      "signal": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question &nbsp;&nbsp; Business Insider",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2tEazBKTHVJMmR5dUZPMVBvU1hJMkhlbWhGVEJSV3lXSGxiaFRUUTdESUdHT29SNUdTY3hEeXpEeWJ4cWZ3OXlRb2M1dXN1dGVCVjlyUUtfN3JwSlRIMkpTSk5STGdFM1lVVUE3YklFc1E3akpWUEZqNkdJc2ZTeExuMS1MNXhHdnkxZTdYQjVaZzVIQnlXeEZhR1I1bmZ0X0JTZA?oc=5",
       "source": "news.google.com"
     },
@@ -239,10 +240,24 @@
       "source": "news.google.com"
     },
     {
+      "company": "Shapes: $24 Million Raised To Advance AI Native Pe",
+      "role": "Shapes: $24 Million Raised To Advance AI Native PeopleOS For Global Workforce Transformation - Pulse",
+      "signal": "Shapes: $24 Million Raised To Advance AI Native PeopleOS For Global Workforce Transformation &nbsp;&nbsp; Pulse 2.0",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5LSGJYY1dKX1BfMW1YdmpNYkFBSktONllld19icDBET3Q3ZHQwa2YwSTh1eTVvQmRiVnhKcGpJWXpJQVpXV2YyRGJyUHdzZFMwOVpMSFRQVTDSAV5BVV95cUxNdFB5dzhMNmxNUXFLckpsTmNoYzFDWlcxYlNRWVMzTHZMeUE2RVJqTEtjZTFXbjdMWk1meUdROG5qdU5QVGpoeW14Rm9qNlJQMG5VamtCQTJEQ2JmS3lR?oc=5",
+      "source": "news.google.com"
+    },
+    {
       "company": "Leapsome Raises $60 Million in Series A",
       "role": "Leapsome Raises $60 Million in Series A - The SaaS News",
       "signal": "Leapsome Raises $60 Million in Series A &nbsp;&nbsp; The SaaS News",
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE01N3EwWEhvRDJ5OWdnYXRTeUtjXzJLTDRlbFU5WHA5enR4T0lDYVY3Umw3eEpjU0xGcmpJUnpidjU0VDFkc2E4MjFxNElyWXl2R3owVjQzaHV6SEtvX2VnQTlXT0NQeGJsU1dDbXhNdXhNMlE2Ym1yZDA2bw?oc=5",
+      "source": "news.google.com"
+    },
+    {
+      "company": "Compliance training platform Ethena raises $30 mil",
+      "role": "Compliance training platform Ethena raises $30 million Series B - Fortune",
+      "signal": "Compliance training platform Ethena raises $30 million Series B &nbsp;&nbsp; Fortune",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeE4zdHBpZFdmVVVtRk9GbThkd1g3RnpwTHhFMEhYa3lTTWtxa3BSLXhLM09FUEFFZFZQZ0lJR2hnUXFJbkNaOE1mT1FhVHFGbWhoSUJ1X3lDXzlNU2toWmNETFlONUxwUXRmZ2FvQW5CcDFOVnAtVGtHZ0NQMVNoMU83VEFOeHJwOUp3SG9EeTZZR0MwRV9jTkg1NnJjZ3R2RnVUSV9kazlhcGxkOGdKXzcyR2lnQ3Z3MFNQRA?oc=5",
       "source": "news.google.com"
     }
   ],
@@ -267,23 +282,15 @@
       "person": "chief people officer",
       "title": "drive global growth",
       "company": "CluePoints",
-      "headline": "CluePoints appoints chief people officer to drive global growth - htworld.co.uk",
+      "headline": "CluePoints appoints chief people officer to drive global growth - Health Tech World",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQd0dfRkRzWG8ydlZFM2hzdjhTTjdPNmxVUVRzdE9YVUVTNFVuZS0wdm83ZjhrWWdrQVdzZTJvR3BOZVBSNWUxTXc1Y0RTMnJuQm1Nc3htb0VMakNLWHFldGNPUjk0QXJ4TnlvVjhVUVJRV1JXQ0I1X1V5ME5ISEcteWhfcExLQ2JaTUVRckFhM2ZtMkFBUDBFdlM1WW5fbzhneW81ZmJMQQ?oc=5",
-      "source": "news.google.com"
-    },
-    {
-      "person": "",
-      "title": "",
-      "company": "DSG Global",
-      "headline": "DSG Global Appoints Chief People Officer - huntscanlon.com",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5mb3pJeGNURVcwd3JLZXByeVBmQnFKSks4OEpIdkMxa2NtSnBibGQtenc1V1lXZ1gzNHdUNC1rNXpfbEtKQzhTZ1lVa0lxZ0ZBTjhqb1l5dWlrSlhzWkcwLTZ2aTkzX1FEdDhLeFVpMERZWlU?oc=5",
       "source": "news.google.com"
     },
     {
       "person": "chief people officer",
       "title": "steer strategy",
       "company": "Tower",
-      "headline": "Tower appoints chief people officer to steer strategy - Insurance Business",
+      "headline": "Tower appoints chief people officer to steer strategy - insurancebusinessmag.com",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaWZ6M3k5VWpGX2VOakNSbWstVkxuazFnS3o2MG5YTkgxNFgxX0FfejZEWGRPUF9DT1hMNWg0WXMxR1FXajM4R1A2V0dPMjJuN2ZUcGlfRXhZaUxtYnZ1TnJUZmJXaGY0YV9LZmxTa1NONm10U1YzMUhremtzdXRuOHJTWlFMM3BNNlF0dDZ2ZHY0MXU4LVR0aEhPR0xicUlkU3RyRTZHaEYyNVdXb25LMTExTVlpaGVCNFUwcGpFbnhrQQ?oc=5",
       "source": "news.google.com"
     },
@@ -298,14 +305,6 @@
     {
       "person": "",
       "title": "",
-      "company": "Laing O\u2019Rourke",
-      "headline": "Laing O\u2019Rourke appoints Chief People Officer - Rail Business Daily",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUGpIZEJRaXpHTzlPQTJFN2Z4Vk9rOFltN29rdHJqNTZkVzUwX3lwcVlWLV9zdGp4bzNPNEs4MWV6QmJsaFVRWFlBRHNRR0Nmb0NjN281WGJOQTdwbXVRSVA5U1Z6V1JVbldyQ0VWYjAyOFdMZkFweGhBZ2hRNVlZUTlzZGl2dw?oc=5",
-      "source": "news.google.com"
-    },
-    {
-      "person": "",
-      "title": "",
       "company": "Railpen",
       "headline": "Railpen appoints chief people officer and chief risk officer - Corporate Adviser",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMENPU01rVWZuYjBYTGNaMWQyWjNIcGdLd3ZYYzh6aW1TaUt3dlFIZE85aENPVTluSFoxcWNNMlFUTEdmVzhkQkxaTnRkYUhwaHN4RUloaFFua0tlMFpxZlRuUGRWV1BHSHd4ZjhhMGd2WlVGYTJMWmhDTEQ2anlTUTlEY3g2bElKM3ZVdXNpM2VqRnZZa1HSAZsBQVVfeXFMTWsxdURJeHVDdzl0TGVEYXpyU2NVaW1Gcm9IcXNOemZmOWhVRGN5cllWSllKaXp6ekhkWVBMUzF1VTlYQWlYdzlVejJONXVPUXlmNTVZaW1PWDhvY2FnVWwyMUI0SHBJWVFRa2ZvdF9jWFNET3Q2b2FnS0Jod21pRHJBbUdYRnBPR3ZYLWdFRmlFX0dpTUl2MExYWmc?oc=5",
@@ -314,9 +313,25 @@
     {
       "person": "",
       "title": "",
+      "company": "Laing O\u2019Rourke",
+      "headline": "Laing O\u2019Rourke appoints Chief People Officer - Rail Business Daily",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUGpIZEJRaXpHTzlPQTJFN2Z4Vk9rOFltN29rdHJqNTZkVzUwX3lwcVlWLV9zdGp4bzNPNEs4MWV6QmJsaFVRWFlBRHNRR0Nmb0NjN281WGJOQTdwbXVRSVA5U1Z6V1JVbldyQ0VWYjAyOFdMZkFweGhBZ2hRNVlZUTlzZGl2dw?oc=5",
+      "source": "news.google.com"
+    },
+    {
+      "person": "",
+      "title": "",
       "company": "Regions Bank",
       "headline": "Regions Bank appoints chief people officer - ATM Marketplace",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObFVlRG9hYlJ0TGRmSjliN0xMUWtiUkl6OXd2dlo0b09UblJBZzZ3VjllVzczYjB3SHRYcTVlSGhpcnJveE05WkF6cGxFdWJYTVJkV010U05SVjFPbmZyelJCbEw4UTkyaGdJTTkwcExtdU5ON1BzLW45eEo0YXhNTFBPSDZjQQ?oc=5",
+      "source": "news.google.com"
+    },
+    {
+      "person": "",
+      "title": "",
+      "company": "Brooks Macdonald",
+      "headline": "Brooks Macdonald appoints chief people officer - International Adviser",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ2VTb0NzdUN0VHpUSGZiVUZjX1ZPWmpmSUIwM0hMOHVDVDEwVnYzY0NCWTBKVE52Qy1jR3FBeXZfVTNzTFU2ekhxYXh4dWh0S2tBbVNGcV9rSWl1c2x4bG9DWk0tMlRLTGwydmZzaHVBd0FTRlZ5Y2VYN3lvbl9iNUlNYlc1WC1EM0hKd2tn?oc=5",
       "source": "news.google.com"
     },
     {
@@ -346,12 +361,12 @@
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZkdrTVFHendBbDhtTWg3M0hpR0xOcXVkUng4X1lGRlBveUVOWDBKME1zWkZWcnZESkhJWXNqN2Q4b2hNc2twai0xZlJBVWNERVBwb3M5S2xPNC1sR0lHVXFNaXJRZGJtaDJmSGFReHVWWnJhajV2RjdxYXpmd2dOSkUzbko?oc=5"
     },
     {
-      "headline": "Griffen O\u2019Shaughnessy redefines fractional talent access - ColoradoBiz",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5BakdZUGJGajhhQUFlNmltcl9LeVN2eUpZUXRfZzlMNmlLZ2FHSFNJaUJoNG54U25VWFlGWVpVM0FkS2Z5Sk9acEY1ekhYMTJQOW1xQklyVjg1cFlqVDhPZFljeFg5d00zWGt4eUJLZG5OMHhjRWFQbVBR?oc=5"
-    },
-    {
       "headline": "Bambee: From Startup to Success Story - J.P. Morgan",
       "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPX3R3REpsRUFZX0dDR1RDRlhaZzV6b0phbGEzODZVUXRhVnRUcGJMM3RFZWVNY25GVi1vdTQ3OG1zTm05ZkZaWXZLTVA0NnJQUGVXa3pNRlpNVElqLVp2WERueTFqT0JsNUNyTkY0ZnFDWkQ4TTUtSTNLTWlUOG5RejRwLW5MakNIYnVnbl9PZFd3VzNFc1pCR3pLREcyZw?oc=5"
+    },
+    {
+      "headline": "Griffen O\u2019Shaughnessy redefines fractional talent access - ColoradoBiz",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5BakdZUGJGajhhQUFlNmltcl9LeVN2eUpZUXRfZzlMNmlLZ2FHSFNJaUJoNG54U25VWFlGWVpVM0FkS2Z5Sk9acEY1ekhYMTJQOW1xQklyVjg1cFlqVDhPZFljeFg5d00zWGt4eUJLZG5OMHhjRWFQbVBR?oc=5"
     }
   ],
   "raw_sam": [],
@@ -612,182 +627,133 @@
   ],
   "github_trending": [
     {
-      "repo": "claude-howto",
-      "owner": "luongnv89",
-      "stars_today": 2390,
-      "language": "Python",
-      "description": "A visual, example-driven guide to Claude Code \u2014 from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "url": "https://github.com/luongnv89/claude-howto"
-    },
-    {
-      "repo": "oh-my-claudecode",
-      "owner": "Yeachan-Heo",
-      "stars_today": 1127,
-      "language": "TypeScript",
-      "description": "Teams-first Multi-agent orchestration for Claude Code",
-      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
+      "repo": "claude-code",
+      "owner": "anthropics",
+      "stars_today": 3905,
+      "language": "Shell",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows ",
+      "url": "https://github.com/anthropics/claude-code"
     },
     {
       "repo": "claude-code-best-practice",
       "owner": "shanraisshan",
-      "stars_today": 2408,
+      "stars_today": 2488,
       "language": "HTML",
       "description": "practice made claude perfect",
       "url": "https://github.com/shanraisshan/claude-code-best-practice"
     },
     {
-      "repo": "hermes-agent",
-      "owner": "NousResearch",
-      "stars_today": 1909,
+      "repo": "claude-howto",
+      "owner": "luongnv89",
+      "stars_today": 3336,
       "language": "Python",
-      "description": "The agent that grows with you",
-      "url": "https://github.com/NousResearch/hermes-agent"
+      "description": "A visual, example-driven guide to Claude Code \u2014 from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "url": "https://github.com/luongnv89/claude-howto"
     },
     {
-      "repo": "superpowers",
-      "owner": "obra",
-      "stars_today": 2846,
-      "language": "Shell",
-      "description": "An agentic skills framework &amp; software development methodology that works.",
-      "url": "https://github.com/obra/superpowers"
+      "repo": "axios",
+      "owner": "axios",
+      "stars_today": 88,
+      "language": "JavaScript",
+      "description": "Promise based HTTP client for the browser and node.js",
+      "url": "https://github.com/axios/axios"
     },
     {
-      "repo": "PaddleOCR",
-      "owner": "PaddlePaddle",
-      "stars_today": 440,
-      "language": "Python",
-      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
-      "url": "https://github.com/PaddlePaddle/PaddleOCR"
+      "repo": "codex",
+      "owner": "openai",
+      "stars_today": 2345,
+      "language": "Rust",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "url": "https://github.com/openai/codex"
     },
     {
-      "repo": "Skills",
-      "owner": "Dimillian",
-      "stars_today": 173,
-      "language": "Shell",
-      "description": "My Codex Skills",
-      "url": "https://github.com/Dimillian/Skills"
-    },
-    {
-      "repo": "sherlock",
-      "owner": "sherlock-project",
-      "stars_today": 862,
-      "language": "Python",
-      "description": "Hunt down social media accounts by username across social networks",
-      "url": "https://github.com/sherlock-project/sherlock"
-    },
-    {
-      "repo": "neovim",
-      "owner": "neovim",
-      "stars_today": 95,
-      "language": "Vim Script",
-      "description": "Vim-fork focused on extensibility and usability",
-      "url": "https://github.com/neovim/neovim"
-    },
-    {
-      "repo": "TaxHacker",
-      "owner": "vas3k",
-      "stars_today": 810,
-      "language": "TypeScript",
-      "description": "Self-hosted AI accounting app. LLM analyzer for receipts, invoices, transactions with custom prompts and categories",
-      "url": "https://github.com/vas3k/TaxHacker"
-    },
-    {
-      "repo": "ChatDev",
-      "owner": "OpenBMB",
-      "stars_today": 254,
-      "language": "Python",
-      "description": "ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration",
-      "url": "https://github.com/OpenBMB/ChatDev"
-    },
-    {
-      "repo": "coding-interview-university",
-      "owner": "jwasham",
-      "stars_today": 874,
-      "language": "",
-      "description": "A complete computer science study plan to become a software engineer.",
-      "url": "https://github.com/jwasham/coding-interview-university"
+      "repo": "prompts.chat",
+      "owner": "f",
+      "stars_today": 421,
+      "language": "HTML",
+      "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source \u2014 self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat"
     }
   ],
   "sec_filings": [],
   "ph_launches": [
     {
-      "product": "Unify",
-      "tagline": "Hire AI colleagues you onboard just like real people Discussion | Link",
-      "link": "https://www.producthunt.com/products/unify-5",
+      "product": "Slapppy",
+      "tagline": "Trigger macros with rhythmic taps on your trackpad or mouse Discussion | Link",
+      "link": "https://www.producthunt.com/products/slapppy-stop-retyping-just-tap",
       "source": "producthunt.com"
     },
     {
-      "product": "Computer Use in Claude Code",
-      "tagline": "Let Claude use your computer from the CLI Discussion | Link",
-      "link": "https://www.producthunt.com/products/claude",
+      "product": "zero",
+      "tagline": "One command to deploy Docker containers to your own server Discussion | Link",
+      "link": "https://www.producthunt.com/products/zero-deploy-apps-to-your-own-server",
       "source": "producthunt.com"
     },
     {
-      "product": "Pixero AI",
-      "tagline": "OpenClaw for AI Ads Discussion | Link",
-      "link": "https://www.producthunt.com/products/pixero-ai-2",
+      "product": "EDAMAME Security",
+      "tagline": "Axios / LiteLLM hacks behavioral detector app for Mac/PC Discussion | Link",
+      "link": "https://www.producthunt.com/products/axios-litellm-detector",
       "source": "producthunt.com"
     },
     {
-      "product": "Jupid",
-      "tagline": "File your taxes with Claude Code Discussion | Link",
-      "link": "https://www.producthunt.com/products/jupid",
+      "product": "The White House",
+      "tagline": "Get direct, unfiltered access to the People's House Discussion | Link",
+      "link": "https://www.producthunt.com/products/the-white-house",
       "source": "producthunt.com"
     },
     {
-      "product": "Solvea",
-      "tagline": "Create your AI receptionist that answers, books, and sells Discussion | Link",
-      "link": "https://www.producthunt.com/products/solvea",
+      "product": "GeoPreview",
+      "tagline": "Preview GIS files directly in Finder (GeoJSON, SHP, GPKG) Discussion | Link",
+      "link": "https://www.producthunt.com/products/geopreview",
       "source": "producthunt.com"
     },
     {
-      "product": "Qwen3.5",
-      "tagline": "A native omni model for voice, video, and tools Discussion | Link",
-      "link": "https://www.producthunt.com/products/qwen3",
+      "product": "Rent AI Key",
+      "tagline": "Rent real keyboard keys that redirect to your link Discussion | Link",
+      "link": "https://www.producthunt.com/products/rent-ai-key",
       "source": "producthunt.com"
     },
     {
-      "product": "layer",
-      "tagline": "Keep local repo files out of git without changing .gitignore Discussion | Link",
-      "link": "https://www.producthunt.com/products/layer-6",
+      "product": "SubscriptionFlow IQ",
+      "tagline": "Turn Website Visitors into Customers with AI Conversations Discussion | Link",
+      "link": "https://www.producthunt.com/products/subscriptionflow",
       "source": "producthunt.com"
     },
     {
-      "product": "Dictura",
-      "tagline": "Hold a key, speak, release- translated text at your cursor Discussion | Link",
-      "link": "https://www.producthunt.com/products/dictura",
+      "product": "IdeaBoard95",
+      "tagline": "A community idea board that looks like Windows 95 Discussion | Link",
+      "link": "https://www.producthunt.com/products/ideaboard95",
       "source": "producthunt.com"
     },
     {
-      "product": "FireAPI",
-      "tagline": "Discover, consume, and monetize APIs in one place Discussion | Link",
-      "link": "https://www.producthunt.com/products/fireapi",
+      "product": "Audyr",
+      "tagline": "AI captures feedback and tells you what to build next Discussion | Link",
+      "link": "https://www.producthunt.com/products/audyr-understand-your-customers",
       "source": "producthunt.com"
     },
     {
-      "product": "Stamp",
-      "tagline": "The AI Secretary that thinks, writes, and works like you Discussion | Link",
-      "link": "https://www.producthunt.com/products/stamp-4",
+      "product": "flock",
+      "tagline": "Run a flock of Claude Code (or other agents) in one window. Discussion | Link",
+      "link": "https://www.producthunt.com/products/flock-let-your-agents-loose",
       "source": "producthunt.com"
     }
   ],
   "cross_references": [],
   "source_stats": {
-    "rss_funding": 8,
+    "rss_funding": 9,
     "rss_hiring": 12,
     "rss_execs": 10,
     "sam_gov": 0,
     "yc": 0,
     "hn_hiring": 30,
-    "github": 12,
+    "github": 6,
     "sec_edgar": 0,
     "producthunt": 10
   },
   "stage_breakdown": {
     "Series C": 4,
-    "Series A": 2,
-    "Late Stage": 1,
-    "Seed": 1
+    "Series A": 3,
+    "Late Stage": 2
   },
   "sector_breakdown": {},
   "pdf_url": "daily_brief.pdf"
