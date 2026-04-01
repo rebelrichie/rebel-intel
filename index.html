@@ -1,158 +1,223 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REBEL TALENT — DAILY BRIEF</title>
+<title>REBEL TALENT — DAILY BRIEF v5.0</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdn.plot.ly/plotly-2.35.0.min.js" charset="utf-8"></script>
 <style>
-:root {
-  --bg:#0a0a0f; --surface:#0d1117; --surface2:#131a24; --border:#1a2440;
-  --teal:#00ffd5; --teal-dim:#007a66; --gold:#ffa500; --gold-dim:#7a5000;
-  --neon-pink:#ff006e; --matrix-green:#00ff41; --red:#ff3366;
-  --purple:#b47cff; --text:#c0d0e0; --muted:#3a4858;
+:root{
+  --bg:#0a0a0f;--surface:#0d1117;--surface2:#131a24;--border:#1a2440;
+  --teal:#00ffd5;--teal-dim:#007a66;--gold:#ffa500;--gold-dim:#7a5000;
+  --neon-pink:#ff006e;--matrix-green:#00ff41;--red:#ff3366;
+  --purple:#b47cff;--text:#c0d0e0;--muted:#3a4858;
+  --fintech:#4fc3f7;--martech:#81c784;--defense:#ffd54f;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{font-size:clamp(16px,1.4vw,22px)}
+html{font-size:clamp(15px,1.3vw,20px)}
 body{background:var(--bg);color:var(--text);font-family:'JetBrains Mono',monospace;min-height:100vh;overflow-x:hidden;cursor:crosshair}
-body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,213,.012) 2px,rgba(0,255,213,.012) 4px);pointer-events:none;z-index:1000}
-body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,213,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,213,.015) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,213,.01) 2px,rgba(0,255,213,.01) 4px);pointer-events:none;z-index:1000}
+body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,213,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,213,.012) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+a{color:var(--teal);text-decoration:none;}a:hover{text-decoration:underline}
 
 /* Boot */
-#boot{position:fixed;inset:0;background:var(--bg);z-index:9000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35rem;transition:opacity .4s}
+#boot{position:fixed;inset:0;background:var(--bg);z-index:9000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.3rem;transition:opacity .4s}
 #boot.gone{opacity:0;pointer-events:none}
-.bl{font-size:.82rem;color:var(--teal);letter-spacing:.06em;opacity:0;animation:bf .1s forwards;width:540px;max-width:90vw}
+.bl{font-size:.75rem;color:var(--teal);letter-spacing:.06em;opacity:0;animation:bf .1s forwards;width:580px;max-width:90vw}
 .bl.ok::after{content:'  [OK]';color:var(--teal)}
+.bl.warn::after{content:'  [WARN]';color:var(--gold)}
 @keyframes bf{to{opacity:1}}
 
 /* Nav */
-nav{position:sticky;top:0;z-index:500;background:rgba(10,10,15,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between;opacity:0;animation:fi .3s 1.2s forwards}
-.nav-logo{font-family:'Chakra Petch',sans-serif;font-size:1.1rem;font-weight:700;color:var(--teal);letter-spacing:.15em;text-shadow:0 0 12px rgba(0,255,213,.3)}
-.nav-logo span{color:var(--muted);font-size:.72rem;letter-spacing:.2em;margin-left:.75rem}
-.nav-r{display:flex;align-items:center;gap:1.5rem}
-.ndot{font-size:.72rem;letter-spacing:.12em;color:var(--muted)}
+nav{position:sticky;top:0;z-index:500;background:rgba(10,10,15,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between;opacity:0;animation:fi .3s 1.4s forwards}
+.nav-logo{font-family:'Chakra Petch',sans-serif;font-size:1.05rem;font-weight:700;color:var(--teal);letter-spacing:.15em;text-shadow:0 0 12px rgba(0,255,213,.3)}
+.nav-logo span{color:var(--muted);font-size:.68rem;letter-spacing:.2em;margin-left:.75rem}
+.nav-r{display:flex;align-items:center;gap:1.2rem}
+.ndot{font-size:.7rem;letter-spacing:.12em;color:var(--muted)}
 .ndot::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--matrix-green);margin-right:.4rem;box-shadow:0 0 6px var(--matrix-green);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 6px var(--matrix-green)}50%{opacity:.15;box-shadow:none}}
-.ndate{font-size:.72rem;color:var(--gold);letter-spacing:.1em}
-.pdf-btn{font-family:'Chakra Petch',sans-serif;font-size:.72rem;letter-spacing:.15em;color:var(--teal);text-decoration:none;border:1px solid var(--teal-dim);padding:.4rem .85rem;transition:all .15s}
-.pdf-btn:hover{background:rgba(0,255,213,.08);border-color:var(--teal);box-shadow:0 0 12px rgba(0,255,213,.15)}
+.ndate{font-size:.7rem;color:var(--gold);letter-spacing:.1em}
+.apollo-badge{font-size:.65rem;letter-spacing:.1em;color:var(--teal);border:1px solid var(--teal-dim);padding:.2rem .55rem;background:rgba(0,255,213,.05)}
+.pdf-btn{font-family:'Chakra Petch',sans-serif;font-size:.7rem;letter-spacing:.15em;color:var(--teal);text-decoration:none;border:1px solid var(--teal-dim);padding:.38rem .8rem;transition:all .15s}
+.pdf-btn:hover{background:rgba(0,255,213,.08);border-color:var(--teal);box-shadow:0 0 12px rgba(0,255,213,.15);text-decoration:none}
 
 /* Layout */
-.wrap{max-width:1600px;margin:0 auto;padding:0 2.5rem 4rem;position:relative;z-index:1;opacity:0;animation:fi .4s 1.3s forwards}
-.updated-ago{font-size:.65rem;color:var(--muted);letter-spacing:.1em;margin-left:.5rem}
+.wrap{max-width:1700px;margin:0 auto;padding:0 2.5rem 4rem;position:relative;z-index:1;opacity:0;animation:fi .4s 1.5s forwards}
+.updated-ago{font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-left:.5rem}
 @keyframes fi{to{opacity:1}}
 
 /* Hero */
 .hero{padding:2.5rem 0 2rem;border-bottom:1px solid var(--border);display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap}
-.h-clf{font-size:.7rem;letter-spacing:.25em;color:var(--red);border:1px solid rgba(255,51,102,.4);display:inline-block;padding:.2rem .6rem;margin-bottom:.5rem;opacity:.8;text-shadow:0 0 4px rgba(255,51,102,.3)}
-.h-title{font-family:'Chakra Petch',sans-serif;font-size:clamp(2.6rem,5.5vw,4.5rem);font-weight:700;color:#fff;line-height:.95;letter-spacing:-.01em}
+.h-clf{font-size:.65rem;letter-spacing:.25em;color:var(--red);border:1px solid rgba(255,51,102,.4);display:inline-block;padding:.2rem .6rem;margin-bottom:.5rem;opacity:.8}
+.h-title{font-family:'Chakra Petch',sans-serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:700;color:#fff;line-height:.95;letter-spacing:-.01em}
 .h-title .t{color:var(--teal);text-shadow:0 0 20px rgba(0,255,213,.25)}
-.h-sub{margin-top:.7rem;font-size:.78rem;color:var(--muted);letter-spacing:.12em}
-.h-stats{display:flex;gap:2rem;flex-wrap:wrap}
+.h-sub{margin-top:.7rem;font-size:.72rem;color:var(--muted);letter-spacing:.1em;line-height:1.7}
+.h-stats{display:flex;gap:1.75rem;flex-wrap:wrap}
 .stat{text-align:right}
-.sv{font-family:'Chakra Petch',sans-serif;font-size:2.1rem;font-weight:600;color:var(--teal);line-height:1;display:block;font-variant-numeric:tabular-nums;text-shadow:0 0 8px rgba(0,255,213,.2)}
-.sl{font-size:.68rem;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;margin-top:.15rem}
+.sv{font-family:'Chakra Petch',sans-serif;font-size:2rem;font-weight:600;color:var(--teal);line-height:1;display:block;font-variant-numeric:tabular-nums;text-shadow:0 0 8px rgba(0,255,213,.2)}
+.sl{font-size:.64rem;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;margin-top:.15rem}
 
-/* Section headers with glitch effect */
-.sec{font-family:'Chakra Petch',sans-serif;font-size:.78rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);padding:2rem 0 .6rem;border-bottom:1px solid var(--border);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;position:relative}
-.sec::before{content:'';display:block;width:14px;height:1px;background:var(--teal);box-shadow:0 0 4px var(--teal)}
+/* Section headers */
+.sec{font-family:'Chakra Petch',sans-serif;font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);padding:2rem 0 .6rem;border-bottom:1px solid var(--border);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.sec::before{content:'';display:block;width:12px;height:1px;background:var(--teal);box-shadow:0 0 4px var(--teal);flex-shrink:0}
 .sec:hover{color:var(--teal);text-shadow:0 0 6px rgba(0,255,213,.3)}
+.sec-badge{margin-left:auto;font-size:.62rem;color:var(--muted);letter-spacing:.1em}
 
-/* Cards with glow */
+/* Mission cards */
 .mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
-@media(max-width:700px){.mgrid,.pgrid,.chart-grid{grid-template-columns:1fr}}
-.mc{background:var(--surface);padding:1.25rem;position:relative;overflow:hidden;transition:all .2s;border:1px solid transparent}
+@media(max-width:700px){.mgrid,.pgrid,.chart-grid,.filter-grid{grid-template-columns:1fr}}
+.mc{background:var(--surface);padding:1.2rem;position:relative;overflow:hidden;transition:all .2s;border:1px solid transparent}
 .mc:hover{background:var(--surface2);box-shadow:0 0 20px rgba(0,255,213,.08);border-color:rgba(0,255,213,.1)}
 .mc::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--gold),var(--neon-pink))}
-.mc-num{font-family:'Chakra Petch',sans-serif;font-size:2.8rem;font-weight:700;color:rgba(26,36,64,.6);position:absolute;bottom:-.4rem;right:.5rem;line-height:1;user-select:none}
-.mc-tag{font-size:.68rem;letter-spacing:.2em;color:var(--gold);margin-bottom:.5rem;text-shadow:0 0 4px rgba(255,165,0,.3)}
-.mc-txt{font-size:.9rem;line-height:1.6;position:relative;z-index:1}
+.mc-num{font-family:'Chakra Petch',sans-serif;font-size:2.6rem;font-weight:700;color:rgba(26,36,64,.6);position:absolute;bottom:-.4rem;right:.5rem;line-height:1;user-select:none}
+.mc-tag{font-size:.65rem;letter-spacing:.2em;color:var(--gold);margin-bottom:.5rem}
+.mc-txt{font-size:.86rem;line-height:1.6;position:relative;z-index:1}
 
-/* Target cards with pulse */
+/* Target cards */
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
 .pc{background:var(--surface);border:1px solid rgba(0,255,213,.15);border-top:2px solid var(--teal);padding:1rem 1.1rem;transition:all .2s;box-shadow:0 0 6px rgba(0,255,213,.04);animation:cardPulse 4s ease-in-out infinite}
 .pc:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:0 0 20px rgba(0,255,213,.12)}
 @keyframes cardPulse{0%,100%{box-shadow:0 0 6px rgba(0,255,213,.04)}50%{box-shadow:0 0 14px rgba(0,255,213,.1)}}
-.pc-idx{font-family:'Chakra Petch',sans-serif;font-size:.72rem;letter-spacing:.2em;color:var(--teal);margin-bottom:.4rem}
-.pc-txt{font-size:.88rem;line-height:1.6}
+.pc-idx{font-family:'Chakra Petch',sans-serif;font-size:.68rem;letter-spacing:.2em;color:var(--teal);margin-bottom:.4rem}
+.pc-txt{font-size:.85rem;line-height:1.6}
+
+/* Market trend cards */
+.trend-card{background:var(--surface);border-left:2px solid var(--purple);padding:.75rem 1rem;margin-bottom:.5rem;font-size:.85rem;line-height:1.6}
 
 /* Charts */
 .chart-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:2rem}
 .chart-card{background:var(--surface);border:1px solid var(--border);border-top:2px solid var(--teal);padding:1rem;box-shadow:0 0 10px rgba(0,255,213,.03);transition:box-shadow .2s}
 .chart-card:hover{box-shadow:0 0 16px rgba(0,255,213,.08)}
-.chart-title{font-family:'Chakra Petch',sans-serif;font-size:.72rem;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;margin-bottom:.75rem}
+.chart-title{font-family:'Chakra Petch',sans-serif;font-size:.68rem;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;margin-bottom:.75rem}
 
 /* Tabs */
 .tabrow{display:flex;border-bottom:1px solid var(--border);margin-bottom:1.25rem;overflow-x:auto;scrollbar-width:none}
 .tabrow::-webkit-scrollbar{display:none}
-.tb{font-family:'Chakra Petch',sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:.6rem 1.1rem;background:none;border:none;color:var(--muted);cursor:crosshair;border-bottom:2px solid transparent;white-space:nowrap;margin-bottom:-1px;transition:all .12s}
+.tb{font-family:'Chakra Petch',sans-serif;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;padding:.6rem 1rem;background:none;border:none;color:var(--muted);cursor:crosshair;border-bottom:2px solid transparent;white-space:nowrap;margin-bottom:-1px;transition:all .12s}
 .tb:hover{color:var(--text)}
 .tb.on{color:var(--teal);border-bottom-color:var(--teal);text-shadow:0 0 6px rgba(0,255,213,.2)}
+.tb.ft-tab.on{color:var(--fintech);border-bottom-color:var(--fintech)}
+.tb.mt-tab.on{color:var(--martech);border-bottom-color:var(--martech)}
+.tb.lp-tab.on{color:var(--purple);border-bottom-color:var(--purple)}
 .pane{display:none}.pane.on{display:block}
 
-/* Filter */
-.frow{display:flex;gap:.75rem;margin-bottom:1rem;align-items:center;flex-wrap:wrap}
-.fi{background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:.82rem;padding:.5rem .9rem;outline:none;width:280px;transition:all .15s}
-.fi::placeholder{color:var(--muted)}.fi:focus{border-color:var(--teal);box-shadow:0 0 8px rgba(0,255,213,.1)}
-.dlb{font-family:'Chakra Petch',sans-serif;font-size:.72rem;letter-spacing:.14em;padding:.5rem .95rem;background:transparent;border:1px solid var(--border);color:var(--muted);cursor:crosshair;text-decoration:none;transition:all .12s}
-.dlb:hover{color:var(--gold);border-color:var(--gold);box-shadow:0 0 8px rgba(255,165,0,.1)}
+/* Filters */
+.filter-bar{display:flex;gap:.65rem;margin-bottom:1rem;align-items:center;flex-wrap:wrap}
+.fi{background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:.78rem;padding:.45rem .85rem;outline:none;transition:all .15s;min-width:180px}
+.fi:focus{border-color:var(--teal);box-shadow:0 0 8px rgba(0,255,213,.1)}
+.fi::placeholder{color:var(--muted)}
+select.fi{cursor:crosshair;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%233a4858' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:28px}
+.filter-label{font-size:.65rem;letter-spacing:.15em;color:var(--muted);white-space:nowrap}
+.dlb{font-family:'Chakra Petch',sans-serif;font-size:.68rem;letter-spacing:.14em;padding:.45rem .9rem;background:transparent;border:1px solid var(--border);color:var(--muted);cursor:crosshair;text-decoration:none;transition:all .12s}
+.dlb:hover{color:var(--gold);border-color:var(--gold);box-shadow:0 0 8px rgba(255,165,0,.1);text-decoration:none}
+.filter-count{font-size:.65rem;color:var(--muted);letter-spacing:.1em;white-space:nowrap}
 
 /* Table */
 .tw{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:.88rem}
-thead th{font-family:'Chakra Petch',sans-serif;font-size:.7rem;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;padding:.5rem .85rem;border-bottom:1px solid var(--border);text-align:left;white-space:nowrap}
-tbody td{padding:.65rem .85rem;border-bottom:1px solid rgba(26,36,64,.6);vertical-align:top;line-height:1.5;transition:background .1s}
+table{width:100%;border-collapse:collapse;font-size:.84rem}
+thead th{font-family:'Chakra Petch',sans-serif;font-size:.67rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;padding:.5rem .85rem;border-bottom:1px solid var(--border);text-align:left;white-space:nowrap}
+tbody td{padding:.6rem .85rem;border-bottom:1px solid rgba(26,36,64,.6);vertical-align:top;line-height:1.5;transition:background .1s}
 tbody tr:hover td{background:var(--surface)}
-.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.05em;padding:.18rem .45rem;white-space:nowrap}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.65rem;letter-spacing:.05em;padding:.16rem .42rem;white-space:nowrap}
 .tt{background:rgba(0,255,213,.06);color:var(--teal);border:1px solid rgba(0,255,213,.18)}
 .tg{background:rgba(255,165,0,.06);color:var(--gold);border:1px solid rgba(255,165,0,.18)}
 .tp{background:rgba(180,124,255,.06);color:var(--purple);border:1px solid rgba(180,124,255,.18)}
 .tr{background:rgba(255,0,110,.06);color:var(--neon-pink);border:1px solid rgba(255,0,110,.18)}
-.nodata{text-align:center;padding:2.5rem;color:var(--muted);font-size:.78rem;letter-spacing:.2em}
+.t-ft{background:rgba(79,195,247,.06);color:var(--fintech);border:1px solid rgba(79,195,247,.18)}
+.t-mt{background:rgba(129,199,132,.06);color:var(--martech);border:1px solid rgba(129,199,132,.18)}
+.t-def{background:rgba(255,213,79,.06);color:var(--defense);border:1px solid rgba(255,213,79,.18)}
+.nodata{text-align:center;padding:2.5rem;color:var(--muted);font-size:.75rem;letter-spacing:.2em}
 
 /* Signal list */
 .siglist{display:flex;flex-direction:column;gap:1px;background:var(--border);border:1px solid var(--border)}
-.si{background:var(--surface);padding:.9rem 1.1rem .9rem 1.3rem;font-size:.88rem;line-height:1.6;border-left:2px solid transparent;transition:all .1s}
+.si{background:var(--surface);padding:.85rem 1rem .85rem 1.2rem;font-size:.85rem;line-height:1.6;border-left:2px solid transparent;transition:all .1s}
 .si:hover{background:var(--surface2);border-left-width:4px}
-.defnote{font-size:.78rem;color:var(--muted);letter-spacing:.07em;margin-bottom:1.25rem;padding:.65rem .95rem;border-left:2px solid var(--gold);background:rgba(255,165,0,.02)}
+.si a{color:var(--teal)}
 
-/* Cross-ref badges */
-.xref-badge{display:inline-block;font-family:'Chakra Petch',sans-serif;font-size:.62rem;letter-spacing:.12em;padding:.16rem .48rem;background:rgba(255,0,110,.08);color:var(--neon-pink);border:1px solid rgba(255,0,110,.25);margin-left:.4rem;text-shadow:0 0 4px rgba(255,0,110,.3)}
+/* Cross-ref */
+.xref-badge{display:inline-block;font-family:'Chakra Petch',sans-serif;font-size:.6rem;letter-spacing:.12em;padding:.14rem .44rem;background:rgba(255,0,110,.08);color:var(--neon-pink);border:1px solid rgba(255,0,110,.25);margin-left:.4rem}
+
+/* Lead Profile Cards (v5.0) */
+.lp-card{background:var(--surface);border:1px solid var(--border);border-top:2px solid var(--teal);margin-bottom:1rem;transition:box-shadow .2s}
+.lp-card:hover{box-shadow:0 0 20px rgba(0,255,213,.08)}
+.lp-header{padding:.9rem 1.1rem .75rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+.lp-name{font-family:'Chakra Petch',sans-serif;font-size:1.05rem;font-weight:600;color:#dde8f0;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.lp-name a{color:#dde8f0}
+.lp-name a:hover{color:var(--teal);text-decoration:none}
+.lp-meta{font-size:.7rem;color:var(--muted);margin-top:.3rem;line-height:1.6}
+.lp-amount{font-family:'Chakra Petch',sans-serif;font-size:1.3rem;font-weight:600;color:var(--gold);text-align:right}
+.lp-stage{font-size:.65rem;color:var(--muted);text-align:right;margin-top:.15rem}
+.lp-badges{display:flex;gap:.3rem;flex-wrap:wrap;margin-top:.5rem}
+
+.lp-body{padding:.9rem 1.1rem}
+.lp-desc{font-size:.8rem;color:#8899aa;line-height:1.65;margin-bottom:.9rem}
+
+.lp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.9rem;margin-bottom:.9rem}
+.lp-section-title{font-size:.65rem;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;margin-bottom:.4rem;padding-bottom:.25rem;border-bottom:1px solid var(--border)}
+.lp-section-body{font-size:.78rem;line-height:1.6}
+.lp-tech{display:flex;flex-wrap:wrap;gap:.3rem}
+.lp-tech-tag{font-size:.65rem;background:rgba(0,255,213,.04);border:1px solid rgba(0,255,213,.12);color:#7CCBC3;padding:.1rem .4rem}
+
+/* Decision makers */
+.dm-section{border-top:1px solid var(--border);padding:.85rem 1.1rem}
+.dm-title{font-size:.65rem;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;margin-bottom:.6rem}
+.dm-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.5rem}
+.dm-card{background:var(--surface2);border:1px solid var(--border);padding:.7rem .9rem}
+.dm-card:hover{border-color:rgba(0,255,213,.2);box-shadow:0 0 8px rgba(0,255,213,.05)}
+.dm-name{font-size:.88rem;font-weight:600;color:#dde8f0;margin-bottom:.2rem}
+.dm-name a{color:#dde8f0}
+.dm-name a:hover{color:var(--teal);text-decoration:none}
+.dm-role{font-size:.72rem;color:var(--muted);margin-bottom:.4rem}
+.dm-contact{font-size:.72rem;line-height:1.7}
+.dm-contact a{color:var(--teal)}
+.dm-li{color:#0077b5}
+
+/* Outreach angle */
+.lp-outreach{border-top:1px solid var(--border);padding:.75rem 1.1rem;background:rgba(255,165,0,.03)}
+.lp-outreach-label{font-size:.62rem;letter-spacing:.15em;color:var(--gold);margin-bottom:.3rem}
+.lp-outreach-body{font-size:.82rem;color:var(--text);line-height:1.6}
+
+/* defnote */
+.defnote{font-size:.75rem;color:var(--muted);letter-spacing:.06em;margin-bottom:1.2rem;padding:.6rem .9rem;border-left:2px solid var(--gold);background:rgba(255,165,0,.02)}
 
 /* Loading */
-#loading{text-align:center;padding:5rem 2rem;font-size:.78rem;color:var(--muted);letter-spacing:.2em}
+#loading{text-align:center;padding:5rem 2rem;font-size:.75rem;color:var(--muted);letter-spacing:.2em}
 .lbar{width:200px;height:2px;background:var(--border);margin:1rem auto 0;overflow:hidden}
 .lfill{height:100%;background:var(--teal);box-shadow:0 0 6px var(--teal);animation:ll 1.2s ease-out forwards}
 @keyframes ll{from{width:0}to{width:100%}}
 
 /* Footer */
 footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
-.ft{font-size:.72rem;color:var(--muted);letter-spacing:.1em;line-height:1.8}
+.ft{font-size:.7rem;color:var(--muted);letter-spacing:.1em;line-height:1.8}
 </style>
 </head>
 <body>
 
+<!-- BOOT SEQUENCE -->
 <div id="boot">
-  <div class="bl ok" style="animation-delay:.05s">REBEL TALENT SYSTEMS v4.0 // INITIALIZING</div>
-  <div class="bl ok" style="animation-delay:.15s">RSS FEEDS [10] // CONNECTED</div>
-  <div class="bl ok" style="animation-delay:.25s">SAM.GOV SBIR // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.05s">REBEL TALENT SYSTEMS v5.0 // INITIALIZING</div>
+  <div class="bl ok" style="animation-delay:.15s">RSS FEEDS [FUNDING + FINTECH + MARTECH] // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.25s">SAM.GOV SBIR + GOV CONTRACTS // CONNECTED</div>
   <div class="bl ok" style="animation-delay:.35s">Y COMBINATOR API // CONNECTED</div>
-  <div class="bl ok" style="animation-delay:.45s">HACKER NEWS // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.45s">HACKER NEWS HIRING // CONNECTED</div>
   <div class="bl ok" style="animation-delay:.55s">GITHUB TRENDING // CONNECTED</div>
-  <div class="bl ok" style="animation-delay:.65s">SEC EDGAR // CONNECTED</div>
-  <div class="bl ok" style="animation-delay:.75s">PRODUCTHUNT // CONNECTED</div>
-  <div class="bl ok" style="animation-delay:.85s">GROQ SYNTHESIS (70B) // READY</div>
-  <div class="bl" style="animation-delay:.95s;color:var(--gold)">ACCESS GRANTED // INTERNAL USE ONLY</div>
+  <div class="bl ok" style="animation-delay:.65s">SEC EDGAR FORM D // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.75s">PRODUCTHUNT LAUNCHES // CONNECTED</div>
+  <div class="bl ok" style="animation-delay:.85s">GROQ SYNTHESIS (llama-3.3-70b) // READY</div>
+  <div class="bl ok" style="animation-delay:.95s">APOLLO API // ENRICHMENT LOADED</div>
+  <div class="bl ok" style="animation-delay:1.05s">ICP FILTER: 20-100 EMP · US-BASED · SERIES A-C // ARMED</div>
+  <div class="bl" style="animation-delay:1.15s;color:var(--gold)">ACCESS GRANTED // richie@rebeltalentsystems.com &amp; shaun@arkhamtalent.com</div>
 </div>
 
+<!-- NAV -->
 <nav>
-  <div class="nav-logo">REBEL TALENT<span>// DAILY BRIEF v4.0</span></div>
+  <div class="nav-logo">REBEL TALENT<span>// DAILY BRIEF v5.0</span></div>
   <div class="nav-r">
     <span class="ndot">LIVE</span>
     <span class="ndate" id="nav-date">&mdash;</span>
+    <span class="apollo-badge" id="nav-apollo" style="display:none">&diams; APOLLO</span>
     <a href="daily_brief.pdf" download class="pdf-btn">&darr; PDF</a>
   </div>
 </nav>
@@ -161,41 +226,58 @@ footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);dis
   <div id="loading">ACQUIRING SIGNAL<div class="lbar"><div class="lfill"></div></div></div>
   <div id="content" style="display:none">
 
+    <!-- HERO -->
     <div class="hero">
       <div>
         <div class="h-clf">// INTERNAL &mdash; NOT FOR DISTRIBUTION</div>
         <div class="h-title">DAILY<br><span class="t">BRIEF</span></div>
-        <div class="h-sub">Series A&ndash;C &nbsp;&middot;&nbsp; SaaS &nbsp;&middot;&nbsp; Defense Tech &nbsp;&middot;&nbsp; GovTech &nbsp;&middot;&nbsp; US Only</div>
+        <div class="h-sub">
+          Series A&ndash;C &nbsp;&middot;&nbsp; 20-100 Employees &nbsp;&middot;&nbsp; US Only<br>
+          SaaS/B2B &nbsp;&middot;&nbsp; <span style="color:var(--fintech)">Fintech</span> &nbsp;&middot;&nbsp; <span style="color:var(--martech)">Martech</span> &nbsp;&middot;&nbsp; Defense/GovTech
+        </div>
       </div>
       <div class="h-stats">
         <div class="stat"><span class="sv" id="s-f">&mdash;</span><span class="sl">Funded</span></div>
+        <div class="stat"><span class="sv" id="s-ft" style="color:var(--fintech)">&mdash;</span><span class="sl">Fintech</span></div>
+        <div class="stat"><span class="sv" id="s-mt" style="color:var(--martech)">&mdash;</span><span class="sl">Martech</span></div>
         <div class="stat"><span class="sv" id="s-s">&mdash;</span><span class="sl">Signals</span></div>
-        <div class="stat"><span class="sv" id="s-b">&mdash;</span><span class="sl">SBIR</span></div>
         <div class="stat"><span class="sv" id="s-src">&mdash;</span><span class="sl">Sources</span></div>
-        <div class="stat"><span class="sv" id="s-xref">&mdash;</span><span class="sl">Cross-Ref</span></div>
+        <div class="stat"><span class="sv" id="s-xref" style="color:var(--neon-pink)">&mdash;</span><span class="sl">Cross-Ref</span></div>
+        <div class="stat"><span class="sv" id="s-lp" style="color:var(--purple)">&mdash;</span><span class="sl">Leads</span></div>
+        <div class="stat"><span class="sv" id="s-dm" style="color:var(--teal)">&mdash;</span><span class="sl">Contacts</span></div>
       </div>
     </div>
 
-    <!-- INTEL OVERVIEW CHARTS -->
-    <div class="sec">INTEL OVERVIEW // SIGNAL ANALYSIS</div>
+    <!-- CHARTS -->
+    <div class="sec">Intel Overview // Signal Analysis</div>
     <div class="chart-grid">
       <div class="chart-card"><div class="chart-title">Funding by Stage</div><div id="chart-stage"></div></div>
-      <div class="chart-card"><div class="chart-title">Sector Heat Map</div><div id="chart-sector"></div></div>
+      <div class="chart-card"><div class="chart-title">Vertical Heat Map</div><div id="chart-sector"></div></div>
       <div class="chart-card"><div class="chart-title">Signal Radar</div><div id="chart-radar"></div></div>
       <div class="chart-card"><div class="chart-title">Data Source Coverage</div><div id="chart-sources"></div></div>
     </div>
 
-    <div class="sec">MISSION OBJECTIVES // TODAY</div>
+    <!-- MARKET TRENDS -->
+    <div class="sec" id="sec-trends" style="display:none">Market Trends // Macro Context</div>
+    <div id="trends-grid"></div>
+
+    <!-- MISSION OBJECTIVES -->
+    <div class="sec">Mission Objectives // Today</div>
     <div class="mgrid" id="moves"></div>
 
-    <div class="sec">HIGH-VALUE TARGETS // TOP 3</div>
+    <!-- TOP 3 TARGETS -->
+    <div class="sec">High-Value Targets // Top 3</div>
     <div class="pgrid" id="top3"></div>
 
-    <div class="sec" style="margin-top:2.5rem">INTELLIGENCE DIGEST</div>
+    <!-- TABS -->
+    <div class="sec" style="margin-top:2.5rem">Intelligence Digest</div>
     <div class="tabrow">
-      <button class="tb on" onclick="tab('funded',this)">New Money In</button>
+      <button class="tb lp-tab on" onclick="tab('leads',this)">&#9670; Lead Profiles</button>
+      <button class="tb on" onclick="tab('funded',this)" id="btn-funded">New Money In</button>
       <button class="tb" onclick="tab('hiring',this)">Hiring Signals</button>
       <button class="tb" onclick="tab('execs',this)">Exec Moves</button>
+      <button class="tb ft-tab" onclick="tab('fintech',this)">Fintech</button>
+      <button class="tb mt-tab" onclick="tab('martech',this)">Martech</button>
       <button class="tb" onclick="tab('defense',this)">Defense / GovTech</button>
       <button class="tb" onclick="tab('xref',this)">Cross-Refs</button>
       <button class="tb" onclick="tab('yc',this)">YC Batch</button>
@@ -205,64 +287,170 @@ footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);dis
       <button class="tb" onclick="tab('vehicles',this)">Vehicles</button>
     </div>
 
-    <div id="pane-funded" class="pane on">
-      <div class="frow">
-        <input class="fi" type="text" placeholder="// filter..." oninput="ftbl('tbl-f',this.value)">
-        <a href="hubspot_leads.csv" download class="dlb">&darr; EXPORT CSV</a>
+    <!-- ═══ LEAD PROFILES PANE ═══ -->
+    <div id="pane-leads" class="pane on">
+      <div class="defnote">
+        Apollo-enriched lead profiles. Each company has been validated against ICP filters (20-100 employees, US-based, Series A-C).
+        Decision makers include verified email, phone, and LinkedIn from Apollo's database.
+      </div>
+      <div class="filter-bar">
+        <input class="fi" type="text" id="lp-search" placeholder="// search leads..." oninput="filterLeads()">
+        <select class="fi" id="lp-vertical" onchange="filterLeads()">
+          <option value="">All Verticals</option>
+          <option value="fintech">Fintech</option>
+          <option value="martech">Martech</option>
+          <option value="defense">Defense/GovTech</option>
+          <option value="saas">SaaS/B2B</option>
+          <option value="cybersecurity">Cybersecurity</option>
+          <option value="tech">Tech</option>
+        </select>
+        <select class="fi" id="lp-stage" onchange="filterLeads()">
+          <option value="">All Stages</option>
+          <option value="series a">Series A</option>
+          <option value="series b">Series B</option>
+          <option value="series c">Series C</option>
+          <option value="seed">Seed</option>
+        </select>
+        <select class="fi" id="lp-contacts" onchange="filterLeads()">
+          <option value="">All Leads</option>
+          <option value="yes">With Apollo Contacts</option>
+          <option value="no">No Contacts Yet</option>
+        </select>
+        <span class="filter-count" id="lp-count"></span>
+      </div>
+      <div id="lp-grid"></div>
+    </div>
+
+    <!-- ═══ FUNDED PANE ═══ -->
+    <div id="pane-funded" class="pane">
+      <div class="filter-bar">
+        <input class="fi" type="text" placeholder="// search..." oninput="ftbl('tbl-f',this.value)">
+        <select class="fi" onchange="filterTable('tbl-f',this.value,2)">
+          <option value="">All Stages</option>
+          <option>Series A</option><option>Series B</option><option>Series C</option><option>Seed</option>
+        </select>
+        <select class="fi" onchange="filterTable('tbl-f',this.value,4)">
+          <option value="">All Verticals</option>
+          <option>Fintech</option><option>Martech</option><option>Defense/GovTech</option><option>SaaS/B2B</option><option>Cybersecurity</option><option>Tech</option>
+        </select>
+        <a href="hubspot_leads.csv" download class="dlb">&darr; HubSpot CSV</a>
       </div>
       <div class="tw">
         <table id="tbl-f">
-          <thead><tr><th>Company</th><th>Amount</th><th>Stage</th><th>Geo</th><th>Sector</th><th>Signal</th></tr></thead>
+          <thead><tr><th>Company</th><th>Amount</th><th>Stage</th><th>Vertical</th><th>Sector / Location</th><th>Signal</th></tr></thead>
           <tbody id="tb-f"></tbody>
         </table>
       </div>
     </div>
 
+    <!-- ═══ HIRING PANE ═══ -->
     <div id="pane-hiring" class="pane">
-      <div class="frow"><input class="fi" type="text" placeholder="// filter..." oninput="fsig('sl-h',this.value)"></div>
+      <div class="filter-bar">
+        <input class="fi" type="text" placeholder="// filter..." oninput="fsig('sl-h',this.value)">
+        <select class="fi" onchange="filterSigAttr('sl-h',this.value,'data-type')">
+          <option value="">All Types</option>
+          <option value="sales">Sales Hires</option>
+          <option value="tech">Tech Hires</option>
+          <option value="people">People Hires</option>
+        </select>
+      </div>
       <div class="siglist" id="sl-h"></div>
     </div>
 
+    <!-- ═══ EXEC MOVES PANE ═══ -->
     <div id="pane-execs" class="pane">
+      <div class="filter-bar">
+        <select class="fi" onchange="filterSigAttr('sl-e',this.value,'data-type')">
+          <option value="">All Moves</option>
+          <option value="people">People / HR</option>
+          <option value="sales">Sales Leaders</option>
+          <option value="tech">Tech Leaders</option>
+        </select>
+      </div>
       <div class="siglist" id="sl-e"></div>
     </div>
 
+    <!-- ═══ FINTECH PANE ═══ -->
+    <div id="pane-fintech" class="pane">
+      <div class="defnote" style="border-left-color:var(--fintech)">
+        Fintech, insurtech, wealthtech, and regtech companies raising Series A-C.
+        High compliance + technical hiring bar = strong case for fractional Head of Talent.
+      </div>
+      <div class="tw">
+        <table id="tbl-ft">
+          <thead><tr><th>Company</th><th>Amount</th><th>Stage</th><th>Signal / Headline</th></tr></thead>
+          <tbody id="tb-ft"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ═══ MARTECH PANE ═══ -->
+    <div id="pane-martech" class="pane">
+      <div class="defnote" style="border-left-color:var(--martech)">
+        Martech, ad tech, sales enablement, and GTM intelligence companies.
+        Simultaneous Sales + Engineering hiring = high-urgency fractional need.
+      </div>
+      <div class="tw">
+        <table id="tbl-mt">
+          <thead><tr><th>Company</th><th>Amount</th><th>Stage</th><th>Signal / Headline</th></tr></thead>
+          <tbody id="tb-mt"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ═══ DEFENSE PANE ═══ -->
     <div id="pane-defense" class="pane">
-      <div class="defnote">SBIR Phase II = federal validation + capital incoming = hiring wave. Warm targets.</div>
+      <div class="defnote">SBIR Phase II = federal validation + capital incoming = cleared hiring wave. Warm targets.</div>
       <div class="siglist" id="sl-d" style="margin-bottom:1.5rem"></div>
-      <div class="sec" style="padding-top:0">SAM.GOV RAW FEED</div>
+      <div class="sec" style="padding-top:0">SAM.gov Raw Feed</div>
       <div class="tw">
         <table id="tbl-s">
-          <thead><tr><th>Opportunity</th><th>Agency</th><th>Type</th><th>Posted</th></tr></thead>
+          <thead><tr><th>Opportunity</th><th>Agency</th><th>Type</th><th>Posted</th><th>Link</th></tr></thead>
           <tbody id="tb-s"></tbody>
         </table>
       </div>
     </div>
 
+    <!-- ═══ CROSS-REFS PANE ═══ -->
     <div id="pane-xref" class="pane">
-      <div class="defnote">Companies appearing in 2+ data sources. Higher conviction = more sources confirming the signal.</div>
+      <div class="defnote">Companies appearing in 2+ independent data sources. Higher source count = higher conviction signal.</div>
       <div class="siglist" id="sl-xref"></div>
     </div>
 
+    <!-- ═══ YC PANE ═══ -->
     <div id="pane-yc" class="pane">
       <div class="defnote">Recent Y Combinator batch companies. Sweet spot for Series A outreach 6-18 months post-batch.</div>
-      <div class="frow"><input class="fi" type="text" placeholder="// filter..." oninput="ftbl('tbl-yc',this.value)"></div>
+      <div class="filter-bar">
+        <input class="fi" type="text" placeholder="// filter..." oninput="ftbl('tbl-yc',this.value)">
+      </div>
       <div class="tw"><table id="tbl-yc">
         <thead><tr><th>Company</th><th>Batch</th><th>Industries</th><th>Description</th></tr></thead>
         <tbody id="tb-yc"></tbody>
       </table></div>
     </div>
 
+    <!-- ═══ HN PANE ═══ -->
     <div id="pane-hn" class="pane">
-      <div class="defnote">Hacker News "Who is Hiring" thread. Companies actively recruiting = warm outreach targets.</div>
-      <div class="frow"><input class="fi" type="text" placeholder="// filter..." oninput="fsig('sl-hn',this.value)"></div>
+      <div class="defnote">Hacker News "Who is Hiring" thread. Companies actively recruiting Sales + Tech roles.</div>
+      <div class="filter-bar">
+        <input class="fi" type="text" placeholder="// filter..." oninput="fsig('sl-hn',this.value)">
+        <select class="fi" onchange="filterSigAttr('sl-hn',this.value,'data-sales')">
+          <option value="">All Companies</option>
+          <option value="true">Sales Roles</option>
+        </select>
+        <select class="fi" onchange="filterSigAttr('sl-hn',this.value,'data-tech')">
+          <option value="">All Companies</option>
+          <option value="true">Tech Roles</option>
+        </select>
+      </div>
       <div class="siglist" id="sl-hn"></div>
     </div>
 
+    <!-- ═══ GITHUB PANE ═══ -->
     <div id="pane-github" class="pane">
       <div class="defnote">GitHub trending repos. Trending open source = growing engineering team = hiring signal.</div>
       <div class="tw"><table id="tbl-gh">
-        <thead><tr><th>Repo</th><th>Owner</th><th>Stars Today</th><th>Language</th><th>Description</th></tr></thead>
+        <thead><tr><th>Repo</th><th>Owner / Org</th><th>Stars Today</th><th>Language</th><th>Description</th></tr></thead>
         <tbody id="tb-gh"></tbody>
       </table></div>
     </div>
@@ -270,107 +458,212 @@ footer{margin-top:3.5rem;padding:1.5rem 0;border-top:1px solid var(--border);dis
     <div id="pane-comp" class="pane"><div class="siglist" id="sl-c"></div></div>
     <div id="pane-vehicles" class="pane"><div class="siglist" id="sl-v"></div></div>
 
-  </div>
-</div>
+  </div><!-- /content -->
+</div><!-- /wrap -->
 
 <div class="wrap" style="padding-top:0">
   <footer>
-    <div class="ft">REBEL TALENT SYSTEMS v4.0 &middot; RICHIE LAMPANI<br>GITHUB ACTIONS &middot; GROQ &middot; RSS &middot; SAM.GOV &middot; YC &middot; HN &middot; GITHUB &middot; SEC EDGAR &middot; PRODUCTHUNT</div>
-    <div class="ft" style="text-align:right">NYC &middot; CHI &middot; ATL &middot; MI &middot; CO &middot; REMOTE-US<br>SAAS &middot; B2B &middot; DEFENSE TECH &middot; GOVTECH</div>
+    <div class="ft">
+      REBEL TALENT SYSTEMS v5.0 &middot; RICHIE LAMPANI &amp; SHAUN<br>
+      richie@rebeltalentsystems.com &middot; shaun@arkhamtalent.com<br>
+      GROQ &middot; APOLLO &middot; RSS &middot; SAM.GOV &middot; YC &middot; HN &middot; GITHUB &middot; SEC EDGAR &middot; PRODUCTHUNT
+    </div>
+    <div class="ft" style="text-align:right">
+      ICP: 20-100 EMP &middot; US-BASED &middot; SERIES A-C<br>
+      SaaS &middot; <span style="color:var(--fintech)">Fintech</span> &middot; <span style="color:var(--martech)">Martech</span> &middot; Defense/GovTech<br>
+      $8K &ndash; $14K/mo &middot; 350% avg ROI
+    </div>
   </footer>
 </div>
 
 <script>
-setTimeout(()=>{const b=document.getElementById('boot');b.classList.add('gone');setTimeout(()=>b.remove(),400)},1200);
+// ─── BOOT ───────────────────────────────────────────────────────────────────
+setTimeout(()=>{
+  const b=document.getElementById('boot');
+  b.classList.add('gone');
+  setTimeout(()=>b.remove(),400);
+},1600);
 
+// ─── LOAD DATA ───────────────────────────────────────────────────────────────
 async function load(){
   try{
-    const r=await fetch('data.json?'+Date.now());
+    const r=await fetch('data.json?v='+Date.now());
     if(!r.ok)throw new Error();
     render(await r.json());
   }catch{
-    document.getElementById('loading').innerHTML='<span style="color:var(--red)">// NO BRIEF YET</span><br><span style="color:var(--muted);font-size:.6rem">Run the GitHub Action to generate today\'s brief.<br>Actions tab &rarr; Rebel Talent &rarr; Run workflow</span>';
+    document.getElementById('loading').innerHTML=
+      '<span style="color:var(--red)">// NO BRIEF YET</span><br>'+
+      '<span style="color:var(--muted);font-size:.6rem">Run the GitHub Action to generate today\'s brief.<br>'+
+      'Actions tab → Rebel Talent → Run workflow</span>';
   }
 }
 
+// ─── ANIMATED COUNTER ────────────────────────────────────────────────────────
 function animateCount(el,target){
   if(!target||target<1){el.textContent=target||0;return;}
-  let current=0;const step=Math.max(1,Math.floor(target/15));
-  const iv=setInterval(()=>{current=Math.min(current+step,target);el.textContent=current;if(current>=target)clearInterval(iv);},50);
+  let cur=0;const step=Math.max(1,Math.floor(target/15));
+  const iv=setInterval(()=>{cur=Math.min(cur+step,target);el.textContent=cur;if(cur>=target)clearInterval(iv);},50);
 }
 
+// ─── RENDER ──────────────────────────────────────────────────────────────────
 function render(d){
   document.getElementById('loading').style.display='none';
   document.getElementById('content').style.display='block';
-  const dateStr=d.generated||'\u2014';
+
+  // Date + age
+  const dateStr=d.generated||'—';
   document.getElementById('nav-date').textContent=dateStr;
   try{
-    const briefDate=new Date(dateStr);const now=new Date();
-    const diffMs=now-briefDate;const diffHrs=Math.floor(diffMs/3600000);const diffDays=Math.floor(diffMs/86400000);
-    let ago='';
-    if(diffDays>0)ago=diffDays===1?'1 day ago':diffDays+' days ago';
-    else if(diffHrs>0)ago=diffHrs===1?'1 hour ago':diffHrs+' hours ago';
-    else ago='just now';
-    document.getElementById('nav-date').innerHTML=dateStr+'<span class="updated-ago">('+ago+')</span>';
+    const diff=Math.floor((Date.now()-new Date(dateStr))/(1000*3600));
+    const ago=diff<1?'just now':diff<24?diff+'h ago':Math.floor(diff/24)+'d ago';
+    document.getElementById('nav-date').innerHTML=
+      dateStr+'<span class="updated-ago">('+ago+')</span>';
   }catch{}
 
-  // Hero stats with animation
-  const fundedCount=d.new_money?.length||d.raw_funded?.length||0;
-  const signalCount=(d.hiring_signals?.length||0)+(d.exec_moves?.length||0);
-  const sbirCount=d.raw_sam?.length||0;
-  const srcCount=Object.values(d.source_stats||{}).filter(v=>v>0).length;
-  const xrefCount=(d.cross_references||[]).length;
-  animateCount(document.getElementById('s-f'),fundedCount);
-  animateCount(document.getElementById('s-s'),signalCount);
-  animateCount(document.getElementById('s-b'),sbirCount);
-  animateCount(document.getElementById('s-src'),srcCount);
-  animateCount(document.getElementById('s-xref'),xrefCount);
+  // Apollo badge
+  if(d.apollo_enabled){
+    const ab=document.getElementById('nav-apollo');
+    ab.style.display='inline';
+    ab.title=`Apollo enriched · ${d.leads_with_contacts||0} contacts`;
+  }
+
+  // Hero stats
+  animateCount(document.getElementById('s-f'),  d.raw_funded?.length||0);
+  animateCount(document.getElementById('s-ft'), d.raw_fintech?.length||0);
+  animateCount(document.getElementById('s-mt'), d.raw_martech?.length||0);
+  animateCount(document.getElementById('s-s'),  (d.raw_hiring?.length||0)+(d.raw_execs?.length||0));
+  animateCount(document.getElementById('s-src'),Object.values(d.source_stats||{}).filter(v=>v>0).length);
+  animateCount(document.getElementById('s-xref'),(d.cross_references||[]).length);
+  animateCount(document.getElementById('s-lp'), (d.lead_profiles||[]).length);
+  animateCount(document.getElementById('s-dm'), d.leads_with_contacts||0);
+
+  // Market trends
+  const trends=d.market_trends||[];
+  if(trends.length){
+    document.getElementById('sec-trends').style.display='flex';
+    const tg=document.getElementById('trends-grid');
+    trends.forEach(t=>{tg.innerHTML+=`<div class="trend-card">${t}</div>`;});
+  }
 
   // Mission objectives
-  const mg=document.getElementById('moves');
   (d.moves_today||[]).slice(0,3).forEach((m,i)=>{
-    mg.innerHTML+=`<div class="mc"><div class="mc-tag">OBJ ${p2(i+1)}</div><div class="mc-txt">${m}</div><div class="mc-num">${p2(i+1)}</div></div>`;
+    document.getElementById('moves').innerHTML+=
+      `<div class="mc"><div class="mc-tag">OBJ ${p2(i+1)}</div><div class="mc-txt">${m}</div><div class="mc-num">${p2(i+1)}</div></div>`;
   });
 
-  // Top 3 targets
-  const pg=document.getElementById('top3');
+  // Top 3
   (d.top_3||[]).slice(0,3).forEach((t,i)=>{
-    pg.innerHTML+=`<div class="pc"><div class="pc-idx">// TARGET ${p2(i+1)}</div><div class="pc-txt">${t}</div></div>`;
+    document.getElementById('top3').innerHTML+=
+      `<div class="pc"><div class="pc-idx">// TARGET ${p2(i+1)}</div><div class="pc-txt">${t}</div></div>`;
   });
+
+  // Lead profiles
+  renderLeadProfiles(d.lead_profiles||[]);
 
   // Funded table
-  const items=d.new_money?.length?d.new_money:(d.raw_funded||[]).map(f=>({company:f.name,amount:f.amount,stage:f.stage,location:f.location||'',sector_tag:f.sector||'',why_now:'Funded \u2014 likely entering active hiring phase.'}));
+  const items=d.new_money?.length?d.new_money:
+    (d.raw_funded||[]).map(f=>({company:f.name,amount:f.amount,stage:f.stage,
+      location:f.location||'',sector_tag:f.sector||'',why_now:'Funded — entering active hiring phase.'}));
   const ftb=document.getElementById('tb-f');
-  if(items.length){items.forEach(item=>{const tr=document.createElement('tr');const geo=item.location?item.location.split(',')[0]:'';tr.innerHTML=`<td><strong style="color:#dde8f0">${item.company||'\u2014'}</strong></td><td><span class="tag tg">${item.amount||'\u2014'}</span></td><td><span class="tag tt">${item.stage||'\u2014'}</span></td><td>${geo?`<span class="tag tp">${geo}</span>`:'<span style="color:var(--muted)">\u2014</span>'}</td><td>${item.sector_tag?`<span class="tag tt">${item.sector_tag}</span>`:'<span style="color:var(--muted)">\u2014</span>'}</td><td style="color:var(--muted);font-size:.66rem">${item.why_now||'\u2014'}</td>`;ftb.appendChild(tr);});}
-  else{ftb.innerHTML='<tr><td colspan="6" class="nodata">// NO FUNDED DATA</td></tr>';}
+  if(items.length){
+    items.forEach(item=>{
+      const tr=document.createElement('tr');
+      const vertical=detectVertical(item.sector_tag||item.company||'');
+      const vTag=verticalTag(vertical);
+      tr.setAttribute('data-vertical',vertical.toLowerCase());
+      tr.setAttribute('data-stage',(item.stage||'').toLowerCase());
+      tr.innerHTML=`<td><strong style="color:#dde8f0">${esc(item.company||'—')}</strong></td>`+
+        `<td><span class="tag tg">${esc(item.amount||'—')}</span></td>`+
+        `<td><span class="tag tt">${esc(item.stage||'—')}</span></td>`+
+        `<td>${vTag}</td>`+
+        `<td style="color:var(--muted);font-size:.65rem">${esc(item.sector_tag||item.location||'—')}</td>`+
+        `<td style="color:var(--muted);font-size:.65rem">${esc(item.why_now||'—')}</td>`;
+      ftb.appendChild(tr);
+    });
+  }else{ftb.innerHTML='<tr><td colspan="6" class="nodata">// NO FUNDED DATA</td></tr>';}
 
-  // Signal lists
-  sigs('sl-h',d.hiring_signals||[],'var(--teal)');
-  sigs('sl-e',d.exec_moves||[],'var(--purple)');
+  // Hiring signals
+  const hnEl2=document.getElementById('sl-h');
+  (d.hiring_signals||[]).forEach(s=>hnEl2.innerHTML+=`<div class="si" style="border-left-color:var(--teal)" data-type="people">${esc(s)}</div>`);
+  // Also render raw hiring with type
+  (d.raw_hiring||[]).slice(0,8).forEach(h=>{
+    const type=h.is_sales_hire?'sales':h.is_tech_hire?'tech':'people';
+    const badge=type==='sales'?`<span class="tag tg">SALES</span>`:type==='tech'?`<span class="tag tt">TECH</span>`:`<span class="tag tp">PEOPLE</span>`;
+    const link=h.link?`<a href="${esc(h.link)}" target="_blank" style="font-size:.68rem;color:var(--teal)"> →</a>`:'';
+    hnEl2.innerHTML+=`<div class="si" style="border-left-color:var(--teal)" data-type="${type}">${badge} <strong>${esc(h.company)}</strong>: ${esc(h.role||h.signal||'')}${link}</div>`;
+  });
+  if(!hnEl2.children.length)hnEl2.innerHTML='<div class="si" style="color:var(--muted)">// NO HIRING SIGNALS</div>';
+
+  // Exec moves
+  const exEl=document.getElementById('sl-e');
+  (d.exec_moves||[]).forEach(s=>exEl.innerHTML+=`<div class="si" style="border-left-color:var(--purple)" data-type="people">${esc(s)}</div>`);
+  (d.raw_execs||[]).slice(0,8).forEach(e=>{
+    const type=e.move_type||'people';
+    const badge=type==='sales'?`<span class="tag tg">SALES</span>`:type==='tech'?`<span class="tag tt">TECH</span>`:`<span class="tag tp">PEOPLE</span>`;
+    const link=e.link?`<a href="${esc(e.link)}" target="_blank">↗</a>`:'';
+    const person=e.person?`<strong>${esc(e.person)}</strong> (${esc(e.title)}) — `:'';
+    exEl.innerHTML+=`<div class="si" style="border-left-color:var(--purple)" data-type="${type}">${badge} ${person}${esc(e.company||'')} ${link}</div>`;
+  });
+  if(!exEl.children.length)exEl.innerHTML='<div class="si" style="color:var(--muted)">// NO EXEC MOVES</div>';
+
+  // Fintech table
+  renderFundingTable('tb-ft',(d.raw_fintech||[]),'fintech','var(--fintech)');
+
+  // Martech table
+  renderFundingTable('tb-mt',(d.raw_martech||[]),'martech','var(--martech)');
+
+  // Defense signals + SAM.gov
+  const defEl=document.getElementById('sl-d');
   sigs('sl-d',d.defense_signals||[],'var(--gold)');
-  sigs('sl-c',d.competitive||[],'var(--red)');
-  sigs('sl-v',d.vehicles||[],'var(--purple)');
+  (d.raw_gov_contracts||[]).slice(0,4).forEach(c=>{
+    const link=c.link?`<a href="${esc(c.link)}" target="_blank" style="color:var(--gold)">${esc(c.company)}</a>`:esc(c.company);
+    defEl.innerHTML+=`<div class="si" style="border-left-color:var(--gold)"><span class="tag t-def">GOV CONTRACT</span> ${link}: ${esc(c.headline||'')}</div>`;
+  });
+  if(!defEl.children.length)defEl.innerHTML='<div class="si" style="color:var(--muted)">// NO DEFENSE SIGNALS</div>';
 
-  // SAM.gov table
   const stb=document.getElementById('tb-s');
-  if(d.raw_sam?.length){d.raw_sam.forEach(item=>{const tr=document.createElement('tr');tr.innerHTML=`<td style="color:#dde8f0">${item.title||'\u2014'}</td><td style="color:var(--muted);font-size:.65rem">${item.agency||'\u2014'}</td><td><span class="tag ${item.type==='SBIR Phase II'?'tg':'tt'}">${item.type||'SBIR'}</span></td><td style="color:var(--muted);font-size:.65rem">${item.posted||'\u2014'}</td>`;stb.appendChild(tr);});}
-  else{stb.innerHTML='<tr><td colspan="4" class="nodata">// NO SAM.GOV DATA</td></tr>';}
+  if(d.raw_sam?.length){
+    d.raw_sam.forEach(item=>{
+      const tr=document.createElement('tr');
+      const link=item.link?`<a href="${esc(item.link)}" target="_blank" style="color:var(--teal);font-size:.68rem">View →</a>`:'—';
+      tr.innerHTML=`<td style="color:#dde8f0">${esc(item.title||'—')}</td>`+
+        `<td style="color:var(--muted);font-size:.65rem">${esc(item.agency||'—')}</td>`+
+        `<td><span class="tag ${item.type==='SBIR Phase II'?'tg':'tt'}">${esc(item.type||'SBIR')}</span></td>`+
+        `<td style="color:var(--muted);font-size:.65rem">${esc(item.posted||'—')}</td>`+
+        `<td>${link}</td>`;
+      stb.appendChild(tr);
+    });
+  }else{stb.innerHTML='<tr><td colspan="5" class="nodata">// NO SAM.GOV DATA</td></tr>';}
 
   // Cross-references
   const xrefEl=document.getElementById('sl-xref');
   if((d.cross_references||[]).length){
     d.cross_references.forEach(xr=>{
-      xrefEl.innerHTML+=`<div class="si" style="border-left-color:var(--neon-pink)"><strong style="color:#dde8f0">${xr.company}</strong><span class="xref-badge">${xr.source_count} SOURCES</span><br><span style="color:var(--muted);font-size:.62rem">${xr.sources.join(' + ')}</span>${xr.details?.funding?` <span class="tag tg">${xr.details.funding}</span>`:''} ${xr.details?.yc_batch?` <span class="tag tt">YC ${xr.details.yc_batch}</span>`:''}</div>`;
+      const details=xr.details||{};
+      const extras=[
+        details.funding?`<span class="tag tg">${esc(details.funding)}</span>`:'',
+        details.yc_batch?`<span class="tag tt">YC ${esc(details.yc_batch)}</span>`:'',
+        details.sector?`<span class="tag t-ft">${esc(details.sector)}</span>`:'',
+      ].filter(Boolean).join(' ');
+      xrefEl.innerHTML+=`<div class="si" style="border-left-color:var(--neon-pink)">
+        <strong style="color:#dde8f0">${esc(xr.company)}</strong>
+        <span class="xref-badge">${xr.source_count} SOURCES</span>
+        ${extras}<br>
+        <span style="color:var(--muted);font-size:.62rem">${xr.sources.join(' + ')}</span>
+      </div>`;
     });
   }else{xrefEl.innerHTML='<div class="si" style="color:var(--muted)">// NO CROSS-REFERENCES TODAY</div>';}
 
-  // YC companies table
+  // YC table
   const ycTb=document.getElementById('tb-yc');
   if((d.yc_companies||[]).length){
-    (d.yc_companies).slice(0,25).forEach(co=>{
+    d.yc_companies.slice(0,30).forEach(co=>{
       const tr=document.createElement('tr');
-      const indStr=(co.industries||[]).slice(0,3).join(', ');
-      tr.innerHTML=`<td><strong style="color:#dde8f0">${co.name}</strong>${co.url?` <a href="${co.url}" style="color:var(--teal);font-size:.6rem" target="_blank">\u2197</a>`:''}</td><td><span class="tag tg">${co.batch||'\u2014'}</span></td><td style="font-size:.62rem;color:var(--muted)">${indStr||'\u2014'}</td><td style="color:var(--muted);font-size:.62rem">${co.description||'\u2014'}</td>`;
+      const nameLink=co.url?`<a href="${esc(co.url)}" target="_blank" style="color:var(--teal)">${esc(co.name)}</a>`:esc(co.name);
+      tr.innerHTML=`<td><strong>${nameLink}</strong></td>`+
+        `<td><span class="tag tg">${esc(co.batch||'—')}</span></td>`+
+        `<td style="font-size:.65rem;color:var(--muted)">${esc((co.industries||[]).slice(0,3).join(', ')||'—')}</td>`+
+        `<td style="color:var(--muted);font-size:.65rem">${esc((co.description||'').slice(0,120)||'—')}</td>`;
       ycTb.appendChild(tr);
     });
   }else{ycTb.innerHTML='<tr><td colspan="4" class="nodata">// NO YC DATA</td></tr>';}
@@ -378,69 +671,324 @@ function render(d){
   // HN Hiring
   const hnEl=document.getElementById('sl-hn');
   if((d.hn_hiring||[]).length){
-    (d.hn_hiring).slice(0,20).forEach(h=>{
-      const remote=h.remote?'<span class="tag tt" style="margin-left:.3rem">REMOTE</span>':'';
-      const loc=h.location?`<span class="tag tp" style="margin-left:.3rem">${h.location}</span>`:'';
-      hnEl.innerHTML+=`<div class="si" style="border-left-color:var(--gold)"><strong style="color:#dde8f0">${h.company}</strong>${remote}${loc}<br><span style="color:var(--muted);font-size:.62rem">${(h.text||'').slice(0,200)}</span></div>`;
+    d.hn_hiring.slice(0,25).forEach(h=>{
+      const remote=h.remote?`<span class="tag tt">REMOTE</span> `:'';
+      const loc=h.location?`<span class="tag tp">${esc(h.location)}</span> `:'';
+      const sales=h.has_sales_role?`<span class="tag tg">SALES</span> `:'';
+      const tech=h.has_tech_role?`<span class="tag tt">ENG</span> `:'';
+      hnEl.innerHTML+=`<div class="si" style="border-left-color:var(--gold)" data-sales="${h.has_sales_role}" data-tech="${h.has_tech_role}">
+        <strong style="color:#dde8f0">${esc(h.company)}</strong> ${remote}${loc}${sales}${tech}<br>
+        <span style="color:var(--muted);font-size:.65rem">${esc((h.text||'').slice(0,200))}</span>
+      </div>`;
     });
   }else{hnEl.innerHTML='<div class="si" style="color:var(--muted)">// NO HN HIRING DATA</div>';}
 
-  // GitHub trending table
+  // GitHub trending
   const ghTb=document.getElementById('tb-gh');
   if((d.github_trending||[]).length){
-    (d.github_trending).slice(0,15).forEach(r=>{
+    d.github_trending.slice(0,15).forEach(r=>{
       const tr=document.createElement('tr');
-      tr.innerHTML=`<td><a href="${r.url}" style="color:var(--teal)" target="_blank">${r.repo}</a></td><td style="color:#dde8f0">${r.owner}</td><td><span class="tag tg">\u2605 ${r.stars_today}</span></td><td>${r.language?`<span class="tag tt">${r.language}</span>`:'<span style="color:var(--muted)">\u2014</span>'}</td><td style="color:var(--muted);font-size:.62rem">${r.description||'\u2014'}</td>`;
+      tr.innerHTML=`<td><a href="${esc(r.url)}" target="_blank">${esc(r.repo)}</a></td>`+
+        `<td style="color:#dde8f0"><a href="https://github.com/${esc(r.owner)}" target="_blank" style="color:#dde8f0">${esc(r.owner)}</a></td>`+
+        `<td><span class="tag tg">★ ${r.stars_today||0}</span></td>`+
+        `<td>${r.language?`<span class="tag tt">${esc(r.language)}</span>`:'<span style="color:var(--muted)">—</span>'}</td>`+
+        `<td style="color:var(--muted);font-size:.65rem">${esc((r.description||'').slice(0,100)||'—')}</td>`;
       ghTb.appendChild(tr);
     });
   }else{ghTb.innerHTML='<tr><td colspan="5" class="nodata">// NO GITHUB DATA</td></tr>';}
 
-  // Render Plotly charts
+  // Competitive + Vehicles
+  sigs('sl-c',d.competitive||[],'var(--red)');
+  (d.raw_competitors||[]).slice(0,4).forEach(c=>{
+    const link=c.link?`<a href="${esc(c.link)}" target="_blank" style="color:var(--red)">${esc(c.headline)}</a>`:esc(c.headline);
+    document.getElementById('sl-c').innerHTML+=`<div class="si" style="border-left-color:var(--red)">${link}</div>`;
+  });
+  sigs('sl-v',d.vehicles||[],'var(--purple)');
+  if(!document.getElementById('sl-c').children.length)
+    document.getElementById('sl-c').innerHTML='<div class="si" style="color:var(--muted)">// NO COMPETITIVE INTEL</div>';
+
+  // Charts
   renderCharts(d);
+
+  // Default to leads tab if profiles exist, else funded
+  if((d.lead_profiles||[]).length){
+    tab('leads', document.querySelector('.lp-tab'));
+  }else{
+    tab('funded', document.getElementById('btn-funded'));
+  }
 }
 
-function renderCharts(d){
-  const plotConfig={displayModeBar:false,responsive:true};
-  const darkLayout={paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{family:'JetBrains Mono',color:'#5a6a7a',size:13},margin:{l:40,r:20,t:10,b:40}};
+// ─── LEAD PROFILE RENDERING ──────────────────────────────────────────────────
+let _allProfiles=[];
 
-  // 1. Funding by Stage - Donut
+function renderLeadProfiles(profiles){
+  _allProfiles=profiles;
+  _renderFilteredProfiles(profiles);
+}
+
+function _renderFilteredProfiles(profiles){
+  const grid=document.getElementById('lp-grid');
+  grid.innerHTML='';
+  document.getElementById('lp-count').textContent=`${profiles.length} leads`;
+  if(!profiles.length){
+    grid.innerHTML='<div class="nodata">// NO LEAD PROFILES YET — Run the GitHub Action to generate today\'s brief</div>';
+    return;
+  }
+  profiles.forEach(p=>grid.appendChild(buildLeadCard(p)));
+}
+
+function filterLeads(){
+  const q=(document.getElementById('lp-search').value||'').toLowerCase();
+  const vert=(document.getElementById('lp-vertical').value||'').toLowerCase();
+  const stage=(document.getElementById('lp-stage').value||'').toLowerCase();
+  const contacts=document.getElementById('lp-contacts').value;
+  const filtered=_allProfiles.filter(p=>{
+    const text=(p.name+p.what_they_do+p.vertical+p.industry+p.outreach_angle).toLowerCase();
+    if(q && !text.includes(q)) return false;
+    if(vert && !p.vertical?.toLowerCase().includes(vert)) return false;
+    if(stage && !(p.funding?.stage||'').toLowerCase().includes(stage)) return false;
+    if(contacts==='yes' && !(p.decision_makers||[]).length) return false;
+    if(contacts==='no' && (p.decision_makers||[]).length) return false;
+    return true;
+  });
+  _renderFilteredProfiles(filtered);
+}
+
+function buildLeadCard(p){
+  const div=document.createElement('div');
+  div.className='lp-card';
+
+  const nameHtml=p.website
+    ?`<a href="${esc(p.website)}" target="_blank">${esc(p.name)}</a>`
+    :esc(p.name);
+  const liHtml=p.linkedin_company
+    ?`&nbsp;<a href="${esc(p.linkedin_company)}" target="_blank" class="dm-li" style="font-size:.7rem">[LinkedIn]</a>`
+    :'';
+
+  const vertical=p.vertical||'Tech';
+  const vTag=verticalTag(vertical);
+  const stageBadge=p.funding?.stage?`<span class="tag tt">${esc(p.funding.stage)}</span>`:'';
+  const salesBadge=p.has_sales_role?`<span class="tag tg">SALES HIRING</span>`:'';
+  const techBadge=p.has_tech_role?`<span class="tag tp">ENG HIRING</span>`:'';
+  const xrefBadge=p.source_count>1?`<span class="xref-badge">${p.source_count} SOURCES</span>`:'';
+
+  let fundingHistHtml='';
+  if((p.funding?.history||[]).length){
+    fundingHistHtml='<div class="lp-section-title">Funding History</div><table style="font-size:.72rem">';
+    p.funding.history.slice(0,4).forEach(ev=>{
+      fundingHistHtml+=`<tr><td style="color:var(--muted);padding-right:.5rem;width:55px">${esc((ev.date||'—').slice(0,7))}</td>`+
+        `<td><span class="tag tg">${esc(ev.amount||'—')}</span> ${esc(ev.type||'')}${ev.investors?.length?` <span style="color:var(--muted);font-size:.65rem">· ${esc(ev.investors.slice(0,2).join(', '))}</span>`:''}</td></tr>`;
+    });
+    fundingHistHtml+='</table>';
+  }
+
+  let rolesHtml='';
+  if((p.open_roles||[]).length){
+    rolesHtml='<div class="lp-section-title">Open Roles</div>'+
+      p.open_roles.slice(0,4).map(r=>`<div style="font-size:.76rem;margin-bottom:.15rem"><span style="color:var(--muted)">›</span> ${esc(r)}</div>`).join('');
+  }
+
+  let stackHtml='';
+  if((p.tech_stack||[]).length){
+    stackHtml='<div class="lp-section-title">Tech Stack</div><div class="lp-tech">'+
+      p.tech_stack.slice(0,8).map(t=>`<span class="lp-tech-tag">${esc(t)}</span>`).join('')+'</div>';
+  }
+
+  let execHtml='';
+  if(p.recent_exec_move){
+    const eLink=p.exec_move_link?`<a href="${esc(p.exec_move_link)}" target="_blank" style="color:var(--purple)">${esc(p.recent_exec_move)}</a>`:esc(p.recent_exec_move);
+    const eType=p.exec_move_type?`<span class="tag tp">${esc(p.exec_move_type.toUpperCase())}</span> `:'';
+    execHtml=`<div style="margin:.6rem 0;padding:.5rem .8rem;border-left:2px solid var(--purple);background:rgba(180,124,255,.04);font-size:.78rem">`+
+      `<span style="font-size:.65rem;color:var(--purple);letter-spacing:.1em">EXEC MOVE </span>${eType}${eLink}</div>`;
+  }
+
+  let dmsHtml='';
+  const dms=p.decision_makers||[];
+  if(dms.length){
+    dmsHtml=`<div class="dm-section"><div class="dm-title">Decision Makers (Apollo) · ${dms.length} found</div><div class="dm-grid">`;
+    dms.forEach(dm=>{
+      const dmName=dm.linkedin_url
+        ?`<a href="${esc(dm.linkedin_url)}" target="_blank">${esc(dm.name)}</a>`
+        :esc(dm.name);
+      const emailHtml=dm.email?`<div>✉ <a href="mailto:${esc(dm.email)}">${esc(dm.email)}</a></div>`:'';
+      const phoneHtml=dm.phone?`<div>☏ ${esc(dm.phone)}</div>`:'';
+      const liHtmlDm=dm.linkedin_url?`<div><a href="${esc(dm.linkedin_url)}" target="_blank" class="dm-li">LinkedIn →</a></div>`:'';
+      dmsHtml+=`<div class="dm-card"><div class="dm-name">${dmName}</div><div class="dm-role">${esc(dm.title||'')}</div><div class="dm-contact">${emailHtml}${phoneHtml}${liHtmlDm}</div></div>`;
+    });
+    dmsHtml+='</div></div>';
+  }else{
+    dmsHtml=`<div style="padding:.5rem 1.1rem;font-size:.72rem;color:var(--muted);border-top:1px solid var(--border)">// No Apollo contacts yet — search LinkedIn for People/HR or CEO at ${esc(p.name)}</div>`;
+  }
+
+  const newsLink=p.funding?.news_link
+    ?`<a href="${esc(p.funding.news_link)}" target="_blank" style="font-size:.68rem;color:var(--muted)">→ news</a>`
+    :'';
+
+  div.innerHTML=`
+    <div class="lp-header">
+      <div>
+        <div class="lp-name">${nameHtml}${liHtml}</div>
+        <div class="lp-meta">
+          ${esc(vertical)}
+          ${p.employee_count?` · ${p.employee_count} employees`:''}
+          ${p.industry?' · '+esc(p.industry):''}
+          ${p.annual_revenue?' · '+esc(p.annual_revenue)+' ARR':''}
+        </div>
+        <div class="lp-badges">${vTag}${stageBadge}${salesBadge}${techBadge}${xrefBadge}</div>
+      </div>
+      <div style="text-align:right;flex-shrink:0">
+        ${p.funding?.latest_amount?`<div class="lp-amount">${esc(p.funding.latest_amount)}</div>`:''}
+        ${p.funding?.total&&p.funding.total!==p.funding.latest_amount?`<div class="lp-stage">Total: ${esc(p.funding.total)}</div>`:''}
+        ${p.funding?.stage?`<div class="lp-stage">${esc(p.funding.stage)}</div>`:''}
+        ${newsLink}
+      </div>
+    </div>
+    <div class="lp-body">
+      ${p.what_they_do?`<div class="lp-desc">${esc(p.what_they_do)}</div>`:''}
+      <div class="lp-grid">
+        ${fundingHistHtml?`<div>${fundingHistHtml}</div>`:''}
+        ${rolesHtml?`<div>${rolesHtml}</div>`:''}
+        ${stackHtml?`<div>${stackHtml}</div>`:''}
+      </div>
+      ${execHtml}
+    </div>
+    ${dmsHtml}
+    <div class="lp-outreach">
+      <div class="lp-outreach-label">// RECOMMENDED OUTREACH ANGLE</div>
+      <div class="lp-outreach-body">${esc(p.outreach_angle||'Recently funded startup — entering active hiring phase.')}</div>
+    </div>
+  `;
+  return div;
+}
+
+// ─── FINTECH / MARTECH TABLE ─────────────────────────────────────────────────
+function renderFundingTable(tbodyId,items,type,color){
+  const tb=document.getElementById(tbodyId);
+  if(items.length){
+    items.forEach(item=>{
+      const tr=document.createElement('tr');
+      const link=item.link?`<a href="${esc(item.link)}" target="_blank">${esc(item.headline||item.name)}</a>`:esc(item.headline||item.name||'—');
+      tr.innerHTML=`<td><strong style="color:#dde8f0">${esc(item.name||'—')}</strong></td>`+
+        `<td><span class="tag tg">${esc(item.amount||'—')}</span></td>`+
+        `<td><span class="tag tt">${esc(item.stage||'—')}</span></td>`+
+        `<td style="color:var(--muted);font-size:.65rem">${link}</td>`;
+      tb.appendChild(tr);
+    });
+  }else{tb.innerHTML=`<tr><td colspan="4" class="nodata">// NO ${type.toUpperCase()} DATA TODAY</td></tr>`;}
+}
+
+// ─── CHARTS ──────────────────────────────────────────────────────────────────
+function renderCharts(d){
+  const cfg={displayModeBar:false,responsive:true};
+  const layout={paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',
+    font:{family:'JetBrains Mono',color:'#5a6a7a',size:12},margin:{l:40,r:20,t:10,b:40}};
+
   const stages=d.stage_breakdown||{};
-  const stageLabels=Object.keys(stages);
-  const stageValues=Object.values(stages);
-  if(stageLabels.length){
-    Plotly.newPlot('chart-stage',[{type:'pie',hole:0.55,labels:stageLabels,values:stageValues,marker:{colors:['#00ffd5','#ffa500','#ff006e','#b47cff','#00ff41','#ff3366']},textfont:{family:'JetBrains Mono',size:12},textinfo:'label+value',hoverinfo:'label+percent'}],{...darkLayout,height:260,showlegend:false},plotConfig);
+  if(Object.keys(stages).length){
+    Plotly.newPlot('chart-stage',[{type:'pie',hole:0.55,labels:Object.keys(stages),values:Object.values(stages),
+      marker:{colors:['#00ffd5','#ffa500','#ff006e','#b47cff','#00ff41','#ff3366']},
+      textfont:{family:'JetBrains Mono',size:11},textinfo:'label+value',hoverinfo:'label+percent'}],
+      {...layout,height:250,showlegend:false},cfg);
   }else{document.getElementById('chart-stage').innerHTML='<div class="nodata">// AWAITING DATA</div>';}
 
-  // 2. Sector Heat Map - Treemap
   const sectors=d.sector_breakdown||{};
-  const secLabels=Object.keys(sectors);
-  const secValues=Object.values(sectors);
-  if(secLabels.length){
-    Plotly.newPlot('chart-sector',[{type:'treemap',labels:secLabels,parents:secLabels.map(()=>''),values:secValues,marker:{colors:secValues,colorscale:[[0,'#0d1117'],[0.5,'#007a66'],[1,'#00ffd5']]},textfont:{family:'JetBrains Mono',size:13},hoverinfo:'label+value'}],{...darkLayout,height:260},plotConfig);
+  if(Object.keys(sectors).length){
+    Plotly.newPlot('chart-sector',[{type:'treemap',labels:Object.keys(sectors),
+      parents:Object.keys(sectors).map(()=>''),values:Object.values(sectors),
+      marker:{colors:Object.values(sectors),colorscale:[[0,'#0d1117'],[0.4,'#007a66'],[1,'#00ffd5']]},
+      textfont:{family:'JetBrains Mono',size:12},hoverinfo:'label+value'}],
+      {...layout,height:250},cfg);
   }else{document.getElementById('chart-sector').innerHTML='<div class="nodata">// AWAITING DATA</div>';}
 
-  // 3. Signal Radar
   const stats=d.source_stats||{};
   const radarLabels=Object.keys(stats);
-  const radarValues=Object.values(stats);
   if(radarLabels.length){
-    Plotly.newPlot('chart-radar',[{type:'scatterpolar',fill:'toself',r:radarValues,theta:radarLabels.map(l=>l.replace(/_/g,' ').toUpperCase()),marker:{color:'#00ffd5'},line:{color:'#00ffd5'},fillcolor:'rgba(0,255,213,0.08)'}],{...darkLayout,height:260,polar:{bgcolor:'rgba(0,0,0,0)',radialaxis:{visible:true,color:'#2a3a4a',gridcolor:'#1a2440'},angularaxis:{color:'#5a6a7a',gridcolor:'#1a2440'}}},plotConfig);
+    Plotly.newPlot('chart-radar',[{type:'scatterpolar',fill:'toself',r:Object.values(stats),
+      theta:radarLabels.map(l=>l.replace(/_/g,' ').toUpperCase()),
+      marker:{color:'#00ffd5'},line:{color:'#00ffd5'},fillcolor:'rgba(0,255,213,0.08)'}],
+      {...layout,height:250,polar:{bgcolor:'rgba(0,0,0,0)',
+        radialaxis:{visible:true,color:'#2a3a4a',gridcolor:'#1a2440'},
+        angularaxis:{color:'#5a6a7a',gridcolor:'#1a2440'}}},cfg);
   }else{document.getElementById('chart-radar').innerHTML='<div class="nodata">// AWAITING DATA</div>';}
 
-  // 4. Data Source Coverage - Bar
-  const activeStats={};
-  for(const[k,v]of Object.entries(stats)){if(v>0)activeStats[k]=v;}
+  const activeStats=Object.fromEntries(Object.entries(stats).filter(([,v])=>v>0));
   if(Object.keys(activeStats).length){
     const barColors=Object.values(activeStats).map(v=>v>5?'#00ffd5':v>2?'#ffa500':'#ff006e');
-    Plotly.newPlot('chart-sources',[{type:'bar',orientation:'h',x:Object.values(activeStats),y:Object.keys(activeStats).map(l=>l.replace(/_/g,' ').toUpperCase()),marker:{color:barColors},text:Object.values(activeStats).map(String),textposition:'outside',textfont:{family:'JetBrains Mono',size:12,color:'#5a6a7a'}}],{...darkLayout,height:260,xaxis:{gridcolor:'#1a2440',zeroline:false},yaxis:{automargin:true}},plotConfig);
+    Plotly.newPlot('chart-sources',[{type:'bar',orientation:'h',
+      x:Object.values(activeStats),y:Object.keys(activeStats).map(l=>l.replace(/_/g,' ').toUpperCase()),
+      marker:{color:barColors},text:Object.values(activeStats).map(String),
+      textposition:'outside',textfont:{family:'JetBrains Mono',size:11,color:'#5a6a7a'}}],
+      {...layout,height:250,xaxis:{gridcolor:'#1a2440',zeroline:false},yaxis:{automargin:true}},cfg);
   }else{document.getElementById('chart-sources').innerHTML='<div class="nodata">// AWAITING DATA</div>';}
 }
 
-function sigs(id,items,color){const el=document.getElementById(id);if(!items.length){el.innerHTML=`<div class="si" style="color:var(--muted)">// NO SIGNALS</div>`;return;}items.forEach(s=>el.innerHTML+=`<div class="si" style="border-left-color:${color}">${s}</div>`);}
-function tab(name,btn){document.querySelectorAll('.pane').forEach(p=>p.classList.remove('on'));document.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));document.getElementById('pane-'+name).classList.add('on');btn.classList.add('on');}
-function ftbl(id,q){document.querySelectorAll(`#${id} tbody tr`).forEach(r=>{r.style.display=r.textContent.toLowerCase().includes(q.toLowerCase())?'':'none';});}
-function fsig(id,q){document.querySelectorAll(`#${id} .si`).forEach(s=>{s.style.display=s.textContent.toLowerCase().includes(q.toLowerCase())?'':'none';});}
+// ─── HELPERS ─────────────────────────────────────────────────────────────────
+function sigs(id,items,color){
+  const el=document.getElementById(id);
+  if(!items.length){el.innerHTML=`<div class="si" style="color:var(--muted)">// NO SIGNALS</div>`;return;}
+  items.forEach(s=>el.innerHTML+=`<div class="si" style="border-left-color:${color}">${esc(s)}</div>`);
+}
+
+function tab(name,btn){
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));
+  document.getElementById('pane-'+name).classList.add('on');
+  btn.classList.add('on');
+}
+
+function ftbl(id,q){
+  document.querySelectorAll(`#${id} tbody tr`).forEach(r=>{
+    r.style.display=r.textContent.toLowerCase().includes(q.toLowerCase())?'':'none';
+  });
+}
+
+function filterTable(id,q,colIdx){
+  document.querySelectorAll(`#${id} tbody tr`).forEach(r=>{
+    if(!q){r.style.display='';return;}
+    const cells=r.querySelectorAll('td');
+    const match=colIdx!==undefined
+      ?(cells[colIdx]?.textContent||'').toLowerCase().includes(q.toLowerCase())
+      :r.textContent.toLowerCase().includes(q.toLowerCase());
+    r.style.display=match?'':'none';
+  });
+}
+
+function fsig(id,q){
+  document.querySelectorAll(`#${id} .si`).forEach(s=>{
+    s.style.display=s.textContent.toLowerCase().includes(q.toLowerCase())?'':'none';
+  });
+}
+
+function filterSigAttr(id,q,attr){
+  document.querySelectorAll(`#${id} .si`).forEach(s=>{
+    if(!q){s.style.display='';return;}
+    s.style.display=(s.getAttribute(attr)||'').toLowerCase()===q.toLowerCase()?'':'none';
+  });
+}
+
+function detectVertical(text){
+  const t=text.toLowerCase();
+  if(/fintech|payment|insurtech|wealthtech|regtech|banking tech|neobank/.test(t)) return 'Fintech';
+  if(/martech|marketing tech|adtech|ad tech|sales enable|revenue intel|gtm/.test(t)) return 'Martech';
+  if(/defense|cleared|govtech|national security|sbir|federal|dod/.test(t)) return 'Defense/GovTech';
+  if(/cybersec|infosec|zero trust|soc |siem/.test(t)) return 'Cybersecurity';
+  if(/saas|b2b|enterprise software/.test(t)) return 'SaaS/B2B';
+  return 'Tech';
+}
+
+function verticalTag(vertical){
+  const map={'Fintech':'t-ft','Martech':'t-mt','Defense/GovTech':'t-def','Cybersecurity':'tr','SaaS/B2B':'tt'};
+  const cls=map[vertical]||'tp';
+  return `<span class="tag ${cls}">${vertical}</span>`;
+}
+
 function p2(n){return String(n).padStart(2,'0')}
+
+function esc(s){
+  if(!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
 load();
 </script>
 </body>
