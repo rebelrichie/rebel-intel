@@ -1,63 +1,82 @@
 {
-  "generated": "April 20, 2026",
-  "generated_slug": "2026-04-20",
+  "generated": "April 21, 2026",
+  "generated_slug": "2026-04-21",
   "moves_today": [
-    "Reach out to Ressio's founders to discuss building their team after their recent $8.8M Series A funding",
-    "Connect with Connecticut City's leadership to offer Rebel's expertise in cleared tech recruiting following their $50M Series C funding",
-    "Contact DecisionPoint to discuss their hiring needs after securing a $25.2M Series B funding and a USTRANSCOM contract"
+    "Reach out to Blue Energy's leadership team to discuss building their talent function after their recent $380M Series C funding",
+    "Connect with Ressio's founders to explore their hiring needs following their $8.8M Series A funding",
+    "Contact Connecticut City's decision-makers to offer Rebel's expertise in cleared tech recruiting after their $50M Series C funding"
   ],
   "top_3": [
-    "Ressio: recently raised $8.8M in Series A funding, indicating a peak hiring window and high urgency to build their team without a dedicated talent function",
-    "Connecticut City: recently raised $50M in Series C funding, with a high urgency to build their team and a specialized need for defense/cleared hiring",
-    "DecisionPoint: recently secured a $25.2M Series B funding and a USTRANSCOM contract, indicating a peak hiring window and a need for cleared tech recruiting expertise"
+    "Blue Energy: Recently raised $380M in Series C funding, indicating a high urgency to build their team without a dedicated talent function",
+    "Ressio: Just raised $8.8M in Series A funding, signaling a peak hiring window and need for talent acquisition support",
+    "Connecticut City: Received $50M in Series C funding, requiring specialized cleared tech recruiting expertise that Rebel can provide"
   ],
   "new_money": [
+    {
+      "company": "Blue Energy",
+      "amount": "$380M",
+      "stage": "Series C",
+      "location": "",
+      "sector_tag": "Tech",
+      "why_now": "Peak hiring window after recent funding, high urgency to build team"
+    },
     {
       "company": "Ressio",
       "amount": "$8.8M",
       "stage": "Series A",
-      "location": "DC",
+      "location": "",
       "sector_tag": "Tech",
-      "why_now": "Peak hiring window, high urgency to build team without dedicated talent function"
+      "why_now": "Peak hiring window after recent funding, high urgency to build team"
     },
     {
       "company": "Connecticut City",
       "amount": "$50M",
       "stage": "Series C",
-      "location": "Connecticut",
+      "location": "",
       "sector_tag": "Defense/GovTech",
-      "why_now": "Peak hiring window, high urgency to build team with specialized need for defense/cleared hiring"
+      "why_now": "Specialized cleared tech recruiting need after recent funding"
     }
   ],
   "hiring_signals": [
-    "VC firm Redpoint tells startups to prepare for a hiring showdown, indicating a competitive hiring market",
-    "BlackRock's head of talent acquisition reveals changes in what they look for in applicants, highlighting the importance of adapting to new hiring trends"
+    "MobiKwik appoints Rajat Bansal as Senior Director and Head of Talent Acquisition, indicating a focus on hiring and talent management",
+    "Teachmint appoints Farhan Hazarika as head of talent management, highlighting the importance of talent acquisition in the current market"
   ],
   "exec_moves": [
-    "WPP appoints chief people officer as part of Elevate28 strategy, indicating a focus on talent acquisition and growth",
-    "Perigon Wealth Management appoints Chief People Officer to drive strategic leadership expansion, highlighting the importance of talent in driving business growth"
+    "Cadent appoints Chief People Officer and SVP of Marketing to accelerate next phase of growth",
+    "WPP appoints chief people officer as part of Elevate28 strategy, emphasizing the role of talent management in driving business success"
   ],
   "defense_signals": [
-    "Connecticut City lands $50M state innovation grant, indicating growth in the defense/GovTech sector"
+    "Connecticut City receives $50M in Series C funding, requiring specialized cleared tech recruiting expertise"
   ],
   "fintech_signals": [
-    "Repeat Founders raise $20M for Spektr, a fintech compliance startup, indicating growth in the fintech sector"
+    "Repeat Founders raises $20M in Series A funding, indicating a need for high-compliance and technical hiring in the fintech sector"
   ],
   "martech_signals": [
-    "Denmark's Dreamdata secures $55M Series B to enhance analytics and AI features for marketers, indicating growth in the martech sector"
+    "Denmark's Dreamdata secures $55M in Series B funding, highlighting the growth of the martech sector and potential hiring needs"
   ],
   "vehicles": [
-    "Series A funding rounds, such as Ressio's $8.8M funding, can indicate a peak hiring window for startups"
+    "Rebel Talent Systems' fractional Head of Talent and Director of Recruiting practice can support companies in building their recruiting infrastructure"
   ],
   "competitive": [
-    "The hiring market is competitive, with VC firms like Redpoint warning startups to prepare for a hiring showdown"
+    "Shaun at Arkham Talent offers similar fractional talent work, providing an alternative solution for companies with hiring needs"
   ],
   "market_trends": [
-    "Startups are experiencing high growth, with companies like Ressio and Connecticut City raising significant funding rounds",
-    "The fintech, martech, and defense/GovTech sectors are experiencing growth, with companies like Repeat Founders, Dreamdata, and Connecticut City raising funding or securing contracts",
-    "Talent acquisition and growth are becoming increasingly important for businesses, with companies like WPP and Perigon Wealth Management appointing chief people officers to drive strategic leadership expansion"
+    "The current market emphasizes the importance of talent acquisition and management, with companies prioritizing hiring and talent development",
+    "The growth of the martech and fintech sectors is driving demand for specialized recruiting expertise",
+    "The need for cleared tech recruiting expertise is on the rise, particularly in the defense and government technology sectors"
   ],
   "raw_funded": [
+    {
+      "name": "Blue Energy",
+      "amount": "$380M",
+      "stage": "Series C",
+      "sector": "Tech",
+      "location": "",
+      "headline": "Blue Energy raises $380M to build grid-scale nuclear reactors in shipyards",
+      "link": "https://techcrunch.com/2026/04/21/blue-energy-raises-380m-to-build-grid-scale-nuclear-reactors-in-shipyards/",
+      "source": "techcrunch.com",
+      "score": 5
+    },
     {
       "name": "Ressio",
       "amount": "$8.8M",
@@ -90,65 +109,32 @@
       "link": "https://www.executivebiz.com/articles/decisionpoint-ustranscom-ibs-support-contract",
       "source": "executivebiz.com",
       "score": 4
-    },
-    {
-      "name": "Sources: Cursor in talks to",
-      "amount": "$2.0B",
-      "stage": "Late Stage",
-      "sector": "Tech",
-      "location": "",
-      "headline": "Sources: Cursor in talks to raise $2B+ at $50B valuation as enterprise growth surges",
-      "link": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
-      "source": "techcrunch.com",
-      "score": 3
-    },
-    {
-      "name": "Civilized AI",
-      "amount": "$2M",
-      "stage": "Seed",
-      "sector": "Tech",
-      "location": "",
-      "headline": "New Orleans-based Civilized AI raises $2M to modernize city services - New Orleans CityBusiness",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdk1CN00xRXQ2YXd1bDE1TEppbE5mdG1OcmNhUjQ1U3hrLWxRendtUzNMOEtpaWZxYmxocFhGbWVscS1UclB4TWtyTEZnenJSNlYwRHE3blFkT3RBTlhHTXJOajMyRjROSE1vam5xTTdGeWM1cjdaRFJhdzAxbzNGSnY3WThreUd3WEd1LVpidTVKZGFwR0pwVFlR?oc=5",
-      "source": "news.google.com",
-      "score": 3
-    },
-    {
-      "name": "Airalux",
-      "amount": "undisclosed",
-      "stage": "Unknown",
-      "sector": "Defense/GovTech",
-      "location": "",
-      "headline": "Airalux lands $300k SBIR grant despite a federal funding slowdown - Technical.ly",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9yN25IVUdOcC1BeThnVV9sM2RaWGRNMkpsbUY1dmxfam54REhaaHF5YnM5YjlNejBucERqUHI3dmdOSVdtZjk2Z0FtdGVCVzlOdjJkOXd2aEFETXAwdmIxa1ZtLW9MVHJrUEdaNDVaU2pVd194ekFuUw?oc=5",
-      "source": "news.google.com",
-      "score": 2
     }
   ],
   "raw_hiring": [
     {
-      "company": "Brent Powell",
-      "role": "Brent Powell Appointed as Head of Talent Acquisition at Grafton Sciences - hrtoday.in",
-      "signal": "Brent Powell Appointed as Head of Talent Acquisition at Grafton Sciences &nbsp;&nbsp; hrtoday.in",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ1ZhaVg3TEhOUUlNalZMTUoyUGF4WjFqVkRfUGl5TTk3YXdpMlpzRjFweE9zOE9kNVB3QkY2aWZoU1VnZW5XLTFmSXpEc3duOVB5eVg5V3luQVZEUy1qRDVXZUYybWNNZ3ByUXNLSEI3WnVhRkxFaS0wRHlNY0RNRHBpQWNFV1RGaXByOVViVjIxZHgtWkpv?oc=5",
+      "company": "Jaclyn Picon",
+      "role": "Jaclyn Picon Appointed as Head of Talent Acquisition at Keenova - hrtoday.in",
+      "signal": "Jaclyn Picon Appointed as Head of Talent Acquisition at Keenova &nbsp;&nbsp; hrtoday.in",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSlhreGpzMFZTTXkzQzlDY1RUdTZHenRSR3RrNHRwVkNhOTJOT1VwRWcta2piNmp3dE5rNWlTbHdQVE1nTzlrV0dlcWxxUGoycXZHYU9MMUlPSTAtR2RlMlNKU1k1QkhfR3k0VWZBemdxa2xMUzdsVWZLNWVGTXdmal9iZ2hjSEVzYmln?oc=5",
       "source": "news.google.com",
       "is_sales_hire": false,
       "is_tech_hire": false
     },
     {
-      "company": "he looks for in applicants",
-      "role": "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants - ",
-      "signal": "BlackRock's head of talent acquisition reveals how AI has changed what he looks for in applicants &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaUk4YTI2OWx6VEc1dkI2OGxnVjVyVGZweHJKYzBuWldxV0doc3o0VWFjME5KN0trY1pxcjJialhkeDRuc1NYY1B2aU1WeDlWdWpHdXFqVGJ6Zlpud1RPNjNiSk5EWGd3Zm9TeEJONWh5WE11bkZ3N2h5WXMyanFCUk53VVFWRmcxM2lmR2JR?oc=5",
+      "company": "MobiKwik",
+      "role": "MobiKwik Appoints Rajat Bansal as Senior Director and Head of Talent Acquisition - CXO Digitalpulse",
+      "signal": "MobiKwik Appoints Rajat Bansal as Senior Director and Head of Talent Acquisition &nbsp;&nbsp; CXO Digitalpulse",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNM1UwblhiTmhVMjFKTUx5bE9zQ3l1RlA5eTdnZmZQSnlyczFLV1d0M21aTkdITjRfVUNXMkRhMmtCajVyaVp4QWJ3b012UWh0TGNpUUlxNlkzcWgtdlQtWnBuTzVKZjlDTTRMN1k4YXZlOUc3OWEtdDRSbUpUeWtlSFI0NUdnQm1XU1AyOFM1a2tWcG1GeEhfYi1PaEhJUVFoVFprSFJZSmxEejlfOGJsWEFzSQ?oc=5",
       "source": "news.google.com",
       "is_sales_hire": false,
-      "is_tech_hire": false
+      "is_tech_hire": true
     },
     {
-      "company": "VC firm Redpoint tells startups to buckle up for a",
-      "role": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shar",
-      "signal": "VC firm Redpoint tells startups to buckle up for a hiring showdown. Here's the 13-slide deck it shared with founders. &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRUdYVEdsTlJDczJ4T1hQN2swd0h4ZmlweVlDYjllYW1Well3UkdyeXNXOXVxdmVtQjhaa2VRU0ExWkpFVk9laGxUYl9oQUJtTTVXQVc0OXpGTy0taEIyeS1xTXN6MUJQRnJuR1VQSk5BYUpJMlhYUjFHY2pDbjRzajdYOTNrMkRRSEE?oc=5",
+      "company": "are 'recession",
+      "role": "Startup job candidates that are 'recession-proof' have a big advantage, according to the people who ",
+      "signal": "Startup job candidates that are 'recession-proof' have a big advantage, according to the people who are hiring &nbsp;&nbsp; Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOFQ5MmlCX2pIVXQ5TUpRcGNvUGxRWk1XU09JRUdqekVIbkpJT1JEY1EyVVd6eGZqU2xGWmd4MWxpMlZEYW1qOVA4NmxjQUx0VzRVQlNrSWpQeEs4eUpMV0pBR2dPR2lVeVRwX3ZsenJIRDZqQ1M4TjNPZWFTc1JMc1J3bzhxT2ZYZ2N1RXdHcl8?oc=5",
       "source": "news.google.com",
       "is_sales_hire": false,
       "is_tech_hire": false
@@ -163,55 +149,46 @@
       "is_tech_hire": false
     },
     {
-      "company": "the firm",
-      "role": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm ",
-      "signal": "BlackRock's head of talent has 4 pieces of advice for college students who want to work at the firm &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZFBqV2Z2N2YwVUpmRDR0QXdWSHBFbHFjZWlZSHJMd1ZQdGJDUEJxN3g2XzRKcHNSUEVGMlJFOHhtV2VWNzJCWTNxaWdKbjhqRTlJeU1BRzU1SDZnazlrT1dvVURQT0d0Yk1OeFg3UHBLV2tMb0ZXV0NaWDQ3WHVFWWctN0JsenN0Wm1YVkE2Y1BObUd2M3ZJVHJZSldrdw?oc=5",
-      "source": "news.google.com",
-      "is_sales_hire": false,
-      "is_tech_hire": false
-    },
-    {
-      "company": "How to Get",
-      "role": "How to Get Hired at Tinder, According to the Head of Talent - Business Insider",
-      "signal": "How to Get Hired at Tinder, According to the Head of Talent &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSEVSYXBpRlpmc0MtcGM1bGZ1YUtLVlNmdTRkZmtzQkFIc3RweVhBWVpHdjY5VTBBcjE1S2k4NzVqR2Zvb1c2VlVYQThNRU1HMzhmNHRxZ2ZTOWpRU1hyMWhKbVN6RTN2WDItX2hmbHc2bDZOV1A3UW1xWFNFaWUzQk1R?oc=5",
-      "source": "news.google.com",
-      "is_sales_hire": false,
-      "is_tech_hire": false
-    },
-    {
-      "company": "BlackRock, According to Their Head of Talent",
-      "role": "How to Get a Job at BlackRock, According to Their Head of Talent - Business Insider",
-      "signal": "How to Get a Job at BlackRock, According to Their Head of Talent &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYmJIVmo1MUFNUHVIUHFGSFk2dGZBeDRuV3BfTnVmU3YwdkROd3JMcFVlVm5ObkpkVXFzMzZud3RpSm9FaW9pT205LUtnLXQxUXpmZ0piamF6M3R3NUVlQ1hNVS13Skw3WnE0OEJRQWZRNjdTWlB3T0NBZmhUYjZOMlhScHNTandjcFlLVXd3?oc=5",
-      "source": "news.google.com",
-      "is_sales_hire": false,
-      "is_tech_hire": false
-    },
-    {
-      "company": "Vanguard Head of Talent Acquisition Shares Favorit",
-      "role": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question - Business Insider",
-      "signal": "Vanguard Head of Talent Acquisition Shares Favorite Interview Question &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2tEazBKTHVJMmR5dUZPMVBvU1hJMkhlbWhGVEJSV3lXSGxiaFRUUTdESUdHT29SNUdTY3hEeXpEeWJ4cWZ3OXlRb2M1dXN1dGVCVjlyUUtfN3JwSlRIMkpTSk5STGdFM1lVVUE3YklFc1E3akpWUEZqNkdJc2ZTeExuMS1MNXhHdnkxZTdYQjVaZzVIQnlXeEZhR1I1bmZ0X0JTZA?oc=5",
-      "source": "news.google.com",
-      "is_sales_hire": false,
-      "is_tech_hire": false
-    },
-    {
-      "company": "Apollo is revamping recruiting and trying to softe",
-      "role": "Apollo is revamping recruiting and trying to soften its culture amid a big growth push. From MBA sum",
-      "signal": "Apollo is revamping recruiting and trying to soften its culture amid a big growth push. From MBA summer internships to kids' story time, here's a look. &nbsp;&nbsp; Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQX195RDU5VFgzbnFwalQyeDhpeE44d2pOQ3lHRk40TGxOcXdjbndnUDhndVRmZUR3cjZXLXdyS1AyZVVGVmNOaHEyaUtpTkU5UFVfY3c5M0dJUV9pNnJrN3hqcVZ1c3VnVmx4aWJGVVJjTHdNVnlWQkJQUlY4NHpaU1V6bWs3WFpGc1I4aFpHYklYZ2VfNjczZ3YzRnY4OFNlZGxlM053?oc=5",
-      "source": "news.google.com",
-      "is_sales_hire": false,
-      "is_tech_hire": false
-    },
-    {
       "company": "Teachmint",
       "role": "Teachmint appoints Farhan Hazarika as head of talent management - People Matters - HR News",
       "signal": "Teachmint appoints Farhan Hazarika as head of talent management &nbsp;&nbsp; People Matters - HR News",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNGVsc09yTi02ZEkwRmpDZXhiUUJicHZHbnVNRmtyU25kbDJac1AxdF9CZW1BRDYwckRxY0p5eGVFRDJmZnNXUTBrN0FyQzU5N2t3cGRQeUpmdmJsQ2hucnY0dGU0ZnBSNjVNVF96cXVnYk5UeFNBZ3RXY2FTWlY5UWNGTzE4emt2X1NLdkVzM0FaUzE3ZHg3VHdzV2FILV9fV3Q3bGRhdnVZRzhWZEpwTEd3QUU0YVk?oc=5",
+      "source": "news.google.com",
+      "is_sales_hire": false,
+      "is_tech_hire": false
+    },
+    {
+      "company": "Rajeev Ranjan Joins Espire Infolabs as Global Head",
+      "role": "Rajeev Ranjan Joins Espire Infolabs as Global Head of Talent Acquisition - CXO Digitalpulse",
+      "signal": "Rajeev Ranjan Joins Espire Infolabs as Global Head of Talent Acquisition &nbsp;&nbsp; CXO Digitalpulse",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbWJYVUFRMzlFVWZtb2VKUzREYTJneC1tTklScXd5bV9fXzFhYlQyS3ZJUnVSM1RzLXR0YjBmZ3p6UGNaYTJFcl9QOFlVNzhjRmszUkZLNmxWS3h1Mk9yNTM5VkludHRydVpvcmtwRzRjVFdvT2NndXlUdnJIY0w2d2Zpb05DQjdSS2liTnlubUdKTGNvV0VkTURtSk5zQ01GV2Vqc3ExeHM?oc=5",
+      "source": "news.google.com",
+      "is_sales_hire": false,
+      "is_tech_hire": false
+    },
+    {
+      "company": "Teachmint brings on board Meesho's Farhan Hazarika",
+      "role": "Teachmint brings on board Meesho's Farhan Hazarika as head of talent management - The Economic Times",
+      "signal": "Teachmint brings on board Meesho's Farhan Hazarika as head of talent management &nbsp;&nbsp; The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQalNaVmFZX19qU0lSdU5naFpKVVg4TVV4OEZKc2w3eHh2dVFZUUJZdU15WGxiMzVROHYxd1piaTdid0Y3QTRhNnBBQ1NyQXhPbEVJSnZ4dHZOTDJuNERmTS0ybGlwZ1N4cW9SOW1PbVFCQlhTMXdrVFBTaHVYTGRwc3lLTHdkV0dSSEIwMTVmQXFTYjNGbkhaemtxc2NwNW04OC1DQUJvMGNkd3ZPT2ZrUTVoWGlhMTRyem1MaFUtaXc3c3lMTXJDdlZlWFN3MUNZQ2hHWmNSS0EtZ1lMN2fSAeMBQVVfeXFMTjIwamtPaFN3N0t1QXFOazlfRDVfZm53VVFCVU1RenhOT2lmVTlvZ0pwdTBPMDRCSEppYjRWQUNQdTJ3MkpwYmI4U1NGdURjR3NzYzltSzJKa3J2WFZ3SGZhS1UzSDBDcUhmVHlPdGZNZmgtMm4yX0hiT3B4dHpXampwblg3UjdKOWV2cF8yRFoxdk9Eb2UwdHpfeW5hWjIyMndJZ3NfV1R2OFNsVlZGd2lCNmR3TzJFNVNFNWJZS2syMF9rUnZJY3ZLYmpTRDBudFo2R2FVVjJuWlFuaURBTy1aTTQ?oc=5",
+      "source": "news.google.com",
+      "is_sales_hire": false,
+      "is_tech_hire": false
+    },
+    {
+      "company": "HRMI 2021: Hung Lee, Editor, Recruiting Brainfood",
+      "role": "HRMI 2021: Hung Lee, Editor, Recruiting Brainfood - HR Magazine",
+      "signal": "HRMI 2021: Hung Lee, Editor, Recruiting Brainfood &nbsp;&nbsp; HR Magazine",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRXNpaDhoVXotUExEMU0wc1c2dnB2MzM3eFV6LXFmYzRaQnpNQV83VnQ2NzU5aE9ka3U2cUlqM2k4RG8tUmgtckF6T1ZNd25ORjJMbGxrRFhiaWNvRHdGc054TGZLTlJ6X09lTlIxV0JDSzZONUpwNzhIcTJYaHZLc3pnd1haV09xdlkwUHVyRW5nYkl6?oc=5",
+      "source": "news.google.com",
+      "is_sales_hire": false,
+      "is_tech_hire": false
+    },
+    {
+      "company": "Senco Gold & Diamonds",
+      "role": "Senco Gold & Diamonds Hires Samrat Banerjee as Head of Talent Acquisition - APAC News Network",
+      "signal": "Senco Gold & Diamonds Hires Samrat Banerjee as Head of Talent Acquisition &nbsp;&nbsp; APAC News Network",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZDAta1UyX191VGsyVm96THlFNFJaQjFtQXJDaVVicEFFY0YwLUJQMVNBN1Bja2dCd2FfTnNudnByNV92cER6ejB0VWpuc0x4LVFDWDM0S0V4aE52WjdJcy1ETWNOam94bWdoamw1YVBhazNmMTdRRWJxSVZMWC1sRThXVVlBRWYtQmUwcjRwbXRsazRxbW5Hcko0WEZKQXZlNTlud2FuUnMzbExG?oc=5",
       "source": "news.google.com",
       "is_sales_hire": false,
       "is_tech_hire": false
@@ -233,33 +210,33 @@
       "source": "news.google.com",
       "is_sales_hire": false,
       "is_tech_hire": false
+    },
+    {
+      "company": "Sparrow Raises $35 Million in Series B Funding to ",
+      "role": "Sparrow Raises $35 Million in Series B Funding to Scale Its Global AI-powered Solutions for Leave Ma",
+      "signal": "Sparrow Raises $35 Million in Series B Funding to Scale Its Global AI-powered Solutions for Leave Management &nbsp;&nbsp; Business Wire",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYjdldFp4a2VkVTE5S0FndUZQVFJlcGVxeXJ5YlJzWHVodS1NV3lZSllKMVhqZzlhLVZvSG11Z05BQ01ncGpGSndzSm41NmhLbWdRaEVQdzNNUG15T05Ba2xncnBBUkdSTDU4cUNRWF9BeDJNbFQteC00em85MGRXTlBYN19pallidmw3T0VKWGRDdF8zUUVIc2V2RE5jbnNrbS1FcU5RYmhIYVF4bHMwRTZxYUh3Wk01SjdHdFBSVm02V1FpTERuQVhma2ZFUjhSM0dCbmU3LVpRNEpwc2xVWFplT1U2M25ZUVVBSGo3enI0UEYzV2tDQ3FKUQ?oc=5",
+      "source": "news.google.com",
+      "is_sales_hire": false,
+      "is_tech_hire": false
     }
   ],
   "raw_execs": [
-    {
-      "person": "chief people officer",
-      "title": "part of Elevate28 strategy",
-      "company": "WPP",
-      "headline": "WPP appoints chief people officer as part of Elevate28 strategy - Campaign",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMnkyXzhtYjk4ZlBJTlpmM25hcnJXNmtFZGpHMmZYQzJ2NDFfbVhfZTVxUEUyMXZCcXRkMEJUVGZSd2RBRld4TE1fdUlIV2ZtejJWVF9HZi12encxT2F5Qm1yY3MydjU0a25sRkJucWJDZ3RtRTJWU09vNExsOU5OR2hYazZoWW1hYzRYWEFURXpEQ0plVlB5c0ZGUDRuc0hxSlNfQ3Y3RQ?oc=5",
-      "source": "news.google.com",
-      "move_type": "people"
-    },
-    {
-      "person": "Chief People Officer",
-      "title": "Part of Strategic Leadership Expansion",
-      "company": "Perigon Wealth Management",
-      "headline": "Perigon Wealth Management Appoints Chief People Officer as Part of Strategic Leadership Expansion - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbjd3VU9LZEFjclBkdEdQYnlKOXVLNVpkTlNlNjlVRGFzSGxvbXRibVRZY0JuWGRUUGVXbnJVWG0xZGpYa2pwQU5fTnU4MmhDUWE0a0JONXlvZmtUd2VaMWgySXM5TVg4ZXMzSHV6eXJvM01EVk5tR3hpNURoUTZ1aG9fbTBJWWRwSThwQzktTW1BZUdqRlZxV1NVeDVrdFZvMlEtMVN3RHk?oc=5",
-      "source": "news.google.com",
-      "move_type": "people"
-    },
     {
       "person": "Chief People Officer and SVP of Marketing",
       "title": "Accelerate Next Phase of Growth",
       "company": "Cadent",
       "headline": "Cadent Appoints Chief People Officer and SVP of Marketing to Accelerate Next Phase of Growth - PR Newswire",
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQMWdjNXdadElwSUpwbS1XQ19xSlFZdjVoV2FlVHhxLUU0bVB5ZTRQS09ISEpUS0R6LVA3TXN3Q0JPcGZUbXU3Q01oVUQycVdTYU5TUGR3X0JBLWRCSmJnZllfOC1ENjFReW9rTjc3a3QyYmVoZFZVVV9mUmI0YUJEemdsbkVlcDBtVkNqazBIclZnRDJtVDNIZXhyMTc3WmxoNVFhNkdEcFkwTlJfOGg2UGpJbExFZzgwV0ppWkJUNjdJRmFPbUp6M2w1TV9HLWU2R3ZNenpuNGVTQ2RNMnZNQXF3?oc=5",
+      "source": "news.google.com",
+      "move_type": "people"
+    },
+    {
+      "person": "chief people officer",
+      "title": "part of Elevate28 strategy",
+      "company": "WPP",
+      "headline": "WPP appoints chief people officer as part of Elevate28 strategy - Campaign",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMnkyXzhtYjk4ZlBJTlpmM25hcnJXNmtFZGpHMmZYQzJ2NDFfbVhfZTVxUEUyMXZCcXRkMEJUVGZSd2RBRld4TE1fdUlIV2ZtejJWVF9HZi12encxT2F5Qm1yY3MydjU0a25sRkJucWJDZ3RtRTJWU09vNExsOU5OR2hYazZoWW1hYzRYWEFURXpEQ0plVlB5c0ZGUDRuc0hxSlNfQ3Y3RQ?oc=5",
       "source": "news.google.com",
       "move_type": "people"
     },
@@ -273,20 +250,20 @@
       "move_type": "people"
     },
     {
-      "person": "",
-      "title": "",
-      "company": "DSG Global",
-      "headline": "DSG Global Appoints Chief People Officer - Hunt Scanlon Media",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5mb3pJeGNURVcwd3JLZXByeVBmQnFKSks4OEpIdkMxa2NtSnBibGQtenc1V1lXZ1gzNHdUNC1rNXpfbEtKQzhTZ1lVa0lxZ0ZBTjhqb1l5dWlrSlhzWkcwLTZ2aTkzX1FEdDhLeFVpMERZWlU?oc=5",
-      "source": "news.google.com",
-      "move_type": "people"
-    },
-    {
       "person": "chief people officer",
       "title": "steer strategy",
       "company": "Tower",
       "headline": "Tower appoints chief people officer to steer strategy - Insurance Business",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaWZ6M3k5VWpGX2VOakNSbWstVkxuazFnS3o2MG5YTkgxNFgxX0FfejZEWGRPUF9DT1hMNWg0WXMxR1FXajM4R1A2V0dPMjJuN2ZUcGlfRXhZaUxtYnZ1TnJUZmJXaGY0YV9LZmxTa1NONm10U1YzMUhremtzdXRuOHJTWlFMM3BNNlF0dDZ2ZHY0MXU4LVR0aEhPR0xicUlkU3RyRTZHaEYyNVdXb25LMTExTVlpaGVCNFUwcGpFbnhrQQ?oc=5",
+      "source": "news.google.com",
+      "move_type": "people"
+    },
+    {
+      "person": "",
+      "title": "",
+      "company": "DSG Global",
+      "headline": "DSG Global Appoints Chief People Officer - Hunt Scanlon Media",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5mb3pJeGNURVcwd3JLZXByeVBmQnFKSks4OEpIdkMxa2NtSnBibGQtenc1V1lXZ1gzNHdUNC1rNXpfbEtKQzhTZ1lVa0lxZ0ZBTjhqb1l5dWlrSlhzWkcwLTZ2aTkzX1FEdDhLeFVpMERZWlU?oc=5",
       "source": "news.google.com",
       "move_type": "people"
     },
@@ -314,6 +291,15 @@
       "company": "Laing O\u2019Rourke",
       "headline": "Laing O\u2019Rourke appoints Chief People Officer - Rail Business Daily",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUGpIZEJRaXpHTzlPQTJFN2Z4Vk9rOFltN29rdHJqNTZkVzUwX3lwcVlWLV9zdGp4bzNPNEs4MWV6QmJsaFVRWFlBRHNRR0Nmb0NjN281WGJOQTdwbXVRSVA5U1Z6V1JVbldyQ0VWYjAyOFdMZkFweGhBZ2hRNVlZUTlzZGl2dw?oc=5",
+      "source": "news.google.com",
+      "move_type": "people"
+    },
+    {
+      "person": "",
+      "title": "",
+      "company": "Thorntons",
+      "headline": "Thorntons appoints chief people officer - Scottish Legal News",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcUhKdHpEa1FEbHFrdDA2Sk82b1lZdlBCTWxWUEQ4REplYjE3cFFfaWhMYXZJbFZ1QjQxZjFIYkRaX1NEbzdPQWVZYlZMSnZWbmFLbHIyV21CLXFEQzdVNlpqd25oV3Z5YWU4VU14d3R4T3FyREkyb0QzZFF4UXktQ1g4RmI?oc=5",
       "source": "news.google.com",
       "move_type": "people"
     },
@@ -376,16 +362,6 @@
       "score": 3
     },
     {
-      "name": "Kiwi fund administration fintech Caruso banks $9.3 million Series A - Startup Da",
-      "amount": "$9.3M",
-      "stage": "Series A",
-      "sector": "Fintech",
-      "headline": "Kiwi fund administration fintech Caruso banks $9.3 million Series A - Startup Daily",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVE1Dd2R4SmItcXgtOHJSSGNKcElOY241T25seUZLazFGd2JwYmw4MGljal94X1F0QTZhRlo0YzFhOVVjWWgwWkJua19rb0VHV0M2VEExaWtvbi1fOFRzaEo1SGtKWUp5cTQ5ZjVzRFZQQlRZeWRINDZpNlVwdkFyTkhrbTBfYldQa1FTYnhnX29kVHVCTXhrY3E1bzlkMDAydzlJVlgzbUh6bTAtZkRj?oc=5",
-      "source": "news.google.com",
-      "score": 3
-    },
-    {
       "name": "Fintech Startups Globally Raise More Money In Far Fewer Deals In Q1 2026 - Crunc",
       "amount": "undisclosed",
       "stage": "Unknown",
@@ -416,12 +392,12 @@
       "score": 3
     },
     {
-      "name": "Mark Cuban-Backed Fintech Startup Yendo",
-      "amount": "$50M",
+      "name": "Exclusive: Candex Extends Series C To $40M+ To Help Enterprises Easily Onboard G",
+      "amount": "$40M",
       "stage": "Series C",
       "sector": "Fintech",
-      "headline": "Mark Cuban-Backed Fintech Startup Yendo Raises $50 Million To Create AI Bank Serving Millions Locked Out Of Traditional ",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTjBuLUdQcnNUWmdNV3RUTURrY09pV0cyTHQ1bXhwelpLc2NMamFiX1FfZFBSaVVqcGZoYTB2d21yNklLNWxMSXE5bjFYNnRzeTlmSzZidjhMQzlqNGxIbzYxamdLQ1Bzd3pTeXpwcVdjcHdDdmhRSjJRZ01hcFZVVDVOVjhiQQ?oc=5",
+      "headline": "Exclusive: Candex Extends Series C To $40M+ To Help Enterprises Easily Onboard Global Vendors - Crunchbase News",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONDhjd1RRZHJNY1pXRG52bVpaTk91M1lYdGdRRGl2ZHpmTTJxRDh2eEkyNDhHSkxNanoyOGlKU1BsOGUwTGhYYmlFNTJ6U1ZSS1VZREVRcWpweWI0S0d4UUpOUTV1NlJ4TTk1blpCb0RrSFU1NURqNms2T2d0b3JmMFhDQVBURDVYeElVTG9mM2FSUQ?oc=5",
       "source": "news.google.com",
       "score": 3
     },
@@ -436,22 +412,32 @@
       "score": 3
     },
     {
-      "name": "Exclusive: Candex Extends Series C To $40M+ To Help Enterprises Easily Onboard G",
-      "amount": "$40M",
-      "stage": "Series C",
-      "sector": "Fintech",
-      "headline": "Exclusive: Candex Extends Series C To $40M+ To Help Enterprises Easily Onboard Global Vendors - Crunchbase News",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONDhjd1RRZHJNY1pXRG52bVpaTk91M1lYdGdRRGl2ZHpmTTJxRDh2eEkyNDhHSkxNanoyOGlKU1BsOGUwTGhYYmlFNTJ6U1ZSS1VZREVRcWpweWI0S0d4UUpOUTV1NlJ4TTk1blpCb0RrSFU1NURqNms2T2d0b3JmMFhDQVBURDVYeElVTG9mM2FSUQ?oc=5",
-      "source": "news.google.com",
-      "score": 3
-    },
-    {
       "name": "Rain",
       "amount": "$250M",
       "stage": "Series C",
       "sector": "Fintech",
       "headline": "Stablecoin Startup Rain Raises $250M Series C at $1.95B Valuation \u2013 Its Third Round In Less Than A Year - Crunchbase New",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYVI4djdBREJKMmw4ek1pM0FFUjB1cHdjUmhvVWhheVpoZUNURFMxd29hNk15Y0lrXzhGMW5uWFI3anJTelRBNGY2LXY1SDFtTDh3YVNvQUdZTXc5ZW9KbU1IOU5ld3puS1g4Y2xLbWZ6Zmw1TVhhZnIxbmJoaUdPR0l3MlBCSmoycjRsaXp0RU5RamkzazNMclpDQlo?oc=5",
+      "source": "news.google.com",
+      "score": 3
+    },
+    {
+      "name": "Zocks",
+      "amount": "$45M",
+      "stage": "Series B",
+      "sector": "Fintech",
+      "headline": "Exclusive: Zocks Raises $45M Series B From Lightspeed, QED For AI Assistant To Financial Advisers - Crunchbase News",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVWJWeDM2Q20wNmJTeWtQWGxaamdTejJ5bUdHNUM1NXp1TzM3Z0NLODJ0ZDFSUGJ0Tlh2bTJwOTRDMkpyRVNzVk92MGd0bmlHMGxBWU1TcjNIejFCandRNy1SUmFPWnhJYXBBQ19Tekx4MklLaDdsOGRaMkp5SjJmRmp6NTQ2bk5hQzVZNENFRG9acnM?oc=5",
+      "source": "news.google.com",
+      "score": 3
+    },
+    {
+      "name": "Rillet",
+      "amount": "$70M",
+      "stage": "Series B",
+      "sector": "Fintech",
+      "headline": "Fintech Startup Rillet Lands $70M Series B From a16z, Iconiq Just 12 Weeks After Last Raise - Crunchbase News",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5VX003MWUxSkdsWU0yRkRYamVsOURacmMzTWhybV9ZQTB5bEFwMHlfa0dxc0QwSlkydXZwMndFRnpHZjFMdUFCeHlHdmp0YllRYVM1N0hqRW9IQkw4MURqNkZKNUtXRzN2RVozVjBVVFV2SXd5cUJfNzduUjFOVHc?oc=5",
       "source": "news.google.com",
       "score": 3
     }
@@ -488,12 +474,12 @@
       "score": 3
     },
     {
-      "name": "Tie",
-      "amount": "$10M",
+      "name": "Alembic Receives $14 Million in Series A - The SaaS News",
+      "amount": "$14M",
       "stage": "Series A",
       "sector": "Martech",
-      "headline": "Tie Raises $10 Million Series A - The SaaS News",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE02eExTclVJTGpscTJ3Q2FZQ2lJUHBsakY1Y25zS3pVOElKUDd1bDk1YnAxckMzbGZlcHJrQjhZRFNiZ003Nm9WVXp4OUpVYUhYSDlLdFhfVV9TUmJiZVF4SzFnUnk4amZvdmFxanZhOUY?oc=5",
+      "headline": "Alembic Receives $14 Million in Series A - The SaaS News",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9pUElUdWFRNnRnQXBNTTNUaGtKc2hUTVNFNDE1cTY2MFZSU1RCakZnWUwyN1U4dVVEb19fREFXekI4SHF3THBaeko2SXg3MENtY2Q0R0VCWDN1bUVsMWpBUk5BeW13T21OZzhrSElMTXJSNE5PU2FpbTY2N1c?oc=5",
       "source": "news.google.com",
       "score": 3
     },
@@ -528,6 +514,16 @@
       "score": 3
     },
     {
+      "name": "Restaurant AI Startup \u2018Lemong\u2019",
+      "amount": "undisclosed",
+      "stage": "Unknown",
+      "sector": "Martech",
+      "headline": "Restaurant AI Startup \u2018Lemong\u2019 Raises $680K to Enhance AI Agentic Marketing Platform \u2018Bizmong\u2019 - Wowtale",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5uVWlPcmQ5Z2p1SEhzZFN1ZnhsbmQ3VVRYcWw1X0VXdGN2ZU1nUlVoS1FrM01mNkZ6bE5jc29PMkwzemFqYnpnWUM2WEQ3VTVOdDdN?oc=5",
+      "source": "news.google.com",
+      "score": 3
+    },
+    {
       "name": "In-store ads streaming martech",
       "amount": "$40M",
       "stage": "Series B",
@@ -544,16 +540,6 @@
       "sector": "Martech",
       "headline": "Check out these 41 pitch decks that advertising startups used to raise millions from top investors - Business Insider",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVmpEVEJGZGdhdE5BWTF5blN1djlBR1EybnVrakpUYzVmSWdaaXN3cmpoSTNoMGh5TjhTWFQzU2Q1TFBIdUZRVldvc2dCV2lBY1N5SXJOenN2WEVPU0FXN0I0VmUtVjlHZk90V2RBU3NHcmpzUU1pTEg4SV83OGN4bXJYaXVUMDdHS2VYdVQtY25HY2tJNE52d3Nld0VYMEl4TVhXUXNiT2E?oc=5",
-      "source": "news.google.com",
-      "score": 3
-    },
-    {
-      "name": "Alembic Receives $14 Million in Series A - The SaaS News",
-      "amount": "$14M",
-      "stage": "Series A",
-      "sector": "Martech",
-      "headline": "Alembic Receives $14 Million in Series A - The SaaS News",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9pUElUdWFRNnRnQXBNTTNUaGtKc2hUTVNFNDE1cTY2MFZSU1RCakZnWUwyN1U4dVVEb19fREFXekI4SHF3THBaeko2SXg3MENtY2Q0R0VCWDN1bUVsMWpBUk5BeW13T21OZzhrSElMTXJSNE5PU2FpbTY2N1c?oc=5",
       "source": "news.google.com",
       "score": 3
     }
@@ -595,10 +581,10 @@
       "signal": "Government contract award \u2014 cleared/tech hiring incoming."
     },
     {
-      "company": "Trump wages war, his sons get payoff through savvy",
-      "headline": "Trump wages war, his sons get payoff through savvy investments - Responsible Statecraft",
-      "amount": "",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9zTVdSN3dkbjhhZjEyNHNUVndHTno2VkVGckpaWEpxWnAwNDVxN1VxMHpPYjBJYnlpTUo5TnhLTldWRGxKUm5ZNnY4ODhmN2JEMTgyMEJfeVpUS3BrdV80?oc=5",
+      "company": "DOD gave $620M loan to startup backed by Donald Tr",
+      "headline": "DOD gave $620M loan to startup backed by Donald Trump Jr.'s venture capital firm - Snopes",
+      "amount": "$620M",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBDeHVhSWpoRDVGTHhDbHdmNzlzV1BGc3RPSkh2N005MU5JNWxtaGR2V2dLVm50YkFrZHJRQWFwcUpfa2N0anh5a2VXMVBGTVJXbkIxcUZrbERDNkJRalBkVXVYV3VSMExuTDlz?oc=5",
       "signal": "Government contract award \u2014 cleared/tech hiring incoming."
     }
   ],
@@ -912,148 +898,155 @@
     {
       "repo": "FinceptTerminal",
       "owner": "Fincept-Corporation",
-      "stars_today": 3129,
+      "stars_today": 2595,
       "language": "Python",
       "description": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making i",
       "url": "https://github.com/Fincept-Corporation/FinceptTerminal"
     },
     {
-      "repo": "RuView",
-      "owner": "ruvnet",
-      "stars_today": 716,
-      "language": "Rust",
-      "description": "\u03c0 RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection \u2014 all without a single pixel of video.",
-      "url": "https://github.com/ruvnet/RuView"
-    },
-    {
       "repo": "thunderbolt",
       "owner": "thunderbird",
-      "stars_today": 667,
+      "stars_today": 591,
       "language": "TypeScript",
       "description": "AI You Control: Choose your models. Own your data. Eliminate vendor lock-in.",
       "url": "https://github.com/thunderbird/thunderbolt"
     },
     {
-      "repo": "paperless-ngx",
-      "owner": "paperless-ngx",
-      "stars_today": 611,
-      "language": "Python",
-      "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
-      "url": "https://github.com/paperless-ngx/paperless-ngx"
-    },
-    {
-      "repo": "arc-kit",
-      "owner": "tractorjuice",
-      "stars_today": 334,
-      "language": "HTML",
-      "description": "Enterprise Architecture Governance &amp; Vendor Procurement Toolkit",
-      "url": "https://github.com/tractorjuice/arc-kit"
-    },
-    {
-      "repo": "worldmonitor",
-      "owner": "koala73",
-      "stars_today": 343,
+      "repo": "claude-context",
+      "owner": "zilliztech",
+      "stars_today": 74,
       "language": "TypeScript",
-      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-      "url": "https://github.com/koala73/worldmonitor"
+      "description": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
+      "url": "https://github.com/zilliztech/claude-context"
     },
     {
-      "repo": "openai-agents-python",
-      "owner": "openai",
-      "stars_today": 909,
+      "repo": "RuView",
+      "owner": "ruvnet",
+      "stars_today": 828,
+      "language": "Rust",
+      "description": "\u03c0 RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection \u2014 all without a single pixel of video.",
+      "url": "https://github.com/ruvnet/RuView"
+    },
+    {
+      "repo": "YTLite",
+      "owner": "dayanch96",
+      "stars_today": 43,
+      "language": "Logos",
+      "description": "A flexible enhancer for YouTube on iOS",
+      "url": "https://github.com/dayanch96/YTLite"
+    },
+    {
+      "repo": "RAG-Anything",
+      "owner": "HKUDS",
+      "stars_today": 245,
       "language": "Python",
-      "description": "A lightweight, powerful framework for multi-agent workflows",
-      "url": "https://github.com/openai/openai-agents-python"
+      "description": "\"RAG-Anything: All-in-One RAG Framework\"",
+      "url": "https://github.com/HKUDS/RAG-Anything"
     },
     {
-      "repo": "DeepGEMM",
-      "owner": "deepseek-ai",
-      "stars_today": 155,
-      "language": "Cuda",
-      "description": "DeepGEMM: clean and efficient FP8 GEMM kernels with fine-grained scaling",
-      "url": "https://github.com/deepseek-ai/DeepGEMM"
-    },
-    {
-      "repo": "pi-hole",
-      "owner": "pi-hole",
-      "stars_today": 154,
-      "language": "Shell",
-      "description": "A black hole for Internet advertisements",
-      "url": "https://github.com/pi-hole/pi-hole"
-    },
-    {
-      "repo": "Xray-core",
-      "owner": "XTLS",
-      "stars_today": 52,
-      "language": "Go",
-      "description": "Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.",
-      "url": "https://github.com/XTLS/Xray-core"
+      "repo": "TrendRadar",
+      "owner": "sansan0",
+      "stars_today": 604,
+      "language": "Python",
+      "description": "\u2b50AI-driven public opinion &amp; trend monitor with multi-platform aggregation, RSS, and smart alerts.\ud83c\udfaf \u544a\u522b\u4fe1\u606f\u8fc7\u8f7d\uff0c\u4f60\u7684 AI \u8206\u60c5\u76d1\u63a7\u52a9\u624b\u4e0e\u70ed\u70b9\u7b5b\u9009\u5de5\u5177\uff01\u805a\u5408\u591a\u5e73\u53f0\u70ed\u70b9 + RSS \u8ba2\u9605\uff0c\u652f\u6301\u5173\u952e\u8bcd\u7cbe\u51c6\u7b5b\u9009\u3002AI \u667a\u80fd\u7b5b\u9009\u65b0\u95fb + AI \u7ffb\u8bd1 + AI \u5206\u6790\u7b80\u62a5\u76f4\u63a8\u624b\u673a\uff0c\u4e5f\u652f\u6301\u63a5\u5165 MCP \u67b6",
+      "url": "https://github.com/sansan0/TrendRadar"
     }
   ],
   "sec_filings": [],
   "ph_launches": [
     {
-      "product": "kaizen",
-      "tagline": "Run training that adapts based on the running you do Discussion | Link",
-      "link": "https://www.producthunt.com/products/kaizen-7",
+      "product": "Magic Lane",
+      "tagline": "Sovereign navigation infrastructure for Europe Discussion | Link",
+      "link": "https://www.producthunt.com/products/magic-lane",
       "source": "producthunt.com"
     },
     {
-      "product": "The New Waydev",
-      "tagline": "Measure the full AI SDLC. From token to production. Discussion | Link",
-      "link": "https://www.producthunt.com/products/waydev",
+      "product": "Twenty 2.0",
+      "tagline": "Build your Enterprise CRM at AI Speed Discussion | Link",
+      "link": "https://www.producthunt.com/products/twenty-crm",
       "source": "producthunt.com"
     },
     {
-      "product": "Granter",
-      "tagline": "Your company's AI Grant Consultant Discussion | Link",
-      "link": "https://www.producthunt.com/products/granter-ai",
+      "product": "Chat Skills for AI Agents",
+      "tagline": "One file. Any agent. Working chat in under 10 minutes. Discussion | Link",
+      "link": "https://www.producthunt.com/products/cometchat-skills",
       "source": "producthunt.com"
     },
     {
-      "product": "QA Crow",
-      "tagline": "A murder of crows for your bug backlog Discussion | Link",
-      "link": "https://www.producthunt.com/products/qa-crow",
+      "product": "LiveDemo",
+      "tagline": "Open-source Interactive product demos Discussion | Link",
+      "link": "https://www.producthunt.com/products/livedemo",
       "source": "producthunt.com"
     },
     {
-      "product": "Knowzilla",
-      "tagline": "Real-time AI for sales that guides every deal Discussion | Link",
-      "link": "https://www.producthunt.com/products/knowzilla",
+      "product": "React Email 6.0",
+      "tagline": "An open-source email editor you can embed in your own app Discussion | Link",
+      "link": "https://www.producthunt.com/products/react-email-6-0",
       "source": "producthunt.com"
     },
     {
-      "product": "GalaxyBrain",
-      "tagline": "An information operating system powered by local files Discussion | Link",
-      "link": "https://www.producthunt.com/products/galaxybrain-com",
+      "product": "Perplexity Health",
+      "tagline": "Ask health questions across your records, labs, wearables Discussion | Link",
+      "link": "https://www.producthunt.com/products/perplexity-ai",
       "source": "producthunt.com"
     },
     {
-      "product": "Pegasus 1.5 by TwelveLabs",
-      "tagline": "AI model for transforming video into Time-Based Metadata Discussion | Link",
-      "link": "https://www.producthunt.com/products/twelvelabs",
+      "product": "Spectrum",
+      "tagline": "Bring agents to all the interfaces people already use Discussion | Link",
+      "link": "https://www.producthunt.com/products/spectrum-5",
       "source": "producthunt.com"
     },
     {
-      "product": "Tinkery",
-      "tagline": "Revenue clarity for growing businesses Discussion | Link",
-      "link": "https://www.producthunt.com/products/tinkery",
+      "product": "RapidNative",
+      "tagline": "The AI app builder that actually builds the whole app Discussion | Link",
+      "link": "https://www.producthunt.com/products/rapidnative",
       "source": "producthunt.com"
     },
     {
-      "product": "In Parallel",
-      "tagline": "The Operating System for Execution Discussion | Link",
-      "link": "https://www.producthunt.com/products/in-parallel",
+      "product": "Dageno AI",
+      "tagline": "Become the most recommended brand across 7+ major LLMs Discussion | Link",
+      "link": "https://www.producthunt.com/products/agent-powered-geo-by-dageno",
       "source": "producthunt.com"
     },
     {
-      "product": "Lia",
-      "tagline": "Manages invoices, reminders, + repayment plans autonomously Discussion | Link",
-      "link": "https://www.producthunt.com/products/lia-3",
+      "product": "Kimi K2.6",
+      "tagline": "Open-source SOTA for long-horizon coding and agent swarms Discussion | Link",
+      "link": "https://www.producthunt.com/products/kimi-ai-assistant",
       "source": "producthunt.com"
     }
   ],
   "lead_profiles": [
+    {
+      "name": "Blue Energy",
+      "website": "https://techcrunch.com/2026/04/21/blue-energy-raises-380m-to-build-grid-scale-nuclear-reactors-in-shipyards/",
+      "linkedin_company": "",
+      "what_they_do": "Blue Energy raises $380M to build grid-scale nuclear reactors in shipyards",
+      "vertical": "Tech",
+      "industry": "Tech",
+      "funding": {
+        "latest_amount": "$380M",
+        "stage": "Series C",
+        "total": "",
+        "history": [],
+        "news_link": "https://techcrunch.com/2026/04/21/blue-energy-raises-380m-to-build-grid-scale-nuclear-reactors-in-shipyards/",
+        "headline": "Blue Energy raises $380M to build grid-scale nuclear reactors in shipyards"
+      },
+      "employee_count": 0,
+      "annual_revenue": "",
+      "tech_stack": [],
+      "decision_makers": [],
+      "open_roles": [],
+      "has_sales_role": false,
+      "has_tech_role": false,
+      "recent_exec_move": "",
+      "exec_move_link": "",
+      "exec_move_type": "",
+      "data_sources": [
+        "rss"
+      ],
+      "source_count": 1,
+      "outreach_angle": "Just raised $380M (Series C) \u2014 peak hiring window. High urgency to build team without a dedicated talent function."
+    },
     {
       "name": "Ressio",
       "website": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeFMyLUVHSDk3U3lndzFfalVGcDFaX0p6b0hiZDhLcV9kUjM3UHRlQ0lEdlQzalI4blh3bkRSWWQ2THRpenpmZlVselhxUVI0RG05YWRCcWNBTmJOY1JEUmlUWDRWLUpNZWNFY0xtd3ViX0RuR3hkSUg1aERycml3cWNRMHhRRHhVTGtPTm52S2VkS00?oc=5",
@@ -1148,99 +1141,6 @@
       "outreach_angle": "Just raised $25.2M (Series B) \u2014 peak hiring window. High urgency to build team without a dedicated talent function. Defense/cleared hiring = specialized need. Rebel has cleared tech recruiting expertise."
     },
     {
-      "name": "Sources: Cursor in talks to",
-      "website": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
-      "linkedin_company": "",
-      "what_they_do": "Sources: Cursor in talks to raise $2B+ at $50B valuation as enterprise growth surges",
-      "vertical": "Tech",
-      "industry": "Tech",
-      "funding": {
-        "latest_amount": "$2.0B",
-        "stage": "Late Stage",
-        "total": "",
-        "history": [],
-        "news_link": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
-        "headline": "Sources: Cursor in talks to raise $2B+ at $50B valuation as enterprise growth surges"
-      },
-      "employee_count": 0,
-      "annual_revenue": "",
-      "tech_stack": [],
-      "decision_makers": [],
-      "open_roles": [],
-      "has_sales_role": false,
-      "has_tech_role": false,
-      "recent_exec_move": "",
-      "exec_move_link": "",
-      "exec_move_type": "",
-      "data_sources": [
-        "rss"
-      ],
-      "source_count": 1,
-      "outreach_angle": "Recently funded startup entering active hiring phase."
-    },
-    {
-      "name": "Civilized AI",
-      "website": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdk1CN00xRXQ2YXd1bDE1TEppbE5mdG1OcmNhUjQ1U3hrLWxRendtUzNMOEtpaWZxYmxocFhGbWVscS1UclB4TWtyTEZnenJSNlYwRHE3blFkT3RBTlhHTXJOajMyRjROSE1vam5xTTdGeWM1cjdaRFJhdzAxbzNGSnY3WThreUd3WEd1LVpidTVKZGFwR0pwVFlR?oc=5",
-      "linkedin_company": "",
-      "what_they_do": "New Orleans-based Civilized AI raises $2M to modernize city services - New Orleans CityBusiness",
-      "vertical": "Tech",
-      "industry": "Tech",
-      "funding": {
-        "latest_amount": "$2M",
-        "stage": "Seed",
-        "total": "",
-        "history": [],
-        "news_link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdk1CN00xRXQ2YXd1bDE1TEppbE5mdG1OcmNhUjQ1U3hrLWxRendtUzNMOEtpaWZxYmxocFhGbWVscS1UclB4TWtyTEZnenJSNlYwRHE3blFkT3RBTlhHTXJOajMyRjROSE1vam5xTTdGeWM1cjdaRFJhdzAxbzNGSnY3WThreUd3WEd1LVpidTVKZGFwR0pwVFlR?oc=5",
-        "headline": "New Orleans-based Civilized AI raises $2M to modernize city services - New Orleans CityBusiness"
-      },
-      "employee_count": 0,
-      "annual_revenue": "",
-      "tech_stack": [],
-      "decision_makers": [],
-      "open_roles": [],
-      "has_sales_role": false,
-      "has_tech_role": false,
-      "recent_exec_move": "",
-      "exec_move_link": "",
-      "exec_move_type": "",
-      "data_sources": [
-        "rss"
-      ],
-      "source_count": 1,
-      "outreach_angle": "Recently funded startup entering active hiring phase."
-    },
-    {
-      "name": "Airalux",
-      "website": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9yN25IVUdOcC1BeThnVV9sM2RaWGRNMkpsbUY1dmxfam54REhaaHF5YnM5YjlNejBucERqUHI3dmdOSVdtZjk2Z0FtdGVCVzlOdjJkOXd2aEFETXAwdmIxa1ZtLW9MVHJrUEdaNDVaU2pVd194ekFuUw?oc=5",
-      "linkedin_company": "",
-      "what_they_do": "Airalux lands $300k SBIR grant despite a federal funding slowdown - Technical.ly",
-      "vertical": "Defense/GovTech",
-      "industry": "Defense/GovTech",
-      "funding": {
-        "latest_amount": "undisclosed",
-        "stage": "Unknown",
-        "total": "",
-        "history": [],
-        "news_link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9yN25IVUdOcC1BeThnVV9sM2RaWGRNMkpsbUY1dmxfam54REhaaHF5YnM5YjlNejBucERqUHI3dmdOSVdtZjk2Z0FtdGVCVzlOdjJkOXd2aEFETXAwdmIxa1ZtLW9MVHJrUEdaNDVaU2pVd194ekFuUw?oc=5",
-        "headline": "Airalux lands $300k SBIR grant despite a federal funding slowdown - Technical.ly"
-      },
-      "employee_count": 0,
-      "annual_revenue": "",
-      "tech_stack": [],
-      "decision_makers": [],
-      "open_roles": [],
-      "has_sales_role": false,
-      "has_tech_role": false,
-      "recent_exec_move": "",
-      "exec_move_link": "",
-      "exec_move_type": "",
-      "data_sources": [
-        "rss"
-      ],
-      "source_count": 1,
-      "outreach_angle": "Defense/cleared hiring = specialized need. Rebel has cleared tech recruiting expertise."
-    },
-    {
       "name": "Repeat Founders",
       "website": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTGNjMmlub3B4WXFPd3FWYUo0REgtSmdkSUo1UDY3dnhnUG5JUE5vOHA3NmhJSUhWSHdkWXVvZEtPWkphVVZ1Y3lGVmdEMzUzZVh1MVdOcHNjX0tHSzhOaGpyb0pFNmpRSGp6SG45NU9RRk16cjVrdUJUenpleVhZRFMtNE1OTkRxV213?oc=5",
       "linkedin_company": "",
@@ -1301,37 +1201,6 @@
       ],
       "source_count": 1,
       "outreach_angle": "Just raised $100M (Series C) \u2014 peak hiring window. High urgency to build team without a dedicated talent function. Fintech = high compliance + technical bar for hires. Need a recruiter who understands the domain."
-    },
-    {
-      "name": "Kiwi fund administration fintech Caruso banks $9.3 million Series A - Startup Da",
-      "website": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVE1Dd2R4SmItcXgtOHJSSGNKcElOY241T25seUZLazFGd2JwYmw4MGljal94X1F0QTZhRlo0YzFhOVVjWWgwWkJua19rb0VHV0M2VEExaWtvbi1fOFRzaEo1SGtKWUp5cTQ5ZjVzRFZQQlRZeWRINDZpNlVwdkFyTkhrbTBfYldQa1FTYnhnX29kVHVCTXhrY3E1bzlkMDAydzlJVlgzbUh6bTAtZkRj?oc=5",
-      "linkedin_company": "",
-      "what_they_do": "Kiwi fund administration fintech Caruso banks $9.3 million Series A - Startup Daily",
-      "vertical": "Fintech",
-      "industry": "Fintech",
-      "funding": {
-        "latest_amount": "$9.3M",
-        "stage": "Series A",
-        "total": "",
-        "history": [],
-        "news_link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVE1Dd2R4SmItcXgtOHJSSGNKcElOY241T25seUZLazFGd2JwYmw4MGljal94X1F0QTZhRlo0YzFhOVVjWWgwWkJua19rb0VHV0M2VEExaWtvbi1fOFRzaEo1SGtKWUp5cTQ5ZjVzRFZQQlRZeWRINDZpNlVwdkFyTkhrbTBfYldQa1FTYnhnX29kVHVCTXhrY3E1bzlkMDAydzlJVlgzbUh6bTAtZkRj?oc=5",
-        "headline": "Kiwi fund administration fintech Caruso banks $9.3 million Series A - Startup Daily"
-      },
-      "employee_count": 0,
-      "annual_revenue": "",
-      "tech_stack": [],
-      "decision_makers": [],
-      "open_roles": [],
-      "has_sales_role": false,
-      "has_tech_role": false,
-      "recent_exec_move": "",
-      "exec_move_link": "",
-      "exec_move_type": "",
-      "data_sources": [
-        "rss"
-      ],
-      "source_count": 1,
-      "outreach_angle": "Just raised $9.3M (Series A) \u2014 peak hiring window. High urgency to build team without a dedicated talent function. Fintech = high compliance + technical bar for hires. Need a recruiter who understands the domain."
     },
     {
       "name": "Fintech Startups Globally Raise More Money In Far Fewer Deals In Q1 2026 - Crunc",
@@ -1425,17 +1294,110 @@
       ],
       "source_count": 1,
       "outreach_angle": "Just raised $100M (Series C) \u2014 peak hiring window. High urgency to build team without a dedicated talent function. Fintech = high compliance + technical bar for hires. Need a recruiter who understands the domain."
+    },
+    {
+      "name": "Exclusive: Candex Extends Series C To $40M+ To Help Enterprises Easily Onboard G",
+      "website": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONDhjd1RRZHJNY1pXRG52bVpaTk91M1lYdGdRRGl2ZHpmTTJxRDh2eEkyNDhHSkxNanoyOGlKU1BsOGUwTGhYYmlFNTJ6U1ZSS1VZREVRcWpweWI0S0d4UUpOUTV1NlJ4TTk1blpCb0RrSFU1NURqNms2T2d0b3JmMFhDQVBURDVYeElVTG9mM2FSUQ?oc=5",
+      "linkedin_company": "",
+      "what_they_do": "Exclusive: Candex Extends Series C To $40M+ To Help Enterprises Easily Onboard Global Vendors - Crunchbase News",
+      "vertical": "Fintech",
+      "industry": "Fintech",
+      "funding": {
+        "latest_amount": "$40M",
+        "stage": "Series C",
+        "total": "",
+        "history": [],
+        "news_link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONDhjd1RRZHJNY1pXRG52bVpaTk91M1lYdGdRRGl2ZHpmTTJxRDh2eEkyNDhHSkxNanoyOGlKU1BsOGUwTGhYYmlFNTJ6U1ZSS1VZREVRcWpweWI0S0d4UUpOUTV1NlJ4TTk1blpCb0RrSFU1NURqNms2T2d0b3JmMFhDQVBURDVYeElVTG9mM2FSUQ?oc=5",
+        "headline": "Exclusive: Candex Extends Series C To $40M+ To Help Enterprises Easily Onboard Global Vendors - Crunchbase News"
+      },
+      "employee_count": 0,
+      "annual_revenue": "",
+      "tech_stack": [],
+      "decision_makers": [],
+      "open_roles": [],
+      "has_sales_role": false,
+      "has_tech_role": false,
+      "recent_exec_move": "",
+      "exec_move_link": "",
+      "exec_move_type": "",
+      "data_sources": [
+        "rss"
+      ],
+      "source_count": 1,
+      "outreach_angle": "Just raised $40M (Series C) \u2014 peak hiring window. High urgency to build team without a dedicated talent function. Fintech = high compliance + technical bar for hires. Need a recruiter who understands the domain."
+    },
+    {
+      "name": "A Growing Share Of Seed And Series A Funding Is Going To Giant Rounds - Crunchba",
+      "website": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMTFWQklaa1F6ZzRfRmVVNlNXaHoycHBNTXJyeHhjdU1fX3FFcHZHcnYteXBTR3hzUVFOcndjM3FJczFoR1VzclhWQThsS2VRay0zeUZlb2hfSUhZdmFSRk5IRU14U1NPNjVvYkRVb2x3ZEMwMXhoUy1LaUpuSEF2OQ?oc=5",
+      "linkedin_company": "",
+      "what_they_do": "A Growing Share Of Seed And Series A Funding Is Going To Giant Rounds - Crunchbase News",
+      "vertical": "Fintech",
+      "industry": "Fintech",
+      "funding": {
+        "latest_amount": "undisclosed",
+        "stage": "Series A",
+        "total": "",
+        "history": [],
+        "news_link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMTFWQklaa1F6ZzRfRmVVNlNXaHoycHBNTXJyeHhjdU1fX3FFcHZHcnYteXBTR3hzUVFOcndjM3FJczFoR1VzclhWQThsS2VRay0zeUZlb2hfSUhZdmFSRk5IRU14U1NPNjVvYkRVb2x3ZEMwMXhoUy1LaUpuSEF2OQ?oc=5",
+        "headline": "A Growing Share Of Seed And Series A Funding Is Going To Giant Rounds - Crunchbase News"
+      },
+      "employee_count": 0,
+      "annual_revenue": "",
+      "tech_stack": [],
+      "decision_makers": [],
+      "open_roles": [],
+      "has_sales_role": false,
+      "has_tech_role": false,
+      "recent_exec_move": "",
+      "exec_move_link": "",
+      "exec_move_type": "",
+      "data_sources": [
+        "rss"
+      ],
+      "source_count": 1,
+      "outreach_angle": "Just raised undisclosed (Series A) \u2014 peak hiring window. High urgency to build team without a dedicated talent function. Fintech = high compliance + technical bar for hires. Need a recruiter who understands the domain."
+    },
+    {
+      "name": "Rain",
+      "website": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYVI4djdBREJKMmw4ek1pM0FFUjB1cHdjUmhvVWhheVpoZUNURFMxd29hNk15Y0lrXzhGMW5uWFI3anJTelRBNGY2LXY1SDFtTDh3YVNvQUdZTXc5ZW9KbU1IOU5ld3puS1g4Y2xLbWZ6Zmw1TVhhZnIxbmJoaUdPR0l3MlBCSmoycjRsaXp0RU5RamkzazNMclpDQlo?oc=5",
+      "linkedin_company": "",
+      "what_they_do": "Stablecoin Startup Rain Raises $250M Series C at $1.95B Valuation \u2013 Its Third Round In Less Than A Year - Crunchbase New",
+      "vertical": "Fintech",
+      "industry": "Fintech",
+      "funding": {
+        "latest_amount": "$250M",
+        "stage": "Series C",
+        "total": "",
+        "history": [],
+        "news_link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYVI4djdBREJKMmw4ek1pM0FFUjB1cHdjUmhvVWhheVpoZUNURFMxd29hNk15Y0lrXzhGMW5uWFI3anJTelRBNGY2LXY1SDFtTDh3YVNvQUdZTXc5ZW9KbU1IOU5ld3puS1g4Y2xLbWZ6Zmw1TVhhZnIxbmJoaUdPR0l3MlBCSmoycjRsaXp0RU5RamkzazNMclpDQlo?oc=5",
+        "headline": "Stablecoin Startup Rain Raises $250M Series C at $1.95B Valuation \u2013 Its Third Round In Less Than A Year - Crunchbase New"
+      },
+      "employee_count": 0,
+      "annual_revenue": "",
+      "tech_stack": [],
+      "decision_makers": [],
+      "open_roles": [],
+      "has_sales_role": false,
+      "has_tech_role": false,
+      "recent_exec_move": "",
+      "exec_move_link": "",
+      "exec_move_type": "",
+      "data_sources": [
+        "rss"
+      ],
+      "source_count": 1,
+      "outreach_angle": "Just raised $250M (Series C) \u2014 peak hiring window. High urgency to build team without a dedicated talent function. Fintech = high compliance + technical bar for hires. Need a recruiter who understands the domain."
     }
   ],
   "cross_references": [],
   "source_stats": {
-    "rss_funding": 6,
+    "rss_funding": 4,
     "rss_hiring": 12,
     "rss_execs": 10,
     "sam_gov": 0,
     "yc": 0,
     "hn_hiring": 30,
-    "github": 10,
+    "github": 7,
     "sec_edgar": 0,
     "producthunt": 10,
     "fintech_signals": 10,
@@ -1443,18 +1405,16 @@
     "gov_contracts": 6
   },
   "stage_breakdown": {
-    "Series A": 11,
-    "Series C": 7,
-    "Series B": 5,
-    "Late Stage": 1,
-    "Seed": 1,
+    "Series C": 8,
+    "Series A": 9,
+    "Series B": 7,
     "Unknown": 3
   },
   "sector_breakdown": {
     "Fintech": 10,
     "Martech": 10,
-    "Tech": 3,
-    "Defense/GovTech": 3
+    "Tech": 2,
+    "Defense/GovTech": 2
   },
   "pdf_url": "daily_brief.pdf",
   "apollo_enabled": true,
